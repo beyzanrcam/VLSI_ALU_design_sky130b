@@ -1,1 +1,0 @@
-/usr/local/share/pdk/sky130B/libs.tech/netgen/sky130B_setup.tcl
