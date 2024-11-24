@@ -1,0 +1,65 @@
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/nand2_TB.sch
+**.subckt nand2_TB OUTPUT VDD VSS
+*.opin OUTPUT
+*.iopin VDD
+*.iopin VSS
+V1 VDD GND 1.2
+V2 VSS GND 0
+V4 INPUT GND pulse(0,1.2,0.01u,0 ,0,0.01u,0.02u)
+x1 INPUT INPUT VSS VDD OUTPUT nand2
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice tt_mm
+
+
+
+
+.control
+set color0 = white
+
+save all
+tran 0.001n 0.03u
+plot INPUT OUTPUT title 'a'
+
+meas tran t_input when V(INPUT)=0.6 RISE=1
+meas tran t_output when V(OUTPUT)=0.6 FALL=1
+let tpdr = (t_output - t_input) * 1e9
+echo tpdr (ns) is:
+print tpdr
+meas tran t_input when V(INPUT)=0.6 FALL=1
+meas tran t_output when V(OUTPUT)=0.6 RISE=1
+let tpdf = (t_output - t_input) * 1e9
+echo tpdf (ns) is:
+print tpdf
+let tpd = (tpdf + tpdr)/2
+echo tpd (ns) is:
+print tpd
+
+let p_n_ratio = @m.x1.xm1.msky130_fd_pr__pfet_01v8[w]/@m.x1.xm2.msky130_fd_pr__nfet_01v8[w]
+print p_n_ratio
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  nand2.sym # of pins=3
+** sym_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/nand2.sym
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/nand2.sch
+.subckt nand2 A B VSS VDD Y
+*.ipin A
+*.opin Y
+*.ipin B
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end

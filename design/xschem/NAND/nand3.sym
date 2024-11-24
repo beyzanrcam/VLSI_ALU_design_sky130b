@@ -1,7 +1,7 @@
 v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {type=subcircuit
-function2="0 1 & ~"
+function2="0 1 2 & &  ~"
 format="@name @@A @@B @@C @VSS @VDD @@Y @symname"
 template="name=x1 VSS=VSS VDD=VDD"
 extra="VSS VDD"
