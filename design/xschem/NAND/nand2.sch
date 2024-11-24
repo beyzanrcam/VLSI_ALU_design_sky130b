@@ -14,14 +14,14 @@ N 180 270 180 300 {lab=#net1}
 N 310 190 310 210 {lab=Y}
 N 180 110 290 110 {lab=VDD}
 N 310 110 310 130 {lab=VDD}
-N 180 400 180 420 {lab=xxx}
+N 180 400 180 420 {lab=VSS}
 N 290 110 310 110 {lab=VDD}
 N 140 320 140 360 {lab=B}
 N 140 320 270 320 {lab=B}
 N 270 160 270 320 {lab=B}
 N 180 210 310 210 {lab=Y}
 N 310 210 420 210 {lab=Y}
-N 180 360 180 400 {lab=xxx}
+N 180 360 180 400 {lab=VSS}
 N 310 130 310 160 {lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
@@ -39,7 +39,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
-W=1
+W=2
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -55,7 +55,7 @@ C {devices/ipin.sym} 110 210 0 0 {name=p3 lab=A}
 C {devices/opin.sym} 420 210 0 0 {name=p4 lab=Y}
 C {sky130_fd_pr/nfet_01v8.sym} 160 360 0 0 {name=M3
 L=0.15
-W=1
+W=2
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

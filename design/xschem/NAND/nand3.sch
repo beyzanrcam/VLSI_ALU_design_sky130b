@@ -31,9 +31,9 @@ N 410 190 410 210 {lab=Y}
 N 180 450 180 480 {lab=VSS}
 N 180 480 180 520 {lab=VSS}
 N 140 410 140 450 {lab=C}
-N 370 160 370 400 {lab=#net3}
-N 140 410 370 410 {}
-N 370 400 370 410 {}
+N 370 160 370 400 {lab=C}
+N 140 410 370 410 {lab=C}
+N 370 400 370 410 {lab=C}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
 W=3.2
@@ -50,7 +50,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
-W=1
+W=3
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -66,7 +66,7 @@ C {devices/ipin.sym} 110 210 0 0 {name=p3 lab=A}
 C {devices/opin.sym} 540 210 0 0 {name=p4 lab=Y}
 C {sky130_fd_pr/nfet_01v8.sym} 160 360 0 0 {name=M3
 L=0.15
-W=1
+W=3
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -111,7 +111,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 160 450 0 0 {name=M6
 L=0.15
-W=1
+W=3
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
