@@ -35,17 +35,19 @@ plot INPUT OUTPUT title 'a'
 meas tran t_input when V(INPUT)=0.6 RISE=1
 meas tran t_output when V(OUTPUT)=0.6 FALL=1
 let tpdr = (t_output - t_input) * 1e9
-echo (a) tpdr (ns) is:
+echo tpdr (ns) is:
 print tpdr
 meas tran t_input when V(INPUT)=0.6 FALL=1
 meas tran t_output when V(OUTPUT)=0.6 RISE=1
 let tpdf = (t_output - t_input) * 1e9
-echo (a) tpdf (ns) is:
+echo tpdf (ns) is:
 print tpdf
 let tpd = (tpdf + tpdr)/2
-echo (a) tpd (ns) is:
+echo tpd (ns) is:
 print tpd
 
+let p_n_ratio = @m.x1.xm1.msky130_fd_pr__pfet_01v8[w]/@m.x1.xm2.msky130_fd_pr__nfet_01v8[w]
+print p_n_ratio
 .endc
 "}
 C {devices/vsource.sym} 140 -80 0 0 {name=V4 value="pulse(0,1.2,0.01u,1p,1p,0.01u,0.02u)" savecurrent=false}
