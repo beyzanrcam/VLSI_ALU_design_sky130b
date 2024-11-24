@@ -5,11 +5,11 @@ V {}
 S {}
 E {}
 N 180 90 180 130 {lab=VDD}
-N 180 190 180 240 {lab=OUT}
+N 180 190 180 240 {lab=Y}
 N 180 300 180 340 {lab=VSS}
-N 180 210 270 210 {lab=OUT}
-N 140 160 140 270 {lab=IN}
-N 110 210 140 210 {lab=IN}
+N 180 210 270 210 {lab=Y}
+N 140 160 140 270 {lab=A}
+N 110 210 140 210 {lab=A}
 N 180 130 180 160 {lab=VDD}
 N 180 270 180 300 {lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
@@ -40,7 +40,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 180 90 1 1 {name=p1 lab=VDD}
-C {devices/iopin.sym} 180 340 1 0 {name=p2 lab=VSS}
-C {devices/iopin.sym} 110 210 2 0 {name=p3 lab=IN}
-C {devices/iopin.sym} 270 210 0 0 {name=p4 lab=OUT}
+C {devices/lab_pin.sym} 180 90 2 1 {name=p1 lab=VDD}
+C {devices/lab_pin.sym} 180 340 3 0 {name=p2 lab=VSS}
+C {devices/ipin.sym} 110 210 0 0 {name=p3 lab=A}
+C {devices/opin.sym} 270 210 0 0 {name=p4 lab=Y}
