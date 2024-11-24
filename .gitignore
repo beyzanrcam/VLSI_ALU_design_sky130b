@@ -1,0 +1,5 @@
+*.magicrc
+*setup.tcl
+*.spiceinit
+*xschemrc
+
