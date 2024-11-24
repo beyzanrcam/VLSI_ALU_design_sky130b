@@ -25,8 +25,8 @@ N 180 360 180 400 {lab=VSS}
 N 310 130 310 160 {lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
-W=3.2
-nf=1
+W=3.21
+nf=3
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -40,7 +40,11 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
 W=2
+<<<<<<< Updated upstream
 nf=1 
+=======
+nf=2 
+>>>>>>> Stashed changes
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -56,7 +60,11 @@ C {devices/opin.sym} 420 210 0 0 {name=p4 lab=Y}
 C {sky130_fd_pr/nfet_01v8.sym} 160 360 0 0 {name=M3
 L=0.15
 W=2
+<<<<<<< Updated upstream
 nf=1 
+=======
+nf=2
+>>>>>>> Stashed changes
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -67,10 +75,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/ipin.sym} 140 360 0 0 {name=p5 lab=B}
+C {devices/lab_pin.sym} 180 90 0 0 {name=p1 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 180 420 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 290 160 0 0 {name=M4
 L=0.15
-W=3.2
-nf=1
+W=3.21
+nf=3
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -81,6 +92,3 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 140 360 0 0 {name=p5 lab=B}
-C {devices/lab_pin.sym} 180 90 0 0 {name=p1 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 420 0 0 {name=p2 sig_type=std_logic lab=VSS}

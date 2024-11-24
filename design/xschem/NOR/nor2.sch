@@ -29,8 +29,13 @@ N 180 40 180 60 {lab=VDD}
 N 180 20 180 40 {lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
+<<<<<<< Updated upstream
 W=6.4
 nf=1
+=======
+W=6.42
+nf=6
+>>>>>>> Stashed changes
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -73,8 +78,13 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 160 60 0 0 {name=M4
 L=0.15
+<<<<<<< Updated upstream
 W=6.4
 nf=1
+=======
+W=6.42
+nf=6
+>>>>>>> Stashed changes
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

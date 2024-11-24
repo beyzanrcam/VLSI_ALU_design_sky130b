@@ -44,8 +44,6 @@ let tpd = (tpdf + tpdr)/2
 echo tpd (ns) is:
 print tpd
 
-let p_n_ratio = @m.x1.xm1.msky130_fd_pr__pfet_01v8[w]/@m.x1.xm2.msky130_fd_pr__nfet_01v8[w]
-print p_n_ratio
 .endc
 "}
 C {devices/vsource.sym} 140 -80 0 0 {name=V4 value="pulse(0,1.2,0.01u,0 ,0,0.01u,0.02u)" savecurrent=false}
