@@ -1,0 +1,19 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1732464864
+<< poly >>
+rect 3 -156 75 -126
+<< metal1 >>
+rect 3 0 69 80
+rect 0 -68 69 0
+rect 3 -175 69 -68
+use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0
+timestamp 1732463990
+transform 0 1 207 -1 0 209
+box -209 -207 209 169
+use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_0
+timestamp 0
+transform 0 1 200 -1 0 -141
+box -73 -126 73 126
+<< end >>
