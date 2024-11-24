@@ -29,7 +29,7 @@ C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
 set color0 = white
 
 save all
-tran 0.01n 0.03u
+tran 0.001n 0.03u
 plot INPUT OUTPUT title 'a'
 
 meas tran t_input when V(INPUT)=0.6 RISE=1
@@ -50,7 +50,7 @@ let p_n_ratio = @m.x1.xm1.msky130_fd_pr__pfet_01v8[w]/@m.x1.xm2.msky130_fd_pr__n
 print p_n_ratio
 .endc
 "}
-C {devices/vsource.sym} 140 -80 0 0 {name=V4 value="pulse(0,1.2,0.01u,1p,1p,0.01u,0.02u)" savecurrent=false}
+C {devices/vsource.sym} 140 -80 0 0 {name=V4 value="pulse(0,1.2,0.01u,0 ,0,0.01u,0.02u)" savecurrent=false}
 C {devices/gnd.sym} 140 -50 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 140 -110 2 0 {name=p16 sig_type=std_logic lab=INPUT}
 C {inv.sym} 120 80 0 0 {name=x1}
