@@ -1,0 +1,35 @@
+** sch_path: /home/ubuntu/Desktop/design/xschem/pss.sch
+**.subckt pss
+E1 Out GND net1 GND 3
+V1 net2 GND sin(0 10 1e6 0 0 0)
+R2 net2 net1 1k m=1
+R1 net1 GND 1k m=1
+**** begin user architecture code
+
+
+.control
+
+let start_r = 1k
+let stop_r = 5k
+let delta_r = 1k
+let r_act = start_r
+
+* loop
+while r_act le stop_r
+alter r1 r_act
+pss 1e6 500n out 1024 10 5 5e-3 uic
+write pss.raw
+set appendwrite
+let r_act=r_act+delta_r
+end
+
+plot pss2.v(out)
+plot pss4.v(out)
+
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

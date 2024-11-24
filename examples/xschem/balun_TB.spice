@@ -1,0 +1,40 @@
+** sch_path: /home/ubuntu/Desktop/design/xschem/balun_TB.sch
+**.subckt balun_TB
+V1 net2 GND sin(1 2 1e6 0 0 0)
+V2 net1 GND sin(1 2 1e6 0 0 180)
+x2 d c p n balun
+x1 d c net2 net1 balun
+**** begin user architecture code
+
+
+.options KEEPOPINFO
+.control
+tran 0.1n 1000n
+save all
+write balun_TB.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  balun.sym # of pins=4
+** sym_path: /home/ubuntu/Desktop/design/xschem/balun.sym
+** sch_path: /home/ubuntu/Desktop/design/xschem/balun.sch
+.subckt balun  1 2 3 4
+*.iopin 1
+*.iopin 2
+*.iopin 3
+*.iopin 4
+E1 5 2 1 0 0.5
+V1 3 5 0
+F1 1 0 V1 -0.5
+R1 1 0 1T m=1
+E2 6 4 1 0 0.5
+V2 2 7 0
+F2 1 0 V2 -0.5
+R2 7 6 1u m=1
+.ends
+
+.GLOBAL GND
+.end

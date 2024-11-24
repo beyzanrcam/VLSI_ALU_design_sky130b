@@ -1,0 +1,18 @@
+For schematic design
+
+$cd xschem
+$xschem
+
+
+For layout
+
+$cd mag
+$magic
+
+
+For lvs 
+$cd netgen
+$netgen
+
+
+https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130

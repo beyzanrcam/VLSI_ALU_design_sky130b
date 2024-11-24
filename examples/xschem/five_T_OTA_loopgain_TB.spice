@@ -1,0 +1,91 @@
+** sch_path: /home/ubuntu/Desktop/examples/xschem/five_T_OTA_loopgain_TB.sch
+**.subckt five_T_OTA_loopgain_TB
+x1 OUT_1 OUT_1 PLUS IBIAS GND VDD five_T_OTA
+V1 VDD GND 1.8
+I0 VDD IBIAS 50u
+V2 PLUS GND 0.9
+C1 OUT_1 GND 1p m=1
+x2 OUT_2 net1 PLUS IBIAS_2 GND VDD five_T_OTA
+C2 OUT_2 GND 1p m=1
+V3 net1 net2 0 AC 1
+V4 OUT_2 net2 0 AC 0
+B1 net2 GND V = v(OUT_1)
+x3 OUT_3 net3 PLUS IBIAS_3 GND VDD five_T_OTA
+C3 OUT_3 GND 1p m=1
+V5 net3 net4 0 AC 0
+V6 OUT_3 net4 0 AC 1
+B2 net4 GND V = v(OUT_1)
+.save  v(out_1)
+.save  v(out_2)
+.save  v(out_3)
+I1 VDD IBIAS_2 50u
+I2 VDD IBIAS_3 50u
+**** begin user architecture code
+
+
+.control
+
+save all
+
+op
+write five_T_OTA_loopgain_TB.raw
+
+ac dec 10 1 10e9
+set appendwrite
+write five_T_OTA_loopgain_TB.raw
+
+setplot new
+set curplottitle=Loopgain
+let frequency=ac1.frequency
+let T = (ac1.i(V4)+ac1.i(V5))/(ac1.i(V3)+ac1.i(V6))
+let Tmag=db(T)
+let Tphase = 180*cph(T)/pi
+plot Tmag Tphase xlog
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  five_T_OTA.sym # of pins=6
+** sym_path: /home/ubuntu/Desktop/examples/xschem/five_T_OTA.sym
+** sch_path: /home/ubuntu/Desktop/examples/xschem/five_T_OTA.sch
+.subckt five_T_OTA  OUT MINUS PLUS IBIAS VSS VDD
+*.iopin VDD
+*.iopin VSS
+*.iopin MINUS
+*.iopin PLUS
+*.iopin OUT
+*.iopin IBIAS
+XM2 IBIAS IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net1 IBIAS VSS VSS sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+.save  v(ibias)
+.save  v(out)
+.save  v(net2)
+.save  v(net1)
+XM4 net2 PLUS net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.3 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+XM5 OUT MINUS net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.3 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+XM3 net2 net2 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.7 W=2.3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+XM6 OUT net2 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.7 W=2.3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+.GLOBAL GND
+.end
