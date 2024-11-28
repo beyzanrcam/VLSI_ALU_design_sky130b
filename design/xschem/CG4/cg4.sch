@@ -155,24 +155,24 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {ipin.sym} 70 -430 0 0 {name=p1 lab=P3}
-C {ipin.sym} 70 -330 0 0 {name=p2 lab=P1}
-C {ipin.sym} 70 -210 0 0 {name=p3 lab=N1}
-C {ipin.sym} 70 -110 0 0 {name=p4 lab=N3}
-C {ipin.sym} 430 -430 0 1 {name=p5 lab=P4}
-C {ipin.sym} 430 -330 0 1 {name=p6 lab=P2}
-C {ipin.sym} 430 -210 0 1 {name=p7 lab=N2}
-C {ipin.sym} 430 -110 0 1 {name=p8 lab=N4}
-C {lab_pin.sym} 250 -40 0 0 {name=p9 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 250 -500 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {opin.sym} 550 -270 0 0 {name=p11 lab=OUT}
-C {lab_pin.sym} 300 -110 0 0 {name=p12 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 300 -210 0 0 {name=p13 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 200 -210 0 1 {name=p14 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 200 -110 0 1 {name=p15 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 300 -430 0 0 {name=p16 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 300 -330 0 0 {name=p17 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 200 -330 0 1 {name=p18 sig_type=std_logic lab=VDD}
-C {lab_pin.sym} 200 -430 0 1 {name=p19 sig_type=std_logic lab=VDD}
-C {ipin.sym} 180 -380 0 1 {name=p20 lab=X}
-C {ipin.sym} 320 -380 0 0 {name=p21 lab=Y}
+C {devices/ipin.sym} 70 -430 0 0 {name=p1 lab=P3}
+C {devices/ipin.sym} 70 -330 0 0 {name=p2 lab=P1}
+C {devices/ipin.sym} 70 -210 0 0 {name=p3 lab=N1}
+C {devices/ipin.sym} 70 -110 0 0 {name=p4 lab=N3}
+C {devices/ipin.sym} 430 -430 0 1 {name=p5 lab=P4}
+C {devices/ipin.sym} 430 -330 0 1 {name=p6 lab=P2}
+C {devices/ipin.sym} 430 -210 0 1 {name=p7 lab=N2}
+C {devices/ipin.sym} 430 -110 0 1 {name=p8 lab=N4}
+C {devices/lab_pin.sym} 250 -40 0 0 {name=p9 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 250 -500 0 0 {name=p10 sig_type=std_logic lab=VDD}
+C {devices/opin.sym} 550 -270 0 0 {name=p11 lab=OUT}
+C {devices/lab_pin.sym} 300 -110 0 0 {name=p12 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 300 -210 0 0 {name=p13 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 200 -210 0 1 {name=p14 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 200 -110 0 1 {name=p15 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 300 -430 0 0 {name=p16 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 300 -330 0 0 {name=p17 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 200 -330 0 1 {name=p18 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 200 -430 0 1 {name=p19 sig_type=std_logic lab=VDD}
+C {devices/ipin.sym} 180 -380 0 1 {name=p20 lab=X}
+C {devices/ipin.sym} 320 -380 0 0 {name=p21 lab=Y}
