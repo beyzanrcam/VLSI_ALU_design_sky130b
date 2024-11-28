@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1732463990
+timestamp 1732803117
 << nwell >>
 rect -209 -207 209 169
 << pmos >>
@@ -65,32 +65,18 @@ rect -113 -188 113 -154
 << metal1 >>
 rect -81 99 209 107
 rect -81 22 -65 99
+rect -31 22 127 99
 rect 161 22 209 99
 rect -81 16 209 22
 rect -209 -22 81 -16
 rect -209 -101 -161 -22
+rect -127 -101 31 -22
 rect 65 -101 81 -22
 rect -209 -107 81 -101
 rect -129 -154 129 -138
 rect -129 -188 -113 -154
 rect 113 -188 129 -154
 rect -129 -204 129 -188
-<< via1 >>
-rect -65 22 -31 99
-rect -31 22 127 99
-rect 127 22 161 99
-rect -161 -101 -127 -22
-rect -127 -101 31 -22
-rect 31 -101 65 -22
-<< metal2 >>
-rect -81 99 209 107
-rect -81 22 -65 99
-rect 161 22 209 99
-rect -81 16 209 22
-rect -209 -22 81 -16
-rect -209 -101 -161 -22
-rect 65 -101 81 -22
-rect -209 -107 81 -101
 << properties >>
 string gencell sky130_fd_pr__pfet_01v8
 string library sky130
