@@ -6,10 +6,11 @@ S {}
 E {}
 N 250 80 290 80 {lab=OUTPUT}
 N 220 80 250 80 {lab=OUTPUT}
-N 100 60 100 100 {lab=INPUT}
 N 80 80 100 80 {lab=INPUT}
 N 90 -130 90 -110 {lab=VSS}
 N 40 -130 40 -110 {lab=VDD}
+N 100 60 100 80 {lab=INPUT}
+N 100 80 100 100 {lab=INPUT}
 C {devices/vsource.sym} 40 -80 0 0 {name=V1 value=1.2 savecurrent=false}
 C {devices/vsource.sym} 90 -80 0 0 {name=V2 value=0 savecurrent=false}
 C {devices/gnd.sym} 40 -50 0 0 {name=l1 lab=GND}
@@ -26,6 +27,7 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
+.include '../mag/NAND/NAND2.spice'
 .control 
 set color0 = white
 
@@ -47,8 +49,6 @@ let tpd = (tpdf + tpdr)/2
 echo tpd (ns) is:
 print tpd
 
-let p_n_ratio = @m.x1.xm1.msky130_fd_pr__pfet_01v8[w]/@m.x1.xm2.msky130_fd_pr__nfet_01v8[w]
-print p_n_ratio
 .endc
 "}
 C {devices/vsource.sym} 140 -80 0 0 {name=V4 value="pulse(0,1.2,0.01u,0 ,0,0.01u,0.02u)" savecurrent=false}
@@ -58,3 +58,4 @@ C {devices/opin.sym} 290 80 0 0 {name=p1 lab=OUTPUT}
 C {devices/iopin.sym} 40 -130 3 0 {name=p3 lab=VDD
 }
 C {devices/iopin.sym} 90 -130 3 0 {name=p4 lab=VSS}
+C {From Layout/NAND/nand2.sym} 160 80 0 0 {name=x1 VSS=VSS VDD=VDD}
