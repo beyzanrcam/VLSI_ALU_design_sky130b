@@ -1,0 +1,15 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1732817447
+<< error_s >>
+rect 88 -4 474 35
+use nmos_2shared_W200-L015-F1  nmos_2shared_W200-L015-F1_0
+timestamp 1732817447
+transform 1 0 281 0 1 -233
+box -125 -226 125 226
+use pmos_p2-w321-L015-f3  pmos_p2-w321-L015-f3_0
+timestamp 1732817447
+transform 1 0 341 0 -1 165
+box -353 -143 353 169
+<< end >>

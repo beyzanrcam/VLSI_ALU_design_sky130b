@@ -1,0 +1,22 @@
+* SPICE3 file created from NAND2.ext - technology: sky130B
+
+.subckt nmos_2shared_W200-L015-F1 a_63_n200# a_n63_n226# a_33_n226# a_n125_n200# VSUBS
+X0 a_n33_n200# a_n63_n226# a_n125_n200# VSUBS sky130_fd_pr__nfet_01v8 ad=0.33 pd=2.33 as=0.62 ps=4.62 w=2 l=0.15
+X1 a_63_n200# a_33_n226# a_n33_n200# VSUBS sky130_fd_pr__nfet_01v8 ad=0.62 pd=4.62 as=0.33 ps=2.33 w=2 l=0.15
+.ends
+
+.subckt pmos_p2-w321-L015-f3 a_n317_n107# w_n353_n143# a_n225_n107# a_33_n138# a_n255_n138#
++ VSUBS
+X0 a_n225_n107# a_33_n138# a_n317_n107# w_n353_n143# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X1 a_n225_n107# a_n255_n138# a_n317_n107# w_n353_n143# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.3317 ps=2.76 w=1.07 l=0.15
+X2 a_n317_n107# a_33_n138# a_n225_n107# w_n353_n143# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X3 a_n317_n107# a_n255_n138# a_n225_n107# w_n353_n143# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X4 a_n225_n107# a_n255_n138# a_n317_n107# w_n353_n143# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X5 a_n317_n107# a_33_n138# a_n225_n107# w_n353_n143# sky130_fd_pr__pfet_01v8 ad=0.3317 pd=2.76 as=0.17655 ps=1.4 w=1.07 l=0.15
+.ends
+
+.subckt nand2 A B VSS Y
+Xnmos_2shared_W200-L015-F1_0 VSS B A Y VSS nmos_2shared_W200-L015-F1
+Xpmos_p2-w321-L015-f3_0 VDD VDD Y B A VSS pmos_p2-w321-L015-f3
+.ends
+
