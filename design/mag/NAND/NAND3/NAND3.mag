@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1732914314
+timestamp 1732960014
 << nwell >>
 rect -241 746 -208 765
 << ndiff >>
@@ -43,19 +43,19 @@ rect -407 1165 228 1227
 rect 125 969 176 988
 rect 125 847 181 969
 rect 125 843 219 847
-rect 303 843 351 989
+rect 298 843 351 989
 rect -443 796 -121 815
 rect 24 796 97 815
 rect -443 746 -108 796
 rect 24 762 37 796
 rect 71 762 97 796
 rect 24 741 97 762
+rect -443 649 -410 718
 rect -172 705 -108 718
 rect -172 671 -158 705
 rect -121 671 -108 705
 rect -172 668 -108 671
-rect 125 600 351 843
-rect 125 599 320 600
+rect 125 599 351 843
 rect 125 524 198 599
 rect -442 220 -318 225
 rect -62 224 198 524
@@ -73,4 +73,17 @@ use efemosp  sky130_fd_pr__pfet_01v8_KFRNSS_0
 timestamp 1732912614
 transform 1 0 -90 0 1 1004
 box -353 -261 410 223
+<< labels >>
+rlabel metal1 -443 779 -443 779 7 A
+port 1 w
+rlabel metal1 -443 649 -410 718 7 B
+port 2 w
+rlabel metal1 -442 552 -409 568 7 C
+port 3 w
+rlabel metal1 -442 -53 350 16 5 VSS
+port 4 s
+rlabel metal1 -407 1166 228 1227 1 VDD
+port 5 n
+rlabel metal1 298 599 351 989 3 Y
+port 6 e
 << end >>
