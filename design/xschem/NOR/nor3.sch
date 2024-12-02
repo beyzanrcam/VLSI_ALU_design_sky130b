@@ -33,25 +33,6 @@ N 400 20 400 270 {lab=C}
 N 310 270 310 300 {lab=VSS}
 N 440 280 440 300 {lab=VSS}
 N 440 270 440 280 {lab=VSS}
-C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
-L=0.15
-<<<<<<< Updated upstream
-W=9.6
-nf=1
-=======
-W=9.63
-nf=9
->>>>>>> Stashed changes
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {sky130_fd_pr/nfet_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
 W=1
@@ -82,43 +63,12 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-<<<<<<< Updated upstream
-C {sky130_fd_pr/pfet_01v8.sym} 160 60 0 0 {name=M4
-L=0.15
-W=9.6
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/ipin.sym} 270 270 0 0 {name=p5 lab=B}
 C {devices/lab_pin.sym} 180 -90 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 370 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/pfet_01v8.sym} 160 -20 0 0 {name=M5
-L=0.15
-W=9.6
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-=======
 C {devices/ipin.sym} 270 270 0 0 {name=p5 lab=B}
 C {devices/lab_pin.sym} 180 -90 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 370 0 0 {name=p2 sig_type=std_logic lab=VSS}
->>>>>>> Stashed changes
 C {sky130_fd_pr/nfet_01v8.sym} 420 270 0 0 {name=M6
 L=0.15
 W=1
@@ -134,10 +84,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 400 270 0 0 {name=p6 lab=C}
-C {sky130_fd_pr/pfet_01v8.sym} 160 60 0 0 {name=M4
+C {sky130_fd_pr/pfet_01v8.sym} 160 -20 0 0 {name=M1
 L=0.15
 W=9.63
-nf=9
+nf=3
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -148,10 +98,24 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 160 -20 0 0 {name=M5
+C {sky130_fd_pr/pfet_01v8.sym} 160 60 0 0 {name=M4
 L=0.15
 W=9.63
-nf=9
+nf=3
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M5
+L=0.15
+W=9.63
+nf=3
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

@@ -25,7 +25,7 @@ N 180 360 180 400 {lab=VSS}
 N 310 130 310 160 {lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
-W=3.21
+W=3.68
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -80,7 +80,7 @@ C {devices/lab_pin.sym} 180 90 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 420 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/pfet_01v8.sym} 290 160 0 0 {name=M4
 L=0.15
-W=3.21
+W=3.68
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
