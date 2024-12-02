@@ -1,0 +1,62 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1733166959
+<< nwell >>
+rect 113 573 1412 2357
+<< psubdiff >>
+rect 387 102 1151 142
+rect 387 44 637 102
+rect 909 44 1151 102
+rect 387 -32 1151 44
+<< nsubdiff >>
+rect 175 2209 500 2284
+rect 175 2146 259 2209
+rect 401 2146 500 2209
+rect 175 2072 500 2146
+<< psubdiffcont >>
+rect 637 44 909 102
+<< nsubdiffcont >>
+rect 259 2146 401 2209
+<< locali >>
+rect 175 2210 500 2218
+rect 175 2145 258 2210
+rect 402 2145 500 2210
+rect 175 2137 500 2145
+rect 266 645 568 679
+rect 620 645 922 679
+rect 974 645 1276 679
+rect 518 468 552 645
+rect 754 468 788 645
+rect 990 468 1024 645
+rect 442 434 626 468
+rect 678 434 862 468
+rect 914 434 1098 468
+rect 399 125 433 196
+rect 635 125 669 193
+rect 871 125 905 195
+rect 1107 125 1141 194
+rect 387 102 1151 125
+rect 387 44 637 102
+rect 909 44 1151 102
+rect 387 26 1151 44
+<< viali >>
+rect 258 2209 402 2210
+rect 258 2146 259 2209
+rect 259 2146 401 2209
+rect 401 2146 402 2209
+rect 258 2145 402 2146
+<< metal1 >>
+rect 246 2210 414 2216
+rect 246 2145 258 2210
+rect 402 2145 414 2210
+rect 246 2139 414 2145
+use sky130_fd_pr__nfet_01v8_WPN2C2  sky130_fd_pr__nfet_01v8_WPN2C2_0
+timestamp 1733166153
+transform 1 0 770 0 1 327
+box -383 -157 383 157
+use sky130_fd_pr__pfet_01v8_FMUCNY  sky130_fd_pr__pfet_01v8_FMUCNY_0
+timestamp 1733166153
+transform 1 0 771 0 1 1332
+box -596 -706 596 740
+<< end >>
