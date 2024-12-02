@@ -1,0 +1,26 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1733174963
+<< psubdiff >>
+rect 0 -96 530 -28
+rect 0 -209 64 -96
+rect 450 -209 530 -96
+rect 0 -285 530 -209
+<< psubdiffcont >>
+rect 64 -209 450 -96
+<< locali >>
+rect 12 -28 46 22
+rect 248 -28 282 22
+rect 484 -28 518 22
+rect 12 -96 518 -28
+rect 12 -209 64 -96
+rect 450 -209 518 -96
+rect 12 -257 518 -209
+<< metal1 >>
+rect 124 204 406 426
+use sky130_fd_pr__nfet_01v8_VPSDAV  sky130_fd_pr__nfet_01v8_VPSDAV_0
+timestamp 1733174963
+transform 1 0 265 0 1 257
+box -265 -257 265 257
+<< end >>
