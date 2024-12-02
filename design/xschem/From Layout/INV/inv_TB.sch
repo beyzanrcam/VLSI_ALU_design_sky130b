@@ -23,6 +23,8 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
+
+.include '../mag/inv/inv_x.spice'
 .control 
 set color0 = white
 
@@ -50,6 +52,6 @@ C {devices/vsource.sym} 140 -80 0 0 {name=V4 value="pulse(0,1.2,0.01u,0 ,0,0.01u
 C {devices/gnd.sym} 140 -50 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 140 -110 2 0 {name=p16 sig_type=std_logic lab=INPUT}
 C {devices/opin.sym} 200 80 0 0 {name=p1 lab=OUTPUT}
-C {INV/inv.sym} 120 80 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {devices/iopin.sym} 90 -130 3 0 {name=p3 lab=VSS}
 C {devices/iopin.sym} 40 -130 3 0 {name=p4 lab=VDD}
+C {From Layout/INV/inv.sym} 120 80 0 0 {name=x1 VSS=VSS VDD=VDD}

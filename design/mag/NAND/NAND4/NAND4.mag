@@ -84,9 +84,9 @@ port 3 w
 rlabel metal1 -37 522 -5 591 7 D
 port 4 w
 rlabel metal1 0 -94 827 21 5 VSS
-port 1 s
+port 5 s
 rlabel metal1 -1 1366 826 1400 5 VDD
-port 1 n
+port 6 n
 rlabel metal1 815 625 861 1150 5 Y
-port 1 e
+port 7 e
 << end >>
