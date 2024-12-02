@@ -1,0 +1,32 @@
+| units: 500000 tech: sky130B format: MIT
+x D VDD Y w_n37_916# s=10626,388 d=10626,388 l=30 w=322 x=637 y=1016 sky130_fd_pr__pfet_01v8
+x D a_284_88# Y VSUBS s=13200,466 d=13200,466 l=30 w=400 x=350 y=88 sky130_fd_pr__nfet_01v8
+x C a_188_88# a_284_88# VSUBS s=13200,466 d=13200,466 l=30 w=400 x=254 y=88 sky130_fd_pr__nfet_01v8
+x A VSS a_92_88# VSUBS s=24800,924 d=13200,466 l=30 w=400 x=62 y=88 sky130_fd_pr__nfet_01v8
+x B a_92_88# a_188_88# VSUBS s=13200,466 d=13200,466 l=30 w=400 x=158 y=88 sky130_fd_pr__nfet_01v8
+x C a_476_88# a_572_88# VSUBS s=13200,466 d=13200,466 l=30 w=400 x=542 y=88 sky130_fd_pr__nfet_01v8
+x D Y a_476_88# VSUBS s=13200,466 d=13200,466 l=30 w=400 x=446 y=88 sky130_fd_pr__nfet_01v8
+x B VDD Y w_n37_916# s=10626,388 d=10626,388 l=30 w=322 x=253 y=1016 sky130_fd_pr__pfet_01v8
+x C Y VDD w_n37_916# s=10626,388 d=10626,388 l=30 w=322 x=541 y=1016 sky130_fd_pr__pfet_01v8
+x A a_668_88# VSS VSUBS s=13200,466 d=24800,924 l=30 w=400 x=734 y=88 sky130_fd_pr__nfet_01v8
+x B a_572_88# a_668_88# VSUBS s=13200,466 d=13200,466 l=30 w=400 x=638 y=88 sky130_fd_pr__nfet_01v8
+x A Y VDD w_n37_916# s=10626,388 d=10626,388 l=30 w=322 x=157 y=1016 sky130_fd_pr__pfet_01v8
+x C VDD Y w_n37_916# s=10626,388 d=10626,388 l=30 w=322 x=445 y=1016 sky130_fd_pr__pfet_01v8
+x A VDD Y w_n37_916# s=19964,768 d=10626,388 l=30 w=322 x=61 y=1016 sky130_fd_pr__pfet_01v8
+x D Y VDD w_n37_916# s=10626,388 d=19964,768 l=30 w=322 x=733 y=1016 sky130_fd_pr__pfet_01v8
+x B Y VDD w_n37_916# s=10626,388 d=10626,388 l=30 w=322 x=349 y=1016 sky130_fd_pr__pfet_01v8
+C B A 3.0
+R VSS 2153
+R Y 6666
+R VDD 7423
+R D 3027
+R C 3357
+R B 3910
+R A 4461
+R a_668_88# 727
+R a_572_88# 727
+R a_476_88# 727
+R a_284_88# 727
+R a_188_88# 727
+R a_92_88# 727
+R w_n37_916# 1812
