@@ -24,7 +24,7 @@ value="
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
 
-.include '../mag/inv/inv_x.spice'
+.include '../mag/inv/inv.spice'
 .control 
 set color0 = white
 

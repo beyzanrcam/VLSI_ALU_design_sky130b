@@ -1,6 +1,6 @@
 * NGSPICE file created from nor2_pex.ext - technology: sky130B
 
-.subckt nor2_pex A B VSS VDD Y
+.subckt nor2 A B VSS VDD Y
 X0 a_154_100.t1 B.t0 VDD.t9 VDD.t8 sky130_fd_pr__pfet_01v8 ad=0.3103 pd=2.43 as=0.6206 ps=4.86 w=2.14 l=0.3
 X1 a_1098_100.t1 A.t0 Y.t3 VDD.t13 sky130_fd_pr__pfet_01v8 ad=0.3103 pd=2.43 as=0.3103 ps=2.43 w=2.14 l=0.3
 X2 Y.t1 A.t1 a_862_100.t1 VDD.t14 sky130_fd_pr__pfet_01v8 ad=0.3103 pd=2.43 as=0.3103 ps=2.43 w=2.14 l=0.3

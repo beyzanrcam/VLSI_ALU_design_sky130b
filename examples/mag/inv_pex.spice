@@ -1,6 +1,6 @@
 * NGSPICE file created from inv_pex.ext - technology: sky130A
 
-.subckt inv A VDD Y VSS
+.subckt inv A Y VDD VSS
 X0 Y.t1 A.t0 VSS.t1 VSS.t0 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 X1 Y.t0 A.t1 VDD.t1 VDD.t0 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 R0 A.n0 A.t1 485.307
