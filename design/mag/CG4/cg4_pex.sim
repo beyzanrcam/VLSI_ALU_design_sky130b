@@ -1,0 +1,40 @@
+| units: 500000 tech: sky130A format: MIT
+x N3 OUT a_130_n657# VSS s=4290,196 d=4290,196 l=30 w=130 x=484 y=-656 sky130_fd_pr__nfet_01v8
+x N2 a_706_n657# OUT VSS s=4290,196 d=4290,196 l=30 w=130 x=772 y=-656 sky130_fd_pr__nfet_01v8
+x N1 VSS a_706_n657# VSS s=4290,196 d=4290,196 l=30 w=130 x=1060 y=-656 sky130_fd_pr__nfet_01v8
+x N4 VSS a_130_n657# VSS s=8060,384 d=4290,196 l=30 w=130 x=100 y=-656 sky130_fd_pr__nfet_01v8
+x N3 a_130_n657# OUT VSS s=4290,196 d=4290,196 l=30 w=130 x=388 y=-656 sky130_fd_pr__nfet_01v8
+x P4 VDD a_130_129# VDD s=18150,616 d=18150,616 l=30 w=550 x=292 y=129 sky130_fd_pr__pfet_01v8
+x P3 a_130_129# OUT VDD s=18150,616 d=18150,616 l=30 w=550 x=580 y=129 sky130_fd_pr__pfet_01v8
+x P4 a_130_129# VDD VDD s=18150,616 d=18150,616 l=30 w=550 x=196 y=129 sky130_fd_pr__pfet_01v8
+x P3 a_130_129# OUT VDD s=18150,616 d=18150,616 l=30 w=550 x=388 y=129 sky130_fd_pr__pfet_01v8
+x P3 OUT a_130_129# VDD s=18150,616 d=18150,616 l=30 w=550 x=484 y=129 sky130_fd_pr__pfet_01v8
+x P2 OUT a_130_129# VDD s=18150,616 d=18150,616 l=30 w=550 x=676 y=129 sky130_fd_pr__pfet_01v8
+x P2 a_130_129# OUT VDD s=18150,616 d=18150,616 l=30 w=550 x=772 y=129 sky130_fd_pr__pfet_01v8
+x P1 a_130_129# VDD VDD s=18150,616 d=18150,616 l=30 w=550 x=964 y=129 sky130_fd_pr__pfet_01v8
+x N2 OUT a_706_n657# VSS s=4290,196 d=4290,196 l=30 w=130 x=676 y=-656 sky130_fd_pr__nfet_01v8
+x P2 OUT a_130_129# VDD s=18150,616 d=18150,616 l=30 w=550 x=868 y=129 sky130_fd_pr__pfet_01v8
+x P1 VDD a_130_129# VDD s=18150,616 d=18150,616 l=30 w=550 x=1060 y=129 sky130_fd_pr__pfet_01v8
+x N1 a_706_n657# VSS VSS s=4290,196 d=4290,196 l=30 w=130 x=964 y=-656 sky130_fd_pr__nfet_01v8
+x P1 a_130_129# VDD VDD s=18150,616 d=34100,1224 l=30 w=550 x=1156 y=129 sky130_fd_pr__pfet_01v8
+x P4 VDD a_130_129# VDD s=34100,1224 d=18150,616 l=30 w=550 x=100 y=129 sky130_fd_pr__pfet_01v8
+x N2 OUT a_706_n657# VSS s=4290,196 d=4290,196 l=30 w=130 x=868 y=-656 sky130_fd_pr__nfet_01v8
+x N1 a_706_n657# VSS VSS s=4290,196 d=8060,384 l=30 w=130 x=1156 y=-656 sky130_fd_pr__nfet_01v8
+x N4 VSS a_130_n657# VSS s=4290,196 d=4290,196 l=30 w=130 x=292 y=-656 sky130_fd_pr__nfet_01v8
+x N3 a_130_n657# OUT VSS s=4290,196 d=4290,196 l=30 w=130 x=580 y=-656 sky130_fd_pr__nfet_01v8
+x N4 a_130_n657# VSS VSS s=4290,196 d=4290,196 l=30 w=130 x=196 y=-656 sky130_fd_pr__nfet_01v8
+R N1 1170
+R N2 1100
+R N3 1031
+R N4 965
+R OUT 8064
+R P1 3198
+R P2 3128
+R P3 3059
+R P4 2992
+C VDD0 4.4
+R VDD 11698
+R VSS 4733
+R a_706_n657# 1578
+R a_130_n657# 1578
+R a_130_129# 13352

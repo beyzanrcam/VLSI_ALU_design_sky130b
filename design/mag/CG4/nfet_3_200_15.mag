@@ -1,7 +1,12 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1733168257
+timestamp 1733177410
+<< error_p >>
+rect -173 -65 -111 65
+rect -81 -65 -15 65
+rect 15 -65 81 65
+rect 111 -65 173 65
 << nmos >>
 rect -111 -65 -81 65
 rect -15 -65 15 65
@@ -54,28 +59,6 @@ rect -97 -118 97 -104
 rect -97 -152 -81 -118
 rect 81 -152 97 -118
 rect -97 -168 97 -152
-<< viali >>
-rect -161 -53 -127 53
-rect -65 -53 -31 53
-rect 31 -53 65 53
-rect 127 -53 161 53
-<< metal1 >>
-rect -167 53 -121 65
-rect -167 -53 -161 53
-rect -127 -53 -121 53
-rect -167 -65 -121 -53
-rect -71 53 -25 65
-rect -71 -53 -65 53
-rect -31 -53 -25 53
-rect -71 -65 -25 -53
-rect 25 53 71 65
-rect 25 -53 31 53
-rect 65 -53 71 53
-rect 25 -65 71 -53
-rect 121 53 167 65
-rect 121 -53 127 53
-rect 161 -53 167 53
-rect 121 -65 167 -53
 << properties >>
 string gencell sky130_fd_pr__nfet_01v8
 string library sky130
