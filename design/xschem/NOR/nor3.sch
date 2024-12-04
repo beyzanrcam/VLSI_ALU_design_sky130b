@@ -21,6 +21,10 @@ N 310 270 310 300 {lab=VSS}
 N 440 280 440 300 {lab=VSS}
 N 440 270 440 280 {lab=VSS}
 N 180 10 180 30 {lab=#net2}
+N 180 -40 180 -20 {lab=VDD}
+N 180 -60 180 -20 {lab=VDD}
+N 180 30 180 60 {lab=#net2}
+N 180 130 180 160 {lab=#net1}
 C {sky130_fd_pr/nfet_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
 W=1
@@ -120,6 +124,3 @@ C {devices/ipin.sym} 40 60 0 0 {name=p3 lab=A}
 C {devices/lab_pin.sym} 40 60 2 0 {name=p13 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 140 270 0 0 {name=p14 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 140 160 0 0 {name=p15 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 180 -20 2 0 {name=p16 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 60 2 0 {name=p17 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 160 2 0 {name=p18 sig_type=std_logic lab=VDD}

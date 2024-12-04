@@ -37,7 +37,6 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
-.include '../mag/NAND/NAND2/NAND2.spice'
 .control 
 set color0 = white
 
@@ -101,5 +100,5 @@ C {devices/lab_pin.sym} 90 610 3 0 {name=p7 sig_type=std_logic lab=INPUT2
 }
 C {devices/iopin.sym} 80 750 2 0 {name=p8 lab=VDD
 }
-C {From Layout/NAND/nand2.sym} 210 80 0 0 {name=x1 VSS=VSS VDD=VDD}
-C {From Layout/NAND/nand2.sym} 210 630 0 0 {name=x11 VSS=VSS VDD=VDD}
+C {NAND/nand2.sym} 210 80 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {NAND/nand2.sym} 210 630 0 0 {name=x11 VSS=VSS VDD=VDD}

@@ -42,6 +42,9 @@ N 410 110 510 110 {lab=VDD}
 N 510 190 510 210 {lab=Y}
 N 470 160 470 500 {lab=D}
 N 440 500 470 500 {lab=D}
+N 270 160 270 320 {lab=B}
+N 140 320 270 320 {lab=B}
+N 140 320 140 360 {lab=B}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
 W=3.21
@@ -76,87 +79,10 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 110 210 0 0 {name=p3 lab=A}
 C {devices/opin.sym} 540 210 0 0 {name=p4 lab=Y}
-<<<<<<< Updated upstream
-C {sky130_fd_pr/nfet_01v8.sym} 160 360 0 0 {name=M3
-L=0.15
-W=4
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 290 160 0 0 {name=M4
-L=0.15
-W=3.2
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/ipin.sym} 140 360 0 0 {name=p5 lab=B}
-C {devices/lab_pin.sym} 180 90 0 0 {name=p1 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 620 0 0 {name=p2 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/pfet_01v8.sym} 390 160 0 0 {name=M5
-L=0.15
-W=3.2
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 160 450 0 0 {name=M6
-L=0.15
-W=4
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/ipin.sym} 140 450 0 0 {name=p6 lab=C}
-C {sky130_fd_pr/nfet_01v8.sym} 160 550 0 0 {name=M7
-L=0.15
-W=4
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-=======
 C {devices/ipin.sym} 140 360 0 0 {name=p5 lab=B}
 C {devices/lab_pin.sym} 180 90 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 620 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 140 450 0 0 {name=p6 lab=C}
->>>>>>> Stashed changes
 C {devices/ipin.sym} 140 550 0 0 {name=p7 lab=D}
 C {sky130_fd_pr/pfet_01v8.sym} 290 160 0 0 {name=M3
 L=0.15
