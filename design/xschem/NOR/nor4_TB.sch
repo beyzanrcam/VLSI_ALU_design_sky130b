@@ -32,7 +32,6 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
-.include '../mag/NOR/NOR4/nor4_pex.spice'
 .control 
 set color0 = white
 
@@ -94,10 +93,10 @@ C {INV/inv.sym} 270 1050 0 0 {name=x9 VSS=VSS VDD=VDD}
 C {INV/inv.sym} -30 600 0 0 {name=x10 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} 40 600 3 0 {name=p7 sig_type=std_logic lab=INPUT2
 }
-C {NOR/nor4_pex.sym} 160 80 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {INV/inv.sym} 30 80 0 0 {name=x12 VSS=VSS VDD=VDD}
-C {NOR/nor4_pex.sym} 160 660 0 0 {name=x11 VSS=VSS VDD=VDD}
 C {INV/inv.sym} -110 600 0 0 {name=x13 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} 70 80 3 0 {name=p9 sig_type=std_logic lab=INPUT1
 }
 C {devices/gnd.sym} 100 740 0 0 {name=l3 lab=GND}
+C {NOR/nor4.sym} 160 80 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {NOR/nor4.sym} 160 660 0 0 {name=x11 VSS=VSS VDD=VDD}

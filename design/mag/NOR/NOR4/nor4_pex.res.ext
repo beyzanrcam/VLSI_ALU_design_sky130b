@@ -1,0 +1,232 @@
+scale 1000 1 500000
+killnode "a_n337_1047#"
+rnode "a_n337_1047.t5" 0 121.162 -43 1903 0
+rnode "a_n337_1047.t3" 0 121.162 193 1903 0
+rnode "a_n337_1047.t4" 0 121.162 135 1903 0
+rnode "a_n337_1047.n0" 0 402.68 164 1903 0
+rnode "a_n337_1047.t0" 0 121.162 -279 1903 0
+rnode "a_n337_1047.t1" 0 121.162 -337 1903 0
+rnode "a_n337_1047.n1" 0 402.68 -308 1903 0
+rnode "a_n337_1047.n2" 0 2365.11 -72 1440 0
+rnode "a_n337_1047.n3" 0 402.555 -72 1903 0
+rnode "a_n337_1047.t2" 0 121.162 -101 1903 0
+resist "a_n337_1047.t2" "a_n337_1047.n3" 3.33703
+resist "a_n337_1047.n3" "a_n337_1047.t5" 3.33703
+resist "a_n337_1047.n0" "a_n337_1047.t4" 3.33703
+resist "a_n337_1047.n0" "a_n337_1047.t3" 3.33703
+resist "a_n337_1047.n1" "a_n337_1047.t1" 3.33703
+resist "a_n337_1047.n1" "a_n337_1047.t0" 3.33703
+resist "a_n337_1047.n3" "a_n337_1047.n2" 198.551
+resist "a_n337_1047.n2" "a_n337_1047.n0" 198.589
+resist "a_n337_1047.n2" "a_n337_1047.n1" 198.589
+rnode "A.t0" 0 0 -131 1903 0
+rnode "A.t2" 0 0 -367 1903 0
+rnode "A.t3" 0 0 -249 1903 0
+rnode "A.n0" 0 0 -249 983 0
+rnode "A.t1" 0 0 105 253 0
+rnode "A.n1" 0 0 -247 524 0
+rnode "A" 0 0 -590 488 0
+rnode "A" 0 0 -557 557 0
+resist "A" "A" 0.0463483
+resist "A" "A.n1" 9.73539
+resist "A.n1" "A.n0" 89.0182
+resist "A.n1" "A.t1" 417.846
+resist "A.n0" "A.t3" 888.657
+resist "A.n0" "A.t0" 920.657
+resist "A.n0" "A.t2" 920.657
+rnode "B.t3" 0 0 223 1903 0
+rnode "B.t1" 0 0 -13 1903 0
+rnode "B.t2" 0 0 105 1903 0
+rnode "B.n0" 0 0 105 983 0
+rnode "B.t0" 0 0 223 253 0
+rnode "B.n1" 0 0 221 644 0
+rnode "B" 0 0 -590 608 0
+rnode "B" 0 0 -557 677 0
+resist "B" "B" 0.046875
+resist "B" "B.n1" 10.4051
+resist "B.n1" "B.n0" 77.4226
+resist "B.n1" "B.t0" 380.816
+resist "B.n0" "B.t2" 888.657
+resist "B.n0" "B.t3" 920.657
+resist "B.n0" "B.t1" 920.657
+killnode "a_17_1047#"
+rnode "a_17_1047.t3" 0 113.028 253 1903 0
+rnode "a_17_1047.t1" 0 113.028 547 1903 0
+rnode "a_17_1047.t0" 0 113.028 489 1903 0
+rnode "a_17_1047.n0" 0 371.211 518 1903 0
+rnode "a_17_1047.t4" 0 113.028 75 1903 0
+rnode "a_17_1047.t5" 0 113.028 17 1903 0
+rnode "a_17_1047.n1" 0 371.211 46 1903 0
+rnode "a_17_1047.n2" 0 2408.33 282 2325 0
+rnode "a_17_1047.n3" 0 371.085 282 1903 0
+rnode "a_17_1047.t2" 0 113.028 311 1903 0
+resist "a_17_1047.n3" "a_17_1047.t3" 3.33703
+resist "a_17_1047.t2" "a_17_1047.n3" 3.33703
+resist "a_17_1047.n0" "a_17_1047.t0" 3.33703
+resist "a_17_1047.n0" "a_17_1047.t1" 3.33703
+resist "a_17_1047.n1" "a_17_1047.t5" 3.33703
+resist "a_17_1047.n1" "a_17_1047.t4" 3.33703
+resist "a_17_1047.n3" "a_17_1047.n2" 183.046
+resist "a_17_1047.n2" "a_17_1047.n0" 183.08
+resist "a_17_1047.n2" "a_17_1047.n1" 183.08
+rnode "C.t1" 0 0 577 1903 0
+rnode "C.t0" 0 0 341 1903 0
+rnode "C.t3" 0 0 459 1903 0
+rnode "C.n0" 0 0 459 983 0
+rnode "C.t2" 0 0 341 253 0
+rnode "C.n1" 0 0 342 762 0
+rnode "C" 0 0 -589 723 0
+rnode "C" 0 0 -556 792 0
+resist "C" "C" 0.0463483
+resist "C" "C.n1" 10.5744
+resist "C.n1" "C.n0" 54.5378
+resist "C.n1" "C.t2" 403.701
+resist "C.n0" "C.t3" 888.657
+resist "C.n0" "C.t1" 920.657
+resist "C.n0" "C.t0" 920.657
+rnode "VSS.t1" 0 0 311 253 0
+rnode "VSS.t5" 0 0 253 253 0
+rnode "VSS.n0" 0 0 282 253 0
+rnode "VSS.t3" 0 0 489 253 0
+rnode "VSS.n1" 0 0 282 -1 0
+rnode "VSS.t7" 0 0 75 253 0
+rnode "VSS" 0 0 218 -182 0
+rnode "VSS.n2" 0 0 218 -182 0
+rnode "VSS.t2" 0 0 459 253 0
+rnode "VSS.t0" 0 0 341 253 0
+rnode "VSS.t6" 0 0 105 253 0
+rnode "VSS.t4" 0 0 223 253 0
+rnode "VSS.n3" 0 0 274 -126 0
+rnode "VSS.n4" 0 0 274 -126 0
+rnode "VSS.n5" 0 0 274 -126 0
+rnode "VSS" 0 0 281 -70 0
+resist "VSS" "VSS.n1" 0.0558952
+resist "VSS" "VSS.n5" 0.391266
+resist "VSS.n5" "VSS" 3.13013
+resist "VSS.n0" "VSS.t5" 8.7
+resist "VSS.n0" "VSS.t1" 8.7
+resist "VSS.n4" "VSS.n2" 42.9261
+resist "VSS.n4" "VSS.n3" 48.75
+resist "VSS.n5" "VSS.n4" 48.75
+resist "VSS.n1" "VSS.n0" 126.457
+resist "VSS" "VSS.t7" 144.771
+resist "VSS.n1" "VSS.t3" 148.348
+resist "VSS.n3" "VSS.t4" 192.618
+resist "VSS.n3" "VSS.t0" 253.047
+resist "VSS.t4" "VSS.t6" 445.665
+resist "VSS.t0" "VSS.t2" 445.665
+rnode "VDD.t4" 0 263.427 931 1903 0
+rnode "VDD.t3" 0 136.936 813 1903 0
+rnode "VDD.t5" 0 136.936 695 1903 0
+rnode "VDD.t0" 0 136.936 577 1903 0
+rnode "VDD.t14" 0 136.936 459 1903 0
+rnode "VDD.t6" 0 136.936 341 1903 0
+rnode "VDD.t7" 0 136.936 223 1903 0
+rnode "VDD.t8" 0 136.936 105 1903 0
+rnode "VDD.t11" 0 136.936 -13 1903 0
+rnode "VDD.t1" 0 136.936 -131 1903 0
+rnode "VDD.t9" 0 101.541 -249 1903 0
+rnode "VDD.t2" 0 13.0587 -161 1903 0
+rnode "VDD.t10" 0 13.0587 -219 1903 0
+rnode "VDD.n0" 0 42.8735 -190 1903 0
+rnode "VDD.t13" 0 67.9895 -397 1903 0
+rnode "VDD.n1" 0 187.678 -426 2325 0
+rnode "VDD" 0 187.996 -369 2833 0
+rnode "VDD.t12" 0 36.5549 -367 1903 0
+rnode "VDD" 0 53.4015 -306 2945 0
+resist "VDD.t12" "VDD" 0.861287
+resist "VDD.n0" "VDD.t10" 3.33703
+resist "VDD.n0" "VDD.t2" 3.33703
+resist "VDD" "VDD.t9" 24.5467
+resist "VDD" "VDD.t12" 26.2693
+resist "VDD.t9" "VDD.t1" 50.816
+resist "VDD.t1" "VDD.t11" 50.816
+resist "VDD.t11" "VDD.t8" 50.816
+resist "VDD.t8" "VDD.t7" 50.816
+resist "VDD.t7" "VDD.t6" 50.816
+resist "VDD.t6" "VDD.t14" 50.816
+resist "VDD.t14" "VDD.t0" 50.816
+resist "VDD.t0" "VDD.t5" 50.816
+resist "VDD.t5" "VDD.t3" 50.816
+resist "VDD.t3" "VDD.t4" 50.816
+resist "VDD" "VDD.n1" 126.69
+resist "VDD.n1" "VDD.n0" 183.046
+resist "VDD.n1" "VDD.t13" 186.383
+rnode "Y.t2" 0 418.546 961 1903 0
+rnode "Y.t1" 0 80.39 783 1903 0
+rnode "Y.t3" 0 80.39 725 1903 0
+rnode "Y.n0" 0 263.931 754 1903 0
+rnode "Y.n1" 0 1147.87 754 2325 0
+rnode "Y.t5" 0 18.7827 193 253 0
+rnode "Y.t6" 0 18.7827 135 253 0
+rnode "Y.n2" 0 53.481 164 253 0
+rnode "Y.t4" 0 18.7827 429 253 0
+rnode "Y.t0" 0 18.7827 371 253 0
+rnode "Y.n3" 0 53.2243 400 253 0
+rnode "Y.n4" 0 413.916 400 342 0
+rnode "Y" 0 192.455 869 297 0
+rnode "Y" 0 320.669 933 427 0
+resist "Y" "Y" 0.0358744
+resist "Y" "Y.n4" 0.262892
+resist "Y" "Y.n1" 2.23054
+resist "Y.n0" "Y.t3" 3.33703
+resist "Y.n0" "Y.t1" 3.33703
+resist "Y.n2" "Y.t6" 8.7
+resist "Y.n2" "Y.t5" 8.7
+resist "Y.n3" "Y.t0" 8.7
+resist "Y.n3" "Y.t4" 8.7
+resist "Y.n4" "Y.n3" 67.4392
+resist "Y.n4" "Y.n2" 67.572
+resist "Y.n1" "Y.n0" 183.046
+resist "Y.n1" "Y.t2" 186.383
+killnode "a_371_1047#"
+rnode "a_371_1047.t3" 0 146.522 665 1903 0
+rnode "a_371_1047.t1" 0 146.522 901 1903 0
+rnode "a_371_1047.t2" 0 146.522 843 1903 0
+rnode "a_371_1047.n0" 0 486.962 872 1903 0
+rnode "a_371_1047.t5" 0 146.522 429 1903 0
+rnode "a_371_1047.t4" 0 146.522 371 1903 0
+rnode "a_371_1047.n1" 0 486.962 400 1903 0
+rnode "a_371_1047.n2" 0 2860.13 636 1440 0
+rnode "a_371_1047.n3" 0 486.81 636 1903 0
+rnode "a_371_1047.t0" 0 146.522 607 1903 0
+resist "a_371_1047.t0" "a_371_1047.n3" 3.33703
+resist "a_371_1047.n3" "a_371_1047.t3" 3.33703
+resist "a_371_1047.n0" "a_371_1047.t2" 3.33703
+resist "a_371_1047.n0" "a_371_1047.t1" 3.33703
+resist "a_371_1047.n1" "a_371_1047.t4" 3.33703
+resist "a_371_1047.n1" "a_371_1047.t5" 3.33703
+resist "a_371_1047.n3" "a_371_1047.n2" 198.551
+resist "a_371_1047.n2" "a_371_1047.n0" 198.589
+resist "a_371_1047.n2" "a_371_1047.n1" 198.589
+rnode "D.t2" 0 0 931 1903 0
+rnode "D.t0" 0 0 695 1903 0
+rnode "D.t3" 0 0 813 1903 0
+rnode "D.n0" 0 0 813 983 0
+rnode "D.t1" 0 0 459 253 0
+rnode "D.n1" 0 0 813 887 0
+rnode "D" 0 0 -589 853 0
+rnode "D" 0 0 -556 922 0
+resist "D" "D" 0.0503049
+resist "D" "D.n1" 11.3869
+resist "D.n1" "D.n0" 18.6182
+resist "D.n1" "D.t1" 488.246
+resist "D.n0" "D.t3" 888.657
+resist "D.n0" "D.t2" 920.657
+resist "D.n0" "D.t0" 920.657
+device msubckt sky130_fd_pr__pfet_01v8 193 1047 194 1048  "VDD.t7" "B.t3" 120 0 "a_n337_1047.t3" 1712 49648,1770 "a_17_1047.t3" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 75 1047 76 1048  "VDD.t8" "B.t2" 120 0 "a_17_1047.t4" 1712 49648,1770 "a_n337_1047.t4" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 -279 1047 -278 1048  "VDD.t9" "A.t3" 120 0 "a_n337_1047.t0" 1712 49648,1770 "VDD.t10" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 783 1047 784 1048  "VDD.t3" "D.t3" 120 0 "Y.t1" 1712 49648,1770 "a_371_1047.t2" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 429 1047 430 1048  "VDD.t14" "C.t3" 120 0 "a_371_1047.t5" 1712 49648,1770 "a_17_1047.t0" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 -43 1047 -42 1048  "VDD.t11" "B.t1" 120 0 "a_n337_1047.t5" 1712 49648,1770 "a_17_1047.t5" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 -397 1047 -396 1048  "VDD.t12" "A.t2" 120 0 "VDD.t13" 1712 99296,3540 "a_n337_1047.t1" 1712 49648,1770
+device msubckt sky130_fd_pr__nfet_01v8 311 53 312 54  "VSS.t0" "C.t2" 120 0 "VSS.t1" 400 11600,458 "Y.t0" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8 75 53 76 54  "VSS.t6" "A.t1" 120 0 "VSS.t7" 400 23200,916 "Y.t6" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 -161 1047 -160 1048  "VDD.t1" "A.t0" 120 0 "VDD.t2" 1712 49648,1770 "a_n337_1047.t2" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 547 1047 548 1048  "VDD.t0" "C.t1" 120 0 "a_17_1047.t1" 1712 49648,1770 "a_371_1047.t0" 1712 49648,1770
+device msubckt sky130_fd_pr__nfet_01v8 193 53 194 54  "VSS.t4" "B.t0" 120 0 "Y.t5" 400 11600,458 "VSS.t5" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 311 1047 312 1048  "VDD.t6" "C.t0" 120 0 "a_17_1047.t2" 1712 49648,1770 "a_371_1047.t4" 1712 49648,1770
+device msubckt sky130_fd_pr__pfet_01v8 901 1047 902 1048  "VDD.t4" "D.t2" 120 0 "a_371_1047.t1" 1712 49648,1770 "Y.t2" 1712 99296,3540
+device msubckt sky130_fd_pr__nfet_01v8 429 53 430 54  "VSS.t2" "D.t1" 120 0 "Y.t4" 400 11600,458 "VSS.t3" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 665 1047 666 1048  "VDD.t5" "D.t0" 120 0 "a_371_1047.t3" 1712 49648,1770 "Y.t3" 1712 49648,1770

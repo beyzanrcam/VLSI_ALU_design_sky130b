@@ -20,6 +20,10 @@ N 510 210 540 210 {lab=Y}
 N 510 270 510 300 {lab=VSS}
 N 410 270 410 300 {lab=VSS}
 N 310 270 310 300 {lab=VSS}
+N 180 -160 180 -130 {lab=VDD}
+N 180 -60 180 -30 {lab=#net2}
+N 180 30 180 60 {lab=#net3}
+N 180 130 180 160 {lab=#net1}
 C {sky130_fd_pr/nfet_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
 W=1
@@ -49,7 +53,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 40 90 0 0 {name=p5 lab=B}
 C {devices/lab_pin.sym} 180 -210 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 340 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 390 270 0 0 {name=M6
@@ -80,16 +83,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 40 130 0 0 {name=p7 lab=D}
-C {devices/lab_pin.sym} 40 90 2 0 {name=p8 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 140 -30 0 0 {name=p9 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 270 270 0 0 {name=p10 sig_type=std_logic lab=B}
-C {devices/ipin.sym} 40 110 0 0 {name=p11 lab=C}
-C {devices/lab_pin.sym} 40 110 2 0 {name=p12 sig_type=std_logic lab=C}
-C {devices/ipin.sym} 40 70 0 0 {name=p13 lab=A}
-C {devices/lab_pin.sym} 40 70 2 0 {name=p14 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 140 -130 0 0 {name=p15 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 40 130 2 0 {name=p3 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 470 270 0 0 {name=p16 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 140 270 0 0 {name=p6 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 140 60 0 0 {name=p17 sig_type=std_logic lab=C}
@@ -151,7 +147,3 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 180 -130 2 0 {name=p20 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 -30 2 0 {name=p21 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 60 2 0 {name=p22 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 180 160 2 0 {name=p23 sig_type=std_logic lab=VDD}

@@ -6,21 +6,30 @@ S {}
 E {}
 N 250 80 290 80 {lab=OUTPUT}
 N 220 80 250 80 {lab=OUTPUT}
+N 80 80 100 80 {lab=INPUT}
 N 90 -130 90 -110 {lab=VSS}
 N 40 -130 40 -110 {lab=VDD}
+N 100 60 100 80 {lab=INPUT}
+N 100 80 100 100 {lab=INPUT}
+N 100 40 100 60 {lab=INPUT}
+N 100 90 100 120 {lab=INPUT}
+N 100 20 100 40 {lab=INPUT}
+N 100 110 100 140 {lab=INPUT}
 N 230 80 230 470 {lab=OUTPUT}
 N 250 660 290 660 {lab=OUTPUT2}
 N 220 660 250 660 {lab=OUTPUT2}
+N -120 600 -100 600 {lab=INPUT}
 N 230 660 230 1050 {lab=OUTPUT2}
+N -100 600 -70 600 {lab=INPUT}
 N 10 600 100 600 {lab=INPUT2}
-N 100 640 100 740 {lab=GND}
-N 100 20 100 140 {lab=INPUT1}
-N 70 80 100 80 {lab=INPUT1}
+N 30 740 100 740 {lab=VDD}
+N 100 640 100 740 {lab=VDD}
+N 220 640 220 660 {lab=OUTPUT2}
 C {devices/vsource.sym} 40 -80 0 0 {name=V1 value=1.2 savecurrent=false}
 C {devices/vsource.sym} 90 -80 0 0 {name=V2 value=0 savecurrent=false}
 C {devices/gnd.sym} 40 -50 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 90 -50 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} -10 80 0 0 {name=p2 sig_type=std_logic lab=INPUT
+C {devices/lab_pin.sym} 80 80 0 0 {name=p2 sig_type=std_logic lab=INPUT
 }
 C {devices/code.sym} 475 -145 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -32,13 +41,12 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
-.include '../mag/NOR/NOR4/nor4_pex.spice'
 .control 
 set color0 = white
 
 save all
 tran 0.001n 0.03u
-plot INPUT1 OUTPUT title 'a'
+plot INPUT OUTPUT title 'a'
 plot INPUT2 OUTPUT2 title 'a'
 
 
@@ -84,7 +92,7 @@ C {INV/inv.sym} 270 150 0 0 {name=x2 VSS=VSS VDD=VDD}
 C {INV/inv.sym} 270 250 0 0 {name=x3 VSS=VSS VDD=VDD}
 C {INV/inv.sym} 270 350 0 0 {name=x4 VSS=VSS VDD=VDD}
 C {INV/inv.sym} 270 470 0 0 {name=x5 VSS=VSS VDD=VDD}
-C {devices/lab_pin.sym} -150 600 0 0 {name=p5 sig_type=std_logic lab=INPUT
+C {devices/lab_pin.sym} -120 600 0 0 {name=p5 sig_type=std_logic lab=INPUT
 }
 C {devices/opin.sym} 290 660 0 0 {name=p6 lab=OUTPUT2}
 C {INV/inv.sym} 270 730 0 0 {name=x6 VSS=VSS VDD=VDD}
@@ -94,10 +102,7 @@ C {INV/inv.sym} 270 1050 0 0 {name=x9 VSS=VSS VDD=VDD}
 C {INV/inv.sym} -30 600 0 0 {name=x10 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} 40 600 3 0 {name=p7 sig_type=std_logic lab=INPUT2
 }
-C {NOR/nor4_pex.sym} 160 80 0 0 {name=x1 VSS=VSS VDD=VDD}
-C {INV/inv.sym} 30 80 0 0 {name=x12 VSS=VSS VDD=VDD}
-C {NOR/nor4_pex.sym} 160 660 0 0 {name=x11 VSS=VSS VDD=VDD}
-C {INV/inv.sym} -110 600 0 0 {name=x13 VSS=VSS VDD=VDD}
-C {devices/lab_pin.sym} 70 80 3 0 {name=p9 sig_type=std_logic lab=INPUT1
+C {devices/iopin.sym} 30 740 2 0 {name=p8 lab=VDD
 }
-C {devices/gnd.sym} 100 740 0 0 {name=l3 lab=GND}
+C {NAND/nand3.sym} 160 80 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {NAND/nand3.sym} 160 640 0 0 {name=x11 VSS=VSS VDD=VDD}

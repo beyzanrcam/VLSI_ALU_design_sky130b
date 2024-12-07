@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1733175904
+timestamp 1733177410
 << nwell >>
 rect 2 715 1284 922
 << psubdiff >>
@@ -169,35 +169,35 @@ rect 2 -843 100 -777
 rect 1186 -843 1284 -777
 rect 2 -858 1284 -843
 use nfet_3_200_15  nfet_3_200_15_0
-timestamp 1733168257
+timestamp 1733177410
 transform -1 0 211 0 -1 -592
 box -173 -170 173 91
 use nfet_3_200_15  nfet_3_200_15_1
-timestamp 1733168257
+timestamp 1733177410
 transform -1 0 499 0 -1 -592
 box -173 -170 173 91
 use nfet_3_200_15  nfet_3_200_15_2
-timestamp 1733168257
+timestamp 1733177410
 transform -1 0 1075 0 -1 -592
 box -173 -170 173 91
 use nfet_3_200_15  nfet_3_200_15_3
-timestamp 1733168257
+timestamp 1733177410
 transform -1 0 787 0 -1 -592
 box -173 -170 173 91
 use pfet_3_825_15  pfet_3_825_15_0
-timestamp 1733084140
+timestamp 1733177410
 transform 1 0 211 0 1 404
 box -209 -398 209 311
 use pfet_3_825_15  pfet_3_825_15_1
-timestamp 1733084140
+timestamp 1733177410
 transform 1 0 499 0 1 404
 box -209 -398 209 311
 use pfet_3_825_15  pfet_3_825_15_2
-timestamp 1733084140
+timestamp 1733177410
 transform 1 0 787 0 1 404
 box -209 -398 209 311
 use pfet_3_825_15  pfet_3_825_15_3
-timestamp 1733084140
+timestamp 1733177410
 transform 1 0 1075 0 1 404
 box -209 -398 209 311
 << labels >>
