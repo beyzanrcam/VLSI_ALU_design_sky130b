@@ -1,0 +1,104 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1733616868
+<< nwell >>
+rect -37 367 1286 559
+rect -37 366 1218 367
+rect -37 331 748 366
+rect -37 324 270 331
+rect 331 327 748 331
+rect 809 328 1218 366
+rect 1279 328 1286 367
+rect 809 327 1286 328
+rect 331 324 1286 327
+rect -37 320 1286 324
+rect -37 319 982 320
+rect -37 280 33 319
+rect 94 317 982 319
+rect 94 280 513 317
+rect -37 278 513 280
+rect 574 281 982 317
+rect 1043 281 1286 320
+rect 574 278 1286 281
+rect -37 -16 1286 278
+<< psubdiff >>
+rect 516 -430 766 -394
+rect 516 -494 563 -430
+rect 725 -494 766 -430
+rect 516 -527 766 -494
+<< nsubdiff >>
+rect 46 481 466 523
+rect 46 430 89 481
+rect 257 430 466 481
+rect 46 392 466 430
+<< psubdiffcont >>
+rect 563 -494 725 -430
+<< nsubdiffcont >>
+rect 89 430 257 481
+<< poly >>
+rect 578 -117 608 3
+rect 674 -39 704 3
+rect 656 -55 722 -39
+rect 656 -89 672 -55
+rect 706 -89 722 -55
+rect 656 -105 722 -89
+rect 674 -116 704 -105
+<< polycont >>
+rect 672 -89 706 -55
+<< locali >>
+rect 46 481 466 501
+rect 46 430 89 481
+rect 257 430 466 481
+rect 46 411 466 430
+rect 48 318 82 411
+rect 432 318 466 411
+rect 656 -89 672 -55
+rect 706 -89 722 -55
+rect 528 -410 562 -343
+rect 720 -410 754 -343
+rect 516 -430 766 -410
+rect 516 -494 563 -430
+rect 725 -494 766 -430
+rect 516 -512 766 -494
+<< viali >>
+rect 480 19 514 53
+rect 672 -89 706 -55
+<< metal1 >>
+rect 234 362 1048 421
+rect 234 313 280 362
+rect 618 314 664 362
+rect 1002 314 1048 362
+rect 810 69 856 100
+rect 1194 69 1240 101
+rect -68 53 526 69
+rect -68 19 480 53
+rect 514 19 526 53
+rect -68 3 526 19
+rect 810 8 1240 69
+rect -68 -55 722 -39
+rect -68 -89 672 -55
+rect 706 -89 722 -55
+rect -68 -105 722 -89
+rect 810 -139 856 8
+rect 664 -339 856 -139
+use sky130_fd_pr__nfet_01v8_LZEQWH  sky130_fd_pr__nfet_01v8_LZEQWH_0
+timestamp 1733614365
+transform -1 0 641 0 -1 -239
+box -125 -126 125 126
+use sky130_fd_pr__pfet_01v8_YXZD9A  sky130_fd_pr__pfet_01v8_YXZD9A_0
+timestamp 1733616374
+transform 1 0 641 0 1 207
+box -737 -207 641 207
+<< labels >>
+flabel nwell 120 430 197 482 1 FreeSerif 320 0 0 0 VDD
+port 1 n
+flabel psubdiffcont 606 -487 683 -435 1 FreeSerif 320 0 0 0 VSS
+port 2 n
+flabel metal1 777 -236 854 -184 1 FreeSerif 320 0 0 0 Y
+port 3 n
+flabel metal1 -61 10 16 62 1 FreeSerif 320 0 0 0 A
+port 4 n
+flabel metal1 -60 -99 17 -47 1 FreeSerif 320 0 0 0 B
+port 5 n
+<< end >>
