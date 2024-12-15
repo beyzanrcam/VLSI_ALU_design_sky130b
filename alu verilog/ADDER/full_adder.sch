@@ -1,0 +1,42 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -150 -10 -120 -10 {lab=A}
+N -150 10 -120 10 {lab=B}
+N 180 -10 220 -10 {lab=#net1}
+N 520 -10 900 -10 {lab=S}
+N 800 180 850 180 {lab=Cout}
+N 340 140 390 140 {lab=#net2}
+N 390 140 390 170 {lab=#net2}
+N 340 250 390 250 {lab=#net3}
+N 390 220 390 250 {lab=#net3}
+N 220 10 220 120 {lab=Cin}
+N 190 160 220 160 {lab=#net1}
+N 190 -10 190 160 {lab=#net1}
+N -100 230 220 230 {lab=A}
+N -130 230 -100 230 {lab=A}
+N -130 -10 -130 230 {lab=A}
+N -200 -10 -150 -10 {lab=A}
+N -200 10 -150 10 {lab=B}
+N -180 10 -180 270 {lab=B}
+N -180 270 220 270 {lab=B}
+N -200 50 220 50 {lab=Cin}
+N 390 170 390 180 {lab=#net2}
+N 390 200 390 220 {lab=#net3}
+N 690 180 720 180 {lab=#net4}
+C {iopin.sym} -200 -10 2 0 {name=p1 lab=A}
+C {iopin.sym} -200 10 2 0 {name=p2 lab=B}
+C {/foss/designs/vlsi_sky130b/design/xschem/XOR/XOR2.sym} 40 20 0 0 {name=x2}
+C {/foss/designs/vlsi_sky130b/design/xschem/XOR/XOR2.sym} 380 20 0 0 {name=x1}
+C {/foss/designs/vlsi_sky130b/design/xschem/NAND/nand2.sym} 280 140 0 0 {name=x3 VSS=VSS VDD=VDD}
+C {/foss/designs/vlsi_sky130b/design/xschem/NAND/nand2.sym} 280 250 0 0 {name=x4 VSS=VSS VDD=VDD}
+C {/foss/designs/vlsi_sky130b/design/xschem/XOR/XOR2.sym} 550 210 0 0 {name=x6}
+C {iopin.sym} -200 50 2 0 {name=p3 lab=Cin
+}
+C {iopin.sym} 900 -10 0 0 {name=p4 lab=S}
+C {iopin.sym} 850 180 0 0 {name=p5 lab=Cout
+}
+C {/foss/designs/vlsi_sky130b/design/xschem/INV/inv.sym} 760 180 0 0 {name=x5 VSS=VSS VDD=VDD}
