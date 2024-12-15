@@ -37,7 +37,7 @@ value="
 "
 spice_ignore=false}
 C {devices/code_shown.sym} 470 40 0 0 {name=s1 only_toplevel=false value="
-.include '../mag/NOR/NOR2/nor2_pex.spice'
+.include '../mag/NOR/NOR2/nor2_fix_pex.spice'
 .control 
 set color0 = white
 

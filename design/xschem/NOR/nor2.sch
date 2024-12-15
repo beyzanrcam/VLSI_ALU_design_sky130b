@@ -9,7 +9,6 @@ N 180 190 180 240 {lab=Y}
 N 180 300 180 340 {lab=VSS}
 N 140 160 140 270 {lab=A}
 N 110 210 140 210 {lab=A}
-N 180 130 180 160 {lab=#net1}
 N 180 270 180 300 {lab=VSS}
 N 180 400 180 420 {lab=VSS}
 N 310 240 420 240 {lab=Y}
@@ -19,14 +18,11 @@ N 310 300 310 330 {lab=VSS}
 N 180 330 310 330 {lab=VSS}
 N 180 340 180 360 {lab=VSS}
 N 180 240 310 240 {lab=Y}
-N 180 0 180 20 {lab=VDD}
-N 180 20 180 30 {lab=VDD}
 N 420 240 510 240 {lab=Y}
 N 270 110 270 270 {lab=B}
 N 140 110 270 110 {lab=B}
 N 140 60 140 110 {lab=B}
-N 180 40 180 60 {lab=VDD}
-N 180 20 180 40 {lab=VDD}
+N 180 -0 180 60 {lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 160 160 0 0 {name=M1
 L=0.15
 W=6.42
@@ -88,3 +84,4 @@ spiceprefix=X
 C {devices/ipin.sym} 270 270 0 0 {name=p5 lab=B}
 C {devices/lab_pin.sym} 180 0 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 180 420 0 0 {name=p2 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 180 160 2 0 {name=p6 sig_type=std_logic lab=VDD}
