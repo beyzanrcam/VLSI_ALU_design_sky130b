@@ -104,9 +104,9 @@ rlabel metal1 -310 684 -310 684 7 B
 port 2 w
 rlabel metal1 -310 559 -310 559 3 C
 port 3 e
-rlabel psubdiffcont 246 158 246 158 1 VSS
+rlabel li 246 158 246 158 1 VSS
 port 4 n
-rlabel viali -29 1648 -29 1648 5 VDD
+rlabel metal1 -29 1648 -29 1648 5 VDD
 port 5 s
 rlabel metal1 676 638 676 638 3 Y
 port 6 e
