@@ -1,4 +1,5 @@
 # Read all module files
+read_verilog full_adder.sv
 read_verilog ripple_carry_adder.sv
 read_verilog multiplier.sv
 read_verilog logical_and.sv
@@ -9,16 +10,5 @@ read_verilog shift_left.sv
 read_verilog shift_right.sv
 read_verilog alu.sv
 
-# Perform synthesis
 synth -top alu
-
-# Write the RTL netlist in an intermediate format
-write_json RTL/alu.json
-
-# Optional: write Verilog for synthesized design
-write_verilog RTL/alu_synth.sv
-
-# Generate RTL diagrams and save them in the RTL directory
-show -format pdf -prefix RTL/alu_diagram alu
-show -format pdf -prefix RTL/ripple_carry_adder_diagram ripple_carry_adder
-
+write_json RTL/alu/alu.json

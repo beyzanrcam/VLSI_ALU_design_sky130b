@@ -5,11 +5,16 @@ module alu (
     input  [3:0] ALU_Sel,
     input        Sub, // Subtraction control for ripple carry adder
     output [7:0] ALU_Out,
-    output       CarryOut
+    output       CarryOut,
+    output       ZeroFlag,
+    output       OverflowFlag,
+    output       SignFlag
 );
     wire [7:0] add_sub_result, and_result, or_result, xor_result, not_result, shl_result, shr_result, mul_result;
     wire add_sub_carry;
-
+    wire add_sub_overflow;
+    wire [7:0] ALU_Result;
+    
     // Instantiate all modules
     ripple_carry_adder u_adder(
         .A(A),
@@ -20,8 +25,8 @@ module alu (
     );
 
     multiplier u_multiplier(
-        .A(A[3:0]),
-        .B(B[3:0]),
+        .A(A[7:4]),
+        .B(B[7:4]),
         .Product(mul_result)
     );
 
@@ -59,15 +64,56 @@ module alu (
     );
 
     // ALU Output MUX
-    assign {CarryOut, ALU_Out} = (ALU_Sel == 4'b0000) ? {add_sub_carry, add_sub_result} :
-                                 (ALU_Sel == 4'b0010) ? {1'b0, mul_result} :
-                                 (ALU_Sel == 4'b1000) ? {1'b0, and_result} :
-                                 (ALU_Sel == 4'b1001) ? {1'b0, or_result} :
-                                 (ALU_Sel == 4'b1010) ? {1'b0, xor_result} :
-                                 (ALU_Sel == 4'b1100) ? {1'b0, not_result} :
-                                 (ALU_Sel == 4'b0100) ? {1'b0, shl_result} :
-                                 (ALU_Sel == 4'b0101) ? {1'b0, shr_result} :
-                                 {1'b0, 8'b0};
+    always @(*)
+    begin
+        case (ALU_Sel)
+            4'b0000: begin
+                ALU_Result = add_sub_result;
+                CarryOut = add_sub_carry;
+            end
+            4'b0010: begin
+                ALU_Result = mul_result;
+                CarryOut = 1'b0; // No carry for multiplication
+            end
+            4'b1000: begin
+                ALU_Result = and_result;
+                CarryOut = 1'b0;
+            end
+            4'b1001: begin
+                ALU_Result = or_result;
+                CarryOut = 1'b0;
+            end
+            4'b1010: begin
+                ALU_Result = xor_result;
+                CarryOut = 1'b0;
+            end
+            4'b1100: begin
+                ALU_Result = not_result;
+                CarryOut = 1'b0;
+            end
+            4'b0100: begin
+                ALU_Result = shl_result;
+                CarryOut = 1'b0;
+            end
+            4'b0101: begin
+                ALU_Result = shr_result;
+                CarryOut = 1'b0;
+            end
+            default: begin
+                ALU_Result = 8'b00000000;
+                CarryOut = 1'b0;
+            end
+        endcase
+    end
 
+    // Zero Flag (Z)
+    assign ZeroFlag = (ALU_Result == 8'b00000000) ? 1'b1 : 1'b0;
+
+    // Sign Flag (S)
+    assign SignFlag = ALU_Result[7];  // MSB is the sign bit for 2's complement
+
+    // Overflow Flag (O)
+    assign OverflowFlag = (ALU_Sel == 4'b0000) ? ((A[7] == B[7]) && (ALU_Result[7] != A[7])) : 1'b0; // Only for addition
+    
 endmodule
 

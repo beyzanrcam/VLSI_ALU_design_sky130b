@@ -13,6 +13,7 @@ mkdir -p RTL/shift_right
 
 # Run the Yosys synthesis script
 yosys -s synth_all_modules.ys
+yosys -s synth_alu.ys
 
 # Generate SVG for each module
 netlistsvg RTL/full_adder/full_adder.json -o RTL/full_adder/full_adder.svg
@@ -24,4 +25,5 @@ netlistsvg RTL/logical_xor/logical_xor.json -o RTL/logical_xor/logical_xor.svg
 netlistsvg RTL/logical_not/logical_not.json -o RTL/logical_not/logical_not.svg
 netlistsvg RTL/shift_left/shift_left.json -o RTL/shift_left/shift_left.svg
 netlistsvg RTL/shift_right/shift_right.json -o RTL/shift_right/shift_right.svg
+netlistsvg RTL/alu/alu.json -o RTL/alu/alu.svg
 
