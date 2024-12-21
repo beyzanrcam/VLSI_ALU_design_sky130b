@@ -1,0 +1,39 @@
+{
+  "creator": "Yosys 0.48+5 (git sha1 7a362f1f7, g++ 14.2.1 -O2 -fexceptions -fstack-protector-strong -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -O3)",
+  "modules": {
+    "shift_left": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "shift_left.sv:2.1-7.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ]
+        },
+        "Result": {
+          "direction": "output",
+          "bits": [ "0", 2, 3, 4, 5, 6, 7, 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "shift_left.sv:3.18-3.19"
+          }
+        },
+        "Result": {
+          "hide_name": 0,
+          "bits": [ "0", 2, 3, 4, 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "shift_left.sv:4.18-4.24"
+          }
+        }
+      }
+    }
+  }
+}

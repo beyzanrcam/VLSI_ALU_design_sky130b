@@ -1,0 +1,45 @@
+# Read and synthesize full_adder
+read_verilog full_adder.sv
+synth -top full_adder
+write_json RTL/full_adder/full_adder.json
+
+# Read and synthesize ripple_carry_adder
+read_verilog ripple_carry_adder.sv
+synth -top ripple_carry_adder
+write_json RTL/ripple_carry_adder/ripple_carry_adder.json
+
+# Read and synthesize multiplier
+read_verilog multiplier.sv
+synth -top multiplier
+write_json RTL/multiplier/multiplier.json
+
+# Read and synthesize logical_and
+read_verilog logical_and.sv
+synth -top logical_and
+write_json RTL/logical_and/logical_and.json
+
+# Read and synthesize logical_or
+read_verilog logical_or.sv
+synth -top logical_or
+write_json RTL/logical_or/logical_or.json
+
+# Read and synthesize logical_xor
+read_verilog logical_xor.sv
+synth -top logical_xor
+write_json RTL/logical_xor/logical_xor.json
+
+# Read and synthesize logical_not
+read_verilog logical_not.sv
+synth -top logical_not
+write_json RTL/logical_not/logical_not.json
+
+# Read and synthesize shift_left
+read_verilog shift_left.sv
+synth -top shift_left
+write_json RTL/shift_left/shift_left.json
+
+# Read and synthesize shift_right
+read_verilog shift_right.sv
+synth -top shift_right
+write_json RTL/shift_right/shift_right.json
+

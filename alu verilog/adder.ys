@@ -1,9 +1,0 @@
-# Read the Verilog design
-read_verilog adder.sv    # Replace alu.sv with your actual file
-
-# Run processes to analyze and optimize the design
-proc;                  # Flatten and process RTL
-opt;                   # Optimize the design
-
-# Generate an interactive schematic
-show;                  # Open GUI for RTL schematic
