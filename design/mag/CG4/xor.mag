@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1734280662
+timestamp 1734781233
 << nwell >>
 rect -902 1668 1312 1671
 rect -902 1199 756 1668
@@ -42,12 +42,12 @@ rect 221 291 255 325
 rect -673 1668 1312 1671
 rect -764 1623 1312 1668
 rect -851 821 -801 822
-rect -993 816 343 821
-rect -993 782 -845 816
+rect -902 816 343 821
+rect -902 782 -845 816
 rect -811 813 343 816
 rect -811 801 344 813
 rect -811 782 302 801
-rect -993 776 302 782
+rect -902 776 302 782
 rect 296 767 302 776
 rect 336 767 344 801
 rect 135 733 187 745
@@ -83,20 +83,20 @@ rect 296 393 344 767
 rect 296 359 304 393
 rect 338 359 344 393
 rect 296 342 344 359
-rect -994 325 261 336
-rect -994 291 -407 325
+rect -902 325 261 336
+rect -902 291 -407 325
 rect -373 291 221 325
 rect 255 291 261 325
-rect -994 283 261 291
+rect -902 283 261 291
 rect 215 279 261 283
 rect -754 -15 -554 61
 rect -316 -15 -116 68
 rect -754 -112 54 -15
-use CG4  CG4_0 CG4
+use CG4  CG4_0
 timestamp 1733177410
 transform 1 0 28 0 1 746
 box 1 -858 1284 922
-use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0 inv
+use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/inv
 timestamp 1734276197
 transform 0 1 -219 -1 0 1462
 box -209 -207 209 169
@@ -113,8 +113,8 @@ timestamp 1734280111
 transform 0 1 -685 -1 0 128
 box -73 -157 73 157
 << labels >>
-rlabel metal1 -969 312 -969 312 3 B
+rlabel metal1 -902 317 -902 317 3 B
 port 1 e
-rlabel metal1 -972 799 -972 799 3 A
+rlabel metal1 -902 797 -902 797 3 A
 port 2 e
 << end >>

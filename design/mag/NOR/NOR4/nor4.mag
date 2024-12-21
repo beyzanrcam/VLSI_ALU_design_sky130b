@@ -114,8 +114,8 @@ flabel metal1 -589 853 -522 922 1 FreeSerif 320 0 0 0 D
 port 4 n
 flabel metal1 869 297 997 427 1 FreeSerif 320 0 0 0 Y
 port 5 n
-flabel nwell -369 2833 -242 2945 1 FreeSerif 320 0 0 0 VDD
+flabel metal1 -369 2833 -242 2945 1 FreeSerif 320 0 0 0 VDD
 port 6 n
-flabel psubdiffcont 218 -182 345 -70 1 FreeSerif 320 0 0 0 VSS
+flabel li 218 -182 345 -70 1 FreeSerif 320 0 0 0 VSS
 port 7 n
 << end >>

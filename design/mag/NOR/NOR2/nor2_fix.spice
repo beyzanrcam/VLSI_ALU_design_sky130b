@@ -1,0 +1,30 @@
+* NGSPICE file created from nor2_fix.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_LZEQWH a_33_n126# a_n125_n100# a_63_n100# a_n63_n126#
++ a_n33_n100# VSUBS
+X0 a_63_n100# a_33_n126# a_n33_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.31 pd=2.62 as=0.165 ps=1.33 w=1 l=0.15
+X1 a_n33_n100# a_n63_n126# a_n125_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.165 pd=1.33 as=0.31 ps=2.62 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_YXZD9A a_n605_n107# a_543_n107# a_159_n107# a_351_n107#
++ a_n417_n107# a_n543_n204# a_n225_n107# a_33_n204# w_n641_n207# a_n33_n107#
+X0 a_543_n107# a_33_n204# a_447_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.3317 pd=2.76 as=0.17655 ps=1.4 w=1.07 l=0.15
+X1 a_159_n107# a_33_n204# a_63_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X2 a_n225_n107# a_n543_n204# a_n321_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X3 a_447_n107# a_33_n204# a_351_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X4 a_n513_n107# a_n543_n204# a_n605_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.3317 ps=2.76 w=1.07 l=0.15
+X5 a_63_n107# a_33_n204# a_n33_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X6 a_n129_n107# a_n543_n204# a_n225_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X7 a_n417_n107# a_n543_n204# a_n513_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X8 a_n33_n107# a_n543_n204# a_n129_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X9 a_351_n107# a_33_n204# a_255_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X10 a_255_n107# a_33_n204# a_159_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+X11 a_n321_n107# a_n543_n204# a_n417_n107# w_n641_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+.ends
+
+.subckt nor2_fix VDD VSS Y A B
+Xsky130_fd_pr__nfet_01v8_LZEQWH_0 A VSS VSS B Y VSS sky130_fd_pr__nfet_01v8_LZEQWH
+Xsky130_fd_pr__pfet_01v8_YXZD9A_0 VDD Y Y m1_234_313# m1_234_313# A VDD B VDD m1_234_313#
++ sky130_fd_pr__pfet_01v8_YXZD9A
+.ends
+

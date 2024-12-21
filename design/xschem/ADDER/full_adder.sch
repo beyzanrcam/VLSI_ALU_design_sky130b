@@ -29,14 +29,14 @@ N 390 200 390 220 {lab=#net3}
 N 690 180 720 180 {lab=#net4}
 C {devices/iopin.sym} -200 -10 2 0 {name=p1 lab=A}
 C {devices/iopin.sym} -200 10 2 0 {name=p2 lab=B}
-C {../design/xschem/XOR/XOR2.sym} 40 20 0 0 {name=x2}
-C {../design/xschem/XOR/XOR2.sym} 380 20 0 0 {name=x1}
-C {../design/xschem/NAND/nand2.sym} 280 140 0 0 {name=x3 VSS=VSS VDD=VDD}
-C {../design/xschem/NAND/nand2.sym} 280 250 0 0 {name=x4 VSS=VSS VDD=VDD}
-C {../design/xschem/XOR/XOR2.sym} 550 210 0 0 {name=x6}
+C {XOR/XOR2.sym} 40 20 0 0 {name=x2}
+C {XOR/XOR2.sym} 380 20 0 0 {name=x1}
+C {NAND/nand2.sym} 280 140 0 0 {name=x3 VSS=VSS VDD=VDD}
+C {NAND/nand2.sym} 280 250 0 0 {name=x4 VSS=VSS VDD=VDD}
+C {XOR/XOR2.sym} 550 210 0 0 {name=x6}
 C {devices/iopin.sym} -200 50 2 0 {name=p3 lab=Cin
 }
 C {devices/iopin.sym} 900 -10 0 0 {name=p4 lab=S}
 C {devices/iopin.sym} 850 180 0 0 {name=p5 lab=Cout
 }
-C {../design/xschem/INV/inv.sym} 760 180 0 0 {name=x5 VSS=VSS VDD=VDD}
+C {INV/inv.sym} 760 180 0 0 {name=x5 VSS=VSS VDD=VDD}
