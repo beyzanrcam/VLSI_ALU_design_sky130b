@@ -1,0 +1,122 @@
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/alu verilog/opcodemux/opcodemux.sch
+**.subckt opcodemux out[7],out[6],out[5],out[4],out[3],out[2],out[1],out[0] Z C V S
+*.opin out[7],out[6],out[5],out[4],out[3],out[2],out[1],out[0]
+*.opin Z
+*.opin C
+*.opin V
+*.opin S
+x1[7] net3[7] net4[7] net5[7] net6[7] out[7] VSS VDD MUX2
+x1[6] net3[6] net4[6] net5[6] net6[6] out[6] VSS VDD MUX2
+x1[5] net3[5] net4[5] net5[5] net6[5] out[5] VSS VDD MUX2
+x1[4] net3[4] net4[4] net5[4] net6[4] out[4] VSS VDD MUX2
+x1[3] net3[3] net4[3] net5[3] net6[3] out[3] VSS VDD MUX2
+x1[2] net3[2] net4[2] net5[2] net6[2] out[2] VSS VDD MUX2
+x1[1] net3[1] net4[1] net5[1] net6[1] out[1] VSS VDD MUX2
+x1[0] net3[0] net4[0] net5[0] net6[0] out[0] VSS VDD MUX2
+x2[7] net7[7] net8[7] net9[7] net10[7] out[7] VSS VDD MUX2
+x2[6] net7[6] net8[6] net9[6] net10[6] out[6] VSS VDD MUX2
+x2[5] net7[5] net8[5] net9[5] net10[5] out[5] VSS VDD MUX2
+x2[4] net7[4] net8[4] net9[4] net10[4] out[4] VSS VDD MUX2
+x2[3] net7[3] net8[3] net9[3] net10[3] out[3] VSS VDD MUX2
+x2[2] net7[2] net8[2] net9[2] net10[2] out[2] VSS VDD MUX2
+x2[1] net7[1] net8[1] net9[1] net10[1] out[1] VSS VDD MUX2
+x2[0] net7[0] net8[0] net9[0] net10[0] out[0] VSS VDD MUX2
+x3[7] net11[7] net12[7] net13[7] net14[7] out[7] VSS VDD MUX2
+x3[6] net11[6] net12[6] net13[6] net14[6] out[6] VSS VDD MUX2
+x3[5] net11[5] net12[5] net13[5] net14[5] out[5] VSS VDD MUX2
+x3[4] net11[4] net12[4] net13[4] net14[4] out[4] VSS VDD MUX2
+x3[3] net11[3] net12[3] net13[3] net14[3] out[3] VSS VDD MUX2
+x3[2] net11[2] net12[2] net13[2] net14[2] out[2] VSS VDD MUX2
+x3[1] net11[1] net12[1] net13[1] net14[1] out[1] VSS VDD MUX2
+x3[0] net11[0] net12[0] net13[0] net14[0] out[0] VSS VDD MUX2
+x4[7] net15[7] net16[7] net17[7] net18[7] out[7] VSS VDD MUX2
+x4[6] net15[6] net16[6] net17[6] net18[6] out[6] VSS VDD MUX2
+x4[5] net15[5] net16[5] net17[5] net18[5] out[5] VSS VDD MUX2
+x4[4] net15[4] net16[4] net17[4] net18[4] out[4] VSS VDD MUX2
+x4[3] net15[3] net16[3] net17[3] net18[3] out[3] VSS VDD MUX2
+x4[2] net15[2] net16[2] net17[2] net18[2] out[2] VSS VDD MUX2
+x4[1] net15[1] net16[1] net17[1] net18[1] out[1] VSS VDD MUX2
+x4[0] net15[0] net16[0] net17[0] net18[0] out[0] VSS VDD MUX2
+x1 out0 out1 out2 out3 VSS VDD net1 nor4
+x2 out4 out5 out6 out7 VSS VDD net2 nor4
+x3 net1 net2 VSS VDD net19 nor2
+x4 net19 VSS VDD Z inv
+**.ends
+
+* expanding   symbol:  /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/MUX/MUX2.sym # of pins=5
+** sym_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/MUX/MUX2.sym
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/MUX/MUX2.sch
+.subckt MUX2 A B !SEL SEL OUT VSS VDD
+*  p1 -  ipin  IS MISSING !!!!
+*  p3 -  ipin  IS MISSING !!!!
+*  p4 -  ipin  IS MISSING !!!!
+*  p13 -  opin  IS MISSING !!!!
+*  p14 -  lab_pin  IS MISSING !!!!
+*  p2 -  lab_pin  IS MISSING !!!!
+*  p6 -  lab_pin  IS MISSING !!!!
+*  p5 -  ipin  IS MISSING !!!!
+*  p7 -  lab_pin  IS MISSING !!!!
+*  p8 -  lab_pin  IS MISSING !!!!
+*  p9 -  lab_pin  IS MISSING !!!!
+*  p10 -  lab_pin  IS MISSING !!!!
+*  p11 -  lab_pin  IS MISSING !!!!
+*  p12 -  lab_pin  IS MISSING !!!!
+*  x1 -  cg4  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/NOR/nor4.sym # of pins=5
+** sym_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/NOR/nor4.sym
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/NOR/nor4.sch
+.subckt nor4 A B C D VSS VDD Y
+*.opin Y
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Y C VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 Y D VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net2 A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=12.84 nf=12 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net3 B net2 net2 sky130_fd_pr__pfet_01v8 L=0.15 W=12.84 nf=12 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 C net3 net3 sky130_fd_pr__pfet_01v8 L=0.15 W=12.84 nf=12 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Y D net1 net1 sky130_fd_pr__pfet_01v8 L=0.15 W=12.84 nf=12 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/NOR/nor2.sym # of pins=3
+** sym_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/NOR/nor2.sym
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/NOR/nor2.sch
+.subckt nor2 A B VSS VDD Y
+*.ipin A
+*.opin Y
+*.ipin B
+XM1 Y A net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=6.42 nf=6 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=6.42 nf=6 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/INV/inv.sym # of pins=2
+** sym_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/INV/inv.sym
+** sch_path: /home/efeler_gibi/Documents/vlsi/vlsi_sky130b/design/xschem/INV/inv.sch
+.subckt inv A VSS VDD Y
+*.ipin A
+*.opin Y
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.21 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

@@ -64,14 +64,14 @@ N 170 690 280 690 {lab=S[4]}
 N 170 860 280 860 {lab=S[5]}
 N 170 1020 280 1020 {lab=S[6]}
 N 170 1190 280 1190 {lab=S[7]}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 10 0 0 0 {name=x1}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 10 180 0 0 {name=x2}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 20 350 0 0 {name=x3}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 20 540 0 0 {name=x4}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 20 710 0 0 {name=x5}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 20 880 0 0 {name=x6}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 20 1040 0 0 {name=x7}
-C {/foss/designs/vlsi_sky130b/alu verilog/ADDER/full_adder.sym} 20 1210 0 0 {name=x8}
+C {../alu verilog/ADDER/full_adder.sym} 10 0 0 0 {name=x1}
+C {../alu verilog/ADDER/full_adder.sym} 10 180 0 0 {name=x2}
+C {../alu verilog/ADDER/full_adder.sym} 20 350 0 0 {name=x3}
+C {../alu verilog/ADDER/full_adder.sym} 20 540 0 0 {name=x4}
+C {../alu verilog/ADDER/full_adder.sym} 20 710 0 0 {name=x5}
+C {../alu verilog/ADDER/full_adder.sym} 20 880 0 0 {name=x6}
+C {../alu verilog/ADDER/full_adder.sym} 20 1040 0 0 {name=x7}
+C {../alu verilog/ADDER/full_adder.sym} 20 1210 0 0 {name=x8}
 C {devices/ipin.sym} -350 -60 0 0 {name=p9 lab=P[7:0]}
 C {devices/lab_pin.sym} -160 -30 0 0 {name=p45 lab=P[0] }
 C {devices/lab_pin.sym} -150 150 0 0 {name=p10 lab=P[1] }
@@ -92,7 +92,7 @@ C {devices/lab_pin.sym} -150 880 0 0 {name=p24 lab=G[5] }
 C {devices/lab_pin.sym} -150 1040 0 0 {name=p25 lab=G[6] }
 C {devices/lab_pin.sym} -150 1210 0 0 {name=p26 lab=G[7] }
 C {devices/lab_pin.sym} -160 30 0 0 {name=p27 lab=C}
-C {opin.sym} -370 40 0 0 {name=p28 lab=S[7:0]}
+C {devices/opin.sym} -370 40 0 0 {name=p28 lab=S[7:0]}
 C {devices/lab_pin.sym} 270 -20 2 0 {name=p1 lab=S[0] }
 C {devices/lab_pin.sym} 270 160 2 0 {name=p2 lab=S[1] }
 C {devices/lab_pin.sym} 280 330 2 0 {name=p3 lab=S[2] }
@@ -101,3 +101,4 @@ C {devices/lab_pin.sym} 280 690 2 0 {name=p5 lab=S[4] }
 C {devices/lab_pin.sym} 280 860 2 0 {name=p6 lab=S[5] }
 C {devices/lab_pin.sym} 280 1020 2 0 {name=p7 lab=S[6] }
 C {devices/lab_pin.sym} 280 1190 2 0 {name=p8 lab=S[7] }
+C {devices/opin.sym} 170 1230 0 0 {name=p29 lab=Cout}
