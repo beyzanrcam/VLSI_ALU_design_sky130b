@@ -1,7 +1,11 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1734278990
+timestamp 1734789947
+<< error_s >>
+rect 0 0 376 418
+rect 100 -126 300 -68
+rect 100 -214 300 -156
 << nwell >>
 rect 0 366 376 418
 rect 101 347 104 366
@@ -23,24 +27,24 @@ rect 3 -174 53 -158
 << viali >>
 rect 19 -158 53 -124
 << metal1 >>
-rect 0 366 376 418
+rect 96 366 318 418
 rect 101 347 104 366
-rect 0 80 53 338
+rect -14 80 53 338
 rect 223 82 376 338
-rect 0 -124 69 80
+rect -14 -124 69 80
 rect 100 -114 376 82
-rect 0 -158 19 -124
+rect -14 -158 19 -124
 rect 53 -158 69 -124
-rect 0 -175 69 -158
+rect -14 -175 69 -158
 rect 100 -203 300 -161
 rect 328 -175 376 -114
-rect 0 -250 376 -203
-use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0 inv
-timestamp 1734276197
+rect 96 -250 304 -203
+use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0
+timestamp 1734789349
 transform 0 1 207 -1 0 209
 box -209 -207 209 169
-use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_0 inv
-timestamp 1734276197
+use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_0
+timestamp 1734789349
 transform 0 1 200 -1 0 -141
 box -73 -126 73 126
 << labels >>

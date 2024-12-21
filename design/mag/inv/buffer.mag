@@ -1,0 +1,25 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1734791363
+<< error_s >>
+rect 1472 -47 2238 371
+rect 1572 -173 1772 -115
+rect 1962 -173 2162 -115
+rect 1572 -261 1772 -203
+rect 1962 -261 2162 -203
+<< nwell >>
+rect 1790 319 1958 371
+rect 1813 -47 1936 319
+<< metal1 >>
+rect 1790 319 1958 371
+rect 1776 -297 1958 -250
+use inv  inv_0
+timestamp 1734789947
+transform 1 0 1472 0 1 -47
+box -14 -250 376 418
+use inv  inv_1
+timestamp 1734789947
+transform 1 0 1862 0 1 -47
+box -14 -250 376 418
+<< end >>

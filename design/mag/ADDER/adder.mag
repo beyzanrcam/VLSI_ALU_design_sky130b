@@ -1,0 +1,47 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1734788766
+<< error_s >>
+rect 5543 -1061 5919 -643
+<< nwell >>
+rect 2214 864 3345 1783
+rect 3268 -580 3329 -60
+<< metal1 >>
+rect -97 888 0 933
+rect -97 -711 -40 888
+rect 2413 710 2514 897
+rect 2214 607 2514 710
+rect 0 -682 57 395
+rect 2261 -711 2370 607
+rect 2413 -547 2522 395
+rect 2413 -682 2562 -547
+rect 2413 -683 2522 -682
+rect 3268 -700 3420 -426
+rect -97 -847 54 -711
+rect 2261 -847 2566 -711
+use inv  inv_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/inv
+timestamp 1734278990
+transform 1 0 5543 0 1 -1061
+box 0 -250 376 418
+use NAND2  NAND2_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/NAND/NAND2
+timestamp 1733005800
+transform 1 0 2206 0 1 -952
+box 356 -63 1062 892
+use NAND2  NAND2_1
+timestamp 1733005800
+transform 1 0 -302 0 1 -952
+box 356 -63 1062 892
+use xor  xor_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/CG4
+timestamp 1734786338
+transform 1 0 902 0 1 112
+box -902 -112 1312 1671
+use xor  xor_1
+timestamp 1734786338
+transform 1 0 3315 0 1 112
+box -902 -112 1312 1671
+use xor  xor_2
+timestamp 1734786338
+transform 1 0 5785 0 1 113
+box -902 -112 1312 1671
+<< end >>
