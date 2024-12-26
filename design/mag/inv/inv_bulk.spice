@@ -1,0 +1,17 @@
+* NGSPICE file created from inv_bulk.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_6H9P4D a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt efepmos_W107-L15-F3 a_n129_n204# a_n173_n107# w_n209_n207# a_n81_n107#
+X0 a_n81_n107# a_n129_n204# a_n173_n107# w_n209_n207# sky130_fd_pr__pfet_01v8 ad=0.3317 pd=2.76 as=0.17655 ps=1.4 w=1.07 l=0.15
+X1 a_n81_n107# a_n129_n204# a_n173_n107# w_n209_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.3317 ps=2.76 w=1.07 l=0.15
+X2 a_n173_n107# a_n129_n204# a_n81_n107# w_n209_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+.ends
+
+.subckt inv_bulk VDD A Y VSS
+Xsky130_fd_pr__nfet_01v8_6H9P4D_0 Y VSS A VSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xefepmos_W107-L15-F3_0 A VDD VDD Y efepmos_W107-L15-F3
+.ends
+

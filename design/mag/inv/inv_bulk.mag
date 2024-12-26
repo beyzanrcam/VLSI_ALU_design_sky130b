@@ -1,16 +1,27 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735171245
-<< error_s >>
-rect 0 0 376 418
-rect 100 -126 300 -68
-rect 100 -214 300 -156
+timestamp 1735230776
 << nwell >>
-rect 0 366 376 418
+rect -30 403 409 644
+rect 0 366 376 403
 rect 101 347 104 366
 rect 223 290 343 338
 rect 326 288 343 290
+<< psubdiff >>
+rect 100 -323 301 -296
+rect 100 -374 126 -323
+rect 279 -374 301 -323
+rect 100 -401 301 -374
+<< nsubdiff >>
+rect 6 513 367 585
+rect 6 458 65 513
+rect 283 458 367 513
+rect 6 439 367 458
+<< psubdiffcont >>
+rect 126 -374 279 -323
+<< nsubdiffcont >>
+rect 65 458 283 513
 << poly >>
 rect 3 -124 70 -108
 rect 3 -158 19 -124
@@ -21,12 +32,22 @@ rect 3 -174 70 -158
 << polycont >>
 rect 19 -158 53 -124
 << locali >>
+rect 49 458 65 513
+rect 283 458 299 513
 rect 3 -124 53 339
 rect 3 -158 19 -124
 rect 3 -174 53 -158
+rect 110 -374 126 -323
+rect 279 -374 295 -323
 << viali >>
+rect 124 469 209 503
 rect 19 -158 53 -124
+rect 173 -361 228 -327
 << metal1 >>
+rect 100 503 277 511
+rect 100 469 124 503
+rect 209 469 277 503
+rect 100 418 277 469
 rect 100 366 314 418
 rect 101 347 104 366
 rect 0 80 53 338
@@ -38,6 +59,10 @@ rect 53 -158 69 -124
 rect 0 -175 69 -158
 rect 100 -250 300 -161
 rect 328 -175 376 -114
+rect 150 -327 256 -250
+rect 150 -361 173 -327
+rect 228 -361 256 -327
+rect 150 -372 256 -361
 use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0
 timestamp 1734789349
 transform 0 1 207 -1 0 209
