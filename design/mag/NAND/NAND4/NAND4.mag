@@ -1,9 +1,19 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1732965431
+timestamp 1735579975
 << nwell >>
+rect -37 1396 861 1492
 rect -1 1335 826 1396
+rect 765 916 861 988
+<< nsubdiff >>
+rect -1 1411 826 1427
+rect -1 1376 251 1411
+rect 539 1390 826 1411
+rect 539 1376 825 1390
+rect -1 1373 825 1376
+<< nsubdiffcont >>
+rect 251 1376 539 1411
 << poly >>
 rect 31 522 100 985
 rect 235 870 303 986
@@ -18,6 +28,8 @@ rect 157 508 212 730
 rect 174 745 208 779
 rect 344 638 442 674
 << locali >>
+rect 235 1376 251 1411
+rect 539 1376 565 1411
 rect 235 969 300 974
 rect 43 884 110 969
 rect 235 935 301 969
@@ -39,10 +51,14 @@ rect 712 39 758 48
 rect 63 -57 123 -53
 rect 712 -60 725 39
 << viali >>
+rect 251 1376 539 1411
 rect 174 745 208 779
 rect 344 638 442 674
 << metal1 >>
-rect -1 1335 826 1400
+rect -1 1411 826 1427
+rect -1 1376 251 1411
+rect 539 1376 826 1411
+rect -1 1335 826 1376
 rect 705 1016 861 1150
 rect -37 813 110 975
 rect 235 974 298 975
@@ -67,11 +83,11 @@ rect 390 88 746 488
 rect 774 21 827 488
 rect 0 -94 827 21
 use nmos4_fingered  sky130_fd_pr__nfet_01v8_V69YKH_0
-timestamp 1732962458
+timestamp 1735579975
 transform 1 0 413 0 1 288
 box -413 -382 414 408
 use pmos4_f2  sky130_fd_pr__pfet_01v8_NFZE9G_0
-timestamp 1732965026
+timestamp 1735579975
 transform 1 0 412 0 1 1177
 box -449 -261 449 223
 << labels >>
@@ -83,10 +99,10 @@ rlabel metal1 -37 619 -4 688 7 C
 port 3 w
 rlabel metal1 -37 522 -5 591 7 D
 port 4 w
-rlabel metal1 0 -94 827 21 5 VSS
-port 5 s
-rlabel metal1 -1 1366 826 1400 5 VDD
+rlabel metal1 825 1366 826 1400 5 VDD
 port 6 n
 rlabel metal1 815 625 861 1150 5 Y
 port 7 e
+rlabel metal1 0 -94 827 21 5 VSS
+port 5 s
 << end >>
