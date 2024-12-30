@@ -1,0 +1,36 @@
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/SHIFTER/left_shifter.sch
+.subckt left_shifter A0 A1 A2 A3 A4 A5 A6 A7 S0 S1 S2 S3 S4 S5 S6 S7 C VDD VSS
+*.PININFO A7:I S7:O A6:I A5:I A4:I A3:I A2:I A1:I A0:I S6:O S5:O S4:O S3:O S2:O S1:O C:O S0:O VDD:I
+x1 A0 VSS VDD S1 buffer
+x2 A1 VSS VDD S2 buffer
+x3 A2 VSS VDD S3 buffer
+x4 A3 VSS VDD S4 buffer
+x5 A4 VSS VDD S5 buffer
+x6 A5 VSS VDD S6 buffer
+x7 A6 VSS VDD S7 buffer
+x8 A7 VSS VDD C buffer
+x9 VDD VSS VDD S0 inv
+.ends
+
+* expanding   symbol:  INV/buffer.sym # of pins=2
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/INV/buffer.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/INV/buffer.sch
+.subckt buffer A VSS VDD Y
+*.PININFO A:I Y:O
+x1 A VSS VDD net1 inv
+x2 net1 VSS VDD Y inv
+.ends
+
+
+* expanding   symbol:  INV/inv.sym # of pins=2
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/INV/inv.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/INV/inv.sch
+.subckt inv A VSS VDD Y
+*.PININFO A:I Y:O
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

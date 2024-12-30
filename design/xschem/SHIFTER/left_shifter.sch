@@ -28,3 +28,6 @@ C {INV/buffer.sym} 250 120 1 0 {name=x5 VSS=VSS VDD=VDD}
 C {INV/buffer.sym} 200 120 1 0 {name=x6 VSS=VSS VDD=VDD}
 C {INV/buffer.sym} 150 120 1 0 {name=x7 VSS=VSS VDD=VDD}
 C {INV/buffer.sym} 100 120 1 0 {name=x8 VSS=VSS VDD=VDD}
+C {devices/opin.sym} 500 160 3 1 {name=p1 lab=S0}
+C {devices/ipin.sym} 500 80 3 1 {name=p3 lab=VDD}
+C {INV/inv.sym} 500 120 1 0 {name=x9 VSS=VSS VDD=VDD}

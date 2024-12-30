@@ -17,7 +17,7 @@ C {devices/opin.sym} 270 210 0 0 {name=p4 lab=Y}
 C {sky130_fd_pr/nfet3_01v8.sym} 160 270 0 0 {name=M2
 L=0.15
 W=1
-body=GND
+body=VSS
 nf=1 mult=1
 model=nfet_01v8 body=VSS
 spiceprefix=X
