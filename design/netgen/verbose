@@ -28,10 +28,10 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H9P4D in circuit inv (1)(1 instance)
-Flattening unmatched subcell efepmos_W107-L15-F3 in circuit inv (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H9P4D in circuit inv (3)(1 instance)
+Flattening unmatched subcell efepmos_W107-L15-F3 in circuit inv (3)(1 instance)
 
-Class inv (1):  Merged 2 parallel devices.
+Class inv (3):  Merged 2 parallel devices.
 Subcircuit summary:
 Circuit 1: inv                             |Circuit 2: inv                             
 -------------------------------------------|-------------------------------------------

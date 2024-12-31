@@ -1,0 +1,34 @@
+* NGSPICE file created from right_shifter.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_6H9P4D a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt efepmos_W107-L15-F3 a_n129_n204# a_n173_n107# w_n209_n207# a_n81_n107#
+X0 a_n81_n107# a_n129_n204# a_n173_n107# w_n209_n207# sky130_fd_pr__pfet_01v8 ad=0.3317 pd=2.76 as=0.17655 ps=1.4 w=1.07 l=0.15
+X1 a_n81_n107# a_n129_n204# a_n173_n107# w_n209_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.3317 ps=2.76 w=1.07 l=0.15
+X2 a_n173_n107# a_n129_n204# a_n81_n107# w_n209_n207# sky130_fd_pr__pfet_01v8 ad=0.17655 pd=1.4 as=0.17655 ps=1.4 w=1.07 l=0.15
+.ends
+
+.subckt inv A VSS VDD Y
+Xsky130_fd_pr__nfet_01v8_6H9P4D_0 Y VSS A VSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xefepmos_W107-L15-F3_0 A VDD VDD Y efepmos_W107-L15-F3
+.ends
+
+.subckt buffer VDD Y A VSS
+Xinv_0 A VSS VDD inv_1/A inv
+Xinv_1 inv_1/A VSS VDD Y inv
+.ends
+
+.subckt right_shifter A0 A1 A2 A3 A4 A5 A6 A7 C S0 S1 S2 S3 S4 S5 S6 S7 VSS VDD
+Xbuffer_0 VDD S1 A2 VSS buffer
+Xbuffer_1 VDD S6 A7 VSS buffer
+Xbuffer_2 VDD S5 A6 VSS buffer
+Xbuffer_3 VDD S4 A5 VSS buffer
+Xbuffer_4 VDD S3 A4 VSS buffer
+Xinv_0 VDD VSS VDD S7 inv
+Xbuffer_5 VDD S2 A3 VSS buffer
+Xbuffer_6 VDD C A0 VSS buffer
+Xbuffer_7 VDD S0 A1 VSS buffer
+.ends
+

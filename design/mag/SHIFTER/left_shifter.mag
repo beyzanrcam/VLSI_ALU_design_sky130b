@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735598892
+timestamp 1735651832
 << nwell >>
 rect 2355 900 7564 1048
 rect 8019 900 8528 1048
@@ -47,9 +47,7 @@ rect 4840 74 4924 387
 rect 5659 74 5743 387
 rect 6478 74 6562 387
 rect 7297 74 7381 387
-rect 8116 348 8200 471
-rect 8019 251 8200 348
-rect 8019 74 8103 251
+rect 8116 74 8200 471
 rect 1467 -110 1648 74
 rect 2286 -110 2467 74
 rect 3105 -110 3286 74
@@ -58,7 +56,7 @@ rect 4743 -110 4924 74
 rect 5562 -110 5743 74
 rect 6381 -110 6562 74
 rect 7200 -110 7381 74
-rect 7922 -110 8103 74
+rect 8019 -110 8200 74
 rect 8284 120 8381 251
 rect 8284 17 8381 23
 << via1 >>
@@ -161,8 +159,6 @@ rlabel metal1 3187 1164 3187 1164 5 A6
 port 7 s
 rlabel metal1 2373 1164 2373 1164 5 A7
 port 8 s
-rlabel metal1 8003 -110 8003 -110 5 S0
-port 9 s
 rlabel metal1 7289 -110 7289 -110 5 S1
 port 10 s
 rlabel metal1 6472 -110 6472 -110 5 S2
@@ -183,4 +179,6 @@ rlabel metal4 4822 1142 4822 1142 5 VDD
 port 18 s
 rlabel metal5 4819 -110 4819 -110 5 VSS
 port 19 s
+rlabel metal1 8100 -110 8100 -110 5 S0
+port 9 s
 << end >>
