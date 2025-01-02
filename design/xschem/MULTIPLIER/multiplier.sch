@@ -5,41 +5,41 @@ V {}
 S {}
 E {}
 N -150 -140 -150 -110 {
-lab=b0}
+lab=B0}
 N -150 -140 300 -140 {
-lab=b0}
+lab=B0}
 N -60 -140 -60 -110 {
-lab=b0}
+lab=B0}
 N 30 -140 30 -110 {
-lab=b0}
+lab=B0}
 N 120 -140 120 -110 {
-lab=b0}
+lab=B0}
 N -110 -170 -110 -110 {
-lab=a3}
+lab=A3}
 N -20 -170 -20 -110 {
-lab=a2}
+lab=A2}
 N 70 -170 70 -110 {
-lab=a1}
+lab=A1}
 N 160 -170 160 -110 {
-lab=a0}
+lab=A0}
 N -210 40 -210 60 {
-lab=b1}
+lab=B1}
 N -210 40 300 40 {
-lab=b1}
+lab=B1}
 N -170 20 -170 60 {
-lab=a3}
+lab=A3}
 N -120 40 -120 60 {
-lab=b1}
+lab=B1}
 N -30 40 -30 60 {
-lab=b1}
+lab=B1}
 N 70 40 70 60 {
-lab=b1}
+lab=B1}
 N -80 20 -80 60 {
-lab=a2}
+lab=A2}
 N 10 20 10 60 {
-lab=a1}
+lab=A1}
 N 110 20 110 60 {
-lab=a0}
+lab=A0}
 N 140 10 140 750 {
 lab=P0}
 N 50 10 50 220 {
@@ -75,41 +75,41 @@ lab=#net7}
 N -300 410 -300 430 {
 lab=#net6}
 N -50 410 -50 490 {
-lab=a0}
+lab=A0}
 N -430 410 -430 490 {
-lab=a1}
+lab=A1}
 N -680 420 -680 490 {
-lab=a2}
+lab=A2}
 N -650 450 290 450 {
-lab=b2}
+lab=B2}
 N -720 450 -720 490 {
-lab=b2}
+lab=B2}
 N -470 450 -470 490 {
-lab=b2}
+lab=B2}
 N -90 460 -90 490 {
-lab=b2}
+lab=B2}
 N -90 450 -90 460 {
-lab=b2}
+lab=B2}
 N -80 860 -80 880 {
 lab=P2}
 N -910 990 -910 1060 {
-lab=a2}
+lab=A2}
 N -1210 990 -1210 1060 {
-lab=a3}
+lab=A3}
 N -1250 1020 -1250 1060 {
-lab=b3}
+lab=B3}
 N -950 1020 -950 1060 {
-lab=b3}
+lab=B3}
 N -600 1020 -600 1060 {
-lab=b3}
+lab=B3}
 N -320 1030 -320 1060 {
-lab=b3}
+lab=B3}
 N -320 1020 -320 1030 {
-lab=b3}
+lab=B3}
 N -560 990 -560 1060 {
-lab=a1}
+lab=A1}
 N -280 990 -280 1060 {
-lab=a0}
+lab=A0}
 N -80 880 -80 1580 {
 lab=P2}
 N 140 750 140 1560 {
@@ -159,11 +159,11 @@ lab=#net12}
 N -710 290 -710 300 {
 lab=#net12}
 N -910 450 -650 450 {
-lab=b2}
+lab=B2}
 N -910 450 -910 490 {
-lab=b2}
+lab=B2}
 N -870 430 -870 490 {
-lab=a3}
+lab=A3}
 N -70 610 -70 740 {
 lab=#net13}
 N -300 430 -170 430 {
@@ -393,13 +393,13 @@ lab=P2}
 N 140 1580 140 1640 {
 lab=P0}
 N -870 1020 -320 1020 {
-lab=b3}
+lab=B3}
 N -320 1020 310 1020 {
-lab=b3}
+lab=B3}
 N -300 1180 -300 1190 {
 lab=#net24}
 N -1250 1020 -870 1020 {
-lab=b3}
+lab=B3}
 N 70 340 70 1630 {
 lab=P1}
 N 70 1630 70 1640 {
@@ -412,16 +412,12 @@ C {NAND/nand2.sym} 90 120 1 0 {name=x5 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -10 120 1 0 {name=x6 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -100 120 1 0 {name=x7 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -190 120 1 0 {name=x8 VSS=VSS VDD=VDD}
-C {devices/ipin.sym} 290 -140 2 0 {name=p3 lab=b0}
-C {devices/ipin.sym} 290 40 2 0 {name=p4 lab=b1}
-C {devices/ipin.sym} -110 -160 1 0 {name=p5 lab=a3}
-C {devices/ipin.sym} -20 -160 1 0 {name=p6 lab=a2}
-C {devices/ipin.sym} 70 -160 1 0 {name=p7 lab=a1}
-C {devices/ipin.sym} 160 -160 1 0 {name=p8 lab=a0}
-C {devices/ipin.sym} 110 30 1 0 {name=p9 lab=a0}
-C {devices/ipin.sym} 10 30 1 0 {name=p10 lab=a1}
-C {devices/ipin.sym} -80 30 1 0 {name=p11 lab=a2}
-C {devices/ipin.sym} -170 30 1 0 {name=p12 lab=a3}
+C {devices/ipin.sym} 290 -140 2 0 {name=p3 lab=B0}
+C {devices/ipin.sym} 290 40 2 0 {name=p4 lab=B1}
+C {devices/ipin.sym} -110 -160 1 0 {name=p5 lab=A3}
+C {devices/ipin.sym} -20 -160 1 0 {name=p6 lab=A2}
+C {devices/ipin.sym} 70 -160 1 0 {name=p7 lab=A1}
+C {devices/ipin.sym} 160 -160 1 0 {name=p8 lab=A0}
 C {ADDER/half_adder.sym} -20 280 0 0 {name=x9}
 C {ADDER/full_adder.sym} -160 280 0 1 {name=x10}
 C {ADDER/full_adder.sym} -500 280 0 1 {name=x11}
@@ -430,7 +426,7 @@ C {NAND/nand2.sym} -70 550 1 0 {name=x13 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -450 550 1 0 {name=x14 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -700 550 1 0 {name=x15 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -890 550 1 0 {name=x16 VSS=VSS VDD=VDD}
-C {devices/ipin.sym} 280 450 2 0 {name=p2 lab=b2}
+C {devices/ipin.sym} 280 450 2 0 {name=p2 lab=B2}
 C {ADDER/half_adder.sym} -170 800 0 0 {name=x17}
 C {ADDER/full_adder.sym} -310 800 0 1 {name=x18}
 C {ADDER/full_adder.sym} -650 800 0 1 {name=x19}
@@ -438,7 +434,7 @@ C {NAND/nand2.sym} -300 1120 1 0 {name=x21 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -580 1120 1 0 {name=x22 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -930 1120 1 0 {name=x23 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} -1230 1120 1 0 {name=x24 VSS=VSS VDD=VDD}
-C {devices/ipin.sym} 300 1020 2 0 {name=p13 lab=b3}
+C {devices/ipin.sym} 300 1020 2 0 {name=p13 lab=B3}
 C {ADDER/half_adder.sym} -400 1440 0 0 {name=x25}
 C {ADDER/full_adder.sym} -560 1440 0 1 {name=x26}
 C {ADDER/full_adder.sym} -900 1440 0 1 {name=x27}
@@ -449,14 +445,18 @@ C {devices/opin.sym} -1460 1630 1 0 {name=p17 lab=P6}
 C {devices/opin.sym} -1580 1630 1 0 {name=p18 lab=P7}
 C {devices/opin.sym} -80 1630 1 0 {name=p19 lab=P2}
 C {devices/opin.sym} 140 1630 1 0 {name=p20 lab=P0}
-C {devices/ipin.sym} -50 420 1 0 {name=p21 lab=a0}
-C {devices/ipin.sym} -430 420 1 0 {name=p22 lab=a1}
-C {devices/ipin.sym} -680 430 1 0 {name=p23 lab=a2}
-C {devices/ipin.sym} -870 440 1 0 {name=p24 lab=a3}
 C {ADDER/full_adder.sym} -1020 800 0 1 {name=x20}
 C {ADDER/full_adder.sym} -1260 1440 0 1 {name=x28}
-C {devices/ipin.sym} -280 1000 1 0 {name=p25 lab=a0}
-C {devices/ipin.sym} -560 1000 1 0 {name=p26 lab=a1}
-C {devices/ipin.sym} -910 1000 1 0 {name=p27 lab=a2}
-C {devices/ipin.sym} -1210 1000 1 0 {name=p28 lab=a3}
 C {devices/opin.sym} 70 1630 1 0 {name=p1 lab=P1}
+C {devices/ipin.sym} 110 30 1 0 {name=p9 lab=A0}
+C {devices/ipin.sym} 10 30 1 0 {name=p10 lab=A1}
+C {devices/ipin.sym} -80 30 1 0 {name=p11 lab=A2}
+C {devices/ipin.sym} -170 30 1 0 {name=p12 lab=A3}
+C {devices/ipin.sym} -50 420 1 0 {name=p21 lab=A0}
+C {devices/ipin.sym} -430 420 1 0 {name=p22 lab=A1}
+C {devices/ipin.sym} -680 430 1 0 {name=p23 lab=A2}
+C {devices/ipin.sym} -870 440 1 0 {name=p24 lab=A3}
+C {devices/ipin.sym} -280 1000 1 0 {name=p25 lab=A0}
+C {devices/ipin.sym} -560 1000 1 0 {name=p26 lab=A1}
+C {devices/ipin.sym} -910 1000 1 0 {name=p27 lab=A2}
+C {devices/ipin.sym} -1210 1000 1 0 {name=p28 lab=A3}
