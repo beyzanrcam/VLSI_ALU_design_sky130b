@@ -1,9 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735397986
-<< error_p >>
-rect -209 -207 209 169
+timestamp 1735843251
 << nwell >>
 rect -209 -207 209 169
 << pmos >>
