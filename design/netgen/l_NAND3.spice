@@ -1,0 +1,25 @@
+* NGSPICE file created from NAND3.ext - technology: sky130B
+
+.subckt efefetn a_n403_n150# a_n273_n329# a_n63_n176# a_n159_n253# a_n33_n150#
+X0 a_159_n150# a_n159_n253# a_63_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X1 a_n225_n150# a_n273_n329# a_n403_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.465 ps=3.62 w=1.5 l=0.15
+X2 a_63_n150# a_n63_n176# a_n33_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X3 a_n129_n150# a_n159_n253# a_n225_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X4 a_n33_n150# a_n63_n176# a_n129_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X5 a_n403_n150# a_n273_n329# a_159_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.465 pd=3.62 as=0.2475 ps=1.83 w=1.5 l=0.15
+.ends
+
+.subckt efemosp a_111_n258# w_n353_n261# a_n273_n258# a_n317_n161# a_n81_n258# a_n225_n161#
+X0 a_n317_n161# a_111_n258# a_n225_n161# w_n353_n261# sky130_fd_pr__pfet_01v8 ad=0.4991 pd=3.84 as=0.26565 ps=1.94 w=1.61 l=0.15
+X1 a_n225_n161# a_111_n258# a_n317_n161# w_n353_n261# sky130_fd_pr__pfet_01v8 ad=0.26565 pd=1.94 as=0.26565 ps=1.94 w=1.61 l=0.15
+X2 a_n225_n161# a_n273_n258# a_n317_n161# w_n353_n261# sky130_fd_pr__pfet_01v8 ad=0.26565 pd=1.94 as=0.4991 ps=3.84 w=1.61 l=0.15
+X3 a_n317_n161# a_n81_n258# a_n225_n161# w_n353_n261# sky130_fd_pr__pfet_01v8 ad=0.26565 pd=1.94 as=0.26565 ps=1.94 w=1.61 l=0.15
+X4 a_n317_n161# a_n273_n258# a_n225_n161# w_n353_n261# sky130_fd_pr__pfet_01v8 ad=0.26565 pd=1.94 as=0.26565 ps=1.94 w=1.61 l=0.15
+X5 a_n225_n161# a_n81_n258# a_n317_n161# w_n353_n261# sky130_fd_pr__pfet_01v8 ad=0.26565 pd=1.94 as=0.26565 ps=1.94 w=1.61 l=0.15
+.ends
+
+.subckt NAND3 A B C VSS VDD Y
+Xefefetn_0 VSS C A B Y efefetn
+Xefemosp_0 A VDD C VDD B Y efemosp
+.ends
+

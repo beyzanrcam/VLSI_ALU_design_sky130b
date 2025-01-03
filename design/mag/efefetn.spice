@@ -1,0 +1,11 @@
+* NGSPICE file created from efefetn.ext - technology: sky130B
+
+.subckt efefetn
+X0 a_159_n150# a_n159_n253# a_63_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X1 a_n225_n150# a_n273_n329# a_n403_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.465 ps=3.62 w=1.5 l=0.15
+X2 a_63_n150# a_n63_n176# a_n33_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X3 a_n129_n150# a_n159_n253# a_n225_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X4 a_n33_n150# a_n63_n176# a_n129_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.2475 pd=1.83 as=0.2475 ps=1.83 w=1.5 l=0.15
+X5 a_n403_n150# a_n273_n329# a_159_n150# a_n403_n150# sky130_fd_pr__nfet_01v8 ad=0.465 pd=3.62 as=0.2475 ps=1.83 w=1.5 l=0.15
+.ends
+
