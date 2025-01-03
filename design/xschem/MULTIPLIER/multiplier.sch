@@ -15,13 +15,13 @@ lab=B0}
 N 120 -140 120 -110 {
 lab=B0}
 N -110 -170 -110 -110 {
-lab=D3}
+lab=A3}
 N -20 -170 -20 -110 {
-lab=D2}
+lab=A2}
 N 70 -170 70 -110 {
-lab=D1}
+lab=A1}
 N 160 -170 160 -110 {
-lab=D0}
+lab=A0}
 N -210 40 -210 60 {
 lab=B1}
 N -210 40 300 40 {
@@ -456,7 +456,7 @@ C {devices/ipin.sym} -280 1000 1 0 {name=p25 lab=A0}
 C {devices/ipin.sym} -560 1000 1 0 {name=p26 lab=A1}
 C {devices/ipin.sym} -910 1000 1 0 {name=p27 lab=A2}
 C {devices/ipin.sym} -1210 1000 1 0 {name=p28 lab=A3}
-C {devices/ipin.sym} 160 -160 1 0 {name=p8 lab=D0}
-C {devices/ipin.sym} 70 -160 1 0 {name=p7 lab=D1}
-C {devices/ipin.sym} -20 -160 1 0 {name=p5 lab=D2}
-C {devices/ipin.sym} -110 -160 1 0 {name=p6 lab=D3}
+C {devices/ipin.sym} 160 -170 1 0 {name=p5 lab=A0}
+C {devices/ipin.sym} 70 -170 1 0 {name=p6 lab=A1}
+C {devices/ipin.sym} -20 -170 1 0 {name=p7 lab=A2}
+C {devices/ipin.sym} -110 -170 1 0 {name=p8 lab=A3}

@@ -18,5 +18,5 @@ C {devices/lab_pin.sym} 150 -40 0 0 {name=p11 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 150 -60 0 0 {name=p12 sig_type=std_logic lab=!B}
 C {devices/opin.sym} 30 -250 0 0 {name=p13 lab=OUT
 }
-C {lab_pin.sym} 450 -110 0 1 {name=p14 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 450 -110 0 1 {name=p14 sig_type=std_logic lab=OUT}
 C {../CG4/cg4.sym} 300 -130 0 0 {name=x1}

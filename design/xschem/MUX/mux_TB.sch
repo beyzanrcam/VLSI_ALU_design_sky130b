@@ -79,11 +79,11 @@ C {devices/opin.sym} -1110 -420 3 0 {name=p1 lab=OUTPUT}
 C {devices/iopin.sym} -1310 -680 3 0 {name=p3 lab=VDD
 }
 C {devices/iopin.sym} -1260 -680 3 0 {name=p4 lab=VSS}
-C {/foss/designs/xschem/INV/inv.sym} -1060 -340 0 0 {name=x2 VSS=VSS VDD=VDD}
-C {/foss/designs/xschem/INV/inv.sym} -1060 -250 0 0 {name=x3 VSS=VSS VDD=VDD}
-C {/foss/designs/xschem/INV/inv.sym} -1060 -160 0 0 {name=x4 VSS=VSS VDD=VDD}
-C {/foss/designs/xschem/INV/inv.sym} -1060 -80 0 0 {name=x5 VSS=VSS VDD=VDD}
-C {/foss/designs/xschem/INV/inv.sym} -1410 -310 0 0 {name=x6 VSS=VSS VDD=VDD}
-C {lab_pin.sym} -1320 -240 3 0 {name=p5 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} -1340 -240 3 0 {name=p6 sig_type=std_logic lab=VDD}
-C {/foss/designs/xschem/XOR/XOR2.sym} -1170 -340 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {../INV/inv.sym} -1060 -340 0 0 {name=x2 VSS=VSS VDD=VDD}
+C {../INV/inv.sym} -1060 -250 0 0 {name=x3 VSS=VSS VDD=VDD}
+C {../INV/inv.sym} -1060 -160 0 0 {name=x4 VSS=VSS VDD=VDD}
+C {../INV/inv.sym} -1060 -80 0 0 {name=x5 VSS=VSS VDD=VDD}
+C {../INV/inv.sym} -1410 -310 0 0 {name=x6 VSS=VSS VDD=VDD}
+C {devices/lab_pin.sym} -1320 -240 3 0 {name=p5 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} -1340 -240 3 0 {name=p6 sig_type=std_logic lab=VDD}
+C {../XOR/XOR2.sym} -1170 -340 0 0 {name=x1 VSS=VSS VDD=VDD}

@@ -18,5 +18,5 @@ C {devices/lab_pin.sym} 160 -110 0 0 {name=p11 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 160 -90 0 0 {name=p12 sig_type=std_logic lab=!B}
 C {devices/opin.sym} 40 -300 0 0 {name=p13 lab=OUT
 }
-C {lab_pin.sym} 460 -160 0 1 {name=p14 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 460 -160 0 1 {name=p14 sig_type=std_logic lab=OUT}
 C {/foss/designs/HW3/cg4.sym} 310 -180 0 0 {name=x1}
