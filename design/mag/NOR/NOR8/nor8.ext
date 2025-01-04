@@ -1,0 +1,276 @@
+timestamp 1736026236
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use nor4 nor4_1 1 0 597 0 1 -110
+use nor4 nor4_0 1 0 2067 0 1 -110
+use nor2 nor2_0 1 0 2857 0 1 942
+port "A7" 8 -5 182 -5 182 m1
+port "A3" 4 -5 591 -5 591 m1
+port "A6" 7 -5 279 -5 279 m1
+port "A2" 3 -5 687 -5 687 m1
+port "A5" 6 -5 380 -5 380 m1
+port "A1" 2 -5 780 -5 780 m1
+port "Y" 11 3947 879 3947 879 m1
+port "A4" 5 -5 479 -5 479 m1
+port "A0" 1 -5 872 -5 872 m1
+node "VSS" 4 2396.59 725 49 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10881 724 27549 1150 33225 1260 221952 3264 1077760 7376 0 0
+node "A7" 5 560.655 -5 182 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9504 552 148896 4644 0 0 0 0 0 0 0 0
+node "A3" 0 3.82239 -5 591 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0 0 0 0 0 0 0
+node "A6" 5 212.539 -5 279 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9504 552 142560 4452 0 0 0 0 0 0 0 0
+node "A2" 0 3.83489 -5 687 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0 0 0 0 0 0 0
+node "A5" 5 198.153 -5 380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9504 552 135102 4226 0 0 0 0 0 0 0 0
+node "A1" 0 3.55124 -5 780 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0 0 0 0 0 0 0
+node "Y" 0 7.74697 3947 879 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 38 0 0 0 0 0 0 0 0 0 0
+node "A4" 4 458.241 -5 479 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9504 552 128040 4012 0 0 0 0 0 0 0 0
+node "A0" 0 4.0262 -5 872 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0 0 0 0 0 0 0
+node "m1_1312_840#" 3 814.762 1312 840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9702 558 10692 588 115072 3616 0 0 0 0 0 0
+node "VDD" 4 1751.48 65 1090 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8736 648 23697 1064 42000 1422 600829 7292 0 0 0 0
+node "w_1380_1019#" 11603 247.959 1380 1019 nw 0 0 0 0 82653 2174 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "A2" "A1" 1.33373
+cap "A3" "A5" 0.00126127
+cap "A2" "A5" 0.00126127
+cap "m1_1312_840#" "A0" 0.253711
+cap "m1_1312_840#" "A6" 11.2264
+cap "A4" "A0" 0.00286788
+cap "m1_1312_840#" "VDD" 196.624
+cap "m1_1312_840#" "w_1380_1019#" 12.1127
+cap "m1_1312_840#" "VSS" 50.0839
+cap "m1_1312_840#" "A5" 20.18
+cap "A2" "A3" 1.28721
+cap "A1" "A4" 0.00782119
+cap "A4" "VDD" 42.1253
+cap "w_1380_1019#" "A4" 4.85954
+cap "VSS" "A4" 14.0562
+cap "A4" "A5" 2233.91
+cap "A6" "A7" 3034.9
+cap "A7" "VDD" 11.7376
+cap "VSS" "A7" 205.038
+cap "A4" "A3" 1.59897
+cap "m1_1312_840#" "Y" 0.129346
+cap "A2" "A4" 0.0112803
+cap "A1" "A0" 1.31786
+cap "A6" "VDD" 15.0234
+cap "A6" "VSS" 25.4812
+cap "A6" "A5" 2284.74
+cap "A1" "A5" 0.211913
+cap "w_1380_1019#" "VDD" 13.7296
+cap "w_1380_1019#" "VSS" 2.84946
+cap "VSS" "VDD" 79.5946
+cap "m1_1312_840#" "A4" 130.816
+cap "A5" "VDD" 28.9218
+cap "VSS" "A5" 17.8462
+cap "m1_1312_840#" "A7" 7.06382
+cap "nor4_0/B" "nor4_1/Y" 135.38
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 29.186
+cap "nor4_1/C" "nor4_0/B" 0.0322497
+cap "nor4_1/D" "nor4_1/VDD" 17.1003
+cap "nor4_1/A" "nor4_1/VDD" 15.7266
+cap "nor4_0/B" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 0.19525
+cap "nor4_1/A" "nor4_0/B" 2.75696
+cap "nor4_1/VSS" "nor4_0/A" 4.78181
+cap "nor4_1/D" "nor4_0/B" 8.75116
+cap "nor4_0/B" "nor4_1/VDD" 0.2268
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" "nor4_1/Y" 0.00406295
+cap "nor4_1/VSS" "nor4_1/Y" 21.9777
+cap "nor4_1/Y" "nor4_0/C" 47.8133
+cap "nor4_1/VSS" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 9.95771
+cap "nor4_0/C" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 0.107115
+cap "nor4_1/VSS" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 1.95382
+cap "nor4_0/C" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 0.151746
+cap "nor4_1/C" "nor4_0/C" 0.684357
+cap "nor4_1/VSS" "nor4_1/C" 7.35307
+cap "nor4_0/A" "nor4_1/B" 10.8818
+cap "nor4_1/D" "nor4_0/C" 7.28778
+cap "nor4_1/VSS" "nor4_1/A" 0.270642
+cap "nor4_1/A" "nor4_0/C" 2.15906
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" "nor4_1/Y" 0.00974224
+cap "nor4_1/VSS" "nor4_1/D" 8.19456
+cap "nor4_1/VSS" "nor4_1/VDD" 5.99873
+cap "nor4_1/VDD" "nor4_0/C" 0.176293
+cap "nor4_1/Y" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 0.024276
+cap "nor4_0/D" "nor4_1/Y" 19.9712
+cap "nor4_0/D" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 0.0863094
+cap "nor4_1/B" "nor4_1/Y" 1.93016
+cap "nor4_1/VSS" "nor4_0/B" 4.88884
+cap "nor4_0/D" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 0.122272
+cap "nor4_1/C" "nor4_1/B" -1.33373
+cap "nor4_0/A" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 9.78199
+cap "nor4_0/D" "nor4_1/D" 5.16082
+cap "nor4_0/D" "nor4_1/A" 0.706816
+cap "nor4_1/A" "nor4_1/B" -1.31786
+cap "nor4_0/D" "nor4_1/VDD" 0.142035
+cap "nor4_1/VDD" "nor4_1/B" 17.3976
+cap "nor4_0/B" "nor4_1/B" -0.0529202
+cap "nor4_1/VSS" "nor4_0/C" 36.3175
+cap "nor4_1/Y" "nor4_0/Y" 6.43232
+cap "nor4_0/A" "nor4_1/Y" 134.547
+cap "nor4_0/A" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 5.76626
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 54.7204
+cap "nor4_1/C" "nor4_0/A" 20.354
+cap "nor4_0/D" "nor4_1/VSS" 85.1085
+cap "nor4_0/A" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 6.04066
+cap "nor4_0/A" "nor4_1/D" 128.175
+cap "nor4_1/B" "nor4_0/C" 0.695133
+cap "nor4_1/VSS" "nor4_1/B" 3.28177
+cap "nor4_1/A" "nor4_0/A" 9.49014
+cap "nor4_0/A" "nor4_1/VDD" 11.5847
+cap "nor4_1/C" "nor4_1/Y" 2.14963
+cap "nor4_0/A" "nor4_0/B" -0.021195
+cap "nor4_1/D" "nor4_1/Y" 2.05627
+cap "nor4_1/A" "nor4_1/Y" 1.28462
+cap "nor4_1/C" "nor4_1/D" -1.28721
+cap "nor4_1/VSS" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 10.2339
+cap "nor4_1/VDD" "nor4_1/Y" 127.077
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 27.9132
+cap "nor4_1/C" "nor4_1/VDD" 17.131
+cap "nor4_1/B" "nor4_0/C" 0.00675539
+cap "nor4_1/Y" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 21.2596
+cap "nor4_0/D" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 0.296941
+cap "nor4_0/D" "nor4_0/B" 18.5313
+cap "nor4_1/VDD" "nor4_0/A" 0.27307
+cap "nor4_0/B" "nor4_1/A" 0.048072
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/VDD" 29.8062
+cap "nor4_1/VSS" "nor4_0/C" 11.7406
+cap "nor4_0/B" "nor4_1/VDD" 9.52436
+cap "nor4_0/Y" "nor4_0/A" 0.665095
+cap "nor4_0/D" "nor4_1/VDD" 13.0228
+cap "nor4_1/VDD" "nor4_1/A" 0.449299
+cap "nor4_1/VSS" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 8.88935
+cap "nor4_1/Y" "nor4_0/A" 43.4992
+cap "nor4_1/D" "nor4_0/A" 8.46758
+cap "nor4_1/C" "nor4_0/A" 2.02397
+cap "nor4_1/B" "nor4_0/A" 0.787067
+cap "nor4_0/Y" "nor4_0/B" 1.07832
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 4.83737
+cap "nor4_1/Y" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 21.1331
+cap "nor4_0/Y" "nor4_0/D" 11.6941
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor4_1/VDD" 10.5641
+cap "nor4_0/D" "nor4_1/D" 0.339031
+cap "nor4_0/D" "nor4_1/Y" 39.754
+cap "nor4_1/Y" "nor4_0/B" 44.5012
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 1.75949
+cap "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/VDD" 0.589663
+cap "nor4_0/A" "nor4_1/VSS" 4.24044
+cap "nor4_0/B" "nor4_1/B" -0.105832
+cap "nor4_0/Y" "nor4_1/VDD" 47.6771
+cap "nor4_0/A" "nor4_0/C" 12.7548
+cap "nor4_1/D" "nor4_1/VDD" 1.2161
+cap "nor4_1/Y" "nor4_1/VDD" 117.548
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" "nor4_1/VDD" 61.0169
+cap "nor4_1/C" "nor4_1/VDD" 0.96794
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/VSS" 9.97643
+cap "nor4_0/B" "nor4_1/VSS" 5.4746
+cap "nor4_1/VDD" "nor4_1/B" 0.506108
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_0/C" 0.440906
+cap "nor4_0/D" "nor4_1/VSS" 31.7999
+cap "nor4_0/B" "nor4_0/C" 14.6902
+cap "nor4_0/D" "nor4_0/C" 19.4325
+cap "nor4_1/A" "nor4_0/C" 0.0405844
+cap "nor4_0/Y" "nor4_1/Y" 77.9091
+cap "nor2_0/Y" "nor4_0/D" 1.02023
+cap "nor4_1/Y" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 52.1237
+cap "nor4_1/VDD" "nor4_1/VSS" 19.0302
+cap "nor4_1/VDD" "nor4_0/C" 14.4686
+cap "nor2_0/Y" "nor4_1/VDD" 4.3128
+cap "nor4_1/VDD" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 22.1096
+cap "nor4_0/Y" "nor4_1/VSS" 34.3261
+cap "nor4_0/B" "nor4_0/A" 12.5501
+cap "nor4_1/Y" "nor4_1/VSS" 11.5748
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" "nor4_1/VSS" 9.74531
+cap "nor4_0/Y" "nor4_0/C" 1.84538
+cap "nor4_0/D" "nor4_0/A" 16.6488
+cap "nor4_1/D" "nor4_0/C" 0.00943274
+cap "nor4_1/A" "nor4_0/A" 0.376263
+cap "nor4_1/Y" "nor4_0/C" 48.1862
+cap "nor4_1/C" "nor4_0/C" 0.00794443
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" "nor4_1/Y" 2.03192
+cap "nor2_0/Y" "nor4_1/Y" 1.14069
+cap "nor2_0/Y" "nor4_0/VSS" 18.5123
+cap "nor4_1/Y" "nor4_0/VDD" 14.9887
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor4_0/VDD" 2.11646
+cap "nor4_0/D" "nor4_1/Y" 3.08048
+cap "nor4_0/A" "nor4_1/Y" 0.531179
+cap "nor4_0/Y" "nor4_1/Y" 109.138
+cap "nor4_0/VSS" "nor4_0/VDD" 16.8255
+cap "nor4_0/Y" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 25.2523
+cap "nor4_0/C" "nor4_1/Y" 1.16446
+cap "nor4_0/D" "nor4_0/VSS" 4.33657
+cap "nor4_0/A" "nor4_0/VSS" 1.0334
+cap "nor4_0/Y" "nor4_0/VSS" 47.515
+cap "nor4_0/C" "nor4_0/VSS" 0.226163
+cap "nor2_0/Y" "nor4_0/VDD" 0.125947
+cap "nor4_0/Y" "nor2_0/Y" 17.6117
+cap "nor4_0/Y" "nor4_0/VDD" 147.912
+cap "nor4_0/Y" "nor4_0/D" 0.0766053
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/Y" 0.622287
+cap "nor4_1/Y" "nor4_0/B" 0.663245
+cap "nor4_0/Y" "nor4_0/C" 0.455293
+cap "nor4_0/VSS" "nor4_0/B" 0.184267
+cap "nor4_1/Y" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 5.20044
+cap "nor4_0/VSS" "nor4_1/Y" 10.5944
+cap "nor4_0/VSS" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 9.29616
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 1.34384
+cap "nor4_0/A" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 1.56102
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 15.6284
+cap "nor4_1/D" "nor4_0/A" 0.575521
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 25.349
+cap "nor4_1/VDD" "nor4_1/Y" 24.8217
+cap "nor4_1/VDD" "nor4_1/D" 0.00861086
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/Y" 3.23442
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" "nor4_1/VDD" 34.2187
+cap "nor4_0/A" "nor4_1/Y" 0.00861086
+cap "nor4_0/Y" "nor4_1/VDD" 6.46241
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" "nor4_1/Y" 0.552958
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/D" 1.56102
+cap "nor4_1/VDD" "nor4_1/Y" 24.3206
+cap "nor4_1/VDD" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 2.33523
+cap "nor4_0/B" "nor4_1/VDD" 0.965851
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 15.6284
+cap "nor4_0/A" "nor4_1/D" 0.575521
+cap "nor4_1/VDD" "nor4_1/C" 0.011966
+cap "nor4_1/VDD" "nor4_0/D" 3.26149
+cap "nor4_1/VDD" "nor4_0/C" 1.10273
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" "nor4_1/VDD" 15.7535
+cap "nor4_1/VDD" "nor4_1/D" 0.442691
+cap "nor4_1/VDD" "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 1.33617
+cap "nor4_1/VDD" "nor4_0/A" 0.733702
+cap "nor4_0/VDD" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" 11.5825
+cap "nor4_0/VDD" "nor4_0/A" 0.707753
+cap "nor4_0/VDD" "nor4_0/VSS" 0.812734
+cap "nor4_0/VDD" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 2.37718
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" "nor4_1/Y" 0.0106756
+cap "nor4_0/VDD" "nor4_1/Y" 7.29869
+cap "nor4_0/Y" "nor4_1/Y" 0.0586674
+cap "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_63_n428#" "nor4_1/Y" 0.0343607
+cap "nor4_0/VDD" "nor4_0/D" 3.33054
+cap "nor4_0/VDD" "nor4_0/B" 1.10624
+cap "nor4_1/Y" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n513_n428#" 0.0052328
+cap "nor4_0/VDD" "nor4_0/sky130_fd_pr__pfet_01v8_64A2S3_0/a_n225_n428#" 1.86131
+cap "nor4_0/VDD" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 12.8275
+cap "nor4_0/Y" "nor4_0/VDD" 56.2602
+cap "nor4_0/VDD" "nor4_0/C" 1.57068
+merge "nor2_0/VSS" "nor4_0/VSS" -516.087 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6097 -554 0 0 0 0 0 0 0 0 0 0
+merge "nor4_0/VSS" "nor4_1/VSS"
+merge "nor4_1/VSS" "VSUBS"
+merge "VSUBS" "VSS"
+merge "nor4_0/A" "A4" -252.523 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor4_0/B" "A5" -112.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor4_1/sky130_fd_pr__pfet_01v8_64A2S3_0/w_n641_n484#" "nor2_0/VDD" -1456.91 0 0 0 0 -6603 -5122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8684 -646 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/VDD" "nor4_0/VDD"
+merge "nor4_0/VDD" "nor4_1/VDD"
+merge "nor4_1/VDD" "VDD"
+merge "VDD" "w_1380_1019#"
+merge "nor4_0/C" "A6" -91.7674 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor4_0/D" "A7" -132.279 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/A" "nor4_1/Y" -638.822 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9306 -546 0 0 0 0 0 0 0 0 0 0
+merge "nor4_1/Y" "m1_1312_840#"
+merge "nor2_0/Y" "Y" -28.6799 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 -38 0 0 0 0 0 0 0 0 0 0
+merge "nor4_1/A" "A0" -4.07626 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27 -24 0 0 0 0 0 0 0 0 0 0
+merge "nor4_1/B" "A1" -3.55124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27 -24 0 0 0 0 0 0 0 0 0 0
+merge "nor4_1/C" "A2" -5.24293 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27 -24 0 0 0 0 0 0 0 0 0 0
+merge "nor4_1/D" "A3" -38.578 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27 -24 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/B" "nor4_0/Y" -218.567 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -132 0 0 0 0 0 0 0 0 0 0
