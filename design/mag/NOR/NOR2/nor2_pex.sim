@@ -1,0 +1,20 @@
+| units: 500000 tech: sky130B format: MIT
+x A VSS Y VSS s=12400,524 d=6600,266 l=30 w=200 x=482 y=-329 sky130_fd_pr__nfet_01v8
+x A VDD a_128_103# VDD s=8448,322 d=8448,322 l=30 w=256 x=290 y=103 sky130_fd_pr__pfet_01v8
+x A a_128_103# VDD VDD s=8448,322 d=8448,322 l=30 w=256 x=194 y=103 sky130_fd_pr__pfet_01v8
+x A a_128_103# VDD VDD s=8448,322 d=8448,322 l=30 w=256 x=386 y=103 sky130_fd_pr__pfet_01v8
+x A VDD a_128_103# VDD s=8448,322 d=8448,322 l=30 w=256 x=482 y=103 sky130_fd_pr__pfet_01v8
+x B a_128_103# Y VDD s=8448,322 d=8448,322 l=30 w=256 x=578 y=103 sky130_fd_pr__pfet_01v8
+x B Y a_128_103# VDD s=8448,322 d=8448,322 l=30 w=256 x=674 y=103 sky130_fd_pr__pfet_01v8
+x B a_128_103# Y VDD s=8448,322 d=8448,322 l=30 w=256 x=770 y=103 sky130_fd_pr__pfet_01v8
+x B a_128_103# Y VDD s=8448,322 d=15872,636 l=30 w=256 x=962 y=103 sky130_fd_pr__pfet_01v8
+x B Y a_128_103# VDD s=8448,322 d=8448,322 l=30 w=256 x=866 y=103 sky130_fd_pr__pfet_01v8
+x A VDD a_128_103# VDD s=15872,636 d=8448,322 l=30 w=256 x=98 y=103 sky130_fd_pr__pfet_01v8
+x B Y VSS VSS s=6600,266 d=12400,524 l=30 w=200 x=578 y=-329 sky130_fd_pr__nfet_01v8
+R Y 4090
+R B 3115
+R A 3105
+C VDD0 2.1
+R VDD 5827
+R VSS 1806
+R a_128_103# 6252
