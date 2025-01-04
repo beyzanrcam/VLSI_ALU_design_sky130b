@@ -1,0 +1,178 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H9P4D in circuit inv (1)(1 instance)
+Flattening unmatched subcell efepmos_W107-L15-F3 in circuit inv (1)(1 instance)
+
+Class inv (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (3->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+A                                          |A                                          
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv and inv are equivalent.
+Flattening unmatched subcell nmos_2shared_W200-L015-F1 in circuit NAND2 (1)(1 instance)
+Flattening unmatched subcell pmos_p2-w321-L015-f3 in circuit NAND2 (1)(1 instance)
+
+Class NAND2 (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: nand2                           |Circuit 2: NAND2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (6->2)             
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand2                           |Circuit 2: NAND2                           
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+VSS                                        |VSS                                        
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand2 and NAND2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: not8                            |Circuit 2: NOT8                            
+-------------------------------------------|-------------------------------------------
+inv (8)                                    |inv (8)                                    
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 18                         |Number of nets: 18                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: not8                            |Circuit 2: NOT8                            
+-------------------------------------------|-------------------------------------------
+A7                                         |A7                                         
+A0                                         |A0                                         
+A6                                         |A6                                         
+A5                                         |A5                                         
+A4                                         |A4                                         
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+S7                                         |S7                                         
+S0                                         |S0                                         
+S6                                         |S6                                         
+S5                                         |S5                                         
+S4                                         |S4                                         
+S1                                         |S1                                         
+S2                                         |S2                                         
+S3                                         |S3                                         
+(no pin, node is VDD)                      |inv_7/VDD                                  
+(no pin, node is VSS)                      |VSUBS                                      
+---------------------------------------------------------------------------------------
+Cell pin lists for not8 and NOT8 altered to match.
+Device classes not8 and NOT8 are equivalent.
+Flattening unmatched subcell nand_8_bitwise in circuit OR8 (0)(1 instance)
+Flattening unmatched subcell NAND8 in circuit OR8 (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: OR8                             |Circuit 2: OR8                             
+-------------------------------------------|-------------------------------------------
+not8 (2)                                   |NOT8 (2)                                   
+nand2 (8)                                  |NAND2 (8)                                  
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 46 **Mismatch**            |Number of nets: 44 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: OR8                             |Circuit 2: OR8                             
+
+---------------------------------------------------------------------------------------
+Net: dummy_41                              |Net: NOT8_1/inv_7/VDD                      
+  not8/proxyinv_7/VDD = 1                  |  NOT8/inv_7/VDD = 2                       
+                                           |                                           
+Net: dummy_43                              |Net: VSUBS                                 
+  not8/proxyinv_7/VDD = 1                  |  NOT8/VSUBS = 2                           
+                                           |                                           
+Net: dummy_42                              |(no matching net)                          
+  not8/proxyVSUBS = 1                      |                                           
+                                           |                                           
+Net: dummy_44                              |(no matching net)                          
+  not8/proxyVSUBS = 1                      |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: OR8                             |Circuit 2: OR8                             
+-------------------------------------------|-------------------------------------------
+S7                                         |S7                                         
+S6                                         |S6                                         
+S5                                         |S5                                         
+S4                                         |S4                                         
+S3                                         |S3                                         
+S2                                         |S2                                         
+S1                                         |S1                                         
+S0                                         |S0                                         
+A7                                         |A7                                         
+B7                                         |B7                                         
+A6                                         |A6                                         
+B6                                         |B6                                         
+A5                                         |A5                                         
+B5                                         |B5                                         
+A4                                         |A4                                         
+B4                                         |B4                                         
+A3                                         |A3                                         
+B3                                         |B3                                         
+A2                                         |A2                                         
+B2                                         |B2                                         
+A1                                         |A1                                         
+B1                                         |B1                                         
+A0                                         |A0                                         
+B0                                         |B0                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OR8 and OR8 are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.
