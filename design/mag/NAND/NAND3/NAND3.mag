@@ -1,104 +1,146 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735932422
+timestamp 1735988064
 << nwell >>
-rect -443 1227 265 1367
-rect -407 1207 228 1227
-rect -241 746 -208 765
-rect 263 743 265 1227
+rect 18 500 725 668
+rect 46 494 688 500
+rect 46 493 54 494
+rect 97 16 167 85
+rect 289 16 359 85
+rect 498 35 532 69
+<< psubdiff >>
+rect 68 -231 150 -207
+rect 68 -783 90 -231
+rect 124 -783 150 -231
+rect 68 -807 150 -783
 << nsubdiff >>
-rect -407 1266 228 1270
-rect -407 1232 -383 1266
-rect 204 1232 228 1266
-rect -407 1219 228 1232
+rect 54 542 688 560
+rect 54 508 78 542
+rect 664 508 688 542
+rect 54 494 688 508
+<< psubdiffcont >>
+rect 90 -783 124 -231
 << nsubdiffcont >>
-rect -383 1232 204 1266
+rect 78 508 664 542
 << poly >>
-rect -172 801 -164 812
-rect -172 796 -109 801
-rect -356 602 -241 746
-rect -172 713 -108 796
-rect -174 707 -108 713
-rect -356 568 -295 602
-rect -258 568 -241 602
-rect -356 550 -241 568
-rect -198 705 -108 707
-rect -198 671 -158 705
-rect -121 671 -108 705
-rect 21 699 97 812
-rect -198 654 -108 671
-rect -198 550 -145 654
-rect -56 592 97 699
-rect -56 588 48 592
-rect 21 552 48 588
+rect 308 85 435 90
+rect 98 69 242 85
+rect 98 35 114 69
+rect 148 35 242 69
+rect 98 19 242 35
+rect 290 69 435 85
+rect 290 35 306 69
+rect 340 35 435 69
+rect 290 19 435 35
+rect 482 69 626 85
+rect 482 35 498 69
+rect 532 35 626 69
+rect 482 19 626 35
+rect 98 -125 166 19
+rect 290 -31 358 19
+rect 482 -23 550 19
+rect 290 -65 306 -31
+rect 340 -65 358 -31
+rect 290 -81 358 -65
+rect 404 -31 550 -23
+rect 404 -65 498 -31
+rect 532 -65 550 -31
+rect 404 -81 550 -65
+rect 98 -179 242 -125
+rect 212 -209 242 -179
+rect 308 -191 338 -81
+rect 404 -181 434 -81
 << polycont >>
-rect -295 568 -258 602
-rect -158 671 -121 705
+rect 114 35 148 69
+rect 306 35 340 69
+rect 498 35 532 69
+rect 306 -65 340 -31
+rect 498 -65 532 -31
 << locali >>
-rect -407 1232 -383 1266
-rect 204 1232 228 1266
-rect -174 705 -105 796
-rect -174 671 -158 705
-rect -121 671 -105 705
-rect -174 668 -105 671
-rect -311 568 -295 602
-rect -258 568 -242 602
+rect 54 542 688 560
+rect 54 508 78 542
+rect 664 508 688 542
+rect 54 494 688 508
+rect 98 35 113 69
+rect 149 35 164 69
+rect 290 35 306 69
+rect 341 35 356 69
+rect 290 -65 306 -31
+rect 340 -65 356 -31
+rect 482 -65 498 -31
+rect 532 -65 548 -31
+rect 90 -203 124 -202
+rect 90 -231 196 -203
+rect 124 -783 196 -231
+rect 90 -811 196 -783
 << viali >>
-rect -383 1232 204 1266
-rect 37 762 71 796
-rect -158 671 -121 705
-rect -295 568 -258 602
+rect 78 508 664 542
+rect 113 35 114 69
+rect 114 35 148 69
+rect 148 35 149 69
+rect 306 35 340 69
+rect 340 35 341 69
+rect 498 35 532 69
+rect 306 -65 340 -31
+rect 498 -65 532 -31
+rect 90 -778 124 -231
 << metal1 >>
-rect -407 1266 228 1272
-rect -407 1232 -383 1266
-rect 204 1232 228 1266
-rect -407 1165 228 1232
-rect 125 969 176 988
-rect 125 847 181 969
-rect 125 843 219 847
-rect 298 843 351 989
-rect -443 796 -121 815
-rect 24 796 97 815
-rect -443 746 -108 796
-rect 24 762 37 796
-rect 71 762 97 796
-rect 24 741 97 762
-rect -443 649 -410 718
-rect -172 705 -108 718
-rect -172 671 -158 705
-rect -121 671 -108 705
-rect -172 668 -108 671
-rect -443 571 -424 621
-rect -443 552 -409 571
-rect 125 599 351 843
-rect 125 524 198 599
-rect -363 203 -340 227
-rect -62 224 198 524
-rect 334 217 351 238
-rect -442 16 -340 203
-rect 281 208 351 217
-rect 281 16 350 208
-rect -442 -53 350 16
-use efefetn  
-timestamp 1735932422
-transform 1 0 -39 0 1 374
-box -404 -386 390 441
-use efemosp  
+rect 54 542 688 560
+rect 54 508 78 542
+rect 664 508 688 542
+rect 54 292 688 508
+rect 758 123 781 135
+rect 289 85 357 86
+rect 18 69 166 85
+rect 18 35 113 69
+rect 149 35 166 69
+rect 18 16 166 35
+rect 289 69 435 85
+rect 289 35 306 69
+rect 341 35 435 69
+rect 289 19 435 35
+rect 480 69 550 87
+rect 480 35 498 69
+rect 532 35 550 69
+rect 289 -12 358 19
+rect 17 -31 358 -12
+rect 17 -65 306 -31
+rect 340 -65 358 -31
+rect 17 -81 358 -65
+rect 480 -31 550 35
+rect 480 -65 498 -31
+rect 532 -65 550 -31
+rect 480 -109 550 -65
+rect 17 -110 98 -109
+rect 166 -110 550 -109
+rect 17 -179 550 -110
+rect 578 -207 781 123
+rect 68 -231 416 -207
+rect 68 -778 90 -231
+rect 124 -778 416 -231
+rect 68 -833 416 -778
+rect 444 -384 781 -207
+rect 444 -807 553 -384
+use efemosp  efemosp_0
 timestamp 1732912614
-transform 1 0 -90 0 1 1004
+transform 1 0 371 0 1 277
 box -353 -261 410 223
+use efen3  efen3_0
+timestamp 1735982637
+transform 1 0 323 0 1 -507
+box -173 -326 173 326
 << labels >>
-rlabel metal1 -407 1166 228 1227 1 VDD
-port 5 n
-rlabel metal1 298 599 351 989 3 Y
-port 6 e
-rlabel metal1 -442 552 -409 568 7 C
-port 3 w
-rlabel metal1 -442 -53 350 16 5 VSS
-port 4 s
-rlabel metal1 -443 649 -410 718 7 B
-port 2 w
-rlabel metal1 -443 779 -443 779 7 A
-port 1 w
+flabel metal1 17 -179 77 -109 0 FreeSans 160 0 0 0 A
+port 0 nsew
+flabel metal1 17 -81 76 -12 0 FreeSans 160 0 0 0 B
+port 1 nsew
+flabel metal1 18 16 77 85 0 FreeSans 160 0 0 0 C
+port 3 nsew
+flabel metal1 97 -833 365 -753 0 FreeSans 160 0 0 0 VSS
+port 4 nsew
+flabel metal1 243 474 511 554 0 FreeSans 160 0 0 0 VDD
+port 5 nsew
+flabel metal1 683 -210 757 42 0 FreeSans 160 0 0 0 Y
+port 7 nsew
 << end >>
