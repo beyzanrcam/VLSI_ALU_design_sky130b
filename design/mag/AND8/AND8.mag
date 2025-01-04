@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735985840
+timestamp 1736007534
 << metal1 >>
 rect 6 1844 78 1924
 rect 178 1852 234 1924
@@ -51,61 +51,61 @@ rect 4892 -2650 4928 -2618
 rect 5392 -2650 5428 -2618
 rect 5872 -2646 5908 -2614
 rect 6372 -2650 6408 -2618
-use NAND8  NAND8_0 ~/Desktop/vlsi_sky130b/design/mag/NAND8
+use NAND8  NAND8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/AND8/../NAND8
 timestamp 1735984326
 transform 1 0 5260 0 1 734
 box -5260 -734 4324 1197
-use NOT8  NOT8_0 ~/Desktop/vlsi_sky130b/design/mag/NOT
+use NOT8  NOT8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/AND8/../NOT
 timestamp 1735843251
 transform 1 0 2718 0 1 -2155
 box -110 -501 3853 1143
 << labels >>
-rlabel metal1 6 1844 78 1924 1 A0
-port 1 n
-rlabel metal1 178 1852 234 1924 1 B0
-port 2 n
-rlabel metal1 1318 1836 1390 1924 1 A1
-port 3 n
-rlabel metal1 1490 1846 1544 1924 1 B1
-port 4 n
-rlabel metal1 2790 1844 2844 1922 1 B2
-port 5 n
-rlabel metal1 2618 1842 2690 1924 1 A2
-port 6 n
-rlabel metal1 3826 1840 3898 1922 1 A3
-port 7 n
-rlabel metal1 3994 1846 4052 1922 1 B3
-port 8 n
-rlabel metal1 5190 1848 5238 1922 1 B4
-port 9 n
-rlabel metal1 5024 1850 5072 1924 1 A4
-port 10 n
-rlabel metal1 6150 1846 6198 1920 1 A5
-port 11 n
-rlabel metal1 6308 1850 6356 1924 1 B5
-port 12 n
-rlabel metal1 7518 1850 7566 1924 1 B6
-port 13 n
-rlabel metal1 7358 1852 7406 1926 1 A6
-port 14 n
-rlabel metal1 8540 1848 8588 1922 1 A7
-port 15 n
-rlabel metal1 8706 1848 8754 1922 1 B7
-port 16 n
-rlabel metal1 3012 -2650 3048 -2618 5 S0
-port 17 s
-rlabel metal1 3492 -2650 3528 -2618 5 S1
-port 18 s
-rlabel metal1 3952 -2650 3988 -2618 5 S2
-port 19 s
-rlabel metal1 4412 -2650 4448 -2618 5 S3
-port 20 s
-rlabel metal1 4892 -2650 4928 -2618 5 S4
-port 21 s
-rlabel metal1 5392 -2650 5428 -2618 5 S5
-port 22 s
-rlabel metal1 5872 -2646 5908 -2614 5 S6
-port 23 s
-rlabel metal1 6372 -2650 6408 -2618 5 S7
-port 24 s
+flabel metal1 18 1850 54 1912 0 FreeSans 160 0 0 0 A7
+port 0 nsew
+flabel metal1 188 1858 224 1920 0 FreeSans 160 0 0 0 B7
+port 1 nsew
+flabel metal1 1338 1850 1374 1912 0 FreeSans 160 0 0 0 A6
+port 2 nsew
+flabel metal1 1502 1854 1538 1916 0 FreeSans 160 0 0 0 B6
+port 3 nsew
+flabel metal1 2634 1854 2670 1916 0 FreeSans 160 0 0 0 A5
+port 4 nsew
+flabel metal1 2800 1854 2836 1916 0 FreeSans 160 0 0 0 B5
+port 5 nsew
+flabel metal1 3844 1850 3880 1912 0 FreeSans 160 0 0 0 A4
+port 6 nsew
+flabel metal1 4006 1856 4042 1918 0 FreeSans 160 0 0 0 B4
+port 7 nsew
+flabel metal1 5032 1856 5068 1918 0 FreeSans 160 0 0 0 A3
+port 8 nsew
+flabel metal1 5194 1854 5230 1916 0 FreeSans 160 0 0 0 B3
+port 9 nsew
+flabel metal1 6158 1852 6194 1914 0 FreeSans 160 0 0 0 A2
+port 10 nsew
+flabel metal1 6312 1856 6348 1918 0 FreeSans 160 0 0 0 B2
+port 11 nsew
+flabel metal1 7366 1856 7402 1918 0 FreeSans 160 0 0 0 A1
+port 12 nsew
+flabel metal1 7524 1856 7560 1918 0 FreeSans 160 0 0 0 B1
+port 13 nsew
+flabel metal1 8548 1852 8584 1914 0 FreeSans 160 0 0 0 A0
+port 14 nsew
+flabel metal1 8710 1852 8746 1914 0 FreeSans 160 0 0 0 B0
+port 15 nsew
+flabel metal1 6378 -2644 6398 -2626 0 FreeSans 160 0 0 0 S0
+port 16 nsew
+flabel metal1 5882 -2642 5902 -2624 0 FreeSans 160 0 0 0 S1
+port 17 nsew
+flabel metal1 5400 -2644 5420 -2626 0 FreeSans 160 0 0 0 S2
+port 18 nsew
+flabel metal1 4902 -2642 4922 -2624 0 FreeSans 160 0 0 0 S3
+port 19 nsew
+flabel metal1 4424 -2642 4444 -2624 0 FreeSans 160 0 0 0 S4
+port 20 nsew
+flabel metal1 3960 -2642 3980 -2624 0 FreeSans 160 0 0 0 S5
+port 21 nsew
+flabel metal1 3500 -2640 3520 -2622 0 FreeSans 160 0 0 0 S6
+port 22 nsew
+flabel metal1 3016 -2642 3036 -2624 0 FreeSans 160 0 0 0 S7
+port 23 nsew
 << end >>
