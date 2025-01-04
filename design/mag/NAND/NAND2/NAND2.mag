@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735933295
+timestamp 1735981380
 << nwell >>
 rect 356 684 1062 804
 << ndiff >>
@@ -98,7 +98,7 @@ timestamp 1735933295
 transform 0 1 826 -1 0 179
 box -125 -226 125 226
 use pmos_p2-w321-L015-f3  pmos_p2-w321-L015-f3_0
-timestamp 1735931554
+timestamp 1735981380
 transform 1 0 709 0 -1 541
 box -353 -143 353 169
 << labels >>

@@ -1,0 +1,100 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell nmos_2shared_W200-L015-F1 in circuit NAND2 (0)(1 instance)
+Flattening unmatched subcell pmos_p2-w321-L015-f3 in circuit NAND2 (0)(1 instance)
+
+Class NAND2 (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2 and nand2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: NAND8                           |Circuit 2: nand_8_bitwise                  
+-------------------------------------------|-------------------------------------------
+NAND2 (8)                                  |nand2 (8)                                  
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 26                         |Number of nets: 26                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND8                           |Circuit 2: nand_8_bitwise                  
+-------------------------------------------|-------------------------------------------
+B5                                         |B5                                         
+B0                                         |B0                                         
+B3                                         |B3                                         
+B4                                         |B4                                         
+B7                                         |B7                                         
+B2                                         |B2                                         
+B1                                         |B1                                         
+B6                                         |B6                                         
+A5                                         |A5                                         
+A0                                         |A0                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+A7                                         |A7                                         
+A2                                         |A2                                         
+A1                                         |A1                                         
+A6                                         |A6                                         
+P5                                         |P5                                         
+P0                                         |P0                                         
+P3                                         |P3                                         
+P4                                         |P4                                         
+P7                                         |P7                                         
+P2                                         |P2                                         
+P1                                         |P1                                         
+P6                                         |P6                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND8 and nand_8_bitwise are equivalent.
+
+Final result: Circuits match uniquely.
+.
