@@ -110,9 +110,9 @@ C {devices/lab_pin.sym} 140 60 0 0 {name=p8 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 270 270 0 0 {name=p9 sig_type=std_logic lab=B}
 C {devices/ipin.sym} 40 120 0 0 {name=p10 lab=C}
 C {devices/lab_pin.sym} 40 120 2 0 {name=p11 sig_type=std_logic lab=C}
-C {devices/lab_pin.sym} 140 -20 0 0 {name=p6 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 140 160 0 0 {name=p6 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 400 270 0 0 {name=p12 sig_type=std_logic lab=C}
 C {devices/ipin.sym} 40 60 0 0 {name=p3 lab=A}
 C {devices/lab_pin.sym} 40 60 2 0 {name=p13 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 140 270 0 0 {name=p14 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 140 160 0 0 {name=p15 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 140 -20 0 0 {name=p15 sig_type=std_logic lab=A}
