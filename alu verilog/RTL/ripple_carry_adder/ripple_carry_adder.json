@@ -1,9 +1,9 @@
 {
-  "creator": "Yosys 0.48+5 (git sha1 7a362f1f7, g++ 14.2.1 -O2 -fexceptions -fstack-protector-strong -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -O3)",
+  "creator": "Yosys 0.48+51 (git sha1 17a53b838, g++ 14.2.1 -O2 -fexceptions -fstack-protector-strong -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -O3)",
   "modules": {
     "full_adder": {
       "attributes": {
-        "src": "full_adder.sv:2.1-11.10"
+        "src": "full_adder.sv:2.1-12.10"
       },
       "ports": {
         "A": {
@@ -178,7 +178,7 @@
     "ripple_carry_adder": {
       "attributes": {
         "top": "00000000000000000000000000000001",
-        "src": "ripple_carry_adder.sv:3.1-29.10"
+        "src": "ripple_carry_adder.sv:3.1-41.10"
       },
       "ports": {
         "A": {
@@ -354,7 +354,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -378,7 +378,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -402,7 +402,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -426,7 +426,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -450,7 +450,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -474,7 +474,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -498,7 +498,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:22.24-24.14"
+            "src": "ripple_carry_adder.sv:29.24-35.14"
           },
           "port_directions": {
             "A": "input",
@@ -522,7 +522,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "ripple_carry_adder.sv:15.16-17.6"
+            "src": "ripple_carry_adder.sv:17.16-23.6"
           },
           "port_directions": {
             "A": "input",

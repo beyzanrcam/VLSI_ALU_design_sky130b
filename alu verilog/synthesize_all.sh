@@ -16,14 +16,13 @@ yosys -s synth_all_modules.ys
 yosys -s synth_alu.ys
 
 # Generate SVG for each module
-netlistsvg RTL/full_adder/full_adder.json -o RTL/full_adder/full_adder.svg
-netlistsvg RTL/ripple_carry_adder/ripple_carry_adder.json -o RTL/ripple_carry_adder/ripple_carry_adder.svg
-netlistsvg RTL/multiplier/multiplier.json -o RTL/multiplier/multiplier.svg
-netlistsvg RTL/logical_and/logical_and.json -o RTL/logical_and/logical_and.svg
-netlistsvg RTL/logical_or/logical_or.json -o RTL/logical_or/logical_or.svg
-netlistsvg RTL/logical_xor/logical_xor.json -o RTL/logical_xor/logical_xor.svg
-netlistsvg RTL/logical_not/logical_not.json -o RTL/logical_not/logical_not.svg
-netlistsvg RTL/shift_left/shift_left.json -o RTL/shift_left/shift_left.svg
-netlistsvg RTL/shift_right/shift_right.json -o RTL/shift_right/shift_right.svg
-netlistsvg RTL/alu/alu.json -o RTL/alu/alu.svg
-
+netlistsvg RTL/full_adder/full_adder.json -o RTL/full_adder/full_adder.svg -style layout=hierarchical
+netlistsvg RTL/ripple_carry_adder/ripple_carry_adder.json -o RTL/ripple_carry_adder/ripple_carry_adder.svg -style layout=hierarchical
+netlistsvg RTL/multiplier/multiplier.json -o RTL/multiplier/multiplier.svg -style layout=hierarchical
+netlistsvg RTL/logical_and/logical_and.json -o RTL/logical_and/logical_and.svg -style layout=hierarchical
+netlistsvg RTL/logical_or/logical_or.json -o RTL/logical_or/logical_or.svg -style layout=hierarchical
+netlistsvg RTL/logical_xor/logical_xor.json -o RTL/logical_xor/logical_xor.svg -style layout=hierarchical
+netlistsvg RTL/logical_not/logical_not.json -o RTL/logical_not/logical_not.svg -style layout=hierarchical
+netlistsvg RTL/shift_left/shift_left.json -o RTL/shift_left/shift_left.svg -style layout=hierarchical
+netlistsvg RTL/shift_right/shift_right.json -o RTL/shift_right/shift_right.svg -style layout=hierarchical
+netlistsvg RTL/alu/alu.json -o RTL/alu/alu.svg -style layout=hierarchical
