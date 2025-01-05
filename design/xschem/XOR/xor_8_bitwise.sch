@@ -66,14 +66,14 @@ N -150 330 -120 330 {
 lab=xxx}
 N -150 310 -140 310 {
 lab=A7}
-C {XOR/XOR2.sym} 40 -80 0 0 {name=x1}
-C {XOR/XOR2.sym} 40 -20 0 0 {name=x2}
-C {XOR/XOR2.sym} 40 40 0 0 {name=x3}
-C {XOR/XOR2.sym} 40 100 0 0 {name=x4}
-C {XOR/XOR2.sym} 40 160 0 0 {name=x5}
-C {XOR/XOR2.sym} 40 220 0 0 {name=x6}
-C {XOR/XOR2.sym} 40 280 0 0 {name=x7}
-C {XOR/XOR2.sym} 40 340 0 0 {name=x8}
+C {XOR/XOR2.sym} 30 -100 0 0 {name=x1}
+C {XOR/XOR2.sym} 30 -40 0 0 {name=x2}
+C {XOR/XOR2.sym} 30 20 0 0 {name=x3}
+C {XOR/XOR2.sym} 30 80 0 0 {name=x4}
+C {XOR/XOR2.sym} 30 140 0 0 {name=x5}
+C {XOR/XOR2.sym} 30 200 0 0 {name=x6}
+C {XOR/XOR2.sym} 30 260 0 0 {name=x7}
+C {XOR/XOR2.sym} 30 320 0 0 {name=x8}
 C {devices/opin.sym} 210 -110 0 0 {name=p1 lab=S0}
 C {devices/opin.sym} 210 -50 0 0 {name=p2 lab=S1}
 C {devices/opin.sym} 210 10 0 0 {name=p3 lab=S2}

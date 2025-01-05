@@ -10,5 +10,5 @@ C {devices/opin.sym} 280 -10 0 0 {name=p4 lab=V}
 C {devices/ipin.sym} -320 -10 0 0 {name=p1 lab=C}
 C {devices/ipin.sym} -320 10 0 0 {name=p3 lab=MSB1}
 C {devices/ipin.sym} -320 30 0 0 {name=p5 lab=MSB2}
-C {XOR/XOR2.sym} -160 40 0 0 {name=x5}
-C {XOR/XOR2.sym} 140 20 0 0 {name=x6}
+C {XOR/XOR2.sym} -170 20 0 0 {name=x5}
+C {XOR/XOR2.sym} 130 0 0 0 {name=x6}

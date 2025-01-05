@@ -6,9 +6,9 @@ S {}
 E {}
 N -80 -180 -20 -180 {lab=#net1}
 N -180 -180 -80 -180 {lab=#net1}
-N -480 -160 -480 -120 {lab=k}
-N -480 -120 -20 -120 {lab=k}
-N -20 -150 -20 -120 {lab=k}
+N -480 -160 -480 -120 {lab=K}
+N -480 -120 -20 -120 {lab=K}
+N -20 -150 -20 -120 {lab=K}
 N -80 0 -20 0 {lab=#net2}
 N -180 0 -80 0 {lab=#net2}
 N -80 180 -20 180 {lab=#net3}
@@ -97,56 +97,53 @@ N 280 -160 290 -160 {
 lab=#net9}
 N 280 200 360 200 {
 lab=#net11}
-N -580 -250 -580 -220 {
-lab=k}
-C {ADDER/full_adder.sym} 130 -180 0 0 {name=x1}
 C {devices/ipin.sym} -20 -210 0 0 {name=p9 lab=A0}
 C {devices/ipin.sym} -480 -180 0 0 {name=p12 lab=B0}
 C {devices/opin.sym} 280 -200 0 0 {name=p28 lab=S0}
-C {XOR/XOR2.sym} -320 -150 0 0 {name=x2[7:0]}
-C {devices/ipin.sym} -580 -240 1 0 {name=p2 lab=K}
+C {devices/ipin.sym} -540 -220 0 0 {name=p2 lab=K}
 C {ADDER/full_adder.sym} 130 0 0 0 {name=x2}
 C {devices/ipin.sym} -20 -30 0 0 {name=p3 lab=A1}
 C {devices/ipin.sym} -480 0 0 0 {name=p4 lab=B1}
 C {devices/opin.sym} 280 -20 0 0 {name=p5 lab=S1}
-C {XOR/XOR2.sym} -320 30 0 0 {name=x3[7:0]}
 C {ADDER/full_adder.sym} 130 180 0 0 {name=x3}
 C {devices/ipin.sym} -20 150 0 0 {name=p8 lab=A2}
 C {devices/ipin.sym} -480 180 0 0 {name=p10 lab=B2}
 C {devices/opin.sym} 280 160 0 0 {name=p11 lab=S2}
-C {XOR/XOR2.sym} -320 210 0 0 {name=x4[7:0]}
 C {ADDER/full_adder.sym} 130 340 0 0 {name=x4}
 C {devices/ipin.sym} -20 310 0 0 {name=p15 lab=A3}
 C {devices/ipin.sym} -480 340 0 0 {name=p16 lab=B3}
 C {devices/opin.sym} 280 320 0 0 {name=p17 lab=S3}
-C {XOR/XOR2.sym} -320 370 0 0 {name=x5[7:0]}
 C {ADDER/full_adder.sym} 130 510 0 0 {name=x5}
 C {devices/ipin.sym} -20 480 0 0 {name=p20 lab=A4}
 C {devices/ipin.sym} -480 510 0 0 {name=p21 lab=B4}
 C {devices/opin.sym} 280 490 0 0 {name=p22 lab=S4}
-C {XOR/XOR2.sym} -320 540 0 0 {name=x6[7:0]}
 C {ADDER/full_adder.sym} 130 670 0 0 {name=x6}
 C {devices/ipin.sym} -20 640 0 0 {name=p25 lab=A5}
 C {devices/ipin.sym} -480 670 0 0 {name=p26 lab=B5}
 C {devices/opin.sym} 280 650 0 0 {name=p27 lab=S5}
-C {XOR/XOR2.sym} -320 700 0 0 {name=x7[7:0]}
 C {ADDER/full_adder.sym} 130 830 0 0 {name=x7}
 C {devices/ipin.sym} -20 800 0 0 {name=p31 lab=A6}
 C {devices/ipin.sym} -480 830 0 0 {name=p32 lab=B6}
 C {devices/opin.sym} 280 810 0 0 {name=p33 lab=S6}
-C {XOR/XOR2.sym} -320 860 0 0 {name=x8[7:0]}
 C {ADDER/full_adder.sym} 130 1000 0 0 {name=x8}
 C {devices/ipin.sym} -20 970 0 0 {name=p36 lab=A7}
 C {devices/ipin.sym} -480 1000 0 0 {name=p37 lab=B7}
 C {devices/opin.sym} 280 980 0 0 {name=p38 lab=S7}
 C {devices/opin.sym} 280 1020 0 0 {name=p39 lab=C}
-C {XOR/XOR2.sym} -320 1030 0 0 {name=x9[7:0]}
-C {devices/lab_pin.sym} -580 -220 0 0 {name=l1 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 20 0 0 {name=l3 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 200 0 0 {name=l4 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 360 0 0 {name=l5 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 530 0 0 {name=l6 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 690 0 0 {name=l7 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 850 0 0 {name=l8 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 1020 0 0 {name=l9 sig_type=std_logic lab=k}
-C {devices/lab_pin.sym} -480 -160 0 0 {name=l2 sig_type=std_logic lab=k}
+C {devices/lab_pin.sym} -480 20 0 0 {name=l3 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 200 0 0 {name=l4 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 360 0 0 {name=l5 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 530 0 0 {name=l6 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 690 0 0 {name=l7 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 850 0 0 {name=l8 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 1020 0 0 {name=l9 sig_type=std_logic lab=K}
+C {devices/lab_pin.sym} -480 -160 0 0 {name=l2 sig_type=std_logic lab=K}
+C {XOR/XOR2.sym} -330 -170 0 0 {name=x9}
+C {XOR/XOR2.sym} -330 10 0 0 {name=x10}
+C {XOR/XOR2.sym} -330 190 0 0 {name=x11}
+C {XOR/XOR2.sym} -330 350 0 0 {name=x12}
+C {XOR/XOR2.sym} -330 520 0 0 {name=x13}
+C {XOR/XOR2.sym} -330 680 0 0 {name=x14}
+C {XOR/XOR2.sym} -330 840 0 0 {name=x15}
+C {XOR/XOR2.sym} -330 1010 0 0 {name=x16}
+C {ADDER/full_adder.sym} 130 -180 0 0 {name=x1}

@@ -26,12 +26,12 @@ N -180 270 220 270 {lab=B}
 N -200 50 220 50 {lab=Cin}
 N 390 170 390 180 {lab=#net2}
 N 390 200 390 220 {lab=#net3}
-N 390 170 390 180 {}
-N 390 200 390 210 {}
+N 390 170 390 180 {lab=#net2}
+N 390 200 390 210 {lab=#net3}
 C {devices/iopin.sym} -200 -10 2 0 {name=p1 lab=A}
 C {devices/iopin.sym} -200 10 2 0 {name=p2 lab=B}
-C {XOR/XOR2.sym} 40 20 0 0 {name=x2}
-C {XOR/XOR2.sym} 380 20 0 0 {name=x1}
+C {XOR/XOR2.sym} 30 0 0 0 {name=x2}
+C {XOR/XOR2.sym} 370 0 0 0 {name=x1}
 C {NAND/nand2.sym} 280 140 0 0 {name=x3 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} 280 250 0 0 {name=x4 VSS=VSS VDD=VDD}
 C {devices/iopin.sym} -200 50 2 0 {name=p3 lab=Cin

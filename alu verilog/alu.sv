@@ -2,7 +2,7 @@
 module alu (
     input  [7:0] A,
     input  [7:0] B,
-    input  [3:0] ALU_Sel, // ALU operation select (last bit controls Sub)
+    input  [3:0] ALU_Sel,  // ALU operation select (last bit controls Sub)
     output [7:0] ALU_Out,  // ALU result output
     output       CarryOut, // Carry flag
     output       ZeroFlag, // Zero flag
@@ -21,7 +21,7 @@ module alu (
     ripple_carry_adder u_adder(
         .A(A),
         .B(B),
-        .Sub(Sub), // Derived from ALU_Sel[0]
+        .Sub(Sub),  // Derived from ALU_Sel[0]
         .Sum(add_sub_result),
         .CarryOut(add_sub_carry)
     );
@@ -34,14 +34,38 @@ module alu (
     );
 
     // Logical Operations
-    assign and_result = A & B;
-    assign or_result = A | B;
-    assign xor_result = A ^ B;
-    assign not_result = ~A;
+    logical_and u_and(
+        .A(A),
+        .B(B),
+        .Result(and_result)
+    );
 
-    // Shift Operations
-    assign shl_result = A << 1;
-    assign shr_result = A >> 1;
+    logical_or u_or(
+        .A(A),
+        .B(B),
+        .Result(or_result)
+    );
+
+    logical_xor u_xor(
+        .A(A),
+        .B(B),
+        .Result(xor_result)
+    );
+
+    logical_not u_not(
+        .A(A),
+        .Result(not_result)
+    );
+
+    shift_left u_shl(
+        .A(A),
+        .Result(shl_result)
+    );
+
+    shift_right u_shr(
+        .A(A),
+        .Result(shr_result)
+    );
 
     // Carry flags for shift operations
     wire shl_carry = A[7]; // MSB before the shift for left shift
@@ -52,6 +76,10 @@ module alu (
     reg CarryOut_Reg;
 
     always @(*) begin
+        // Default values to prevent latches
+        ALU_Result = 8'b00000000;
+        CarryOut_Reg = 1'b0;
+
         case (ALU_Sel[3:1]) // Decode only upper 3 bits of ALU_Sel
             3'b000: begin
                 ALU_Result = add_sub_result;  // Addition/Subtraction
@@ -59,7 +87,7 @@ module alu (
             end
             3'b001: begin
                 ALU_Result = mul_result;     // Multiplication
-                CarryOut_Reg = 1'b0;
+                CarryOut_Reg = 1'b0;         // No carry for multiplication
             end
             3'b010: begin
                 ALU_Result = and_result;     // AND
@@ -97,13 +125,13 @@ module alu (
     assign CarryOut = CarryOut_Reg;
 
     // Zero Flag (Z)
-    assign ZeroFlag = (ALU_Result == 8'b00000000) ? 1'b1 : 1'b0;
+    assign ZeroFlag = (ALU_Result == 8'b00000000);
 
     // Sign Flag (S)
     assign SignFlag = ALU_Result[7];  // MSB indicates sign in 2's complement
 
     // Overflow Flag (O)
-    assign OverflowFlag = (ALU_Sel[3:1] == 3'b000) ?
+    assign OverflowFlag = (ALU_Sel[3:1] == 3'b000) ?  // Only for Add/Sub
                           ((A[7] == B[7]) && (ALU_Result[7] != A[7])) : 1'b0;
 
 endmodule
