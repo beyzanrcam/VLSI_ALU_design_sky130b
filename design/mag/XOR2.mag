@@ -1,0 +1,198 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1736099803
+<< checkpaint >>
+rect -1313 1342 1629 1395
+rect -1313 1289 1998 1342
+rect -1313 1236 2367 1289
+rect -1313 1183 2736 1236
+rect -1313 1130 3105 1183
+rect -1313 1077 3474 1130
+rect -1313 1024 3843 1077
+rect -1313 971 4212 1024
+rect -1313 812 4581 971
+rect -1313 759 5688 812
+rect -1313 653 6057 759
+rect -1313 600 6795 653
+rect -1313 547 7164 600
+rect -1313 56 7533 547
+rect -1313 3 7902 56
+rect -1313 -50 8271 3
+rect -1313 -103 8640 -50
+rect -1313 -156 9009 -103
+rect -1313 -209 9378 -156
+rect -1313 -262 9747 -209
+rect -1313 -315 10116 -262
+rect -1313 -368 10485 -315
+rect -1313 -421 10854 -368
+rect -1313 -474 11223 -421
+rect -1313 -2113 11592 -474
+rect -944 -2166 11592 -2113
+rect -575 -2219 11592 -2166
+rect -206 -2272 11592 -2219
+rect 163 -2325 11592 -2272
+rect 532 -2378 11592 -2325
+rect 901 -2431 11592 -2378
+rect 1270 -2484 11592 -2431
+rect 1639 -2537 11592 -2484
+rect 2008 -2590 11592 -2537
+rect 2377 -2643 11592 -2590
+rect 2746 -2696 11592 -2643
+rect 3115 -2749 11592 -2696
+rect 3484 -2802 11592 -2749
+rect 3853 -2855 11592 -2802
+rect 4222 -2908 11592 -2855
+rect 4591 -2961 11592 -2908
+rect 4960 -3014 11592 -2961
+rect 5329 -3067 11592 -3014
+rect 5698 -3120 11592 -3067
+rect 6067 -3173 11592 -3120
+rect 6436 -3226 11592 -3173
+rect 6805 -3279 11592 -3226
+rect 7174 -3332 11592 -3279
+rect 7543 -3385 11592 -3332
+rect 7912 -3438 11592 -3385
+rect 8281 -3491 11592 -3438
+rect 8650 -3544 11592 -3491
+<< error_s >>
+rect 73 0 200 25
+rect 101 -28 228 -3
+rect 196 -379 200 -200
+rect 73 -400 200 -379
+rect 224 -407 228 -172
+rect 101 -428 228 -407
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+use sky130_fd_pr__pfet_01v8_MJEY2X  X0
+timestamp 0
+transform 1 0 158 0 1 -359
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X1
+timestamp 0
+transform 1 0 527 0 1 -412
+box -211 -494 211 494
+use inv  x2 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1735843251
+transform 1 0 1 0 1 -489
+box 0 -311 412 486
+use sky130_fd_pr__pfet_01v8_MJEY2X  X2
+timestamp 0
+transform 1 0 896 0 1 -465
+box -211 -494 211 494
+use inv  x3
+timestamp 1735843251
+transform 1 0 413 0 1 -489
+box 0 -311 412 486
+use sky130_fd_pr__pfet_01v8_MJEY2X  X3
+timestamp 0
+transform 1 0 1265 0 1 -518
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X4
+timestamp 0
+transform 1 0 1634 0 1 -571
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X5
+timestamp 0
+transform 1 0 2003 0 1 -624
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X6
+timestamp 0
+transform 1 0 2372 0 1 -677
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X7
+timestamp 0
+transform 1 0 2741 0 1 -730
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X8
+timestamp 0
+transform 1 0 3110 0 1 -783
+box -211 -494 211 494
+use sky130_fd_pr__nfet_01v8_97T3BZ  X9
+timestamp 0
+transform 1 0 3479 0 1 -1055
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X10
+timestamp 0
+transform 1 0 3848 0 1 -1108
+box -211 -275 211 275
+use sky130_fd_pr__pfet_01v8_MJEY2X  X11
+timestamp 0
+transform 1 0 4217 0 1 -942
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X12
+timestamp 0
+transform 1 0 4586 0 1 -995
+box -211 -494 211 494
+use sky130_fd_pr__nfet_01v8_97T3BZ  X13
+timestamp 0
+transform 1 0 4955 0 1 -1267
+box -211 -275 211 275
+use sky130_fd_pr__pfet_01v8_MJEY2X  X14
+timestamp 0
+transform 1 0 5324 0 1 -1101
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X15
+timestamp 0
+transform 1 0 5693 0 1 -1154
+box -211 -494 211 494
+use sky130_fd_pr__pfet_01v8_MJEY2X  X16
+timestamp 0
+transform 1 0 6062 0 1 -1207
+box -211 -494 211 494
+use sky130_fd_pr__nfet_01v8_97T3BZ  X17
+timestamp 0
+transform 1 0 6431 0 1 -1479
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X18
+timestamp 0
+transform 1 0 6800 0 1 -1532
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X19
+timestamp 0
+transform 1 0 7169 0 1 -1585
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X20
+timestamp 0
+transform 1 0 7538 0 1 -1638
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X21
+timestamp 0
+transform 1 0 7907 0 1 -1691
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X22
+timestamp 0
+transform 1 0 8276 0 1 -1744
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X23
+timestamp 0
+transform 1 0 8645 0 1 -1797
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X24
+timestamp 0
+transform 1 0 9014 0 1 -1850
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X25
+timestamp 0
+transform 1 0 9383 0 1 -1903
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X26
+timestamp 0
+transform 1 0 9752 0 1 -1956
+box -211 -275 211 275
+use sky130_fd_pr__nfet_01v8_97T3BZ  X27
+timestamp 0
+transform 1 0 10121 0 1 -2009
+box -211 -275 211 275
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 A
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 B
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 Y
+port 2 nsew
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VSS
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VDD
+<< end >>

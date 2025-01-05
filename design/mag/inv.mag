@@ -1,0 +1,93 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1736099625
+<< checkpaint >>
+rect -944 1446 1998 1831
+rect -1313 -1624 1998 1446
+rect -944 -1677 1998 -1624
+<< nwell >>
+rect 0 366 412 486
+rect 101 347 104 366
+rect 223 290 343 338
+rect 326 288 343 290
+rect 376 0 412 366
+<< psubdiff >>
+rect 100 -270 300 -268
+rect 100 -304 131 -270
+rect 263 -304 300 -270
+rect 100 -311 300 -304
+<< nsubdiff >>
+rect 100 442 314 448
+rect 100 408 163 442
+rect 254 408 314 442
+rect 100 382 314 408
+<< psubdiffcont >>
+rect 131 -304 263 -270
+<< nsubdiffcont >>
+rect 163 408 254 442
+<< poly >>
+rect 3 -124 70 -108
+rect 3 -158 19 -124
+rect 53 -126 70 -124
+rect 53 -156 75 -126
+rect 53 -158 70 -156
+rect 3 -174 70 -158
+<< polycont >>
+rect 19 -158 53 -124
+<< locali >>
+rect 147 408 163 442
+rect 254 408 270 442
+rect 3 -124 53 339
+rect 3 -158 19 -124
+rect 3 -174 53 -158
+rect 115 -304 131 -270
+rect 263 -304 279 -270
+<< viali >>
+rect 163 408 254 442
+rect 19 -158 53 -124
+rect 131 -304 263 -270
+<< metal1 >>
+rect 100 442 314 486
+rect 100 408 163 442
+rect 254 408 314 442
+rect 100 366 314 408
+rect 101 347 104 366
+rect 0 80 53 338
+rect 223 82 412 338
+rect 0 -124 69 80
+rect 100 -114 412 82
+rect 0 -158 19 -124
+rect 53 -158 69 -124
+rect 0 -175 69 -158
+rect 100 -270 300 -161
+rect 328 -175 412 -114
+rect 100 -304 131 -270
+rect 263 -304 300 -270
+rect 100 -311 300 -304
+use efepmos_W107-L15-F3  efepmos_W107-L15-F3_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1735843251
+transform 0 1 207 -1 0 209
+box -209 -207 209 169
+use sky130_fd_pr__nfet_01v8_6H9P4D  sky130_fd_pr__nfet_01v8_6H9P4D_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1735843251
+transform 0 1 200 -1 0 -141
+box -73 -126 73 126
+use sky130_fd_pr__pfet_01v8_MJEY2X  XM1
+timestamp 0
+transform 1 0 527 0 1 77
+box -211 -494 211 494
+use sky130_fd_pr__nfet_01v8_97T3BZ  XM2
+timestamp 0
+transform 1 0 158 0 1 -89
+box -211 -275 211 275
+<< labels >>
+rlabel metal1 0 78 0 78 3 A
+port 1 e
+rlabel metal1 198 -311 198 -311 5 VSS
+port 2 s
+rlabel metal1 210 486 210 486 5 VDD
+port 3 s
+rlabel metal1 412 78 412 78 3 Y
+port 4 e
+<< end >>
