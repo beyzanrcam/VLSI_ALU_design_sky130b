@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736010558
+timestamp 1736076964
 << nwell >>
 rect 3789 899 4035 1429
 << metal1 >>
@@ -147,6 +147,12 @@ rect 6811 -834 6863 -828
 rect 6811 -892 6863 -886
 << metal4 >>
 rect 3674 1480 4130 1644
+rect 7622 1456 8298 1630
+rect 8110 -880 8294 1456
+<< metal5 >>
+rect 4040 404 4388 474
+rect 3872 108 4388 404
+rect 4040 -2732 4388 108
 use NAND8  NAND8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NAND8
 timestamp 1735984326
 transform 1 0 4552 0 1 -1997
@@ -208,4 +214,6 @@ flabel metal1 1628 -2714 1660 -2690 0 FreeSans 160 0 0 0 S6
 port 23 nsew
 flabel metal1 322 -2720 354 -2696 0 FreeSans 160 0 0 0 S7
 port 24 nsew
+flabel space 7862 -2652 8218 -2280 0 FreeSans 800 0 0 0 VSS
+flabel metal4 7932 1480 8124 1584 0 FreeSans 800 0 0 0 VDD
 << end >>

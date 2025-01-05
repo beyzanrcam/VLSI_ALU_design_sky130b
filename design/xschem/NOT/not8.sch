@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2 }
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -43,7 +43,7 @@ C {INV/inv.sym} -50 0 1 0 {name=x4 VSS=VSS VDD=VDD}
 C {INV/inv.sym} -120 0 1 0 {name=x5 VSS=VSS VDD=VDD}
 C {INV/inv.sym} -190 0 1 0 {name=x6 VSS=VSS VDD=VDD}
 C {INV/inv.sym} 270 0 1 0 {name=x7 VSS=VSS VDD=VDD}
-C {INV/inv.sym} -270 0 1 0 {name=x9 VSS=VSS VDD=VDD}
+C {INV/inv.sym} -270 0 1 0 {name=x8 VSS=VSS VDD=VDD}
 C {devices/ipin.sym} -270 -70 1 0 {name=p1 lab=A7}
 C {devices/ipin.sym} -120 -70 1 0 {name=p2 lab=A5}
 C {devices/ipin.sym} -190 -70 1 0 {name=p3 lab=A6}
