@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735579975
+timestamp 1736093548
 << nmos >>
 rect -351 -200 -321 200
 rect -255 -200 -225 200
@@ -124,6 +124,19 @@ rect 361 188 407 200
 rect 361 -188 367 188
 rect 401 -188 407 188
 rect 361 -200 407 -188
+<< labels >>
+flabel nmos -56 50 -42 60 0 FreeSans 16 0 0 0 A
+flabel nmos 46 52 60 62 0 FreeSans 16 0 0 0 A
+flabel nmos -148 30 -134 40 0 FreeSans 16 0 0 0 B
+flabel nmos 138 30 152 40 0 FreeSans 16 0 0 0 B
+flabel nmos -244 26 -230 36 0 FreeSans 16 0 0 0 C
+flabel nmos 230 30 244 40 0 FreeSans 16 0 0 0 C
+flabel nmos -342 70 -328 80 0 FreeSans 16 0 0 0 D
+flabel nmos 328 60 342 70 0 FreeSans 16 0 0 0 D
+rlabel polycont -382 -354 -348 -294 7 D
+rlabel polycont 340 -342 374 -282 7 D
+rlabel metal1 -398 -10 -370 66 7 VSS
+rlabel metal1 374 -52 402 24 7 VSS
 << properties >>
 string gencell sky130_fd_pr__nfet_01v8
 string library sky130

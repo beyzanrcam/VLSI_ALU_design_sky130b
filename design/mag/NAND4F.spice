@@ -20,7 +20,7 @@ X2 a_n33_n400# a_n63_n426# a_n129_n400# VSUBS sky130_fd_pr__nfet_01v8 ad=0.66 pd
 X3 a_159_n400# a_129_n426# a_63_n400# VSUBS sky130_fd_pr__nfet_01v8 ad=1.24 pd=8.62 as=0.66 ps=4.33 w=4 l=0.15
 .ends
 
-.subckt NAND4 A B C D VSS VDD Y
+.subckt NAND4F A B C D VSS VDD Y
 Xpmos4_f2_0 C VDD A VDD D Y B pmos4_f2
 Xefenmos2_1 D B VSS C A Y VSS efenmos2
 .ends

@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735746853
+timestamp 1736093548
 << nwell >>
 rect -37 1396 862 1492
 rect -1 1335 826 1396
@@ -101,7 +101,7 @@ rect 390 88 746 488
 rect 774 21 884 488
 rect -58 -94 884 21
 use nmos4_fingered  sky130_fd_pr__nfet_01v8_V69YKH_0
-timestamp 1735579975
+timestamp 1736093548
 transform 1 0 413 0 1 288
 box -413 -382 414 408
 use pmos4_f2  sky130_fd_pr__pfet_01v8_NFZE9G_0
@@ -123,4 +123,12 @@ rlabel metal1 815 625 861 1150 5 Y
 port 7 e
 rlabel metal1 0 -94 827 21 5 VSS
 port 5 s
+rlabel poly 552 308 566 318 7 C
+rlabel poly 262 402 276 412 7 C
+rlabel poly 356 308 370 318 7 D
+rlabel poly 454 400 468 410 7 D
+rlabel poly 164 342 178 352 7 B
+rlabel poly 646 370 660 380 7 B
+rlabel poly 744 376 758 386 7 A
+rlabel poly 70 412 84 422 7 A
 << end >>
