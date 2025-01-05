@@ -59,17 +59,17 @@ lab=B6}
 N -190 -20 -180 -20 {
 lab=A6}
 N -180 0 -160 0 {
-lab=#net1}
+lab=A7}
 N -190 160 -160 160 {
 lab=B7}
 N -200 0 -190 0 {
-lab=A7}
+lab=#net1}
 N -190 20 -160 20 {
 lab=B0}
 C {NAND/nand_8_bitwise.sym} -10 10 0 0 {name=x1}
 C {NOT/not8.sym} 290 -70 0 0 {name=x2}
-C {devices/opin.sym} 470 -20 0 0 {name=p7 lab=S6}
-C {devices/opin.sym} 470 0 0 0 {name=p8 lab=S7}
+C {devices/opin.sym} 480 -20 0 0 {name=p7 lab=S6}
+C {devices/opin.sym} 480 0 0 0 {name=p8 lab=S7}
 C {devices/opin.sym} 480 -80 0 0 {name=p4 lab=S3}
 C {devices/opin.sym} 480 -60 0 0 {name=p5 lab=S4}
 C {devices/opin.sym} 480 -40 0 0 {name=p6 lab=S5}
