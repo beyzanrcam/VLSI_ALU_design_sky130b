@@ -47,6 +47,9 @@ N -210 740 -130 740 {lab=#net4}
 N -210 910 -130 910 {lab=#net5}
 N -210 1070 -130 1070 {lab=#net6}
 N -210 1240 -130 1240 {lab=#net7}
+N 210 1110 390 1110 {lab=#net7}
+N 170 1230 440 1230 {lab=Cout}
+N 390 1130 390 1230 {lab=Cout}
 C {ADDER/full_adder.sym} 10 0 0 0 {name=x1}
 C {ADDER/full_adder.sym} 10 180 0 0 {name=x2}
 C {ADDER/full_adder.sym} 20 350 0 0 {name=x3}
@@ -84,4 +87,6 @@ C {devices/lab_pin.sym} 280 690 2 0 {name=p5 lab=S[4] }
 C {devices/lab_pin.sym} 280 860 2 0 {name=p6 lab=S[5] }
 C {devices/lab_pin.sym} 280 1020 2 0 {name=p7 lab=S[6] }
 C {devices/lab_pin.sym} 280 1190 2 0 {name=p8 lab=S[7] }
-C {devices/opin.sym} 170 1230 0 0 {name=p29 lab=Cout}
+C {devices/opin.sym} 440 1230 0 0 {name=p29 lab=Cout}
+C {XOR/XOR2.sym} 540 1120 0 0 {name=x9}
+C {devices/opin.sym} 690 1110 0 0 {name=p30 lab=V}

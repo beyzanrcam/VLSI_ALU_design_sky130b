@@ -4,6 +4,13 @@ K {}
 V {}
 S {}
 E {}
+L 4 520 1270 520 1740 {}
+L 4 520 1740 940 1740 {}
+T {Flags} 560 1690 0 0 0.5 0.5 {}
+T {Sign Flag} 590 1520 0 0 0.2 0.2 {}
+T {Carry Flag} 630 880 0 0 0.2 0.2 {}
+T {Operations} 150 170 0 0 0.5 0.5 {}
+T {Output Control Logic} 840 170 0 0 0.5 0.5 {}
 N 590 1560 700 1560 {lab=Y7}
 N 780 1560 890 1560 {lab=S}
 N 590 930 590 1010 {lab=VSS}
@@ -335,7 +342,6 @@ C {devices/opin.sym} 1340 970 0 0 {name=p310 lab=Z}
 C {devices/opin.sym} 1340 990 0 0 {name=p311 lab=C}
 C {devices/opin.sym} 1340 1010 0 0 {name=p312 lab=V}
 C {devices/opin.sym} 1340 1030 0 0 {name=p313 lab=S}
-C {ZV_FLAG/V_FLAG.sym} 740 1460 0 0 {name=x17}
 C {ZV_FLAG/Z_FLAG.sym} 740 1310 0 0 {name=x18}
 C {devices/lab_pin.sym} 590 1240 0 0 {name=p314 sig_type=std_logic lab=Y0}
 C {devices/lab_pin.sym} 590 1260 0 0 {name=p315 sig_type=std_logic lab=Y1}
@@ -346,14 +352,10 @@ C {devices/lab_pin.sym} 590 1340 0 0 {name=p319 sig_type=std_logic lab=Y5}
 C {devices/lab_pin.sym} 590 1360 0 0 {name=p320 sig_type=std_logic lab=Y6}
 C {devices/lab_pin.sym} 590 1380 0 0 {name=p321 sig_type=std_logic lab=Y7}
 C {devices/lab_pin.sym} 890 1240 2 0 {name=p322 sig_type=std_logic lab=Z}
-C {devices/lab_pin.sym} 890 1440 2 0 {name=p323 sig_type=std_logic lab=V}
 C {devices/lab_pin.sym} 590 1560 0 0 {name=p324 sig_type=std_logic lab=Y7}
 C {devices/lab_pin.sym} 890 1560 2 0 {name=p325 sig_type=std_logic lab=S}
-C {devices/lab_pin.sym} 590 1460 0 0 {name=p326 sig_type=std_logic lab=A7}
-C {devices/lab_pin.sym} 590 1480 0 0 {name=p327 sig_type=std_logic lab=B7}
 C {devices/lab_pin.sym} 370 2380 0 1 {name=p328 sig_type=std_logic lab=C_RSHIFT}
 C {devices/lab_pin.sym} 370 2170 0 1 {name=p329 sig_type=std_logic lab=C_LSHIFT}
-C {devices/lab_pin.sym} 590 1440 2 1 {name=p330 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 370 430 0 1 {name=p331 sig_type=std_logic lab=C_ADD}
 C {devices/ipin.sym} 1240 1050 0 0 {name=p6 lab=B4}
 C {INV/buffer.sym} 740 1560 0 0 {name=x19 VSS=VSS VDD=VDD}
@@ -370,3 +372,4 @@ C {devices/ipin.sym} 1060 970 2 1 {name=p335 lab=VDD}
 C {devices/ipin.sym} 1060 990 2 1 {name=p336 lab=VSS}
 C {devices/lab_pin.sym} 70 2170 0 0 {name=p337 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 70 2380 0 0 {name=p338 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 370 450 2 0 {name=p323 sig_type=std_logic lab=V}
