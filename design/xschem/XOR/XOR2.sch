@@ -24,9 +24,9 @@ C {devices/lab_pin.sym} 430 -320 2 0 {name=p15 sig_type=std_logic lab=!B}
 C {devices/lab_pin.sym} 300 -320 0 0 {name=p16 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 160 -170 0 0 {name=p5 sig_type=std_logic lab=!A}
 C {devices/lab_pin.sym} 160 -210 0 0 {name=p6 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 160 -190 0 0 {name=p7 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 160 -230 0 0 {name=p8 sig_type=std_logic lab=!B}
+C {devices/lab_pin.sym} 160 -230 0 0 {name=p7 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 160 -190 0 0 {name=p8 sig_type=std_logic lab=!B}
 C {devices/lab_pin.sym} 160 -130 0 0 {name=p9 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 160 -150 0 0 {name=p10 sig_type=std_logic lab=!A}
-C {devices/lab_pin.sym} 160 -110 0 0 {name=p11 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 160 -90 0 0 {name=p12 sig_type=std_logic lab=!B}
+C {devices/lab_pin.sym} 160 -90 0 0 {name=p11 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 160 -110 0 0 {name=p12 sig_type=std_logic lab=!B}
+C {devices/lab_pin.sym} 160 -150 0 0 {name=p17 sig_type=std_logic lab=!A}
