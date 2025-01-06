@@ -40,15 +40,7 @@ sky130_fd_pr__nfet_01v8 (14->6)            |sky130_fd_pr__nfet_01v8 (6)
 Number of devices: 12                      |Number of devices: 12                      
 Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-sky130_fd_pr__nfet_01v8:13 vs. inv:2/sky130_fd_pr__nfet_01v8:M2:
- w circuit1: 0.65   circuit2: 1   (delta=42.4%, cutoff=7%)
-sky130_fd_pr__nfet_01v8:10 vs. inv:3/sky130_fd_pr__nfet_01v8:M2:
- w circuit1: 0.65   circuit2: 1   (delta=42.4%, cutoff=7%)
-sky130_fd_pr__pfet_01v8:16 vs. inv:2/sky130_fd_pr__pfet_01v8:M1:
- w circuit1: 2.75   circuit2: 3.21   (delta=15.4%, cutoff=7%)
-sky130_fd_pr__pfet_01v8:15 vs. inv:3/sky130_fd_pr__pfet_01v8:M1:
- w circuit1: 2.75   circuit2: 3.21   (delta=15.4%, cutoff=7%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: XOR2                            |Circuit 2: XOR2                            
@@ -56,12 +48,11 @@ Circuit 1: XOR2                            |Circuit 2: XOR2
 A                                          |A                                          
 B                                          |B                                          
 Y                                          |Y                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes XOR2 and XOR2 are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- XOR2
+.
