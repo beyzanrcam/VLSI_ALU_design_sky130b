@@ -6,7 +6,6 @@ template="name=x1 VSS=VSS VDD=VDD"
 extra="VSS VDD"
 template="name=x1"type=subcircuit
 format="@name @pinlist @symname"
-template="name=x1"
 }
 V {}
 S {}

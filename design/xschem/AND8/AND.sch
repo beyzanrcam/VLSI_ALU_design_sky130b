@@ -20,7 +20,9 @@ N 440 -20 480 -20 {
 lab=S6}
 N 440 0 480 0 {
 lab=S7}
-C {NAND/nand_8_bitwise.sym} -10 10 0 0 {name=x1}
+C {NAND/nand_8_bitwise.sym} -10 10 0 0 {name=x1
+VSS=VSS
+VDD=VDD}
 C {NOT/not8.sym} 290 -70 0 0 {name=x2}
 C {devices/opin.sym} 480 -20 0 0 {name=p7 lab=S6}
 C {devices/opin.sym} 480 0 0 0 {name=p8 lab=S7}
