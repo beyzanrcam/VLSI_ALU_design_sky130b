@@ -99,6 +99,8 @@ N 280 200 360 200 {
 lab=#net11}
 N 280 1020 420 1020 {lab=C}
 N 370 940 370 1020 {lab=C}
+N 370 920 410 920 {lab=#net15}
+N 370 940 410 940 {lab=C}
 C {devices/ipin.sym} -20 -210 0 0 {name=p9 lab=A0}
 C {devices/ipin.sym} -480 -180 0 0 {name=p12 lab=B0}
 C {devices/opin.sym} 280 -200 0 0 {name=p28 lab=S0}
@@ -149,5 +151,5 @@ C {XOR/XOR2.sym} -330 680 0 0 {name=x14}
 C {XOR/XOR2.sym} -330 840 0 0 {name=x15}
 C {XOR/XOR2.sym} -330 1010 0 0 {name=x16}
 C {ADDER/full_adder.sym} 130 -180 0 0 {name=x1}
-C {XOR/XOR2.sym} 520 930 0 0 {name=x17}
-C {devices/opin.sym} 670 920 0 0 {name=p1 lab=V}
+C {XOR/XOR2.sym} 560 930 0 0 {name=x17}
+C {devices/opin.sym} 710 920 0 0 {name=p1 lab=V}

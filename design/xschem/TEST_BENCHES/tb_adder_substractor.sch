@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2 }
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -54,29 +54,31 @@ C {devices/code_shown.sym} 230 -30 0 0 {name=s1 only_toplevel=false value="
 * Apply test cases using DC sources and pulses for inputs
 * Test Case 1: A = 8'b00000001, B = 8'b00000001, K = 0 (Addition)
 
-V_K K 0 1.2
+V_K K 0 1
 
 V_A0 A0 0 1.2
-V_B0 B0 0 1.2
 V_A1 A1 0 0
-V_B1 B1 0 1.2
 V_A2 A2 0 1.2
-V_B2 B2 0 0
 V_A3 A3 0 0
-V_B3 B3 0 0
 V_A4 A4 0 1.2
-V_B4 B4 0 1.2
 V_A5 A5 0 0
-V_B5 B5 0 1.2
 V_A6 A6 0 1.2
-V_B6 B6 0 0
 V_A7 A7 0 0
+
+V_B0 B0 0 1.2
+V_B1 B1 0 1.2
+V_B2 B2 0 0
+V_B3 B3 0 0
+V_B4 B4 0 1.2
+V_B5 B5 0 1.2
+V_B6 B6 0 0
 V_B7 B7 0 0
+
+
 .control 
 op
 set color0 = white
-save S0 S1 S2 S3 S4 S5 S6 S7 K
-print V(S0) V(S1) V(S2) V(S3) V(S4) V(S5) V(S6) V(S7) V(K)
+print V(S0) V(S1) V(S2) V(S3) V(S4) V(S5) V(S6) V(S7) V(C)
 
 .endc
 "}
