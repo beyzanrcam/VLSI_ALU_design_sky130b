@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736192741
+timestamp 1736272085
 << nwell >>
 rect -292 625 2999 1536
 rect -292 -679 2999 -159
@@ -173,23 +173,23 @@ rect 759 -903 2194 -828
 rect 2339 -903 2360 -828
 rect 759 -915 2360 -903
 use NAND2  NAND2_0
-timestamp 1736192741
+timestamp 1736272085
 transform 1 0 -167 0 1 -1051
 box 356 -63 1062 892
 use NAND2  NAND2_1
-timestamp 1736192741
+timestamp 1736272085
 transform 1 0 942 0 1 -1051
 box 356 -63 1062 892
 use NAND2  NAND2_2
-timestamp 1736192741
+timestamp 1736272085
 transform 1 0 1824 0 1 -1051
 box 356 -63 1062 892
 use XOR2  XOR2_0
-timestamp 1736192741
+timestamp 1736272085
 transform 1 0 69 0 1 -239
 box -109 222 1371 1764
 use XOR2  XOR2_1
-timestamp 1736192741
+timestamp 1736272085
 transform 1 0 1628 0 1 -239
 box -109 222 1371 1764
 << end >>
