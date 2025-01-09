@@ -1,0 +1,132 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell cg4 in circuit XOR2 (1)(1 instance)
+Flattening unmatched subcell inv_smol in circuit XOR2 (1)(2 instances)
+
+Class XOR2 (0):  Merged 16 parallel devices.
+Subcircuit summary:
+Circuit 1: XOR2                            |Circuit 2: XOR2                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (14->6)            |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (14->6)            |sky130_fd_pr__nfet_01v8 (6)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: XOR2                            |Circuit 2: XOR2                            
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+a_99_341#                                  |(no pin, node is !B)                       
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for XOR2 and XOR2 altered to match.
+Device classes XOR2 and XOR2 are equivalent.
+Flattening unmatched subcell nmos_2shared_W200-L015-F1 in circuit NAND2 (0)(1 instance)
+Flattening unmatched subcell pmos_p2-w321-L015-f3 in circuit NAND2 (0)(1 instance)
+
+Class NAND2 (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2 and nand2 are equivalent.
+Flattening unmatched subcell FULL_ADDER_XORED in circuit x8bit_ADDER (0)(8 instances)
+Flattening unmatched subcell full_adder_substractor in circuit 8-bit_adder_subtractor (1)(8 instances)
+Flattening unmatched subcell full_adder in circuit 8-bit_adder_subtractor (1)(8 instances)
+
+Subcircuit summary:
+Circuit 1: x8bit_ADDER                     |Circuit 2: 8-bit_adder_subtractor          
+-------------------------------------------|-------------------------------------------
+NAND2 (24)                                 |nand2 (24)                                 
+XOR2 (24)                                  |XOR2 (24)                                  
+Number of devices: 48                      |Number of devices: 48                      
+Number of nets: 91                         |Number of nets: 91                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: x8bit_ADDER                     |Circuit 2: 8-bit_adder_subtractor          
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+S0                                         |S0                                         
+C                                          |C                                          
+B0                                         |B0                                         
+B7                                         |B7                                         
+B2                                         |B2                                         
+B3                                         |B3                                         
+B4                                         |B4                                         
+B5                                         |B5                                         
+B6                                         |B6                                         
+B1                                         |B1                                         
+S2                                         |S2                                         
+S3                                         |S3                                         
+S4                                         |S4                                         
+S5                                         |S5                                         
+S6                                         |S6                                         
+S7                                         |S7                                         
+S1                                         |S1                                         
+K                                          |K                                          
+A0                                         |A0                                         
+A1                                         |A1                                         
+A2                                         |A2                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+A5                                         |A5                                         
+A6                                         |A6                                         
+A7                                         |A7                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes x8bit_ADDER and 8-bit_adder_subtractor are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -5,8 +5,6 @@ V {}
 S {}
 E {}
 N -10 580 130 580 {lab=C}
-N 80 500 80 580 {lab=C}
-N -310 -170 -310 -150 {lab=K}
 N -10 -190 -10 -130 {lab=#net1}
 N -360 -130 -10 -130 {lab=#net1}
 N -360 -130 -360 -40 {lab=#net1}
@@ -31,12 +29,11 @@ N -10 470 -10 530 {lab=#net6}
 N -360 530 -10 530 {lab=#net6}
 N -360 530 -360 620 {lab=#net6}
 N -360 620 -310 620 {lab=#net6}
-N -10 470 80 470 {lab=#net6}
-N 80 490 80 500 {lab=C}
 N -10 -80 -10 -20 {lab=#net7}
 N -360 -20 -10 -20 {lab=#net7}
 N -360 -20 -360 70 {lab=#net7}
 N -360 70 -310 70 {lab=#net7}
+N -310 -170 -310 -150 {lab=K}
 C {devices/ipin.sym} -310 -210 0 0 {name=p9 lab=A0}
 C {devices/ipin.sym} -310 -190 0 0 {name=p12 lab=B0}
 C {devices/opin.sym} -10 -210 0 0 {name=p28 lab=S0}
@@ -71,8 +68,6 @@ C {devices/lab_pin.sym} -310 380 0 0 {name=l7 sig_type=std_logic lab=K}
 C {devices/lab_pin.sym} -310 490 0 0 {name=l8 sig_type=std_logic lab=K}
 C {devices/lab_pin.sym} -310 600 0 0 {name=l9 sig_type=std_logic lab=K}
 C {devices/lab_pin.sym} -310 -150 0 0 {name=l2 sig_type=std_logic lab=K}
-C {XOR/XOR2.sym} 230 480 0 0 {name=x17}
-C {devices/opin.sym} 380 470 0 0 {name=p1 lab=V}
 C {ADDER/full_adder_substractor.sym} -160 -180 0 0 {name=x1}
 C {ADDER/full_adder_substractor.sym} -160 40 0 0 {name=x2}
 C {ADDER/full_adder_substractor.sym} -160 150 0 0 {name=x3}

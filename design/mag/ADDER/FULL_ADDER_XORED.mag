@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736434665
+timestamp 1736436273
 << nwell >>
 rect -292 625 2999 1536
 rect -292 -679 2999 -159
@@ -348,27 +348,27 @@ rect -166 -1217 2479 -1195
 rect 2751 -1217 2994 -945
 rect -166 -1421 2994 -1217
 use NAND2  NAND2_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/NAND/NAND2
-timestamp 1736429400
+timestamp 1736436273
 transform 1 0 -167 0 1 -1051
 box 356 -17 1062 804
 use NAND2  NAND2_1
-timestamp 1736429400
+timestamp 1736436273
 transform 1 0 942 0 1 -1051
 box 356 -17 1062 804
 use NAND2  NAND2_2
-timestamp 1736429400
+timestamp 1736436273
 transform 1 0 1824 0 1 -1051
 box 356 -17 1062 804
 use XOR2  XOR2_0
-timestamp 1736433792
+timestamp 1736436273
 transform 1 0 69 0 1 -239
 box -109 77 1371 1764
 use XOR2  XOR2_1
-timestamp 1736433792
+timestamp 1736436273
 transform 1 0 1628 0 1 -239
 box -109 77 1371 1764
 use XOR2  XOR2_2
-timestamp 1736433792
+timestamp 1736436273
 transform -1 0 2027 0 1 1545
 box -109 77 1371 1764
 << labels >>

@@ -1,0 +1,100 @@
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/8-bit_adder_subtractor.sch
+.subckt 8-bit_adder_subtractor K A0 S0 B0 A1 S1 B1 A2 S2 B2 A3 S3 B3 A4 S4 B4 A5 S5 B5 A6 S6 B6 A7 S7 B7 C VSS VDD
+*.PININFO A0:I B0:I S0:O K:I A1:I B1:I S1:O A2:I B2:I S2:O A3:I B3:I S3:O A4:I B4:I S4:O A5:I B5:I S5:O A6:I B6:I S6:O A7:I B7:I
+*+ S7:O C:O
+x1 A0 K B0 K S0 net1 VSS VDD full_adder_substractor
+x2 A2 K B2 net7 S2 net2 VSS VDD full_adder_substractor
+x3 A3 K B3 net2 S3 net3 VSS VDD full_adder_substractor
+x4 A4 K B4 net3 S4 net4 VSS VDD full_adder_substractor
+x5 A5 K B5 net4 S5 net5 VSS VDD full_adder_substractor
+x6 A6 K B6 net5 S6 net6 VSS VDD full_adder_substractor
+x7 A7 K B7 net6 S7 C VSS VDD full_adder_substractor
+x8 A1 K B1 net1 S1 net7 VSS VDD full_adder_substractor
+.ends
+
+* expanding   symbol:  ADDER/full_adder_substractor.sym # of pins=6
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder_substractor.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder_substractor.sch
+.subckt full_adder_substractor A K B CIN OUT COUT VSS VDD
+*.PININFO K:I B:I CIN:I OUT:O COUT:O A:I
+x1 A OUT net1 CIN COUT VSS VDD full_adder
+x2 B K net1 VSS VDD XOR2
+.ends
+
+
+* expanding   symbol:  ADDER/full_adder.sym # of pins=5
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder.sch
+.subckt full_adder A S B Cin Cout VSS VDD
+*.PININFO A:B B:B Cin:B S:B Cout:B
+x2 B A net1 VSS VDD XOR2
+x1 net1 Cin S VSS VDD XOR2
+x3 net1 Cin VSS VDD net2 nand2
+x4 B A VSS VDD net3 nand2
+x5 net2 net3 VSS VDD Cout nand2
+.ends
+
+
+* expanding   symbol:  XOR/XOR2.sym # of pins=3
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/XOR/XOR2.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/XOR/XOR2.sch
+.subckt XOR2 A B Y VSS VDD
+*.PININFO A:I B:I Y:O
+x1 A B !B !A Y A !A B !B VSS VDD cg4
+x2 A VSS VDD !A inv_smol
+x3 B VSS VDD !B inv_smol
+.ends
+
+
+* expanding   symbol:  NAND/nand2.sym # of pins=3
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/NAND/nand2.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/NAND/nand2.sch
+.subckt nand2 A B VSS VDD Y
+*.PININFO A:I Y:O B:I
+XM1 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.21 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y B net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3.21 nf=3 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ./CG4/cg4.sym # of pins=9
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/CG4/cg4.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/CG4/cg4.sch
+.subckt cg4 P3 P4 P2 P1 OUT N2 N1 N4 N3 VSS VDD
+*.PININFO P3:I P1:I N1:I N3:I P4:I P2:I N2:I N4:I OUT:O
+XM1 OUT N1 net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT N2 net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 N3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net2 N4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT P1 net3 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 OUT P2 net3 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net3 P3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net3 P4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  INV/inv_smol.sym # of pins=2
+** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/INV/inv_smol.sym
+** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/INV/inv_smol.sch
+.subckt inv_smol A VSS VDD Y
+*.PININFO A:I Y:O
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
