@@ -1,7 +1,12 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736276957
+timestamp 1736447539
+<< error_s >>
+rect 123 -472 13156 -460
+rect 123 -792 13156 -780
+rect 123 -3737 13156 -3724
+rect 123 -4057 13156 -4044
 << nwell >>
 rect -3447 3502 -2268 4023
 rect -1606 3502 -427 4023
@@ -1538,17 +1543,17 @@ rect -1893 -6733 -1825 -6287
 rect -1736 -6733 -1708 -6287
 rect -1893 -6782 -1708 -6733
 use 4bit_ADDER  4bit_ADDER_0
-timestamp 1736273553
+timestamp 1736447539
 transform 1 0 171 0 1 -165
-box -3989 -146 13189 3089
+box -3989 -307 13189 3089
 use 4bit_ADDER  4bit_ADDER_1
-timestamp 1736273553
+timestamp 1736447539
 transform 1 0 171 0 1 -3430
-box -3989 -146 13189 3089
+box -3989 -307 13189 3089
 use 4bit_ADDER  4bit_ADDER_2
-timestamp 1736273553
+timestamp 1736447539
 transform 1 0 171 0 1 -6694
-box -3989 -146 13189 3089
+box -3989 -307 13189 3089
 << labels >>
 rlabel metal1 -2443 3252 -2443 3252 5 VSS
 port 4 s

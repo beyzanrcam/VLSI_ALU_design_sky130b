@@ -1,11 +1,12 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736273553
+timestamp 1736447539
 << nwell >>
 rect 6413 2450 6512 2634
 rect 9708 2491 9799 2635
-rect -3594 1895 -2415 2416
+rect -3594 2381 -2393 2416
+rect -3594 1895 -2415 2381
 rect -1868 1895 -689 2416
 rect -3594 603 -2415 1124
 rect -1868 603 -689 1124
@@ -1108,30 +1109,32 @@ rect -3764 347 -3566 376
 rect -3764 149 -3739 347
 rect -3593 149 -3566 347
 rect -3764 134 -3566 149
-use FULL_ADDER  FULL_ADDER_0
-timestamp 1736272085
+<< metal5 >>
+rect -48 -307 12985 2650
+use FULL_ADDER  FULL_ADDER_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/ADDER
+timestamp 1736444032
 transform 1 0 118 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_1
-timestamp 1736272085
+timestamp 1736444032
 transform 1 0 3409 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_2
-timestamp 1736272085
+timestamp 1736444032
 transform 1 0 6700 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_3
-timestamp 1736272085
+timestamp 1736444032
 transform 1 0 9991 0 1 1114
-box -292 -1260 3108 1536
-use INV  INV_0
-timestamp 1736272085
-transform 1 0 -2791 0 1 1895
-box -14 -250 376 418
-use NAND2  NAND2_0
-timestamp 1736272085
+box -292 -1421 3108 1536
+use inv  inv_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/inv
+timestamp 1735843251
+transform 1 0 -2805 0 1 1895
+box 0 -311 412 486
+use NAND2  NAND2_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/NAND/NAND2
+timestamp 1736436273
 transform 1 0 -3950 0 1 1523
-box 356 -63 1062 892
+box 356 -17 1062 804
 << labels >>
 rlabel metal1 -689 1864 -689 1864 3 Y
 port 3 e
