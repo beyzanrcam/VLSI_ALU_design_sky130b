@@ -370,6 +370,4 @@ C {devices/lab_pin.sym} 720 910 0 1 {name=p332 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 590 930 0 0 {name=p334 sig_type=std_logic lab=VSS}
 C {devices/ipin.sym} 1060 970 2 1 {name=p335 lab=VDD}
 C {devices/ipin.sym} 1060 990 2 1 {name=p336 lab=VSS}
-C {devices/lab_pin.sym} 70 2170 0 0 {name=p337 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 70 2380 0 0 {name=p338 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 370 450 2 0 {name=p323 sig_type=std_logic lab=V}

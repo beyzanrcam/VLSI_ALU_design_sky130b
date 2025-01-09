@@ -10,6 +10,7 @@ mkdir -p RTL/logical_xor
 mkdir -p RTL/logical_not
 mkdir -p RTL/shift_left
 mkdir -p RTL/shift_right
+mkdir -p RTL/alu
 
 # Run the Yosys synthesis script
 yosys -s synth_all_modules.ys

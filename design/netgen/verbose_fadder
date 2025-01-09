@@ -28,29 +28,6 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-
-Class NAND2 (0):  Merged 4 parallel devices.
-Subcircuit summary:
-Circuit 1: NAND2                           |Circuit 2: nand2                           
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
-sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 6                          |Number of nets: 6                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: NAND2                           |Circuit 2: nand2                           
--------------------------------------------|-------------------------------------------
-w_356_372#                                 |VDD **Mismatch**                           
-a_484_434#                                 |Y **Mismatch**                             
-a_626_n63#                                 |VSS **Mismatch**                           
-a_538_212#                                 |B **Mismatch**                             
-a_453_79#                                  |A **Mismatch**                             
----------------------------------------------------------------------------------------
-Cell pin lists for NAND2 and nand2 altered to match.
-Device classes NAND2 and nand2 are equivalent.
 Flattening unmatched subcell cg4 in circuit XOR2 (1)(1 instance)
 Flattening unmatched subcell inv in circuit XOR2 (1)(2 instances)
 
@@ -85,175 +62,103 @@ VDD                                        |VDD
 ---------------------------------------------------------------------------------------
 Cell pin lists for XOR2 and XOR2 altered to match.
 Device classes XOR2 and XOR2 are equivalent.
+Flattening unmatched subcell nmos_2shared_W200-L015-F1 in circuit NAND2 (0)(1 instance)
+Flattening unmatched subcell pmos_p2-w321-L015-f3 in circuit NAND2 (0)(1 instance)
 
-Flattening instances of XOR2 in cell FULL_ADDER_XORED (0) makes a better match
-Flattening instances of XOR2 in cell full_adder (1) makes a better match
-Making another compare attempt.
+Class NAND2 (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2 and nand2 are equivalent.
+Flattening unmatched subcell full_adder in circuit full_adder_substractor (1)(1 instance)
 
 Subcircuit summary:
-Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder                      
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
 -------------------------------------------|-------------------------------------------
 NAND2 (3)                                  |nand2 (3)                                  
-sky130_fd_pr__pfet_01v8 (18)               |sky130_fd_pr__pfet_01v8 (12) **Mismatch**  
-sky130_fd_pr__nfet_01v8 (18)               |sky130_fd_pr__nfet_01v8 (12) **Mismatch**  
-Number of devices: 39 **Mismatch**         |Number of devices: 27 **Mismatch**         
-Number of nets: 29 **Mismatch**            |Number of nets: 20 **Mismatch**            
+XOR2 (3)                                   |XOR2 (3)                                   
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 13 **Mismatch**            |Number of nets: 15 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder                      
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
 
 ---------------------------------------------------------------------------------------
-Net: XOR2_2/Y                              |Net: net1                                  
-  NAND2/a_453_79# = 1                      |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/2 = 2            
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  nand2/B = 1                              
+Net: VSS                                   |Net: VSS                                   
+  XOR2/VSS = 3                             |  XOR2/VSS = 3                             
+  NAND2/VSS = 3                            |  nand2/VSS = 3                            
+  XOR2/A = 2                               |                                           
+  NAND2/A = 2                              |                                           
+  XOR2/Y = 2                               |                                           
                                            |                                           
-Net: XOR2_1/A                              |Net: A                                     
-  NAND2/a_453_79# = 1                      |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
-  sky130_fd_pr__nfet_01v8/2 = 2            |  nand2/A = 1                              
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+Net: XOR2_2/VDD                            |Net: VDD                                   
+  NAND2/VDD = 3                            |  XOR2/VDD = 3                             
+  XOR2/VDD = 3                             |  nand2/VDD = 3                            
                                            |                                           
-Net: CIN                                   |Net: Cin                                   
-  NAND2/a_538_212# = 1                     |  nand2/A = 1                              
-  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+(no matching net)                          |Net: net1                                  
+                                           |  XOR2/A = 1                               
+                                           |  nand2/A = 1                              
+                                           |  XOR2/Y = 1                               
                                            |                                           
-Net: w_n292_n679#                          |Net: VSS                                   
-  NAND2/w_356_372# = 3                     |  sky130_fd_pr__nfet_01v8/4 = 12           
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 8        
-                                           |  nand2/VSS = 3                            
+(no matching net)                          |Net: full_adder:1/net1                     
+                                           |  XOR2/Y = 1                               
+                                           |  XOR2/A = 1                               
+                                           |  nand2/B = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: NAND2_2/A                             |Net: full_adder:1/net2                     
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/A = 1                              |  nand2/A = 1                              
                                            |                                           
-Net: VSUBS                                 |Net: VDD                                   
-  NAND2/a_626_n63# = 3                     |  sky130_fd_pr__pfet_01v8/4 = 12           
-  sky130_fd_pr__nfet_01v8/(1|3) = 12       |  sky130_fd_pr__pfet_01v8/(1|3) = 8        
-  sky130_fd_pr__nfet_01v8/4 = 18           |  nand2/VDD = 3                            
-                                           |                                           
-Net: /XOR2_2/a_129_367#                    |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: /XOR2_2/a_705_367#                    |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-                                           |                                           
-Net: XOR2_1/VDD                            |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 8        |                                           
-  sky130_fd_pr__pfet_01v8/4 = 12           |                                           
-                                           |                                           
-Net: XOR2_2/a_99_341#                      |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-                                           |                                           
-Net: /XOR2_2/a_n51_367#                    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-                                           |                                           
-Net: B                                     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
-                                           |                                           
-Net: K                                     |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
-  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
-                                           |                                           
-Net: /XOR2_2/a_129_987#                    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
-                                           |                                           
-Net: XOR2_2/VDD                            |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 4        |                                           
-  sky130_fd_pr__pfet_01v8/4 = 6            |                                           
+Net: CIN                                   |Net: CIN                                   
+  NAND2/B = 1                              |  nand2/A = 1                              
+  XOR2/B = 1                               |  XOR2/B = 1                               
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder                      
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
 
 ---------------------------------------------------------------------------------------
-Instance: XOR2_2/sky130_fd_pr__pfet_01v8:0 |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 4                                    |                                           
-  4 = 10                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__pfet_01v8:2 |(no matching instance)                     
-  (1,3) = (9,4)                            |                                           
-  2 = 4                                    |                                           
-  4 = 10                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__pfet_01v8:3 |(no matching instance)                     
-  (1,3) = (9,4)                            |                                           
-  2 = 4                                    |                                           
-  4 = 10                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__pfet_01v8:8 |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 4                                    |                                           
-  4 = 10                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__pfet_01v8:1 |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 4                                    |                                           
-  4 = 10                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__pfet_01v8:1 |(no matching instance)                     
-  (1,3) = (10,4)                           |                                           
-  2 = 4                                    |                                           
-  4 = 10                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__nfet_01v8:9 |(no matching instance)                     
-  (1,3) = (33,2)                           |                                           
-  2 = 4                                    |                                           
-  4 = 33                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__nfet_01v8:1 |(no matching instance)                     
-  (1,3) = (33,4)                           |                                           
-  2 = 4                                    |                                           
-  4 = 33                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__nfet_01v8:1 |(no matching instance)                     
-  (1,3) = (33,4)                           |                                           
-  2 = 4                                    |                                           
-  4 = 33                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__nfet_01v8:1 |(no matching instance)                     
-  (1,3) = (9,2)                            |                                           
-  2 = 4                                    |                                           
-  4 = 33                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__nfet_01v8:2 |(no matching instance)                     
-  (1,3) = (9,2)                            |                                           
-  2 = 4                                    |                                           
-  4 = 33                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: XOR2_2/sky130_fd_pr__nfet_01v8:2 |(no matching instance)                     
-  (1,3) = (33,2)                           |                                           
-  2 = 4                                    |                                           
-  4 = 33                                   |                                           
-                                           |                                           
+Instance: NAND2_1                          |Instance: full_adder:1/nand2:3             
+  A = 12                                   |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 12                                 |  VSS = 6                                  
+  VDD = 6                                  |  VDD = 6                                  
+  Y = 2                                    |  Y = 2                                    
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
-Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder                      
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
 -------------------------------------------|-------------------------------------------
-CIN                                        |Cin                                        
-Cell pin lists are equivalent.
-Device classes FULL_ADDER_XORED and full_adder are equivalent.
+OUT                                        |OUT                                        
+COUT                                       |COUT                                       
+B                                          |B                                          
+K                                          |K                                          
+CIN                                        |CIN                                        
+A                                          |A                                          
+(no pin, node is XOR2_2/VDD)               |VSS                                        
+(no pin, node is XOR2_2/VDD)               |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for FULL_ADDER_XORED and full_adder_substractor altered to match.
+Device classes FULL_ADDER_XORED and full_adder_substractor are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Final result: Top level cell failed pin matching.

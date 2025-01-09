@@ -1,4 +1,4 @@
-timestamp 1735981380
+timestamp 1736429400
 version 8.3
 tech sky130B
 style ngspice()
@@ -18,33 +18,33 @@ node "B" 607 477.762 356 173 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "A" 542 498.49 356 341 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22991 1008 0 0 20248 934 22140 598 0 0 0 0 0 0 0 0 0 0
 node "VDD" 6877 741.79 709 684 m1 0 0 0 0 84720 1652 0 0 40722 1366 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28623 1312 135042 1694 0 0 0 0 0 0 0 0 0 0
 substrate "VSS" 0 0 826 54 m1 0 0 0 0 0 0 0 0 0 0 28400 942 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13600 868 48800 1044 0 0 0 0 0 0 0 0 0 0
-cap "a_994_146#" "Y" 0.0016397
-cap "a_994_146#" "B" 0.000663395
-cap "a_994_146#" "A" 0.000361821
+cap "B" "a_994_146#" 0.000663395
+cap "A" "Y" 47.7806
+cap "A" "B" 630.111
 cap "VDD" "a_626_54#" 0.00790217
-cap "B" "a_626_54#" 0.239553
 cap "VDD" "Y" 688.885
 cap "B" "VDD" 31.6915
+cap "B" "a_626_54#" 0.239553
 cap "B" "Y" 733.345
+cap "A" "a_994_146#" 0.000361821
+cap "VDD" "a_994_146#" 0.000287771
+cap "Y" "a_994_146#" 0.0016397
 cap "A" "VDD" 34.4961
-cap "A" "Y" 47.7806
-cap "B" "A" 630.111
-cap "a_994_146#" "VDD" 0.000287771
-cap "nmos_2shared_W200-L015-F1_0/a_33_n226#" "nmos_2shared_W200-L015-F1_0/a_n63_n226#" 41.645
-cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" -8.72763
 cap "nmos_2shared_W200-L015-F1_0/a_n33_n200#" "nmos_2shared_W200-L015-F1_0/a_n125_n200#" -0.0016397
-cap "nmos_2shared_W200-L015-F1_0/a_n33_n200#" "nmos_2shared_W200-L015-F1_0/a_n63_n226#" 7.87101
-cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "nmos_2shared_W200-L015-F1_0/a_33_n226#" 17.4343
-cap "nmos_2shared_W200-L015-F1_0/a_n125_n200#" "nmos_2shared_W200-L015-F1_0/a_n63_n226#" 146.691
-cap "pmos_p2-w321-L015-f3_0/a_n317_n107#" "nmos_2shared_W200-L015-F1_0/a_33_n226#" 19.6421
-cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "nmos_2shared_W200-L015-F1_0/a_n33_n200#" -0.00398284
-cap "nmos_2shared_W200-L015-F1_0/a_n33_n200#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" -0.000287771
 cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "nmos_2shared_W200-L015-F1_0/a_n125_n200#" -101.367
-cap "pmos_p2-w321-L015-f3_0/a_n317_n107#" "nmos_2shared_W200-L015-F1_0/a_n125_n200#" -575.918
-cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "nmos_2shared_W200-L015-F1_0/a_n63_n226#" -18.4476
-cap "nmos_2shared_W200-L015-F1_0/a_n33_n200#" "nmos_2shared_W200-L015-F1_0/a_33_n226#" 5.75356
-cap "pmos_p2-w321-L015-f3_0/a_n317_n107#" "nmos_2shared_W200-L015-F1_0/a_n63_n226#" 41.6878
+cap "nmos_2shared_W200-L015-F1_0/a_n125_n200#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" -575.918
+cap "nmos_2shared_W200-L015-F1_0/a_n33_n200#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" -0.000287771
+cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "nmos_2shared_W200-L015-F1_0/a_n33_n200#" -0.00398284
+cap "nmos_2shared_W200-L015-F1_0/a_63_n200#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" -8.72763
+cap "nmos_2shared_W200-L015-F1_0/a_n63_n226#" "nmos_2shared_W200-L015-F1_0/a_n125_n200#" 146.691
+cap "nmos_2shared_W200-L015-F1_0/a_n63_n226#" "nmos_2shared_W200-L015-F1_0/a_n33_n200#" 7.87101
+cap "nmos_2shared_W200-L015-F1_0/a_n63_n226#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" 41.6878
+cap "nmos_2shared_W200-L015-F1_0/a_n63_n226#" "nmos_2shared_W200-L015-F1_0/a_63_n200#" -18.4476
 cap "nmos_2shared_W200-L015-F1_0/a_33_n226#" "nmos_2shared_W200-L015-F1_0/a_n125_n200#" 13.6176
+cap "nmos_2shared_W200-L015-F1_0/a_33_n226#" "nmos_2shared_W200-L015-F1_0/a_n33_n200#" 5.75356
+cap "nmos_2shared_W200-L015-F1_0/a_33_n226#" "pmos_p2-w321-L015-f3_0/a_n317_n107#" 19.6421
+cap "nmos_2shared_W200-L015-F1_0/a_33_n226#" "nmos_2shared_W200-L015-F1_0/a_63_n200#" 17.4343
+cap "nmos_2shared_W200-L015-F1_0/a_33_n226#" "nmos_2shared_W200-L015-F1_0/a_n63_n226#" 41.645
 merge "nmos_2shared_W200-L015-F1_0/VSUBS" "nmos_2shared_W200-L015-F1_0/a_63_n200#" -250.89 0 0 0 0 0 0 0 0 -2400 -812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18000 -890 0 0 0 0 0 0 0 0 0 0
 merge "nmos_2shared_W200-L015-F1_0/a_63_n200#" "a_626_54#"
 merge "a_626_54#" "pmos_p2-w321-L015-f3_0/VSUBS"
