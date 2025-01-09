@@ -4,17 +4,20 @@ K {}
 V {}
 S {}
 E {}
-N 160 -220 160 -110 {lab=#net1}
-N 160 -110 160 -100 {lab=#net1}
-C {NOR/nor4.sym} 100 -260 0 0 {name=x2 VSS=VSS VDD=VDD}
-C {NOR/nor4.sym} 100 -100 0 0 {name=x3 VSS=VSS VDD=VDD}
-C {devices/ipin.sym} 40 -320 0 0 {name=p1 lab=A0}
-C {devices/ipin.sym} 40 -280 0 0 {name=p2 lab=A1}
-C {devices/ipin.sym} 40 -240 0 0 {name=p3 lab=A2}
-C {devices/ipin.sym} 40 -200 0 0 {name=p4 lab=A3}
-C {devices/ipin.sym} 40 -160 0 0 {name=p5 lab=A4}
-C {devices/ipin.sym} 40 -120 0 0 {name=p6 lab=A5}
-C {devices/ipin.sym} 40 -80 0 0 {name=p7 lab=A6}
-C {devices/ipin.sym} 40 -40 0 0 {name=p8 lab=A7}
-C {devices/opin.sym} 280 -240 0 0 {name=p9 lab=Y}
-C {NOR/nor2.sym} 220 -240 0 0 {name=x1 VSS=VSS VDD=VDD}
+N 300 210 300 280 {lab=#net1}
+N 300 320 300 380 {lab=#net2}
+N 420 300 430 300 {lab=#net3}
+N 510 300 520 300 {lab=Y}
+C {devices/opin.sym} 520 300 0 0 {name=p2 lab=Y}
+C {NOR/nor4.sym} 240 210 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {NOR/nor4.sym} 240 380 0 0 {name=x2 VSS=VSS VDD=VDD}
+C {NOR/nor2.sym} 360 300 0 0 {name=x3 VSS=VSS VDD=VDD}
+C {INV/inv.sym} 470 300 0 0 {name=x4 VSS=VSS VDD=VDD}
+C {devices/ipin.sym} 180 320 0 0 {name=p17 lab=A4}
+C {devices/ipin.sym} 180 360 0 0 {name=p19 lab=A5}
+C {devices/ipin.sym} 180 400 0 0 {name=p21 lab=A6}
+C {devices/ipin.sym} 180 440 0 0 {name=p23 lab=A7}
+C {devices/ipin.sym} 180 270 0 0 {name=p9 lab=A0}
+C {devices/ipin.sym} 180 150 0 0 {name=p15 lab=A3}
+C {devices/ipin.sym} 180 190 0 0 {name=p13 lab=A2}
+C {devices/ipin.sym} 180 230 0 0 {name=p11 lab=A1}

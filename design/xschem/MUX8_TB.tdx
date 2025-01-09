@@ -1,0 +1,23 @@
+tEDAx v1
+begin netlist v1 MUX8_TB
+#subcircuit mux2efe x1
+#map SEL0 -> SEL0
+#map A0 -> A0
+#map Y -> Y
+#map A1 -> A1
+#  subcircuit nand2 x1
+#  map A -> A0
+#  map B -> x1.net3
+#  map Y -> x1.net1
+#  subcircuit nand2 x2
+#  map A -> A1
+#  map B -> SEL0
+#  map Y -> x1.net2
+#  subcircuit nor2 x3
+#  map A -> x1.net1
+#  map B -> x1.net2
+#  map Y -> Y
+#  subcircuit inv x13
+#  map Y -> x1.net3
+#  map A -> SEL0
+end netlist

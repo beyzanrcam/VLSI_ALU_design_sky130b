@@ -1,0 +1,18 @@
+tEDAx v1
+begin netlist v1 mux2efe
+#subcircuit nand2 x1
+#map A -> A0
+#map B -> net3
+#map Y -> net1
+#subcircuit nand2 x2
+#map A -> A1
+#map B -> SEL0
+#map Y -> net2
+#subcircuit nor2 x3
+#map A -> net1
+#map B -> net2
+#map Y -> net4
+#subcircuit inv x13
+#map Y -> net3
+#map A -> SEL0
+end netlist
