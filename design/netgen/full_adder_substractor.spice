@@ -12,7 +12,7 @@ x2 B K net1 VSS VDD XOR2
 *.PININFO A:B B:B Cin:B S:B Cout:B
 x2 B A net1 VSS VDD XOR2
 x1 net1 Cin S VSS VDD XOR2
-x3 Cin net1 VSS VDD net2 nand2
+x3 net1 Cin VSS VDD net2 nand2
 x4 B A VSS VDD net3 nand2
 x5 net2 net3 VSS VDD Cout nand2
 .ends

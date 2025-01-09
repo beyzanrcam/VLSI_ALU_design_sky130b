@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736432524
+timestamp 1736433792
 << nwell >>
 rect -292 625 2999 1536
 rect -292 -679 2999 -159
@@ -188,9 +188,9 @@ rect 763 -760 776 -612
 rect 859 -760 872 -612
 rect 763 -772 872 -760
 rect -18 -866 353 -846
-rect -7 -932 12 -866
+rect -18 -932 12 -866
 rect 265 -932 353 -866
-rect -7 -945 353 -932
+rect -18 -945 353 -932
 rect 477 -1019 830 -1010
 rect 477 -1075 486 -1019
 rect 821 -1075 830 -1019
@@ -357,17 +357,17 @@ timestamp 1736429400
 transform 1 0 1824 0 1 -1051
 box 356 -17 1062 804
 use XOR2  XOR2_0
-timestamp 1736428148
+timestamp 1736433792
 transform 1 0 69 0 1 -239
-box -109 5 1371 1764
+box -109 77 1371 1764
 use XOR2  XOR2_1
-timestamp 1736428148
+timestamp 1736433792
 transform 1 0 1628 0 1 -239
-box -109 5 1371 1764
+box -109 77 1371 1764
 use XOR2  XOR2_2
-timestamp 1736428148
+timestamp 1736433792
 transform -1 0 2027 0 1 1545
-box -109 5 1371 1764
+box -109 77 1371 1764
 << labels >>
 rlabel metal2 -268 2638 -214 2710 5 A
 port 1 s

@@ -95,56 +95,9 @@ Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor
 NAND2 (3)                                  |nand2 (3)                                  
 XOR2 (3)                                   |XOR2 (3)                                   
 Number of devices: 6                       |Number of devices: 6                       
-Number of nets: 13 **Mismatch**            |Number of nets: 15 **Mismatch**            
+Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
-
----------------------------------------------------------------------------------------
-Net: VSS                                   |Net: VSS                                   
-  XOR2/VSS = 3                             |  XOR2/VSS = 3                             
-  NAND2/VSS = 3                            |  nand2/VSS = 3                            
-  XOR2/A = 2                               |                                           
-  NAND2/A = 2                              |                                           
-  XOR2/Y = 2                               |                                           
-                                           |                                           
-Net: XOR2_2/VDD                            |Net: VDD                                   
-  NAND2/VDD = 3                            |  XOR2/VDD = 3                             
-  XOR2/VDD = 3                             |  nand2/VDD = 3                            
-                                           |                                           
-(no matching net)                          |Net: net1                                  
-                                           |  XOR2/A = 1                               
-                                           |  nand2/A = 1                              
-                                           |  XOR2/Y = 1                               
-                                           |                                           
-(no matching net)                          |Net: full_adder:1/net1                     
-                                           |  XOR2/Y = 1                               
-                                           |  XOR2/A = 1                               
-                                           |  nand2/B = 1                              
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: NAND2_2/A                             |Net: full_adder:1/net2                     
-  NAND2/Y = 1                              |  nand2/Y = 1                              
-  NAND2/A = 1                              |  nand2/A = 1                              
-                                           |                                           
-Net: CIN                                   |Net: CIN                                   
-  NAND2/B = 1                              |  nand2/A = 1                              
-  XOR2/B = 1                               |  XOR2/B = 1                               
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
-
----------------------------------------------------------------------------------------
-Instance: NAND2_1                          |Instance: full_adder:1/nand2:3             
-  A = 12                                   |  A = 2                                    
-  B = 2                                    |  B = 3                                    
-  VSS = 12                                 |  VSS = 6                                  
-  VDD = 6                                  |  VDD = 6                                  
-  Y = 2                                    |  Y = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
@@ -153,9 +106,9 @@ OUT                                        |OUT
 COUT                                       |COUT                                       
 B                                          |B                                          
 K                                          |K                                          
-CIN                                        |CIN                                        
 A                                          |A                                          
-(no pin, node is XOR2_2/VDD)               |VSS                                        
+CIN                                        |CIN                                        
+(no pin, node is VSS)                      |VSS                                        
 (no pin, node is XOR2_2/VDD)               |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists for FULL_ADDER_XORED and full_adder_substractor altered to match.
