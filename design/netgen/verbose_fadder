@@ -40,15 +40,7 @@ sky130_fd_pr__nfet_01v8 (14->6)            |sky130_fd_pr__nfet_01v8 (6)
 Number of devices: 12                      |Number of devices: 12                      
 Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port and property errors.
-sky130_fd_pr__nfet_01v8:13 vs. inv:2/sky130_fd_pr__nfet_01v8:M2:
- w circuit1: 0.65   circuit2: 1   (delta=42.4%, cutoff=7%)
-sky130_fd_pr__nfet_01v8:10 vs. inv:3/sky130_fd_pr__nfet_01v8:M2:
- w circuit1: 0.65   circuit2: 1   (delta=42.4%, cutoff=7%)
-sky130_fd_pr__pfet_01v8:16 vs. inv:2/sky130_fd_pr__pfet_01v8:M1:
- w circuit1: 2.75   circuit2: 3.21   (delta=15.4%, cutoff=7%)
-sky130_fd_pr__pfet_01v8:15 vs. inv:3/sky130_fd_pr__pfet_01v8:M1:
- w circuit1: 2.75   circuit2: 3.21   (delta=15.4%, cutoff=7%)
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: XOR2                            |Circuit 2: XOR2                            
@@ -97,7 +89,7 @@ XOR2 (3)                                   |XOR2 (3)
 Number of devices: 6                       |Number of devices: 6                       
 Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
@@ -106,12 +98,13 @@ OUT                                        |OUT
 COUT                                       |COUT                                       
 B                                          |B                                          
 K                                          |K                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 A                                          |A                                          
 CIN                                        |CIN                                        
-(no pin, node is VSS)                      |VSS                                        
-(no pin, node is XOR2_2/VDD)               |VDD                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for FULL_ADDER_XORED and full_adder_substractor altered to match.
+Cell pin lists are equivalent.
 Device classes FULL_ADDER_XORED and full_adder_substractor are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736433792
+timestamp 1736434665
 << nwell >>
 rect -292 625 2999 1536
 rect -292 -679 2999 -159
@@ -307,7 +307,10 @@ rect 2587 -1109 2643 -1053
 rect 2643 -1109 2648 -1053
 rect 2582 -1114 2648 -1109
 << metal4 >>
-rect 597 3141 782 3267
+rect 597 3265 782 3267
+rect 891 3265 2011 3266
+rect 597 3142 2011 3265
+rect 597 3141 782 3142
 rect 597 1497 723 3141
 rect 597 1371 2272 1497
 rect 1418 -268 1596 1371
@@ -382,5 +385,7 @@ port 5 s
 rlabel metal1 2808 -144 2958 -100 5 CIN
 port 6 s
 rlabel metal4 1215 3164 1616 3241 5 VDD
+port 7 s
 rlabel metal5 433 -1321 834 -1244 5 VSS
+port 8 s
 << end >>
