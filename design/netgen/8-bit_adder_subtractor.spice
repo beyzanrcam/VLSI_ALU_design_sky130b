@@ -1,5 +1,5 @@
 ** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/8-bit_adder_subtractor.sch
-.subckt 8-bit_adder_subtractor K A0 S0 B0 A1 S1 B1 A2 S2 B2 A3 S3 B3 A4 S4 B4 A5 S5 B5 A6 S6 B6 A7 S7 B7 C VSS VDD
+.subckt 8-bit_adder_subtractor K S0 A0 B0 S1 A1 B1 A2 S2 B2 A3 S3 B3 A4 S4 B4 A5 S5 B5 S6 A6 B6 S7 A7 C B7
 *.PININFO A0:I B0:I S0:O K:I A1:I B1:I S1:O A2:I B2:I S2:O A3:I B3:I S3:O A4:I B4:I S4:O A5:I B5:I S5:O A6:I B6:I S6:O A7:I B7:I
 *+ S7:O C:O
 x1 A0 K B0 K S0 net1 VSS VDD full_adder_substractor
@@ -17,7 +17,7 @@ x8 A1 K B1 net1 S1 net7 VSS VDD full_adder_substractor
 ** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder_substractor.sch
 .subckt full_adder_substractor A K B CIN OUT COUT VSS VDD
 *.PININFO K:I B:I CIN:I OUT:O COUT:O A:I
-x1 A OUT net1 CIN COUT VSS VDD full_adder
+x1 OUT A net1 CIN COUT VSS VDD full_adder
 x2 B K net1 VSS VDD XOR2
 .ends
 
@@ -25,13 +25,13 @@ x2 B K net1 VSS VDD XOR2
 * expanding   symbol:  ADDER/full_adder.sym # of pins=5
 ** sym_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder.sym
 ** sch_path: /home/erhangok/Documents/Dersler/VLSI/vlsi_sky130b/design/xschem/ADDER/full_adder.sch
-.subckt full_adder A S B Cin Cout VSS VDD
-*.PININFO A:B B:B Cin:B S:B Cout:B
+.subckt full_adder OUT A B CIN COUT VSS VDD
+*.PININFO A:I COUT:O B:I CIN:I OUT:O
 x2 B A net1 VSS VDD XOR2
-x1 net1 Cin S VSS VDD XOR2
-x3 net1 Cin VSS VDD net2 nand2
+x1 net1 CIN OUT VSS VDD XOR2
+x3 net1 CIN VSS VDD net2 nand2
 x4 B A VSS VDD net3 nand2
-x5 net2 net3 VSS VDD Cout nand2
+x5 net2 net3 VSS VDD COUT nand2
 .ends
 
 

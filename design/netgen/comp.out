@@ -1,0 +1,171 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell cg4 in circuit XOR2 (1)(1 instance)
+Flattening unmatched subcell inv_smol in circuit XOR2 (1)(2 instances)
+
+Class XOR2 (0):  Merged 16 parallel devices.
+Subcircuit summary:
+Circuit 1: XOR2                            |Circuit 2: XOR2                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (14->6)            |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (14->6)            |sky130_fd_pr__nfet_01v8 (6)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: XOR2                            |Circuit 2: XOR2                            
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+a_99_341#                                  |(no pin, node is !B)                       
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for XOR2 and XOR2 altered to match.
+Device classes XOR2 and XOR2 are equivalent.
+Flattening unmatched subcell nmos_2shared_W200-L015-F1 in circuit NAND2 (0)(1 instance)
+Flattening unmatched subcell pmos_p2-w321-L015-f3 in circuit NAND2 (0)(1 instance)
+
+Class NAND2 (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2 and nand2 are equivalent.
+Flattening unmatched subcell full_adder in circuit full_adder_substractor (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
+-------------------------------------------|-------------------------------------------
+NAND2 (3)                                  |nand2 (3)                                  
+XOR2 (3)                                   |XOR2 (3)                                   
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
+
+---------------------------------------------------------------------------------------
+Net: li_1358_495#                          |Net: full_adder:1/dummy_11                 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  NAND2/VDD = 3                            |  nand2/VDD = 3                            
+  XOR2/VDD = 3                             |  XOR2/VDD = 3                             
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  NAND2/VSS = 3                            |  nand2/VSS = 3                            
+  XOR2/VSS = 3                             |  XOR2/VSS = 3                             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: NAND2_2/B                             |Net: full_adder:1/net3                     
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: A                                     |Net: A                                     
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: XOR2_1/A                              |Net: full_adder:1/net1                     
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/Y = 1                               |  XOR2/A = 1                               
+  XOR2/A = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: XOR2_2/Y                              |Net: net1                                  
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/A = 1                               |  nand2/B = 1                              
+  XOR2/Y = 1                               |  XOR2/Y = 1                               
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
+
+---------------------------------------------------------------------------------------
+Instance: XOR2_0                           |Instance: full_adder:1/XOR2:2              
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 6                                  |  VSS = 6                                  
+  VDD = 6                                  |  VDD = 6                                  
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: NAND2_0                          |Instance: full_adder:1/nand2:4             
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 6                                  |  VSS = 6                                  
+  VDD = 6                                  |  VDD = 6                                  
+  Y = 2                                    |  Y = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: FULL_ADDER_XORED                |Circuit 2: full_adder_substractor          
+-------------------------------------------|-------------------------------------------
+OUT                                        |OUT                                        
+COUT                                       |COUT                                       
+B                                          |B                                          
+K                                          |K                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A                                          |A                                          
+CIN                                        |CIN                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes FULL_ADDER_XORED and full_adder_substractor are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.

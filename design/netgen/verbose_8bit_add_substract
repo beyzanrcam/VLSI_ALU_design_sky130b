@@ -91,23 +91,336 @@ XOR2 (24)                                  |XOR2 (24)
 Number of devices: 48                      |Number of devices: 48                      
 Number of nets: 91                         |Number of nets: 91                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: x8bit_ADDER                     |Circuit 2: 8-bit_adder_subtractor          
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  NAND2/VDD = 24                           |  nand2/VDD = 24                           
+  XOR2/VDD = 24                            |  XOR2/VDD = 24                            
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  NAND2/VSS = 24                           |  nand2/VSS = 24                           
+  XOR2/VSS = 24                            |  XOR2/VSS = 24                            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /FULL_ADDER_XORED_7/XOR2_1/A          |Net: full_adder_substractor:8/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/Y = 1                               |  XOR2/A = 1                               
+  XOR2/A = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_7/XOR2_2/Y          |Net: full_adder_substractor:6/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_6/XOR2_2/Y          |Net: full_adder_substractor:5/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_5/XOR2_2/Y          |Net: full_adder_substractor:4/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_4/XOR2_2/Y          |Net: full_adder_substractor:3/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_3/XOR2_2/Y          |Net: full_adder_substractor:2/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_2/XOR2_2/Y          |Net: full_adder_substractor:7/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_1/XOR2_2/Y          |Net: full_adder_substractor:1/full_adder:1 
+  NAND2/A = 1                              |  XOR2/Y = 1                               
+  XOR2/A = 1                               |  XOR2/A = 1                               
+  XOR2/Y = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_0/XOR2_2/Y          |Net: full_adder_substractor:8/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/A = 1                               |  nand2/B = 1                              
+  XOR2/Y = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_6/XOR2_1/A          |Net: full_adder_substractor:7/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_5/XOR2_1/A          |Net: full_adder_substractor:6/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_4/XOR2_1/A          |Net: full_adder_substractor:5/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_3/XOR2_1/A          |Net: full_adder_substractor:4/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_2/XOR2_1/A          |Net: full_adder_substractor:3/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_1/XOR2_1/A          |Net: full_adder_substractor:2/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+                                           |                                           
+Net: /FULL_ADDER_XORED_0/XOR2_1/A          |Net: full_adder_substractor:1/net1         
+  NAND2/A = 1                              |  XOR2/B = 1                               
+  XOR2/Y = 1                               |  nand2/B = 1                              
+  XOR2/A = 1                               |  XOR2/Y = 1                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /FULL_ADDER_XORED_7/li_1358_495#      |Net: full_adder_substractor:8/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_6/li_1358_495#      |Net: full_adder_substractor:7/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_5/li_1358_495#      |Net: full_adder_substractor:6/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_4/li_1358_495#      |Net: full_adder_substractor:5/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_3/li_1358_495#      |Net: full_adder_substractor:4/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_2/li_1358_495#      |Net: full_adder_substractor:3/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_1/li_1358_495#      |Net: full_adder_substractor:2/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+                                           |                                           
+Net: /FULL_ADDER_XORED_0/li_1358_495#      |Net: full_adder_substractor:1/full_adder:1 
+  XOR2/a_99_341# = 1                       |  XOR2/proxya_99_341# = 1                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /FULL_ADDER_XORED_7/NAND2_2/B         |Net: full_adder_substractor:8/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_6/NAND2_2/B         |Net: full_adder_substractor:5/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_5/NAND2_2/B         |Net: full_adder_substractor:4/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_4/NAND2_2/B         |Net: full_adder_substractor:3/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_3/NAND2_2/B         |Net: full_adder_substractor:2/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_2/NAND2_2/B         |Net: full_adder_substractor:6/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_1/NAND2_2/B         |Net: full_adder_substractor:1/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: /FULL_ADDER_XORED_0/NAND2_2/B         |Net: full_adder_substractor:7/full_adder:1 
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  NAND2/B = 1                              |  nand2/B = 1                              
+                                           |                                           
+Net: A1                                    |Net: A1                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A7                                    |Net: A7                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A6                                    |Net: A6                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A5                                    |Net: A5                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A4                                    |Net: A4                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A3                                    |Net: A3                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A2                                    |Net: A2                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+                                           |                                           
+Net: A0                                    |Net: A0                                    
+  NAND2/B = 1                              |  XOR2/A = 1                               
+  XOR2/B = 1                               |  nand2/A = 1                              
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: x8bit_ADDER                     |Circuit 2: 8-bit_adder_subtractor          
+
+---------------------------------------------------------------------------------------
+Instance: FULL_ADDER_XORED_7//XOR2_0       |Instance: full_adder_substractor:8/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_6//XOR2_0       |Instance: full_adder_substractor:7/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_5//XOR2_0       |Instance: full_adder_substractor:6/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_4//XOR2_0       |Instance: full_adder_substractor:5/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_3//XOR2_0       |Instance: full_adder_substractor:4/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_2//XOR2_0       |Instance: full_adder_substractor:3/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_1//XOR2_0       |Instance: full_adder_substractor:2/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+                                           |                                           
+Instance: FULL_ADDER_XORED_0//XOR2_0       |Instance: full_adder_substractor:1/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 3                                    |  Y = 3                                    
+  a_99_341# = 1                            |  proxya_99_341# = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: FULL_ADDER_XORED_7//NAND2_0      |Instance: full_adder_substractor:8/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_6//NAND2_0      |Instance: full_adder_substractor:7/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_5//NAND2_0      |Instance: full_adder_substractor:6/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_4//NAND2_0      |Instance: full_adder_substractor:5/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_3//NAND2_0      |Instance: full_adder_substractor:4/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_2//NAND2_0      |Instance: full_adder_substractor:3/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_1//NAND2_0      |Instance: full_adder_substractor:2/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: FULL_ADDER_XORED_0//NAND2_0      |Instance: full_adder_substractor:1/full_ad 
+  A = 3                                    |  A = 2                                    
+  B = 2                                    |  B = 3                                    
+  VSS = 48                                 |  VSS = 48                                 
+  VDD = 48                                 |  VDD = 48                                 
+  Y = 2                                    |  Y = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
 Circuit 1: x8bit_ADDER                     |Circuit 2: 8-bit_adder_subtractor          
 -------------------------------------------|-------------------------------------------
-VSS                                        |VSS                                        
-VDD                                        |VDD                                        
+VSS                                        |(no pin, node is VDD)                      
+VDD                                        |(no pin, node is VSS)                      
 S0                                         |S0                                         
 C                                          |C                                          
-B0                                         |B0                                         
-B7                                         |B7                                         
-B2                                         |B2                                         
-B3                                         |B3                                         
+B7                                         |B0 **Mismatch**                            
+B6                                         |B2 **Mismatch**                            
+B5                                         |B3 **Mismatch**                            
 B4                                         |B4                                         
-B5                                         |B5                                         
-B6                                         |B6                                         
-B1                                         |B1                                         
+B3                                         |B5 **Mismatch**                            
+B2                                         |B6 **Mismatch**                            
+B1                                         |B7 **Mismatch**                            
+B0                                         |B1 **Mismatch**                            
 S2                                         |S2                                         
 S3                                         |S3                                         
 S4                                         |S4                                         
@@ -116,17 +429,16 @@ S6                                         |S6
 S7                                         |S7                                         
 S1                                         |S1                                         
 K                                          |K                                          
-A0                                         |A0                                         
-A1                                         |A1                                         
-A2                                         |A2                                         
-A3                                         |A3                                         
+A0                                         |A1 **Mismatch**                            
+A1                                         |A7 **Mismatch**                            
+A2                                         |A6 **Mismatch**                            
+A3                                         |A5 **Mismatch**                            
 A4                                         |A4                                         
-A5                                         |A5                                         
-A6                                         |A6                                         
-A7                                         |A7                                         
+A5                                         |A3 **Mismatch**                            
+A6                                         |A2 **Mismatch**                            
+A7                                         |A0 **Mismatch**                            
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for x8bit_ADDER and 8-bit_adder_subtractor altered to match.
 Device classes x8bit_ADDER and 8-bit_adder_subtractor are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Top level cell failed pin matching.

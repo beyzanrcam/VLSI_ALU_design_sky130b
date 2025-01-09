@@ -4,11 +4,15 @@ K {}
 V {}
 S {}
 E {}
-N -300 -10 -20 -10 {lab=C}
-N -320 -10 -300 -10 {lab=C}
 C {devices/opin.sym} 280 -10 0 0 {name=p4 lab=V}
-C {devices/ipin.sym} -320 -10 0 0 {name=p1 lab=C}
-C {devices/ipin.sym} -320 10 0 0 {name=p3 lab=MSB1}
-C {devices/ipin.sym} -320 30 0 0 {name=p5 lab=MSB2}
+C {devices/ipin.sym} -480 -90 0 0 {name=p3 lab=A_MSB}
+C {devices/ipin.sym} -480 -70 0 0 {name=p5 lab=B_MSB}
 C {XOR/XOR2.sym} -170 20 0 0 {name=x5}
-C {XOR/XOR2.sym} 130 0 0 0 {name=x6}
+C {XOR/XOR2.sym} -170 -30 0 0 {name=x6}
+C {devices/lab_pin.sym} -320 -40 0 0 {name=p2 sig_type=std_logic lab=A_MSB}
+C {devices/lab_pin.sym} -320 10 0 0 {name=p6 sig_type=std_logic lab=A_MSB}
+C {devices/ipin.sym} -480 -50 0 0 {name=p1 lab=Y_MSB}
+C {devices/lab_pin.sym} -320 30 0 0 {name=p7 sig_type=std_logic lab=Y_MSB}
+C {INV/inv.sym} -440 -70 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {devices/lab_pin.sym} -400 -70 2 0 {name=p8 sig_type=std_logic lab=!A_MSB}
+C {devices/lab_pin.sym} -320 -20 0 0 {name=p9 sig_type=std_logic lab=!A_MSB}

@@ -41,25 +41,12 @@ C {devices/ipin.sym} 90 -80 0 0 {name=p7 lab=A5}
 C {devices/ipin.sym} 90 -20 0 0 {name=p8 lab=A6}
 C {devices/ipin.sym} 90 0 0 0 {name=p9 lab=A7}
 C {devices/ipin.sym} 90 -430 0 0 {name=p10 lab=SEL0}
-C {INV/inv.sym} 130 -430 0 0 {name=x8 VSS=VSS VDD=VDD}
-C {devices/lab_pin.sym} 170 -430 2 0 {name=p11 sig_type=std_logic lab=!SEL0}
 C {devices/lab_pin.sym} 90 -200 0 0 {name=p12 sig_type=std_logic lab=SEL0}
-C {devices/lab_pin.sym} 90 -220 0 0 {name=p13 sig_type=std_logic lab=!SEL0}
 C {devices/lab_pin.sym} 90 -120 0 0 {name=p14 sig_type=std_logic lab=SEL0}
-C {devices/lab_pin.sym} 90 -140 0 0 {name=p15 sig_type=std_logic lab=!SEL0}
 C {devices/lab_pin.sym} 90 -40 0 0 {name=p16 sig_type=std_logic lab=SEL0}
-C {devices/lab_pin.sym} 90 -60 0 0 {name=p17 sig_type=std_logic lab=!SEL0}
 C {devices/lab_pin.sym} 90 40 0 0 {name=p18 sig_type=std_logic lab=SEL0}
-C {devices/lab_pin.sym} 90 20 0 0 {name=p19 sig_type=std_logic lab=!SEL0}
 C {devices/ipin.sym} 90 -380 0 0 {name=p22 lab=SEL1}
-C {INV/inv.sym} 130 -380 0 0 {name=x9 VSS=VSS VDD=VDD}
-C {devices/lab_pin.sym} 170 -380 2 0 {name=p23 sig_type=std_logic lab=!SEL1}
-C {devices/lab_pin.sym} 360 -160 0 0 {name=p28 sig_type=std_logic lab=!SEL1}
 C {devices/lab_pin.sym} 360 -140 0 0 {name=p29 sig_type=std_logic lab=SEL1}
-C {devices/lab_pin.sym} 360 0 0 0 {name=p30 sig_type=std_logic lab=!SEL1}
 C {devices/lab_pin.sym} 360 20 0 0 {name=p31 sig_type=std_logic lab=SEL1}
 C {devices/ipin.sym} 90 -330 0 0 {name=p32 lab=SEL2}
-C {INV/inv.sym} 130 -330 0 0 {name=x10 VSS=VSS VDD=VDD}
-C {devices/lab_pin.sym} 170 -330 2 0 {name=p33 sig_type=std_logic lab=!SEL2}
-C {devices/lab_pin.sym} 630 -60 0 0 {name=p36 sig_type=std_logic lab=!SEL2}
 C {devices/lab_pin.sym} 630 -40 0 0 {name=p37 sig_type=std_logic lab=SEL2}
