@@ -1,12 +1,11 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
 S {}
 E {}
-N 630 -530 630 -510 {lab=GND}
+N 630 -530 630 -510 {lab=VSS}
 N 580 -530 580 -510 {lab=VDD}
-N 630 -510 630 -450 {lab=GND}
 C {devices/code.sym} 365 -545 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -25,7 +24,7 @@ C {devices/iopin.sym} 630 -520 3 0 {name=p29 lab=VSS}
 C {devices/code_shown.sym} 310 -330 0 0 {name=s1 only_toplevel=false value="
 
 
-V_OPCODE0 OPCODE[0] 0 1.2
+V_OPCODE0 OPCODE[0] 0 0
 V_OPCODE1 OPCODE[1] 0 1.2
 V_OPCODE2 OPCODE[2] 0 0
 V_OPCODE3 OPCODE[3] 0 0
@@ -87,3 +86,4 @@ C {devices/ipin.sym} -130 -180 2 1 {name=p27 lab=OPCODE[3:0]}
 C {ALU/alu.sym} 20 0 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} -130 -160 0 0 {name=l3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -130 -140 0 0 {name=l4 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 630 -480 0 0 {name=V2 value=0 savecurrent=false}
