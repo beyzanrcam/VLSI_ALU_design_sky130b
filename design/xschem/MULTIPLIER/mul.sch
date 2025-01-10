@@ -160,3 +160,6 @@ C {devices/opin.sym} -150 1530 1 0 {name=p36 lab=S5}
 C {devices/opin.sym} 360 150 1 0 {name=p37 lab=S0}
 C {devices/opin.sym} -10 590 1 0 {name=p38 lab=S1}
 C {devices/opin.sym} -100 1030 1 0 {name=p39 lab=S2}
+C {devices/lab_pin.sym} -170 290 1 0 {name=p24 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} -260 730 1 0 {name=p25 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} -270 1230 1 0 {name=p40 sig_type=std_logic lab=VSS}

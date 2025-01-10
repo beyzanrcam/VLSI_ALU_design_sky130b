@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -371,5 +371,7 @@ C {devices/ipin.sym} 1060 970 2 1 {name=p335 lab=VDD}
 C {devices/ipin.sym} 1060 990 2 1 {name=p336 lab=VSS}
 C {ADDER/8-bit_adder_subtractor.sym} 220 430 0 0 {name=x2}
 C {devices/lab_pin.sym} 890 1250 2 0 {name=p323 sig_type=std_logic lab=V}
+C {devices/lab_pin.sym} 590 1250 0 0 {name=p327 sig_type=std_logic lab=A7}
+C {devices/lab_pin.sym} 590 1270 0 0 {name=p330 sig_type=std_logic lab=B7}
 C {ZV_FLAG/V_FLAG.sym} 740 1270 0 0 {name=x17}
-C {devices/lab_pin.sym} 590 1250 2 1 {name=p326 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 590 1290 0 0 {name=p326 sig_type=std_logic lab=Y7}
