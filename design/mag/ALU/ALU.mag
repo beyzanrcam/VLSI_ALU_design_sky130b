@@ -1,0 +1,41 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1736532227
+use mux8  mux8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/MUX
+timestamp 1736530819
+transform 1 0 7400 0 1 784
+box -1848 -1184 5835 3344
+use mux8  mux8_1
+timestamp 1736530819
+transform 1 0 7400 0 1 -3744
+box -1848 -1184 5835 3344
+use mux8  mux8_2
+timestamp 1736530819
+transform 1 0 7400 0 1 -8272
+box -1848 -1184 5835 3344
+use mux8  mux8_3
+timestamp 1736530819
+transform 1 0 7400 0 1 -12800
+box -1848 -1184 5835 3344
+use mux8  mux8_4
+timestamp 1736530819
+transform 1 0 7400 0 1 -17328
+box -1848 -1184 5835 3344
+use mux8  mux8_5
+timestamp 1736530819
+transform 1 0 7400 0 1 -21856
+box -1848 -1184 5835 3344
+use mux8  mux8_6
+timestamp 1736530819
+transform 1 0 7400 0 1 -35440
+box -1848 -1184 5835 3344
+use mux8  mux8_7
+timestamp 1736530819
+transform 1 0 7400 0 1 -26384
+box -1848 -1184 5835 3344
+use mux8  mux8_8
+timestamp 1736530819
+transform 1 0 7400 0 1 -30912
+box -1848 -1184 5835 3344
+<< end >>

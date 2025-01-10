@@ -16,7 +16,6 @@ value="
 "
 spice_ignore=false}
 C {devices/vsource.sym} 580 -480 0 0 {name=V1 value=1.2 savecurrent=false}
-C {devices/vsource.sym} 630 -480 0 0 {name=V2 value=0 savecurrent=false}
 C {devices/gnd.sym} 580 -450 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 630 -450 0 0 {name=l2 lab=GND}
 C {devices/iopin.sym} 580 -520 3 0 {name=p28 lab=VDD
@@ -25,13 +24,11 @@ C {devices/iopin.sym} 630 -520 3 0 {name=p29 lab=VSS}
 C {devices/code_shown.sym} 310 -330 0 0 {name=s1 only_toplevel=false value="
 
 
-V_OPCODE0 OPCODE[0] 0 1.2
-V_OPCODE1 OPCODE[1] 0 0
+V_OPCODE0 OPCODE[0] 0 0
+V_OPCODE1 OPCODE[1] 0 1.2
 V_OPCODE2 OPCODE[2] 0 0
 V_OPCODE3 OPCODE[3] 0 0
 
-V_DD VDD 0 1.2
-V_SS VSS 0 1.2
 
 V_A0 A0 0 1.2
 V_B0 B0 0 1.2
@@ -57,22 +54,22 @@ print V(Y0) V(Y1) V(Y2) V(Y3) V(Y4) V(Y5) V(Y6) V(Y7) V(Z) V(C) V(V) V(S)
 
 .endc
 "}
-C {devices/ipin.sym} -130 20 2 1 {name=p5 lab=A7}
-C {devices/ipin.sym} -130 0 2 1 {name=p7 lab=A6}
-C {devices/ipin.sym} -130 -20 2 1 {name=p8 lab=A5}
-C {devices/ipin.sym} -130 -40 2 1 {name=p9 lab=A4}
-C {devices/ipin.sym} -130 -60 2 1 {name=p10 lab=A3}
-C {devices/ipin.sym} -130 -80 2 1 {name=p11 lab=A2}
-C {devices/ipin.sym} -130 -100 2 1 {name=p12 lab=A1}
+C {devices/ipin.sym} -130 180 2 1 {name=p5 lab=A7}
+C {devices/ipin.sym} -130 140 2 1 {name=p7 lab=A6}
+C {devices/ipin.sym} -130 100 2 1 {name=p8 lab=A5}
+C {devices/ipin.sym} -130 60 2 1 {name=p9 lab=A4}
+C {devices/ipin.sym} -130 0 2 1 {name=p10 lab=A3}
+C {devices/ipin.sym} -130 -40 2 1 {name=p11 lab=A2}
+C {devices/ipin.sym} -130 -80 2 1 {name=p12 lab=A1}
 C {devices/ipin.sym} -130 -120 2 1 {name=p13 lab=A0}
-C {devices/ipin.sym} -130 60 0 0 {name=p1 lab=B1}
-C {devices/ipin.sym} -130 80 0 0 {name=p14 lab=B2}
-C {devices/ipin.sym} -130 100 0 0 {name=p16 lab=B3}
-C {devices/ipin.sym} -130 40 0 0 {name=p2 lab=B0}
-C {devices/ipin.sym} -130 160 0 0 {name=p3 lab=B6}
-C {devices/ipin.sym} -130 180 0 0 {name=p4 lab=B7}
-C {devices/ipin.sym} -130 140 0 0 {name=p15 lab=B5}
-C {devices/ipin.sym} -130 120 0 0 {name=p6 lab=B4}
+C {devices/ipin.sym} -130 -60 0 0 {name=p1 lab=B1}
+C {devices/ipin.sym} -130 -20 0 0 {name=p14 lab=B2}
+C {devices/ipin.sym} -130 20 0 0 {name=p16 lab=B3}
+C {devices/ipin.sym} -130 -100 0 0 {name=p2 lab=B0}
+C {devices/ipin.sym} -130 120 0 0 {name=p3 lab=B6}
+C {devices/ipin.sym} -130 160 0 0 {name=p4 lab=B7}
+C {devices/ipin.sym} -130 80 0 0 {name=p15 lab=B5}
+C {devices/ipin.sym} -130 40 0 0 {name=p6 lab=B4}
 C {devices/opin.sym} 170 -180 0 0 {name=p17 lab=Y0}
 C {devices/opin.sym} 170 -160 0 0 {name=p18 lab=Y1}
 C {devices/opin.sym} 170 -140 0 0 {name=p19 lab=Y2}
@@ -89,3 +86,4 @@ C {devices/ipin.sym} -130 -180 2 1 {name=p27 lab=OPCODE[3:0]}
 C {ALU/alu.sym} 20 0 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} -130 -160 0 0 {name=l3 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -130 -140 0 0 {name=l4 sig_type=std_logic lab=VSS}
+C {devices/vsource.sym} 630 -480 0 0 {name=V2 value=0 savecurrent=false}

@@ -1,12 +1,12 @@
-v {xschem version=3.1.0 file_version=1.2 }
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
 E {}
 N -20 -40 -20 10 {
-lab=#net1}
-C {devices/opin.sym} -20 10 0 0 {name=p4 lab=V}
+lab=V}
+C {devices/opin.sym} -20 -20 0 0 {name=p4 lab=V}
 C {devices/ipin.sym} -480 -90 0 0 {name=p3 lab=A_MSB}
 C {devices/ipin.sym} -480 -70 0 0 {name=p5 lab=B_MSB}
 C {XOR/XOR2.sym} -170 20 0 0 {name=x5}

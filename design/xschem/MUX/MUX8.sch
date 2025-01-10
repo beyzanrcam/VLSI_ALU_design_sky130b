@@ -71,7 +71,6 @@ N 340 370 340 380 {lab=#net4}
 N 340 380 380 380 {lab=#net4}
 N 360 340 380 340 {lab=#net8}
 N 360 340 360 840 {lab=#net8}
-N 220 840 360 830 {lab=#net8}
 N 200 690 300 690 {lab=#net6}
 N 300 300 380 300 {lab=#net6}
 N 300 300 300 690 {lab=#net6}
@@ -82,6 +81,7 @@ N 170 200 360 200 {lab=#net1}
 N 360 180 360 200 {lab=#net1}
 N 360 180 380 180 {lab=#net1}
 N 160 200 170 200 {lab=#net1}
+N 220 840 360 840 {lab=#net8}
 C {NAND/nand4.sym} 60 -280 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {INV/inv.sym} -120 -420 1 0 {name=x13 VSS=VSS VDD=VDD}
 C {devices/ipin.sym} -170 -480 1 0 {name=p5 lab=SEL0}
