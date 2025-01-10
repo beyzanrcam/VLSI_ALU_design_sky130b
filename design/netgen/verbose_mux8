@@ -1,0 +1,120 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UFBY79 in circuit nor2 (5)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_LZEQWH in circuit nor2 (5)(1 instance)
+
+Class nor2 (5):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: nor2                            |Circuit 2: nor2                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (10->2)            |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nor2                            |Circuit 2: nor2                            
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nor2 and nor2 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H9P4D in circuit inv (5)(1 instance)
+Flattening unmatched subcell efepmos_W107-L15-F3 in circuit inv (5)(1 instance)
+
+Class inv (5):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (3->1)             |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv and inv are equivalent.
+Flattening unmatched subcell NAND4F in circuit mux8 (5)(10 instances)
+Flattening unmatched subcell pmos4_f2 in circuit mux8 (5)(10 instances)
+Flattening unmatched subcell efenmos2 in circuit mux8 (5)(10 instances)
+Flattening unmatched subcell nand4 in circuit MUX8 (7)(10 instances)
+
+Class mux8 (5):  Merged 40 parallel devices.
+Subcircuit summary:
+Circuit 1: mux8                            |Circuit 2: MUX8                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (80->40)           |sky130_fd_pr__pfet_01v8 (40)               
+sky130_fd_pr__nfet_01v8 (40)               |sky130_fd_pr__nfet_01v8 (40)               
+nor2 (1)                                   |nor2 (1)                                   
+inv (4)                                    |inv (4)                                    
+Number of devices: 85                      |Number of devices: 85                      
+Number of nets: 58                         |Number of nets: 58                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: mux8                            |Circuit 2: MUX8                            
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+SEL0                                       |SEL0                                       
+SEL1                                       |SEL1                                       
+SEL2                                       |SEL2                                       
+A1                                         |A1                                         
+A5                                         |A5                                         
+A2                                         |A2                                         
+A6                                         |A6                                         
+A0                                         |A0                                         
+A3                                         |A3                                         
+A4                                         |A4                                         
+A7                                         |A7                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes mux8 and MUX8 are equivalent.
+
+Final result: Circuits match uniquely.
+.
