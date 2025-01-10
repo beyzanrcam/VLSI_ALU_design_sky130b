@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -28,8 +28,10 @@ N 390 170 390 180 {lab=#net2}
 N 390 200 390 220 {lab=#net3}
 N 390 170 390 180 {lab=#net2}
 N 390 200 390 210 {lab=#net3}
-C {XOR/XOR2.sym} 30 0 0 0 {name=x2}
-C {XOR/XOR2.sym} 370 0 0 0 {name=x1}
+C {XOR/XOR2.sym} 30 0 0 0 {name=x2 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 370 0 0 0 {name=x1 VSS=VSS
+VDD=VDD}
 C {NAND/nand2.sym} 280 140 2 1 {name=x3 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} 280 250 0 0 {name=x4 VSS=VSS VDD=VDD}
 C {NAND/nand2.sym} 450 190 0 0 {name=x5 VSS=VSS VDD=VDD}

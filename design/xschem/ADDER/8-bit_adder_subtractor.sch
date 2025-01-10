@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -68,11 +68,19 @@ C {devices/lab_pin.sym} -310 380 0 0 {name=l7 sig_type=std_logic lab=K}
 C {devices/lab_pin.sym} -310 490 0 0 {name=l8 sig_type=std_logic lab=K}
 C {devices/lab_pin.sym} -310 600 0 0 {name=l9 sig_type=std_logic lab=K}
 C {devices/lab_pin.sym} -310 -150 0 0 {name=l2 sig_type=std_logic lab=K}
-C {ADDER/full_adder_substractor.sym} -160 -180 0 0 {name=x1}
-C {ADDER/full_adder_substractor.sym} -160 40 0 0 {name=x2}
-C {ADDER/full_adder_substractor.sym} -160 150 0 0 {name=x3}
-C {ADDER/full_adder_substractor.sym} -160 260 0 0 {name=x4}
-C {ADDER/full_adder_substractor.sym} -160 370 0 0 {name=x5}
-C {ADDER/full_adder_substractor.sym} -160 480 0 0 {name=x6}
-C {ADDER/full_adder_substractor.sym} -160 590 0 0 {name=x7}
-C {ADDER/full_adder_substractor.sym} -160 -70 0 0 {name=x8}
+C {ADDER/full_adder_substractor.sym} -160 -180 0 0 {name=x1 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 40 0 0 {name=x2 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 150 0 0 {name=x3 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 260 0 0 {name=x4 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 370 0 0 {name=x5 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 480 0 0 {name=x6 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 590 0 0 {name=x7 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder_substractor.sym} -160 -70 0 0 {name=x8 VSS=VSS
+VDD=VDD}

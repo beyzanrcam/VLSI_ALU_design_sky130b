@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -23,7 +23,8 @@ lab=S7}
 C {NAND/nand_8_bitwise.sym} -10 10 0 0 {name=x1
 VSS=VSS
 VDD=VDD}
-C {NOT/not8.sym} 290 -70 0 0 {name=x2}
+C {NOT/not8.sym} 290 -70 0 0 {name=x2 VSS=VSS
+VDD=VDD}
 C {devices/opin.sym} 480 -20 0 0 {name=p7 lab=S6}
 C {devices/opin.sym} 480 0 0 0 {name=p8 lab=S7}
 C {devices/opin.sym} 480 -80 0 0 {name=p4 lab=S3}

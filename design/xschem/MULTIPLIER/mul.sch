@@ -108,7 +108,8 @@ C {AND/and2.sym} 0 90 1 0 {name=x1 VSS=VSS VDD=VDD}
 C {AND/and2.sym} 120 90 1 0 {name=x2 VSS=VSS VDD=VDD}
 C {AND/and2.sym} 240 90 1 0 {name=x3 VSS=VSS VDD=VDD}
 C {AND/and2.sym} 360 90 1 0 {name=x4 VSS=VSS VDD=VDD}
-C {ADDER/4-bit_adder.sym} -80 440 1 0 {name=x5}
+C {ADDER/4-bit_adder.sym} -80 440 1 0 {name=x5 VSS=VSS
+VDD=VDD}
 C {devices/lab_pin.sym} -150 290 1 0 {name=p1 sig_type=std_logic lab=VSS}
 C {AND/and2.sym} -590 130 1 0 {name=x6 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -470 130 1 0 {name=x7 VSS=VSS VDD=VDD}
@@ -132,7 +133,8 @@ C {devices/lab_pin.sym} -450 70 1 0 {name=p20 sig_type=std_logic lab=A2}
 C {devices/lab_pin.sym} -570 70 1 0 {name=p21 sig_type=std_logic lab=A3}
 C {devices/lab_pin.sym} -130 -30 1 0 {name=p22 sig_type=std_logic lab=B0}
 C {devices/lab_pin.sym} -670 20 1 0 {name=p23 sig_type=std_logic lab=B1}
-C {ADDER/4-bit_adder.sym} -170 880 1 0 {name=x10}
+C {ADDER/4-bit_adder.sym} -170 880 1 0 {name=x10 VSS=VSS
+VDD=VDD}
 C {AND/and2.sym} -680 570 1 0 {name=x11 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -560 570 1 0 {name=x12 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -440 570 1 0 {name=x13 VSS=VSS VDD=VDD}
@@ -142,7 +144,8 @@ C {devices/lab_pin.sym} -420 510 1 0 {name=p17 sig_type=std_logic lab=A1}
 C {devices/lab_pin.sym} -540 510 1 0 {name=p26 sig_type=std_logic lab=A2}
 C {devices/lab_pin.sym} -660 510 1 0 {name=p27 sig_type=std_logic lab=A3}
 C {devices/lab_pin.sym} -760 460 1 0 {name=p30 sig_type=std_logic lab=B2}
-C {ADDER/4-bit_adder.sym} -180 1380 1 0 {name=x15}
+C {ADDER/4-bit_adder.sym} -180 1380 1 0 {name=x15 VSS=VSS
+VDD=VDD}
 C {AND/and2.sym} -690 1070 1 0 {name=x16 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -570 1070 1 0 {name=x17 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -450 1070 1 0 {name=x18 VSS=VSS VDD=VDD}
@@ -163,3 +166,5 @@ C {devices/opin.sym} -100 1030 1 0 {name=p39 lab=S2}
 C {devices/lab_pin.sym} -170 290 1 0 {name=p24 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -260 730 1 0 {name=p25 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -270 1230 1 0 {name=p40 sig_type=std_logic lab=VSS}
+C {devices/ipin.sym} 20 -200 1 0 {name=p41 lab=VSS}
+C {devices/ipin.sym} 50 -200 1 0 {name=p42 lab=VDD}

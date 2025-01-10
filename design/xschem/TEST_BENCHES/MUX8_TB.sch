@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -38,10 +38,11 @@ V_A3 A3 0 0
 V_A4 A4 0 1.2
 V_A5 A5 0 0
 V_A6 A6 0 1.2
+V_A7 A7 0 1.2
 
 V_S0 SEL0 0 1.2
-V_S1 SEL1 0 0
-V_S2 SEL2 0 0
+V_S1 SEL1 0 1.2
+V_S2 SEL2 0 1.2
 .control 
 op
 set color0 = white

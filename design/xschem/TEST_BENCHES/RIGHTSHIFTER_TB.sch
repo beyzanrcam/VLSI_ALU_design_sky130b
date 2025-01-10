@@ -50,7 +50,6 @@ C {devices/opin.sym} 160 -80 0 0 {name=p1 lab=S0}
 C {devices/opin.sym} 160 -60 0 0 {name=p3 lab=S1}
 C {devices/opin.sym} 160 -40 0 0 {name=p25 lab=S2}
 C {devices/opin.sym} 160 80 0 0 {name=p2 lab=C}
-C {devices/ipin.sym} -140 80 0 0 {name=p10 lab=VDD}
 C {SHIFTER/right_shifter.sym} 10 0 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {devices/vsource.sym} 510 -440 0 0 {name=V1 value=1.2 savecurrent=false}
 C {devices/vsource.sym} 560 -440 0 0 {name=V2 value=0 savecurrent=false}

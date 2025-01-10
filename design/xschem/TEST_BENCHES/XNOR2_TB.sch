@@ -6,7 +6,6 @@ S {}
 E {}
 N 500 -270 500 -250 {lab=VSS}
 N 450 -270 450 -250 {lab=VDD}
-C {XNOR/XNOR2.sym} 30 0 0 0 {name=x1 VSS=VSS VDD=VDD}
 C {devices/code.sym} 235 -285 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -29,21 +28,18 @@ C {devices/code_shown.sym} 180 -70 0 0 {name=s1 only_toplevel=false value="
 * Test Case 1: A = 8'b00000001, B = 8'b00000001, K = 0 (Addition)
 
 
-V_A0 A0 0 0
-V_B0 B0 0 0
-V_A1 A1 0 0
-V_B1 B1 0 0
+V_A A 0 0
+V_B B 0 1.2
 
 .control 
 op
 set color0 = white
-save OUT
-print V(OUT)
+save Y
+print V(Y)
 
 .endc
 "}
-C {devices/ipin.sym} -120 -30 0 0 {name=p9 lab=A0}
-C {devices/ipin.sym} -120 -10 0 0 {name=p11 lab=A1}
-C {devices/ipin.sym} -120 10 0 0 {name=p13 lab=B1}
-C {devices/ipin.sym} -120 30 0 0 {name=p15 lab=B2}
-C {devices/ipin.sym} 70 0 2 0 {name=p1 lab=OUT}
+C {devices/ipin.sym} -120 -30 0 0 {name=p9 lab=A}
+C {devices/ipin.sym} -120 10 0 0 {name=p13 lab=B}
+C {devices/opin.sym} 70 0 0 0 {name=p1 lab=Y}
+C {XNOR/XNOR2.sym} 30 0 0 0 {name=x1 VSS=VSS VDD=VDD}

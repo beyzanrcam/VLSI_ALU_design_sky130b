@@ -15,7 +15,6 @@ C {devices/ipin.sym} -140 0 0 0 {name=p17 lab=A4}
 C {devices/ipin.sym} -140 20 0 0 {name=p19 lab=A5}
 C {devices/ipin.sym} -140 40 0 0 {name=p21 lab=A6}
 C {devices/ipin.sym} -140 60 0 0 {name=p23 lab=A7}
-C {devices/ipin.sym} -140 80 0 0 {name=p10 lab=VDD}
 C {devices/opin.sym} 160 40 0 0 {name=p7 lab=S6}
 C {devices/opin.sym} 160 60 0 0 {name=p8 lab=S7}
 C {devices/opin.sym} 160 -20 0 0 {name=p4 lab=S3}

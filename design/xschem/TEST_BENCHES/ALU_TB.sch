@@ -62,12 +62,8 @@ N -150 160 -130 160 {
 lab=B6}
 N -150 180 -130 180 {
 lab=B7}
-N -150 -160 -130 -160 {
-lab=VDD}
-N -150 -140 -130 -140 {
-lab=VSS}
-N -150 -180 -130 -180 {}
-C {ALU/alu.sym} 20 0 0 0 {name=x1}
+N -150 -180 -130 -180 {
+lab=OPCODE[3:0]}
 C {devices/code.sym} 365 -545 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -81,15 +77,19 @@ C {devices/vsource.sym} 580 -480 0 0 {name=V1 value=1.2 savecurrent=false}
 C {devices/vsource.sym} 630 -480 0 0 {name=V2 value=0 savecurrent=false}
 C {devices/gnd.sym} 580 -450 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 630 -450 0 0 {name=l2 lab=GND}
-C {devices/iopin.sym} 580 -530 3 0 {name=p28 lab=VDD
+C {devices/iopin.sym} 580 -520 3 0 {name=p28 lab=VDD
 }
-C {devices/iopin.sym} 630 -530 3 0 {name=p29 lab=VSS}
+C {devices/iopin.sym} 630 -520 3 0 {name=p29 lab=VSS}
 C {devices/code_shown.sym} 310 -330 0 0 {name=s1 only_toplevel=false value="
 
 
-V_OPCODE OPCODE[0] 0 1.2
-V_OPCODE OPCODE[1] 0 1.2
-V_OPCODE OPCODE[2] 0 1.2
+V_OPCODE0 OPCODE[0] 0 1.2
+V_OPCODE1 OPCODE[1] 0 1.2
+V_OPCODE2 OPCODE[2] 0 1.2
+V_OPCODE3 OPCODE[3] 0 1.2
+
+V_DD VDD 0 1.2
+V_SS VSS 0 1.2
 
 V_A0 A0 0 1.2
 V_B0 B0 0 1.2
@@ -143,7 +143,7 @@ C {devices/opin.sym} 180 -20 0 0 {name=p310 lab=Z}
 C {devices/opin.sym} 180 0 0 0 {name=p311 lab=C}
 C {devices/opin.sym} 180 20 0 0 {name=p312 lab=V}
 C {devices/opin.sym} 180 40 0 0 {name=p313 lab=S}
-C {devices/iopin.sym} -140 -160 2 0 {name=p25 lab=VDD
-}
-C {devices/iopin.sym} -140 -140 2 0 {name=p26 lab=VSS}
 C {devices/ipin.sym} -140 -180 2 1 {name=p27 lab=OPCODE[3:0]}
+C {ALU/alu.sym} 20 0 0 0 {name=x1 VSS=VSS VDD=VDD}
+C {devices/lab_pin.sym} -130 -160 0 0 {name=l3 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} -130 -140 0 0 {name=l4 sig_type=std_logic lab=VSS}

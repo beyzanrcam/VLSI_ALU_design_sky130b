@@ -34,12 +34,18 @@ N 170 350 170 370 {
 lab=#net3}
 N -130 370 -130 380 {
 lab=#net2}
-N -130 560 -130 570 {}
-N 170 540 170 560 {}
-C {ADDER/full_adder.sym} 10 0 0 0 {name=x1}
-C {ADDER/full_adder.sym} 10 180 0 0 {name=x2}
-C {ADDER/full_adder.sym} 20 350 0 0 {name=x3}
-C {ADDER/full_adder.sym} 20 540 0 0 {name=x4}
+N -130 560 -130 570 {
+lab=#net3}
+N 170 540 170 560 {
+lab=Cout}
+C {ADDER/full_adder.sym} 10 0 0 0 {name=x1 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder.sym} 10 180 0 0 {name=x2 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder.sym} 20 350 0 0 {name=x3 VSS=VSS
+VDD=VDD}
+C {ADDER/full_adder.sym} 20 540 0 0 {name=x4 VSS=VSS
+VDD=VDD}
 C {devices/ipin.sym} -140 20 0 0 {name=p27 lab=C}
 C {devices/opin.sym} 200 560 0 0 {name=p29 lab=Cout}
 C {devices/opin.sym} 280 520 0 0 {name=p5 lab=S3}

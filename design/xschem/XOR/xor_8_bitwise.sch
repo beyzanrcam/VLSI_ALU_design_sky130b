@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -7,7 +7,7 @@ E {}
 N 180 -110 220 -110 {
 lab=S0}
 N 180 -50 220 -50 {
-lab=#net1}
+lab=S1}
 N 180 10 220 10 {
 lab=S2}
 N 180 70 220 70 {
@@ -63,17 +63,25 @@ lab=A6}
 N -140 310 -120 310 {
 lab=A7}
 N -150 330 -120 330 {
-lab=xxx}
+lab=B7}
 N -150 310 -140 310 {
 lab=A7}
-C {XOR/XOR2.sym} 30 -100 0 0 {name=x1}
-C {XOR/XOR2.sym} 30 -40 0 0 {name=x2}
-C {XOR/XOR2.sym} 30 20 0 0 {name=x3}
-C {XOR/XOR2.sym} 30 80 0 0 {name=x4}
-C {XOR/XOR2.sym} 30 140 0 0 {name=x5}
-C {XOR/XOR2.sym} 30 200 0 0 {name=x6}
-C {XOR/XOR2.sym} 30 260 0 0 {name=x7}
-C {XOR/XOR2.sym} 30 320 0 0 {name=x8}
+C {XOR/XOR2.sym} 30 -100 0 0 {name=x1 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 -40 0 0 {name=x2 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 20 0 0 {name=x3 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 80 0 0 {name=x4 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 140 0 0 {name=x5 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 200 0 0 {name=x6 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 260 0 0 {name=x7 VSS=VSS
+VDD=VDD}
+C {XOR/XOR2.sym} 30 320 0 0 {name=x8 VSS=VSS
+VDD=VDD}
 C {devices/opin.sym} 210 -110 0 0 {name=p1 lab=S0}
 C {devices/opin.sym} 210 -50 0 0 {name=p2 lab=S1}
 C {devices/opin.sym} 210 10 0 0 {name=p3 lab=S2}
