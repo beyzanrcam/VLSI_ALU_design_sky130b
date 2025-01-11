@@ -1,73 +1,55 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
-def plot_alu_waveforms_from_interleaved_ascii(filepath, clock_period=4e-8):
-    """Plots waveforms from ASCII data where time and signal values are interleaved, with grouped Y[7:0] output."""
-    try:
-        with open(filepath, 'r') as f:
-            lines = f.readlines()
-    except FileNotFoundError:
-        print(f"Error: File not found at {filepath}")
-        return
+# Replace 'alu_tb.txt' with the path to your file
+file_path = "alu_tb.txt"
 
-    all_data = []
-    for line in lines:
-        line = line.strip()
-        if line:
-            try:
-                values = [float(x) for x in line.split()]
-                all_data.append(values)
-            except ValueError:
-                print(f"Warning: Could not convert line to float: {line}")
-                continue
+# Load the data assuming it's whitespace-delimited
+data = np.loadtxt(file_path)
 
-    if not all_data:
-        print("Error: No data found in the file.")
-        return
+# Extract the time and y values
+time = data[:, 0::2]  # Every even-indexed column is time
+y_values = data[:, 1::2]  # Every odd-indexed column is y
 
-    all_data = np.array(all_data)
-    num_samples = all_data.shape[0]
-    num_signals = all_data.shape[1] // 2  # number of signals is half the number of columns
+# Sampling period
+sample_interval = 4e-8
 
-    if num_signals != 8:
-        print(f"Warning: Expected 8 output signals, found {num_signals}. Adjusting plots.")
+# Initialize the previous time value and an empty list for indices
+previous_time = time[0, 0]
+sample_indices = []
 
-    time = all_data[:, 0]  # time is the first column of each row
-    data = [all_data[:, 2 * i + 1] for i in range(num_signals)]  # extract the signal data
+# Loop through the time array and find indices at each sample interval
+for idx, t in enumerate(time[:, 0]):
+    if np.abs(t - previous_time - sample_interval) < 1e-12:  # Allow some tolerance due to floating point precision
+        sample_indices.append(idx)
+        previous_time = t
 
-    fig, axes = plt.subplots(num_signals, 1, figsize=(10, num_signals * 2), sharex=True)
-    fig.suptitle('ALU Output Waveforms (Grouped Y[7:0])', fontsize=16)
+# Print the sampled time and corresponding y values
+for idx in sample_indices:
+    print(f"Time: {time[idx, 0]:.2e} s")
+    for i in range(y_values.shape[1]):
+        y_val = y_values[idx, i]
+        # Print 1 if the value is greater than 1, and 0 if less than 0.3
+        if y_val > 1:
+            print(f"y{i}: 1")
+        elif y_val < 0.3:
+            print(f"y{i}: 0")
+        else:
+            print(f"y{i}: {y_val}")
+    print('-' * 30)
 
-    grouped_output = []
-    stable_times = np.arange(min(time), max(time), clock_period)
+# Plotting each y on a separate subplot
+num_plots = y_values.shape[1]
+fig, axes = plt.subplots(num_plots, 1, figsize=(8, 12), sharex=True)
+fig.suptitle("Y Outputs vs Time")
 
-    # Extract the digital sequences for each stable time
-    output_sequences = [[] for _ in range(num_signals)]
-    for t in stable_times:
-        stable_index = np.argmin(abs(time - t))  # Find closest sample index for each stable time
-        sampled_bits = []
-        for i in range(num_signals):
-            # Threshold the signal to extract digital values
-            threshold = (max(data[i]) + min(data[i])) / 2
-            sampled_bit = int(data[i][stable_index] > threshold)
-            sampled_bits.append(sampled_bit)
-            output_sequences[i].append(sampled_bit)
-        grouped_output.append(''.join(map(str, sampled_bits[::-1])))  # Reverse for MSB to LSB
+for i in range(num_plots):
+    axes[i].plot(time[:, i], y_values[:, i], label=f"y{i}")
+    axes[i].set_ylabel(f"y{i}")
+    axes[i].grid()
+    axes[i].legend()
 
-    for i in range(num_signals):
-        axes[i].plot(time, data[i], drawstyle='steps-post')
-        axes[i].set_ylabel(f'Y{i}')
-        axes[i].grid(True)
-    axes[-1].set_xlabel('Time')
-
-    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-    plt.show()
-
-    # Print the grouped output
-    print("\nGrouped Digital Output Sequences (Y[7:0]):")
-    for bits in grouped_output:
-        print(bits)
-
-# Example usage:
-plot_alu_waveforms_from_interleaved_ascii('alu_tb.txt', clock_period=4e-8)
+axes[-1].set_xlabel("Time (s)")
+plt.tight_layout(rect=[0, 0, 1, 0.96])  # Adjust layout to fit title
+plt.show()
 

@@ -1,4 +1,5 @@
 import itertools
+import numpy as np
 
 def generate_pwl_for_sequence(sequence, period, voltage, tr, tf):
     """Generates a PWL string for a given sequence of 0s and 1s."""
@@ -79,11 +80,54 @@ def write_spice_to_file(spice_code, filename="spice_input.txt"):
 
 # Example usage:
 num_inputs = 8  # Number of A and B inputs
-sequence_a = [[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]] # Example sequence for A0 and A1
-sequence_b = [[0, 0, 1, 1, 0, 0, 1, 1, 0, 0]] # Example sequence for B0 and B1
-opcode_bits = 3
+# Example usage:
+num_inputs = 8  # Number of A and B inputs
+
+# Define sequences for all 8 bits of A and B
+# Each sublist represents the sequence for one bit, e.g., A[0], A[1], ..., A[7]
+sequence_a = [
+    [1, 2, 3, 4, 5, 6, 7, 8],  # A0
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A1
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A2
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A3
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A4
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A5
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A6
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A7
+]
+
+
+sequence_b = [
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A0
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A1
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A2
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A3
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A4
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A5
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A6
+    [0, 0, 0, 0, 0, 0, 0, 0],  # A7
+]
+
+# Convert to NumPy arrays
+sequence_a_np = np.array(sequence_a)
+sequence_b_np = np.array(sequence_b)
+
+# Reverse all rows and transpose for sequence_a
+sequence_a_np = np.transpose(np.flip(sequence_a_np, axis=1))
+
+# Reverse all rows and transpose for sequence_b
+sequence_b_np = np.transpose(np.flip(sequence_b_np, axis=1))
+
+# Update sequence_a and sequence_b to the new reversed and transposed versions
+sequence_a = sequence_a_np.tolist()
+sequence_b = sequence_b_np.tolist()
+
+
+print(sequence_a)
+opcode_bits = 3  # Number of bits in the opcode
 
 spice_code = generate_spice_input(num_inputs, sequence_a, sequence_b, opcode_bits)
 write_spice_to_file(spice_code)
+
 
 # Now add the rest of your SPICE netlist to the file.
