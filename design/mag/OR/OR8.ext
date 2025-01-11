@@ -1,0 +1,1401 @@
+timestamp 1736600897
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use nor2 nor2_7 1 0 10400 0 1 -1320
+use nor2 nor2_6 1 0 9000 0 1 -1320
+use nor2 nor2_5 1 0 7600 0 1 -1320
+use nor2 nor2_4 1 0 6200 0 1 -1320
+use nor2 nor2_3 1 0 4800 0 1 -1320
+use nor2 nor2_2 1 0 3400 0 1 -1320
+use nor2 nor2_1 1 0 2000 0 1 -1320
+use nor2 nor2_0 1 0 11800 0 1 -1320
+use NOT8 NOT8_0 1 0 5850 0 1 -3379
+port "S0" 23 9504 -3874 9538 -3842 m1
+port "S1" 22 9004 -3876 9038 -3844 m1
+port "S2" 21 8524 -3874 8558 -3842 m1
+port "S3" 20 8024 -3874 8058 -3842 m1
+port "S4" 19 7544 -3874 7578 -3842 m1
+port "S5" 18 7084 -3874 7118 -3842 m1
+port "S6" 17 6624 -3874 6658 -3842 m1
+port "S7" 16 6144 -3874 6178 -3842 m1
+port "VSS" 25 5966 -3670 6066 -3568 m5
+port "A0" 7 11708 -718 11750 -690 m1
+port "B0" 8 11574 -716 11616 -688 m1
+port "A1" 6 10312 -716 10354 -688 m1
+port "B1" 9 10182 -716 10224 -688 m1
+port "A2" 5 8904 -722 8946 -694 m1
+port "B2" 10 8784 -722 8826 -694 m1
+port "A3" 4 7516 -722 7558 -694 m1
+port "B3" 11 7402 -722 7444 -694 m1
+port "A4" 3 6120 -718 6162 -690 m1
+port "B4" 12 6026 -718 6068 -690 m1
+port "A5" 2 4698 -722 4740 -694 m1
+port "B5" 13 4592 -722 4634 -694 m1
+port "A6" 1 3308 -714 3350 -686 m1
+port "B6" 14 3200 -714 3242 -686 m1
+port "A7" 0 1936 -718 1978 -690 m1
+port "B7" 15 1822 -718 1864 -690 m1
+port "VDD" 24 2218 -634 2302 -548 m4
+node "S0" 0 31.2499 9504 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S1" 0 26.2671 9004 -3876 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S2" 0 26.2671 8524 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S3" 0 26.2671 8024 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S4" 0 25.9627 7544 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S5" 0 25.8098 7084 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S6" 0 25.9627 6624 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "S7" 0 31.0984 6144 -3874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1848 172 0 0 0 0 0 0 0 0 0 0
+node "m1_9134_n2305#" 8 1456.19 9134 -2305 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 296010 8718 0 0 0 0 0 0 0 0 0 0
+node "m1_8634_n2305#" 6 550.737 8634 -2305 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240810 7118 0 0 0 0 0 0 0 0 0 0
+node "m1_8156_n2350#" 5 466.021 8156 -2350 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180297 5364 0 0 0 0 0 0 0 0 0 0
+node "m1_7654_n2305#" 3 296.006 7654 -2305 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 95892 2918 0 0 0 0 0 0 0 0 0 0
+node "m1_6905_n2156#" 2 348.776 6905 -2156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66741 2074 0 0 0 0 0 0 0 0 0 0
+node "m1_5726_n2060#" 3 380.987 5726 -2060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117696 3552 0 0 0 0 0 0 0 0 0 0
+node "m1_4310_n2196#" 4 463.859 4310 -2196 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 220797 5576 0 0 0 0 0 0 0 0 0 0
+node "VSS" 14 12070.6 5966 -3670 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173292 6696 70640 2992 101688 3600 819200 10240 32596104 27864 0 0
+node "m1_2986_n2314#" 6 1106.27 2986 -2314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 251679 7170 0 0 0 0 0 0 0 0 0 0
+node "A0" 1 184.244 11708 -718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49236 1624 0 0 0 0 0 0 0 0 0 0
+node "B0" 2 266.828 11574 -716 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 66792 2156 0 0 0 0 0 0 0 0 0 0
+node "A1" 1 176.972 10312 -716 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49830 1642 0 0 0 0 0 0 0 0 0 0
+node "B1" 2 253.164 10182 -716 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65604 2120 0 0 0 0 0 0 0 0 0 0
+node "A2" 1 198.442 8904 -722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50490 1662 0 0 0 0 0 0 0 0 0 0
+node "B2" 2 243.799 8784 -722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64812 2096 0 0 0 0 0 0 0 0 0 0
+node "A3" 1 182.98 7516 -722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48774 1610 0 0 0 0 0 0 0 0 0 0
+node "B3" 2 256.888 7402 -722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63294 2050 0 0 0 0 0 0 0 0 0 0
+node "A4" 1 168.65 6120 -718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48444 1600 0 0 0 0 0 0 0 0 0 0
+node "B4" 2 245.001 6026 -718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62436 2024 0 0 0 0 0 0 0 0 0 0
+node "A5" 1 177.806 4698 -722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49896 1644 0 0 0 0 0 0 0 0 0 0
+node "B5" 2 254.811 4592 -722 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64152 2076 0 0 0 0 0 0 0 0 0 0
+node "A6" 2 165.481 3308 -714 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39379 1592 0 0 0 0 0 0 0 0 0 0
+node "B6" 2 256.18 3200 -714 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63162 2046 0 0 0 0 0 0 0 0 0 0
+node "A7" 1 159.177 1936 -718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47256 1564 0 0 0 0 0 0 0 0 0 0
+node "B7" 2 285.666 1822 -718 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62106 2014 0 0 0 0 0 0 0 0 0 0
+node "VDD" 13 6313.64 2218 -634 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 184724 6052 76832 3136 76832 3136 4432024 24520 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "S4" "VSS" 4.56381
+cap "VDD" "A6" 31.8916
+cap "B2" "B1" 3.28715
+cap "m1_7654_n2305#" "VDD" 21.4627
+cap "VDD" "A4" 46.8299
+cap "S6" "S7" 3.55459
+cap "A5" "B5" 847.21
+cap "B1" "m1_8634_n2305#" 30.6191
+cap "VDD" "A7" 34.5828
+cap "m1_4310_n2196#" "m1_5726_n2060#" 436.641
+cap "m1_8156_n2350#" "B2" 37.3986
+cap "A5" "VSS" 35.6745
+cap "S6" "S5" 3.72548
+cap "A5" "B4" 14.9211
+cap "S2" "S1" 3.55459
+cap "B3" "m1_7654_n2305#" 0.772514
+cap "A2" "VDD" 34.1172
+cap "VDD" "A0" 34.8546
+cap "B3" "A4" 15.3906
+cap "m1_8156_n2350#" "m1_8634_n2305#" 1092.1
+cap "m1_5726_n2060#" "VSS" 245.433
+cap "m1_5726_n2060#" "B4" 16.1478
+cap "B3" "VDD" 43.8482
+cap "VDD" "B7" 1.7716
+cap "VDD" "S5" 0.0826293
+cap "B5" "A6" 15.1163
+cap "A3" "VDD" 43.528
+cap "B7" "A7" 570.899
+cap "m1_2986_n2314#" "B6" 18.4948
+cap "m1_4310_n2196#" "VDD" 22.9577
+cap "m1_5726_n2060#" "m1_6905_n2156#" 44.9395
+cap "S6" "VSS" 4.56381
+cap "VDD" "B5" 22.4666
+cap "A6" "VSS" 32.8579
+cap "m1_9134_n2305#" "VDD" 8.27659
+cap "m1_7654_n2305#" "VSS" 321.818
+cap "A4" "VSS" 33.4079
+cap "B4" "A4" 1013.71
+cap "VDD" "VSS" 5203.98
+cap "VDD" "B4" 30.6281
+cap "S3" "VSS" 4.63929
+cap "m1_7654_n2305#" "m1_6905_n2156#" 31.162
+cap "A7" "VSS" 32.3468
+cap "B0" "VDD" 22.938
+cap "B3" "A3" 606.721
+cap "VDD" "m1_6905_n2156#" 51.4658
+cap "S7" "VSS" 5.83741
+cap "A1" "VDD" 35.9436
+cap "m1_4310_n2196#" "B5" 23.1958
+cap "A2" "VSS" 42.2097
+cap "A0" "VSS" 35.0325
+cap "B3" "VSS" 56.1345
+cap "B7" "VSS" 22.9406
+cap "B3" "B4" 3.28866
+cap "S5" "VSS" 4.28737
+cap "B0" "A0" 588.772
+cap "A3" "VSS" 41.8758
+cap "m1_4310_n2196#" "VSS" 254.89
+cap "VDD" "B1" 22.8355
+cap "B5" "VSS" 57.1816
+cap "S0" "VSS" 5.87498
+cap "B4" "B5" 3.18609
+cap "m1_9134_n2305#" "VSS" 452.591
+cap "VDD" "B2" 22.9023
+cap "m1_8156_n2350#" "m1_7654_n2305#" 116.194
+cap "B4" "VSS" 58.2697
+cap "m1_9134_n2305#" "B0" 25.2286
+cap "m1_8156_n2350#" "VDD" 19.375
+cap "B6" "A6" 738.298
+cap "A2" "B1" 15.5218
+cap "VDD" "m1_2986_n2314#" 12.0108
+cap "B0" "VSS" 60.6416
+cap "m1_6905_n2156#" "VSS" 108.989
+cap "VDD" "m1_8634_n2305#" 17.1305
+cap "S3" "S2" 3.39868
+cap "VDD" "B6" 24.1671
+cap "A1" "VSS" 35.9414
+cap "A2" "B2" 628.483
+cap "B3" "B2" 3.29188
+cap "A7" "B6" 13.9617
+cap "B0" "A1" 15.7027
+cap "m1_8156_n2350#" "A2" 0.403279
+cap "A3" "B2" 15.5822
+cap "S3" "S4" 3.55459
+cap "B1" "VSS" 57.6401
+cap "S0" "S1" 3.39868
+cap "m1_4310_n2196#" "m1_2986_n2314#" 1169.51
+cap "B7" "B6" 3.25668
+cap "B0" "B1" 3.35196
+cap "B2" "VSS" 54.8757
+cap "S1" "VSS" 4.63929
+cap "A1" "B1" 661.704
+cap "A5" "VDD" 34.0231
+cap "m1_8156_n2350#" "VSS" 353.657
+cap "B5" "B6" 3.46624
+cap "m1_9134_n2305#" "m1_8634_n2305#" 962.884
+cap "S5" "S4" 3.72548
+cap "m1_2986_n2314#" "VSS" 405.435
+cap "m1_8634_n2305#" "VSS" 268.898
+cap "S2" "VSS" 4.63929
+cap "m1_5726_n2060#" "VDD" 26.3405
+cap "B6" "VSS" 56.4766
+cap "nor2_3/Y" "NOT8_0/S7" 0.297527
+cap "nor2_2/Y" "nor2_1/Y" 1.27567
+cap "NOT8_0/inv_4/VDD" "nor2_4/VSS" -10.4172
+cap "nor2_3/Y" "nor2_1/Y" 5.29922
+cap "nor2_2/Y" "nor2_4/VSS" 0.970824
+cap "nor2_3/VDD" "NOT8_0/S7" 0.00542168
+cap "nor2_3/Y" "nor2_4/VSS" 0.430838
+cap "nor2_3/VDD" "nor2_1/Y" 1.22654
+cap "NOT8_0/S7" "nor2_4/VSS" 0.268195
+cap "NOT8_0/inv_4/VDD" "nor2_2/Y" 6.46653
+cap "nor2_3/Y" "NOT8_0/inv_4/VDD" 1.70853
+cap "nor2_4/VSS" "nor2_1/Y" 72.809
+cap "nor2_3/VDD" "NOT8_0/inv_4/VDD" 0.228187
+cap "nor2_3/B" "nor2_1/Y" 0.231643
+cap "NOT8_0/inv_4/VDD" "nor2_1/Y" -0.149249
+cap "NOT8_0/S7" "nor2_2/Y" 0.337433
+cap "NOT8_0/S5" "NOT8_0/inv_6/VDD" 11.7793
+cap "NOT8_0/S7" "NOT8_0/A6" 4.26459
+cap "NOT8_0/inv_6/VDD" "nor2_5/VSS" -51.8866
+cap "nor2_4/A" "NOT8_0/A6" 0.884084
+cap "nor2_3/Y" "NOT8_0/A6" 1.35595
+cap "NOT8_0/S6" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" 0.174142
+cap "NOT8_0/S6" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.16678
+cap "NOT8_0/S7" "nor2_3/Y" 0.161595
+cap "NOT8_0/S5" "nor2_5/VSS" 9.57906
+cap "nor2_3/Y" "nor2_4/A" 0.0277783
+cap "nor2_4/VDD" "NOT8_0/inv_6/VDD" 6.98162
+cap "nor2_4/VDD" "NOT8_0/S5" 0.608654
+cap "nor2_4/B" "NOT8_0/A7" 0.0477514
+cap "NOT8_0/inv_6/VDD" "NOT8_0/S6" 5.17136
+cap "NOT8_0/inv_6/VDD" "nor2_4/B" 4.64909
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" "NOT8_0/A6" 0.659779
+cap "NOT8_0/S5" "NOT8_0/S6" -3.72548
+cap "nor2_4/Y" "NOT8_0/inv_6/VDD" 18.0614
+cap "NOT8_0/A6" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0190665
+cap "NOT8_0/S6" "nor2_5/VSS" 12.1322
+cap "NOT8_0/S5" "nor2_4/B" 0.53622
+cap "nor2_4/Y" "NOT8_0/S5" 5.53535
+cap "nor2_3/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.164779
+cap "NOT8_0/A6" "NOT8_0/A7" 0.194294
+cap "nor2_4/Y" "nor2_5/VSS" 16.9636
+cap "NOT8_0/inv_6/VDD" "nor2_5/B" 0.646781
+cap "nor2_4/VDD" "NOT8_0/S6" 0.573359
+cap "NOT8_0/S5" "NOT8_0/S4" -1.86274
+cap "nor2_4/A" "NOT8_0/A7" 0.0134943
+cap "nor2_3/Y" "NOT8_0/A7" 0.148599
+cap "nor2_5/VSS" "NOT8_0/S4" 0.0832294
+cap "NOT8_0/inv_6/VDD" "NOT8_0/A6" 5.49648
+cap "nor2_4/Y" "nor2_4/VDD" 1.12476
+cap "NOT8_0/S7" "NOT8_0/inv_6/VDD" 4.78522
+cap "NOT8_0/inv_6/VDD" "nor2_4/A" 4.51833
+cap "nor2_3/Y" "NOT8_0/inv_6/VDD" 12.4614
+cap "nor2_5/VSS" "NOT8_0/A6" 27.6619
+cap "nor2_4/VDD" "NOT8_0/S4" 0.00468305
+cap "NOT8_0/S6" "nor2_4/B" 0.0586816
+cap "nor2_3/Y" "NOT8_0/S5" 0.127262
+cap "NOT8_0/S7" "nor2_5/VSS" 15.5976
+cap "nor2_3/Y" "nor2_5/VSS" 23.7736
+cap "nor2_4/Y" "nor2_4/B" 0.219388
+cap "nor2_4/VDD" "NOT8_0/A6" 1.467
+cap "nor2_3/Y" "nor2_4/VDD" 1.28263
+cap "nor2_4/Y" "NOT8_0/S4" 0.0473848
+cap "NOT8_0/S6" "NOT8_0/A6" -0.00119332
+cap "NOT8_0/inv_6/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" 2.87877
+cap "NOT8_0/inv_6/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.67319
+cap "NOT8_0/S7" "NOT8_0/S6" -3.55459
+cap "NOT8_0/A6" "nor2_4/B" 0.40341
+cap "nor2_4/A" "NOT8_0/S6" 0.564972
+cap "nor2_5/B" "NOT8_0/S4" 0.00947132
+cap "nor2_3/Y" "NOT8_0/S6" 4.48413
+cap "NOT8_0/S7" "nor2_4/B" 0.0444907
+cap "NOT8_0/S5" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.139011
+cap "nor2_3/Y" "nor2_4/B" 0.990406
+cap "nor2_4/Y" "nor2_3/Y" 2.83595
+cap "nor2_5/VSS" "NOT8_0/A7" 3.23548
+cap "nor2_5/VDD" "NOT8_0/S3" 0.749602
+cap "nor2_5/B" "NOT8_0/S3" 0.0542223
+cap "nor2_5/Y" "NOT8_0/inv_7/VDD" 21.1633
+cap "NOT8_0/inv_7/VDD" "NOT8_0/S2" 8.53452
+cap "nor2_5/A" "nor2_4/Y" 0.0171274
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" "NOT8_0/S3" 0.210676
+cap "nor2_5/Y" "nor2_6/VSS" 19.5264
+cap "nor2_5/Y" "NOT8_0/A1" 2.28495
+cap "nor2_6/B" "NOT8_0/inv_7/VDD" 0.923673
+cap "nor2_6/VSS" "NOT8_0/S2" 11.957
+cap "nor2_5/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0155854
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/S2" 0.202853
+cap "nor2_5/Y" "nor2_5/VDD" 1.32533
+cap "nor2_5/Y" "nor2_5/B" 0.388469
+cap "NOT8_0/S1" "nor2_6/Y" 0.11435
+cap "nor2_5/VDD" "NOT8_0/S2" 0.742606
+cap "NOT8_0/inv_7/VDD" "nor2_5/A" 4.39029
+cap "nor2_5/Y" "NOT8_0/S3" 2.81228
+cap "nor2_5/B" "NOT8_0/S2" 0.629411
+cap "NOT8_0/S3" "NOT8_0/S2" -3.39868
+cap "nor2_5/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" 0.60272
+cap "nor2_6/VSS" "NOT8_0/S1" -1.28606
+cap "NOT8_0/S1" "NOT8_0/A1" 0.135818
+cap "NOT8_0/inv_7/VDD" "nor2_6/Y" 11.772
+cap "nor2_5/A" "NOT8_0/S3" 0.737
+cap "nor2_6/VSS" "nor2_4/Y" 1.46349
+cap "nor2_5/Y" "NOT8_0/S2" 1.0477
+cap "nor2_6/VSS" "nor2_6/Y" 23.6972
+cap "nor2_6/Y" "NOT8_0/A1" 0.886549
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/Y" 0.0551723
+cap "nor2_5/B" "nor2_4/Y" 0.0459665
+cap "nor2_6/Y" "nor2_5/VDD" 1.27349
+cap "NOT8_0/inv_7/VDD" "NOT8_0/S4" 11.2014
+cap "NOT8_0/inv_7/VDD" "NOT8_0/A1" 3.87431
+cap "nor2_6/Y" "nor2_5/B" 2.53921
+cap "nor2_6/VSS" "NOT8_0/inv_7/VDD" -53.6041
+cap "nor2_5/Y" "nor2_5/A" 0.854955
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/inv_7/VDD" 3.73834
+cap "NOT8_0/inv_7/VDD" "nor2_5/VDD" 7.20199
+cap "nor2_6/VSS" "NOT8_0/S4" 13.6538
+cap "nor2_6/VSS" "NOT8_0/A1" 20.5126
+cap "NOT8_0/inv_7/VDD" "nor2_5/B" 6.45849
+cap "NOT8_0/inv_7/VDD" "NOT8_0/S3" 8.31123
+cap "NOT8_0/S1" "NOT8_0/S2" -1.77729
+cap "nor2_5/VDD" "NOT8_0/A1" 0.797126
+cap "NOT8_0/S4" "nor2_5/B" 1.50308
+cap "NOT8_0/S5" "NOT8_0/S4" -1.86274
+cap "NOT8_0/inv_7/VDD" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" 2.85367
+cap "NOT8_0/S4" "NOT8_0/S3" -3.55459
+cap "nor2_6/VSS" "NOT8_0/S3" 14.5347
+cap "nor2_6/B" "NOT8_0/S1" 0.017749
+cap "nor2_5/Y" "nor2_6/Y" 2.80868
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/S3" 0.207143
+cap "nor2_6/Y" "NOT8_0/S2" 3.70216
+cap "nor2_7/Y" "nor2_7/VSS" 3.27757
+cap "NOT8_0/A0" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.861456
+cap "NOT8_0/A0" "NOT8_0/S0" 4.81677
+cap "nor2_6/B" "NOT8_0/S0" 0.0927864
+cap "nor2_7/VSS" "NOT8_0/S0" 74.0259
+cap "NOT8_0/S1" "nor2_7/Y" 3.27247
+cap "NOT8_0/A0" "nor2_6/B" 0.389663
+cap "nor2_7/Y" "nor2_6/Y" 0.130082
+cap "NOT8_0/A0" "nor2_7/VSS" 40.5678
+cap "NOT8_0/S0" "nor2_6/VDD" 0.54446
+cap "NOT8_0/S1" "NOT8_0/S0" -3.39868
+cap "NOT8_0/S0" "nor2_6/Y" 0.924644
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" "NOT8_0/inv_7/VDD" 2.21134
+cap "NOT8_0/A0" "nor2_6/VDD" 1.31991
+cap "nor2_6/A" "NOT8_0/inv_7/VDD" 4.64306
+cap "NOT8_0/A0" "nor2_6/Y" 1.0052
+cap "NOT8_0/S1" "nor2_6/B" 0.045523
+cap "NOT8_0/S1" "NOT8_0/S2" -1.77729
+cap "NOT8_0/S1" "nor2_7/VSS" 14.9887
+cap "nor2_7/VSS" "nor2_6/Y" 0.592973
+cap "NOT8_0/S1" "nor2_6/VDD" 0.165812
+cap "nor2_7/Y" "NOT8_0/inv_7/VDD" 9.6226
+cap "NOT8_0/S1" "nor2_6/Y" 0.223088
+cap "nor2_6/A" "nor2_7/Y" 0.0414307
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/inv_7/VDD" 1.72281
+cap "NOT8_0/inv_7/VDD" "NOT8_0/S0" 5.80081
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" "NOT8_0/S0" 0.169514
+cap "NOT8_0/A0" "NOT8_0/inv_7/VDD" 13.7257
+cap "nor2_6/A" "NOT8_0/S0" 0.956064
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" "NOT8_0/A0" 0.226166
+cap "NOT8_0/inv_7/VDD" "nor2_6/B" 3.19286
+cap "NOT8_0/A0" "nor2_6/A" 1.25894
+cap "NOT8_0/inv_7/VDD" "nor2_7/VSS" -10.897
+cap "NOT8_0/inv_7/VDD" "nor2_6/VDD" 3.29269
+cap "NOT8_0/S1" "NOT8_0/inv_7/VDD" 7.25198
+cap "nor2_7/Y" "NOT8_0/S0" 0.519404
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n509_n128#" "NOT8_0/S1" 0.0149476
+cap "NOT8_0/inv_7/VDD" "nor2_6/Y" 5.38906
+cap "NOT8_0/A0" "nor2_7/Y" 1.1181
+cap "nor2_6/A" "NOT8_0/S1" 0.0131101
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/S0" 0.12414
+cap "nor2_7/Y" "nor2_6/B" 0.0458175
+cap "nor2_2/Y" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.404758
+cap "nor2_1/Y" "nor2_1/A" 2.65019
+cap "nor2_2/A" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.961485
+cap "nor2_3/B" "nor2_1/Y" 0.017021
+cap "nor2_2/VSS" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 24.5258
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_2/VDD" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.17716
+cap "nor2_1/B" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.02765
+cap "nor2_2/B" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.56804
+cap "nor2_2/Y" "nor2_2/VSS" 2.54434
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/A" 3.14931
+cap "nor2_2/Y" "nor2_2/VDD" 0.0160876
+cap "nor2_2/Y" "nor2_1/B" 0.108335
+cap "nor2_2/VSS" "nor2_2/A" 0.577188
+cap "nor2_2/VDD" "nor2_2/A" 0.49653
+cap "nor2_2/Y" "nor2_1/A" 0.000747045
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/Y" -0.0323094
+cap "nor2_1/B" "nor2_2/A" 4.29508
+cap "nor2_2/VSS" "nor2_2/VDD" 53.7824
+cap "nor2_1/B" "nor2_2/VSS" 42.5142
+cap "nor2_2/A" "nor2_1/A" 4.36083
+cap "nor2_2/VSS" "nor2_2/B" -13.2192
+cap "nor2_2/VDD" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.524531
+cap "nor2_2/Y" "nor2_1/Y" 8.52518
+cap "nor2_1/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_1/B" "nor2_2/VDD" 18.5705
+cap "nor2_2/VDD" "nor2_2/B" 4.48789
+cap "nor2_1/B" "nor2_2/B" 4.66835
+cap "nor2_2/VSS" "nor2_1/A" 42.6822
+cap "nor2_1/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.023954
+cap "nor2_1/B" "nor2_1/A" 225.207
+cap "nor2_2/VDD" "nor2_1/A" 105.25
+cap "nor2_2/A" "nor2_1/Y" 4.64119
+cap "nor2_2/B" "nor2_1/A" -4.87611
+cap "nor2_2/VSS" "nor2_1/Y" 114.129
+cap "nor2_1/Y" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.65784
+cap "nor2_2/VDD" "nor2_1/Y" 15.5786
+cap "nor2_1/B" "nor2_3/B" 0.000224826
+cap "nor2_1/B" "nor2_1/Y" 1.23672
+cap "nor2_2/B" "nor2_1/Y" 101.173
+cap "nor2_3/VSS" "nor2_2/Y" 125.944
+cap "nor2_2/A" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00545938
+cap "nor2_1/A" "nor2_2/Y" 0.204794
+cap "nor2_2/B" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00301797
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/B" 3.51075
+cap "nor2_2/B" "nor2_1/Y" 23.6679
+cap "nor2_3/VSS" "nor2_1/Y" 63.8672
+cap "nor2_1/B" "nor2_3/VDD" 2.30592
+cap "nor2_3/VSS" "nor2_2/B" 43.1149
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" 3.57141
+cap "nor2_2/B" "nor2_1/A" 0.0386315
+cap "nor2_3/Y" "nor2_2/A" 0.000747045
+cap "nor2_3/VSS" "nor2_1/A" 0.421605
+cap "nor2_2/A" "nor2_3/A" 4.40828
+cap "nor2_2/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.45251
+cap "nor2_1/B" "nor2_3/B" 0.000548742
+cap "nor2_3/Y" "nor2_2/Y" 8.75022
+cap "nor2_2/B" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_3/VDD" "nor2_3/B" 4.38946
+cap "nor2_3/A" "nor2_2/Y" 4.68513
+cap "nor2_2/Y" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 2.35115
+cap "nor2_3/VSS" "nor2_3/Y" 2.54434
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_2/B" "nor2_3/Y" 0.108335
+cap "nor2_1/B" "nor2_2/A" 5.07303
+cap "nor2_2/A" "nor2_3/VDD" 75.0067
+cap "nor2_1/Y" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 9.84125
+cap "nor2_2/B" "nor2_3/A" 4.39284
+cap "nor2_2/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.881225
+cap "nor2_3/VSS" "nor2_3/A" 0.577188
+cap "nor2_3/VSS" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 24.6293
+cap "nor2_1/B" "nor2_2/Y" 0.916228
+cap "nor2_1/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.184956
+cap "nor2_3/VDD" "nor2_2/Y" 18.8997
+cap "nor2_2/A" "nor2_3/B" -4.58295
+cap "nor2_3/VSS" "nor2_1/B" 0.577188
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_3/VDD" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.50736
+cap "nor2_2/B" "nor2_1/B" 0.68685
+cap "nor2_3/VDD" "nor2_1/Y" 36.0769
+cap "nor2_2/Y" "nor2_3/B" 111.573
+cap "nor2_3/VSS" "nor2_3/VDD" 54.763
+cap "nor2_2/B" "nor2_3/VDD" 18.8525
+cap "nor2_3/VDD" "nor2_1/A" 1.23057
+cap "nor2_3/Y" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.404758
+cap "nor2_1/Y" "nor2_3/B" 0.0306256
+cap "nor2_3/VSS" "nor2_3/B" -14.3471
+cap "nor2_4/B" "nor2_2/Y" 0.00384736
+cap "nor2_3/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.03049
+cap "nor2_2/B" "nor2_3/B" 4.44804
+cap "nor2_2/A" "nor2_2/Y" 1.97247
+cap "nor2_3/VDD" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.524531
+cap "nor2_2/A" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.52533
+cap "nor2_2/B" "nor2_2/A" 142.182
+cap "nor2_2/A" "nor2_1/Y" 9.95113
+cap "nor2_3/Y" "nor2_3/VDD" 0.0160876
+cap "nor2_3/VSS" "nor2_2/A" 42.8774
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" 0.529867
+cap "nor2_1/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.688305
+cap "nor2_2/A" "nor2_1/A" 1.84708
+cap "nor2_3/VDD" "nor2_3/A" 0.526913
+cap "nor2_3/VDD" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 4.79388
+cap "nor2_1/Y" "nor2_2/Y" 28.0734
+cap "nor2_2/B" "nor2_2/Y" 1.35556
+cap "nor2_2/Y" "nor2_4/VSS" 84.2123
+cap "nor2_3/Y" "nor2_4/B" 51.2977
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/Y" 0.529867
+cap "nor2_4/A" "nor2_3/A" 4.31615
+cap "nor2_4/Y" "nor2_4/VSS" 2.72566
+cap "nor2_3/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.84768
+cap "nor2_1/Y" "nor2_4/VDD" 25.7721
+cap "nor2_3/Y" "nor2_2/Y" 34.1217
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/VSS" 24.7632
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/B" 0.688305
+cap "nor2_3/B" "nor2_2/B" 0.68685
+cap "nor2_4/Y" "nor2_3/Y" 9.45461
+cap "nor2_3/B" "nor2_4/VSS" 49.5904
+cap "nor2_1/Y" "nor2_3/A" 2.20656
+cap "nor2_2/A" "nor2_4/VSS" 0.421605
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 0.547384
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/Y" 1.08009
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" 10.2575
+cap "nor2_4/VDD" "nor2_2/B" 2.30343
+cap "nor2_3/B" "nor2_4/B" 4.25636
+cap "nor2_3/B" "nor2_3/Y" 8.83976
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/B" 0.00301797
+cap "nor2_3/Y" "nor2_2/A" 0.204811
+cap "nor2_4/VDD" "nor2_4/VSS" 251.985
+cap "nor2_3/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_3/B" "nor2_2/Y" 28.0442
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/Y" 0.404758
+cap "nor2_2/B" "nor2_3/A" 4.99202
+cap "nor2_4/VDD" "nor2_4/B" 0.178649
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/VDD" 3.50736
+cap "nor2_4/VDD" "nor2_3/Y" 31.3691
+cap "nor2_3/B" "nor2_4/Y" 0.115545
+cap "nor2_3/A" "nor2_4/VSS" 42.8133
+cap "nor2_4/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.524531
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/B" 0.837992
+cap "nor2_4/VDD" "nor2_2/Y" 84.7408
+cap "nor2_3/A" "nor2_4/B" -2.69505
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/A" 0.183292
+cap "nor2_3/Y" "nor2_3/A" 2.3983
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/A" 0.496204
+cap "nor2_4/VDD" "nor2_4/Y" 0.0160876
+cap "nor2_3/B" "nor2_2/A" 0.0386315
+cap "nor2_3/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00547829
+cap "nor2_3/A" "nor2_2/Y" 10.2886
+cap "nor2_4/A" "nor2_4/VSS" 0.577188
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/VDD" 4.82952
+cap "nor2_3/Y" "nor2_5/B" 0.0128499
+cap "nor2_4/Y" "nor2_3/A" 0.000749594
+cap "nor2_3/B" "nor2_4/VDD" 19.6969
+cap "nor2_1/Y" "nor2_4/VSS" 10.8937
+cap "nor2_4/A" "nor2_3/Y" 4.99735
+cap "nor2_4/VDD" "nor2_2/A" 1.2011
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/A" 3.55061
+cap "nor2_3/A" "nor2_1/VDD" 8.1669e-06
+cap "nor2_3/B" "nor2_3/A" 158.976
+cap "nor2_1/Y" "nor2_3/Y" 4.1526
+cap "nor2_3/A" "nor2_2/A" 1.7971
+cap "nor2_1/Y" "nor2_2/Y" 44.5425
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/A" 1.0236
+cap "nor2_3/B" "nor2_5/B" 1.66924e-05
+cap "nor2_2/B" "nor2_4/VSS" 0.577188
+cap "nor2_4/VDD" "nor2_3/A" 74.0423
+cap "nor2_3/B" "nor2_4/A" 4.33638
+cap "nor2_1/Y" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.45726
+cap "nor2_3/Y" "NOT8_0/S7" 0.707581
+cap "nor2_3/Y" "nor2_2/B" 0.916258
+cap "nor2_2/Y" "NOT8_0/S7" 2.04018
+cap "nor2_4/B" "nor2_4/VSS" 0.421605
+cap "nor2_3/Y" "nor2_4/VSS" 117.129
+cap "nor2_1/Y" "nor2_3/B" 2.69285
+cap "nor2_4/A" "nor2_4/VDD" 0.521596
+cap "nor2_3/B" "nor2_4/A" 4.88217
+cap "nor2_3/A" "nor2_4/Y" 0.204909
+cap "nor2_5/A" "nor2_5/VDD" 12.3579
+cap "nor2_2/VDD" "nor2_4/B" 0.0269917
+cap "nor2_5/B" "NOT8_0/S4" 0.137222
+cap "nor2_5/VDD" "nor2_4/A" 140.467
+cap "nor2_3/A" "nor2_5/VSS" 0.709572
+cap "nor2_4/A" "NOT8_0/S6" 0.868118
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/A" 0.373181
+cap "nor2_5/VDD" "nor2_5/Y" 13.2472
+cap "nor2_4/Y" "NOT8_0/S4" 0.384827
+cap "nor2_3/B" "nor2_4/B" 1.22299
+cap "nor2_5/B" "nor2_4/Y" 103.134
+cap "nor2_2/Y" "nor2_4/B" 0.0104642
+cap "nor2_5/VDD" "nor2_4/B" 90.831
+cap "NOT8_0/S6" "nor2_4/B" 0.0685441
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 3.23942
+cap "nor2_5/VSS" "nor2_5/B" -11.7302
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_3/Y" "nor2_4/A" 8.29614
+cap "nor2_5/VSS" "nor2_4/Y" 87.8051
+cap "NOT8_0/A7" "nor2_4/A" 0.000558841
+cap "NOT8_0/A6" "nor2_4/A" 1.44546
+cap "nor2_3/B" "nor2_5/VDD" 4.83498
+cap "nor2_5/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.02424
+cap "nor2_4/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.28225
+cap "NOT8_0/S5" "nor2_4/B" 0.705962
+cap "nor2_5/VDD" "NOT8_0/S6" 0.0658564
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/VDD" 4.82001
+cap "nor2_3/Y" "nor2_4/B" 36.3033
+cap "nor2_5/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.404758
+cap "NOT8_0/A7" "nor2_4/B" 0.016856
+cap "nor2_3/A" "nor2_4/A" 1.71912
+cap "NOT8_0/A6" "nor2_4/B" 0.108907
+cap "NOT8_0/S7" "nor2_4/B" 0.0244549
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 0.698126
+cap "nor2_4/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.64056
+cap "nor2_5/VDD" "NOT8_0/S5" -0.0451891
+cap "nor2_3/A" "nor2_4/B" -1.73311
+cap "nor2_4/Y" "nor2_6/B" 0.0217357
+cap "nor2_4/A" "nor2_5/B" -4.82946
+cap "nor2_3/Y" "nor2_5/VDD" 101.915
+cap "nor2_3/Y" "NOT8_0/S6" 8.16586
+cap "NOT8_0/A7" "nor2_5/VDD" 1.11647
+cap "nor2_3/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.688305
+cap "nor2_5/A" "nor2_4/Y" 4.73699
+cap "NOT8_0/A6" "nor2_5/VDD" 23.9032
+cap "nor2_4/A" "nor2_4/Y" 2.31591
+cap "nor2_5/A" "nor2_5/VSS" 0.577188
+cap "nor2_5/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 34.7548
+cap "NOT8_0/S6" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.16613
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_5/VSS" "nor2_4/A" 46.7759
+cap "nor2_5/Y" "nor2_4/Y" 6.36865
+cap "nor2_5/B" "nor2_4/B" 4.63699
+cap "nor2_3/A" "nor2_5/VDD" 1.17014
+cap "nor2_5/VSS" "nor2_5/Y" 2.69694
+cap "nor2_4/Y" "nor2_4/B" 13.1781
+cap "NOT8_0/A7" "nor2_3/Y" 0.828202
+cap "nor2_5/VDD" "NOT8_0/A1" -0.11169
+cap "nor2_5/VSS" "nor2_4/B" 70.1938
+cap "NOT8_0/S7" "nor2_3/Y" 1.53957
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/S5" 0.10912
+cap "nor2_3/B" "nor2_5/B" 4.22934e-05
+cap "NOT8_0/A6" "nor2_3/Y" -0.873144
+cap "NOT8_0/A7" "NOT8_0/A6" -2.14036
+cap "NOT8_0/A6" "NOT8_0/S7" 5.84083
+cap "nor2_3/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 5.99464
+cap "nor2_5/VDD" "nor2_5/B" 13.062
+cap "nor2_3/B" "nor2_4/Y" 0.925502
+cap "NOT8_0/A6" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0984824
+cap "nor2_4/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0140102
+cap "nor2_3/B" "nor2_5/VSS" 0.88939
+cap "nor2_5/VDD" "nor2_4/Y" 160.871
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/Y" 0.52979
+cap "nor2_5/VSS" "nor2_5/VDD" 1106.94
+cap "nor2_5/VSS" "NOT8_0/S6" 5.87624
+cap "nor2_5/A" "nor2_4/A" 4.33319
+cap "nor2_3/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.183292
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 0.0311646
+cap "nor2_4/A" "nor2_5/Y" 0.000747045
+cap "nor2_3/Y" "nor2_5/B" 0.0255301
+cap "nor2_4/B" "nor2_6/B" 0.000670941
+cap "nor2_5/VDD" "NOT8_0/A2" -0.806328
+cap "nor2_4/Y" "NOT8_0/S5" 8.82349
+cap "nor2_5/A" "nor2_4/B" 4.3415
+cap "nor2_5/VSS" "NOT8_0/S5" 2.14414
+cap "nor2_3/Y" "nor2_4/Y" 4.82948
+cap "nor2_5/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.56465
+cap "nor2_4/A" "nor2_4/B" 158.642
+cap "nor2_3/Y" "nor2_5/VSS" 46.9149
+cap "nor2_5/Y" "nor2_4/B" 0.113442
+cap "NOT8_0/S7" "nor2_5/VSS" 0.746292
+cap "nor2_5/VDD" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 7.33734
+cap "NOT8_0/A6" "nor2_5/VSS" 13.6104
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/Y" 3.71033
+cap "nor2_5/VSS" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 20.1506
+cap "nor2_6/VSS" "nor2_6/B" -14.1284
+cap "nor2_5/B" "nor2_4/A" 0.0386315
+cap "nor2_5/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00301797
+cap "nor2_6/B" "nor2_5/A" -5.02543
+cap "nor2_4/Y" "nor2_6/VDD" 11.255
+cap "nor2_5/Y" "nor2_5/B" 11.4472
+cap "nor2_5/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.529797
+cap "nor2_5/Y" "nor2_4/A" 0.204811
+cap "nor2_6/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 5.31991
+cap "NOT8_0/S1" "nor2_6/B" 0.124453
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 0.688305
+cap "nor2_6/VSS" "nor2_5/B" 86.7587
+cap "nor2_6/VSS" "nor2_4/A" 0.529893
+cap "nor2_5/Y" "NOT8_0/A1" 4.28195
+cap "nor2_5/B" "nor2_5/A" 234.201
+cap "nor2_5/A" "nor2_4/A" 1.8772
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/A" 0.624905
+cap "nor2_4/Y" "nor2_6/B" 0.0350364
+cap "nor2_5/Y" "nor2_6/VSS" 320.23
+cap "NOT8_0/S3" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.142364
+cap "nor2_5/Y" "nor2_5/A" 9.5616
+cap "NOT8_0/A1" "nor2_6/VSS" -6.97569
+cap "nor2_6/Y" "nor2_6/VDD" 91.5365
+cap "nor2_5/B" "nor2_6/A" 4.38255
+cap "nor2_6/VDD" "nor2_4/B" 2.24665
+cap "nor2_6/VSS" "nor2_5/A" 39.3737
+cap "nor2_5/Y" "nor2_6/A" 4.44745
+cap "nor2_4/Y" "nor2_5/B" 0.568799
+cap "NOT8_0/S2" "nor2_6/Y" 8.40333
+cap "nor2_6/VSS" "nor2_6/A" 0.577188
+cap "nor2_6/VDD" "NOT8_0/S3" 0.0565859
+cap "NOT8_0/A1" "NOT8_0/S1" 1.45311
+cap "nor2_5/Y" "nor2_4/Y" 3.54739
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_6/A" "nor2_5/A" 4.39927
+cap "nor2_6/B" "nor2_4/B" 0.00156101
+cap "nor2_6/VSS" "nor2_4/Y" 13.7862
+cap "nor2_6/VDD" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 32.1617
+cap "nor2_4/Y" "nor2_5/A" 2.49451
+cap "nor2_6/VDD" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.524531
+cap "nor2_5/B" "nor2_6/Y" 16.1805
+cap "NOT8_0/S2" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.11738
+cap "nor2_5/B" "nor2_4/B" 0.68685
+cap "nor2_5/Y" "nor2_6/Y" 60.9503
+cap "nor2_6/B" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.42317
+cap "NOT8_0/A1" "nor2_6/Y" -5.05023
+cap "nor2_5/B" "NOT8_0/S3" 0.0639487
+cap "nor2_6/VSS" "nor2_6/Y" 12.9911
+cap "nor2_5/Y" "nor2_4/B" 0.924
+cap "nor2_6/VSS" "nor2_4/B" 0.694444
+cap "nor2_6/Y" "nor2_5/A" 0.000747045
+cap "nor2_5/Y" "NOT8_0/S3" 7.93497
+cap "nor2_5/A" "nor2_4/B" 5.11333
+cap "nor2_6/VSS" "NOT8_0/S3" 3.7942
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_4/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.183923
+cap "nor2_5/B" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.953422
+cap "NOT8_0/S1" "nor2_6/Y" 1.88857
+cap "nor2_5/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 4.596
+cap "nor2_6/B" "nor2_6/VDD" 9.62665
+cap "NOT8_0/S3" "nor2_5/A" 0.783886
+cap "nor2_5/B" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_5/B" "NOT8_0/S4" 1.4912
+cap "nor2_6/VSS" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 19.2154
+cap "nor2_5/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.50221
+cap "nor2_5/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.29389
+cap "nor2_5/B" "nor2_6/VDD" 66.1781
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/VDD" 3.34474
+cap "nor2_6/VDD" "nor2_4/A" 1.18635
+cap "nor2_6/VSS" "NOT8_0/S4" 0.811632
+cap "NOT8_0/A1" "NOT8_0/A0" -2.95371
+cap "nor2_6/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.02925
+cap "nor2_5/Y" "nor2_6/VDD" 176.212
+cap "nor2_5/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0129508
+cap "NOT8_0/A1" "nor2_6/VDD" 14.305
+cap "NOT8_0/S2" "nor2_5/B" 0.651673
+cap "nor2_4/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 2.13586
+cap "nor2_6/VSS" "nor2_6/VDD" 1304.42
+cap "nor2_5/B" "nor2_6/B" 4.5995
+cap "nor2_6/VDD" "nor2_5/A" 126.115
+cap "nor2_5/Y" "NOT8_0/S2" 4.77851
+cap "NOT8_0/S2" "nor2_6/VSS" 0.369136
+cap "nor2_5/Y" "nor2_6/B" 121.552
+cap "nor2_5/B" "nor2_7/B" 0.000537102
+cap "NOT8_0/A1" "nor2_6/B" 0.0681246
+cap "nor2_5/Y" "nor2_7/B" 0.0205285
+cap "nor2_6/A" "nor2_6/VDD" 0.525952
+cap "nor2_6/B" "nor2_5/B" 0.68685
+cap "NOT8_0/A0" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.80061
+cap "NOT8_0/A0" "NOT8_0/S0" 8.85739
+cap "nor2_6/B" "nor2_5/A" 0.0386315
+cap "nor2_6/B" "nor2_5/Y" 0.551917
+cap "nor2_6/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.43707
+cap "nor2_6/A" "NOT8_0/S0" 1.37519
+cap "nor2_6/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 5.67359
+cap "nor2_6/Y" "NOT8_0/S0" 0.4502
+cap "nor2_6/B" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_7/VDD" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 4.76385
+cap "nor2_7/VSS" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 25.359
+cap "nor2_7/VDD" "NOT8_0/S0" 0.0581029
+cap "nor2_7/VSS" "NOT8_0/S0" 6.37029
+cap "nor2_7/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 11.5226
+cap "nor2_7/Y" "NOT8_0/S0" 5.43192
+cap "nor2_5/B" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.688305
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/A" 0.183837
+cap "nor2_5/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 2.13586
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_6/B" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.958031
+cap "NOT8_0/A0" "NOT8_0/inv_7/VDD" 72.5108
+cap "nor2_6/B" "NOT8_0/S0" 0.0639487
+cap "nor2_6/A" "NOT8_0/inv_7/VDD" 37.0234
+cap "nor2_6/Y" "NOT8_0/inv_7/VDD" 16.4725
+cap "nor2_7/VDD" "NOT8_0/inv_7/VDD" 43.0104
+cap "nor2_7/VSS" "NOT8_0/inv_7/VDD" 695.569
+cap "nor2_7/Y" "NOT8_0/inv_7/VDD" 71.134
+cap "nor2_6/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.633487
+cap "nor2_6/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.529853
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/S0" 0.0771294
+cap "nor2_6/A" "nor2_7/B" -4.95764
+cap "nor2_7/VDD" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.47486
+cap "nor2_7/B" "nor2_6/Y" 118.993
+cap "nor2_5/Y" "NOT8_0/inv_7/VDD" 0.000104558
+cap "nor2_7/VDD" "nor2_7/B" 4.28041
+cap "nor2_7/VSS" "nor2_7/B" -14.3229
+cap "NOT8_0/S1" "nor2_6/A" 0.00988354
+cap "nor2_6/A" "nor2_7/A" 4.3593
+cap "nor2_0/B" "nor2_6/Y" 0.0277703
+cap "nor2_7/B" "nor2_5/B" 0.001268
+cap "NOT8_0/S1" "nor2_6/Y" 0.275241
+cap "nor2_6/Y" "nor2_7/A" 4.62473
+cap "nor2_7/VSS" "NOT8_0/S1" 0.913112
+cap "nor2_7/VSS" "nor2_7/A" 0.600483
+cap "nor2_7/VDD" "nor2_7/A" 0.524022
+cap "NOT8_0/S1" "nor2_7/Y" 6.55522
+cap "nor2_7/B" "nor2_5/Y" 0.0340752
+cap "NOT8_0/A0" "nor2_6/A" 5.70782
+cap "NOT8_0/A0" "nor2_6/Y" 2.26163
+cap "NOT8_0/A0" "nor2_7/VDD" 4.73041
+cap "nor2_7/VSS" "NOT8_0/A0" -9.75685
+cap "NOT8_0/A0" "nor2_7/Y" 4.37472
+cap "nor2_6/A" "nor2_6/Y" 7.45982
+cap "nor2_7/VDD" "nor2_6/A" 76.2218
+cap "nor2_7/VSS" "nor2_6/A" 44.6675
+cap "nor2_7/VSS" "nor2_6/Y" 236.973
+cap "nor2_6/A" "nor2_7/Y" 9.92107
+cap "nor2_7/VDD" "nor2_6/Y" 34.8833
+cap "nor2_6/Y" "nor2_7/Y" 24.0976
+cap "nor2_6/A" "nor2_5/B" 5.11809
+cap "nor2_6/Y" "nor2_5/B" 0.862151
+cap "nor2_7/VSS" "nor2_7/VDD" 76.7507
+cap "nor2_7/VSS" "nor2_7/Y" 50.9338
+cap "nor2_6/B" "NOT8_0/inv_7/VDD" 13.669
+cap "nor2_7/VDD" "nor2_7/Y" 41.7078
+cap "nor2_6/A" "nor2_5/A" 1.88559
+cap "nor2_7/VSS" "nor2_5/B" 2.42275
+cap "nor2_7/VDD" "nor2_5/B" 2.29113
+cap "nor2_6/Y" "nor2_5/A" 0.170055
+cap "nor2_6/A" "nor2_5/Y" 2.49911
+cap "nor2_6/Y" "nor2_5/Y" 5.64843
+cap "nor2_6/B" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00301797
+cap "nor2_7/VDD" "nor2_5/A" 1.21187
+cap "nor2_7/VSS" "nor2_5/A" 2.08289
+cap "nor2_7/VSS" "nor2_5/Y" 41.9562
+cap "nor2_7/VDD" "nor2_5/Y" 11.3542
+cap "nor2_6/B" "nor2_7/B" 4.61297
+cap "nor2_6/A" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00654083
+cap "nor2_6/Y" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.51951
+cap "nor2_7/VDD" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.524531
+cap "NOT8_0/inv_7/VDD" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 13.1931
+cap "nor2_6/B" "nor2_0/B" 0.0015632
+cap "nor2_6/B" "NOT8_0/S1" 0.0420123
+cap "nor2_6/B" "nor2_7/A" 4.362
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "NOT8_0/A0" "nor2_6/B" 1.88362
+cap "nor2_7/B" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.45395
+cap "nor2_6/B" "nor2_6/A" 235.333
+cap "nor2_6/B" "nor2_6/Y" 8.55671
+cap "nor2_7/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.02675
+cap "nor2_6/B" "nor2_7/VDD" 19.0866
+cap "nor2_7/VSS" "nor2_6/B" 91.2116
+cap "nor2_6/B" "nor2_7/Y" 8.79722
+cap "nor2_7/VDD" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.524531
+cap "nor2_6/A" "nor2_7/VDD" 1.18888
+cap "nor2_7/Y" "nor2_0/A" 4.50226
+cap "nor2_6/Y" "nor2_7/VDD" 11.303
+cap "nor2_0/B" "nor2_7/VSS" -14.4005
+cap "nor2_0/B" "nor2_7/A" -5.13734
+cap "nor2_7/B" "nor2_0/B" 4.51877
+cap "nor2_6/B" "nor2_7/A" 5.17891
+cap "nor2_6/B" "nor2_7/VSS" 0.814404
+cap "nor2_7/B" "nor2_6/B" 0.68685
+cap "nor2_7/Y" "nor2_0/B" 137.521
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/A" 3.39978
+cap "nor2_7/Y" "nor2_6/B" 0.915564
+cap "nor2_7/VSS" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 27.6058
+cap "nor2_7/B" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.04977
+cap "nor2_0/A" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.02738
+cap "nor2_7/VDD" "nor2_7/A" 81.5496
+cap "nor2_0/B" "nor2_6/B" 0.0034398
+cap "nor2_7/VSS" "nor2_7/VDD" 83.2741
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/A" 0.698149
+cap "nor2_7/B" "nor2_7/VDD" 19.2311
+cap "nor2_7/Y" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 7.1799
+cap "nor2_0/A" "nor2_7/VDD" 0.524505
+cap "nor2_7/B" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00301797
+cap "nor2_0/Y" "nor2_7/A" 9.87905
+cap "nor2_7/VSS" "nor2_0/Y" 17.5655
+cap "nor2_7/B" "nor2_0/Y" 9.02495
+cap "nor2_7/A" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00933702
+cap "nor2_6/A" "nor2_7/A" 1.92305
+cap "nor2_6/A" "nor2_7/VSS" 0.636698
+cap "nor2_6/A" "nor2_7/B" 0.0386315
+cap "nor2_7/B" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_7/Y" "nor2_7/VDD" 40.3232
+cap "nor2_6/Y" "nor2_7/A" 2.56924
+cap "nor2_6/Y" "nor2_7/VSS" 15.9461
+cap "nor2_7/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.529825
+cap "nor2_0/B" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.33755
+cap "nor2_7/B" "nor2_6/Y" 0.553434
+cap "nor2_7/Y" "nor2_0/Y" 20.7242
+cap "nor2_7/Y" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.41565
+cap "nor2_6/A" "nor2_7/Y" 0.204811
+cap "nor2_6/B" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.688305
+cap "nor2_0/B" "nor2_7/VDD" 4.05661
+cap "nor2_7/Y" "nor2_6/Y" 6.15325
+cap "nor2_6/B" "nor2_7/VDD" 2.26659
+cap "nor2_6/Y" "nor2_0/B" 0.0403463
+cap "nor2_7/VDD" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 4.79388
+cap "nor2_7/B" "nor2_7/A" 143.555
+cap "nor2_7/VSS" "nor2_7/A" 48.9657
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_7/B" "nor2_7/VSS" 70.1125
+cap "nor2_0/Y" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 11.2393
+cap "nor2_0/A" "nor2_7/A" 4.37084
+cap "nor2_7/VSS" "nor2_0/A" 0.595681
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_6/A" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.183355
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 3.40982
+cap "nor2_7/B" "nor2_0/A" 4.36713
+cap "nor2_7/Y" "nor2_7/A" 9.18934
+cap "nor2_7/Y" "nor2_7/VSS" 177.747
+cap "nor2_6/Y" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 2.13586
+cap "nor2_0/Y" "nor2_7/VDD" 39.3952
+cap "nor2_7/B" "nor2_7/Y" 10.4875
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/Y" 0.529832
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.790917
+cap "nor2_7/A" "nor2_0/Y" 0.204802
+cap "nor2_7/VSS" "nor2_7/A" 0.63225
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/A" 0.18355
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/A" 0.814389
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 3.42609
+cap "nor2_7/A" "nor2_0/A" 1.99666
+cap "nor2_7/A" "nor2_7/VDD" 1.19704
+cap "nor2_0/B" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00301797
+cap "nor2_7/B" "nor2_0/Y" 0.915665
+cap "nor2_7/VSS" "nor2_7/B" 0.809812
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/B" 0.688305
+cap "nor2_0/B" "nor2_7/A" 0.0386315
+cap "nor2_7/B" "nor2_0/A" 5.28495
+cap "nor2_7/VSS" "nor2_0/Y" 146.897
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/Y" 8.86833
+cap "nor2_7/B" "nor2_7/VDD" 2.27267
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VSS" 27.1022
+cap "nor2_7/Y" "nor2_0/Y" 6.35035
+cap "nor2_0/A" "nor2_0/Y" 10.0107
+cap "nor2_7/Y" "nor2_7/VSS" 15.8941
+cap "nor2_0/B" "nor2_7/B" 0.68685
+cap "nor2_7/VSS" "nor2_0/A" 48.9389
+cap "nor2_7/Y" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 2.13586
+cap "nor2_0/Y" "nor2_7/VDD" 25.1553
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/A" 3.58733
+cap "nor2_7/VSS" "nor2_7/VDD" 82.3848
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 1.61671
+cap "nor2_7/Y" "nor2_0/A" 2.65692
+cap "nor2_7/Y" "nor2_7/VDD" 11.3158
+cap "nor2_0/B" "nor2_0/Y" 10.4784
+cap "nor2_7/VSS" "nor2_0/B" 64.3854
+cap "nor2_0/A" "nor2_7/VDD" 77.8879
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/B" 1.15803
+cap "nor2_7/Y" "nor2_0/B" 0.553604
+cap "nor2_0/B" "nor2_0/A" 159.476
+cap "nor2_0/B" "nor2_7/VDD" 6.95626
+cap "nor2_2/VDD" "nor2_2/Y" 0.00259693
+cap "nor2_2/VSS" "nor2_2/VDD" 76.9473
+cap "nor2_2/VDD" "nor2_1/Y" 46.3356
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/VDD" 0.384061
+cap "nor2_2/B" "nor2_2/VDD" 38.1228
+cap "nor2_1/B" "nor2_2/VDD" 28.9899
+cap "nor2_2/Y" "nor2_1/Y" 0.84985
+cap "nor2_2/A" "nor2_2/VDD" 1.39211
+cap "nor2_2/VSS" "nor2_1/Y" 2.93085
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/Y" 6.92648
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/VDD" 35.6629
+cap "nor2_3/B" "nor2_1/Y" 0.0148481
+cap "nor2_1/B" "nor2_2/Y" 0.0100918
+cap "nor2_1/B" "nor2_2/VSS" 6.14137
+cap "nor2_1/A" "nor2_2/VDD" 80.215
+cap "nor2_2/VSS" "nor2_2/B" -4.12326
+cap "nor2_2/B" "nor2_1/Y" 3.69397
+cap "nor2_1/B" "nor2_1/Y" 0.567169
+cap "nor2_1/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_2/A" "nor2_1/Y" 2.30067
+cap "nor2_1/B" "nor2_3/B" 6.02626e-05
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" 0.72077
+cap "nor2_2/VSS" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 37.9478
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/Y" -1.99676
+cap "nor2_1/B" "nor2_2/B" 1.82982
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.63515
+cap "nor2_1/B" "nor2_2/A" 0.512263
+cap "nor2_1/A" "nor2_2/Y" 7.56895e-05
+cap "nor2_2/VSS" "nor2_1/A" 1.36926
+cap "nor2_1/A" "nor2_1/Y" 1.22402
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/A" 0.0196652
+cap "nor2_1/B" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.293238
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/B" 13.5402
+cap "nor2_2/A" "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.50659
+cap "nor2_1/B" "nor2_1/A" 1.52678
+cap "nor2_2/B" "nor2_1/A" -2.51709
+cap "nor2_2/A" "nor2_1/A" 0.0441121
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_1/A" 30.8729
+cap "nor2_3/A" "nor2_2/A" 0.0384442
+cap "nor2_2/A" "nor2_3/VSS" 1.90637
+cap "nor2_3/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.53932
+cap "nor2_2/A" "nor2_3/Y" 7.56895e-05
+cap "nor2_2/B" "nor2_3/VDD" 27.4287
+cap "nor2_3/B" "nor2_2/Y" 3.63671
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/A" 0.461152
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/Y" 0.697241
+cap "nor2_3/VSS" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 38.8737
+cap "nor2_3/VDD" "nor2_1/Y" 5.413
+cap "nor2_3/A" "nor2_2/Y" 2.43166
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.25533
+cap "nor2_1/B" "nor2_3/VDD" 2.479
+cap "nor2_2/B" "nor2_1/Y" 0.235554
+cap "nor2_3/VSS" "nor2_2/Y" 2.88159
+cap "nor2_2/A" "nor2_3/VDD" 80.2357
+cap "nor2_2/Y" "nor2_3/Y" 0.84985
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" 0.384061
+cap "nor2_3/B" "nor2_3/VSS" -4.50752
+cap "nor2_3/VDD" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.384061
+cap "nor2_3/VDD" "nor2_1/A" 1.44873
+cap "nor2_3/VDD" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 38.4599
+cap "nor2_2/B" "nor2_2/A" 1.46608
+cap "nor2_4/B" "nor2_2/Y" 0.00335621
+cap "nor2_2/A" "nor2_1/Y" 0.575348
+cap "nor2_2/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.158321
+cap "nor2_3/VDD" "nor2_2/Y" 46.5028
+cap "nor2_2/B" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_1/Y" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.79324
+cap "nor2_1/B" "nor2_2/A" 0.619316
+cap "nor2_3/B" "nor2_3/VDD" 41.0686
+cap "nor2_1/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.1193
+cap "nor2_2/B" "nor2_2/Y" 1.10153
+cap "nor2_2/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 24.9331
+cap "nor2_1/Y" "nor2_2/Y" 0.202147
+cap "nor2_3/A" "nor2_3/VDD" 1.63893
+cap "nor2_3/B" "nor2_2/B" 1.81349
+cap "nor2_2/A" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0049919
+cap "nor2_2/A" "nor2_1/A" 0.120853
+cap "nor2_3/B" "nor2_1/Y" 0.0305563
+cap "nor2_1/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.408888
+cap "nor2_3/VSS" "nor2_3/VDD" 79.8031
+cap "nor2_1/B" "nor2_2/Y" 0.159843
+cap "nor2_3/VDD" "nor2_3/Y" 0.00259693
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.56514
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/VDD" 6.92648
+cap "nor2_2/B" "nor2_3/A" 0.531036
+cap "nor2_2/A" "nor2_2/Y" 1.34414
+cap "nor2_3/B" "nor2_1/B" 0.000740162
+cap "nor2_2/B" "nor2_3/Y" 0.0100918
+cap "nor2_2/B" "nor2_3/VSS" 6.65019
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" 6.92648
+cap "nor2_1/A" "nor2_2/Y" 0.00409109
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/Y" -2.02164
+cap "nor2_3/B" "nor2_2/A" -4.11036
+cap "nor2_1/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/B" 0.00301797
+cap "nor2_3/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 13.8815
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/Y" -1.94225
+cap "nor2_3/B" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00301797
+cap "nor2_3/B" "nor2_4/VSS" 6.31773
+cap "nor2_4/A" "nor2_3/B" 0.530142
+cap "nor2_3/B" "nor2_1/Y" 0.279375
+cap "nor2_2/A" "nor2_3/A" 0.112184
+cap "nor2_2/Y" "nor2_3/A" 0.714761
+cap "nor2_3/A" "nor2_4/Y" 7.56895e-05
+cap "nor2_3/A" "nor2_4/VDD" 84.1858
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.25533
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/VSS" 38.7363
+cap "nor2_3/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_3/A" "nor2_3/Y" 1.37772
+cap "nor2_4/A" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.62096
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/B" 0.144621
+cap "nor2_2/B" "nor2_4/VDD" 2.4705
+cap "nor2_3/A" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.43581
+cap "nor2_2/B" "nor2_3/Y" 0.159843
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.78858
+cap "nor2_3/A" "nor2_4/VSS" 1.86423
+cap "nor2_4/VDD" "nor2_4/B" 2.83714
+cap "nor2_4/A" "nor2_3/A" 0.0377183
+cap "nor2_3/Y" "nor2_4/B" 1.55891
+cap "nor2_3/A" "nor2_1/Y" 0.231321
+cap "nor2_3/A" "nor2_3/B" 1.46532
+cap "nor2_2/Y" "nor2_4/VDD" 5.88033
+cap "nor2_2/A" "nor2_4/VDD" 1.35243
+cap "nor2_2/Y" "nor2_3/Y" 0.202147
+cap "nor2_2/A" "nor2_3/Y" 0.00409109
+cap "nor2_3/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0049965
+cap "nor2_4/VDD" "nor2_4/Y" 0.00259693
+cap "nor2_3/Y" "nor2_4/Y" 0.84985
+cap "nor2_4/VDD" "nor2_3/Y" 53.1916
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/A" 25.0049
+cap "nor2_3/B" "nor2_4/B" 0.0969583
+cap "nor2_5/B" "nor2_3/Y" 0.0112095
+cap "nor2_4/VDD" "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_4/VSS" "nor2_4/VDD" 127.023
+cap "nor2_2/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_3/Y" 0.384061
+cap "nor2_4/VSS" "nor2_3/Y" 2.76986
+cap "nor2_2/B" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.1193
+cap "nor2_4/A" "nor2_4/VDD" 1.60584
+cap "nor2_2/Y" "nor2_3/B" 0.395233
+cap "nor2_4/A" "nor2_3/Y" 2.42647
+cap "nor2_4/VDD" "nor2_1/Y" 0.445216
+cap "nor2_3/B" "nor2_4/Y" 0.0100918
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 8.88346
+cap "nor2_3/B" "nor2_4/VDD" 30.7798
+cap "nor2_3/B" "nor2_3/Y" 0.944845
+cap "nor2_4/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.384061
+cap "nor2_2/B" "nor2_3/A" 0.607772
+cap "nor2_3/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_2/Y" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.79324
+cap "nor2_2/A" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.407437
+cap "nor2_1/VDD" "nor2_3/A" 1.17162e-05
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/Y" 0.772335
+cap "nor2_5/B" "nor2_3/B" 4.47424e-06
+cap "nor2_3/A" "nor2_4/B" -2.54942
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/VDD" 43.6775
+cap "nor2_5/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.716068
+cap "nor2_5/Y" "nor2_5/VDD" 2.12344
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/B" 13.6081
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.62116
+cap "nor2_5/VDD" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 16.2919
+cap "nor2_5/VSS" "nor2_4/B" 0.505844
+cap "nor2_5/VDD" "nor2_5/B" 40.3155
+cap "nor2_5/VSS" "nor2_4/A" 3.15362
+cap "nor2_3/B" "nor2_4/B" 1.81127
+cap "nor2_5/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 65.9908
+cap "NOT8_0/A6" "nor2_4/A" 0.194735
+cap "nor2_4/A" "nor2_3/B" 0.563515
+cap "nor2_6/B" "nor2_4/Y" 0.0189609
+cap "nor2_5/Y" "nor2_4/B" 0.0100918
+cap "nor2_3/Y" "nor2_5/B" 0.0255181
+cap "nor2_4/Y" "nor2_5/A" 2.42695
+cap "nor2_4/Y" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.384061
+cap "nor2_4/B" "nor2_5/B" 1.83023
+cap "nor2_4/B" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0311646
+cap "nor2_5/Y" "nor2_4/A" 7.56895e-05
+cap "nor2_4/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0118549
+cap "nor2_3/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.66538
+cap "nor2_3/Y" "nor2_5/VDD" 9.57114
+cap "nor2_4/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0377623
+cap "nor2_4/A" "nor2_5/B" -4.04599
+cap "nor2_5/VDD" "nor2_4/B" 67.9747
+cap "nor2_4/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 27.8524
+cap "nor2_3/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.378268
+cap "nor2_3/A" "nor2_5/VDD" 1.37038
+cap "nor2_4/A" "nor2_5/VDD" 91.0029
+cap "nor2_4/B" "nor2_2/VDD" 0.123852
+cap "nor2_5/VSS" "nor2_4/Y" 2.60854
+cap "nor2_4/Y" "nor2_3/B" 0.159843
+cap "nor2_3/Y" "nor2_4/B" 2.31298
+cap "nor2_4/A" "nor2_3/Y" 0.658511
+cap "nor2_4/A" "nor2_4/B" 1.38228
+cap "nor2_3/A" "nor2_4/B" -1.33069
+cap "nor2_5/Y" "nor2_4/Y" 0.84985
+cap "nor2_3/A" "nor2_4/A" 0.0819227
+cap "nor2_4/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_4/Y" "nor2_5/B" 3.68423
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.09946
+cap "nor2_4/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" -2.00173
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/A" 1.55584
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/VDD" 10.1438
+cap "nor2_5/VDD" "nor2_5/A" 4.43607
+cap "nor2_4/Y" "nor2_5/VDD" 39.6393
+cap "nor2_2/Y" "nor2_4/B" 0.0103174
+cap "nor2_6/B" "nor2_4/B" 0.00017984
+cap "nor2_5/VSS" "nor2_5/B" -3.65258
+cap "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_4/B" 4.04448
+cap "NOT8_0/A6" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.00200887
+cap "nor2_4/Y" "nor2_3/Y" 0.202147
+cap "nor2_5/VSS" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 30.8677
+cap "nor2_5/VSS" "nor2_5/VDD" 130.47
+cap "nor2_4/B" "nor2_5/A" 0.530225
+cap "nor2_4/Y" "nor2_4/B" 0.709118
+cap "nor2_3/B" "nor2_5/B" 5.56788e-05
+cap "NOT8_0/A6" "nor2_5/VDD" 0.404203
+cap "nor2_4/Y" "nor2_4/A" 1.2947
+cap "nor2_4/A" "nor2_3/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.328763
+cap "nor2_3/A" "nor2_4/Y" 0.00409109
+cap "nor2_3/B" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.05816
+cap "nor2_3/B" "nor2_5/VDD" 3.42375
+cap "nor2_4/A" "nor2_5/A" 0.0439763
+cap "nor2_4/Y" "nor2_5/B" 0.0042324
+cap "nor2_4/Y" "nor2_5/Y" 0.202147
+cap "nor2_5/Y" "nor2_4/B" 0.159843
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/B" 14.169
+cap "nor2_5/A" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.547796
+cap "nor2_6/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.51623
+cap "nor2_6/VDD" "nor2_6/B" 41.8777
+cap "nor2_7/B" "nor2_5/B" 0.000143966
+cap "nor2_4/A" "nor2_5/A" 0.142653
+cap "nor2_5/Y" "nor2_7/B" 0.0179078
+cap "nor2_6/VDD" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 46.1055
+cap "nor2_6/VDD" "nor2_6/A" 1.63296
+cap "nor2_5/B" "nor2_6/B" 1.78156
+cap "nor2_5/Y" "nor2_6/B" 3.58196
+cap "nor2_5/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" -2.04155
+cap "nor2_5/B" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.246079
+cap "nor2_5/B" "nor2_6/A" 0.530877
+cap "nor2_5/Y" "nor2_6/A" 2.43074
+cap "nor2_6/VDD" "nor2_5/B" 33.1157
+cap "nor2_6/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.680078
+cap "nor2_5/Y" "nor2_6/VDD" 55.0983
+cap "nor2_6/VDD" "NOT8_0/A1" 0.417466
+cap "nor2_6/VSS" "nor2_6/B" -4.42148
+cap "nor2_6/VSS" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 37.2555
+cap "nor2_4/Y" "nor2_5/A" 0.409027
+cap "nor2_4/B" "nor2_5/A" 0.65665
+cap "nor2_6/VDD" "nor2_6/Y" 1.19117
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.50902
+cap "nor2_5/Y" "nor2_5/B" 0.947672
+cap "nor2_6/VDD" "nor2_6/VSS" 162.887
+cap "nor2_6/VDD" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.384061
+cap "nor2_6/Y" "nor2_5/B" 0.84039
+cap "nor2_5/Y" "nor2_6/Y" 0.84985
+cap "nor2_6/VSS" "nor2_5/B" 6.15597
+cap "nor2_5/Y" "nor2_6/VSS" 2.80504
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/B" 0.0311646
+cap "nor2_5/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_5/A" "nor2_6/B" -4.12758
+cap "nor2_5/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 27.5558
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.11365
+cap "nor2_5/A" "nor2_6/A" 0.0439613
+cap "nor2_6/VDD" "nor2_5/A" 89.5895
+cap "nor2_4/A" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.381475
+cap "nor2_6/VDD" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_5/Y" "nor2_5/A" 2.23542
+cap "nor2_5/A" "nor2_5/B" 1.47563
+cap "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/B" 0.00301797
+cap "nor2_5/Y" "nor2_4/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.384061
+cap "nor2_4/A" "nor2_6/VDD" 1.41351
+cap "nor2_5/A" "nor2_6/Y" 7.56895e-05
+cap "nor2_5/Y" "nor2_4/A" 0.00409109
+cap "nor2_5/A" "nor2_6/VSS" 2.10468
+cap "nor2_4/Y" "nor2_6/B" 0.0351724
+cap "nor2_5/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0110331
+cap "nor2_4/B" "nor2_6/B" 0.00216055
+cap "nor2_4/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.67548
+cap "nor2_4/B" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.06373
+cap "nor2_4/Y" "nor2_6/VDD" 6.19821
+cap "nor2_6/VDD" "nor2_4/B" 2.48415
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.22703
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/B" 0.0311646
+cap "nor2_6/Y" "nor2_5/Y" 0.202147
+cap "nor2_6/A" "NOT8_0/A0" 0.290416
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/A" 25.4605
+cap "NOT8_0/inv_7/VDD" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.2425
+cap "nor2_7/A" "nor2_7/VDD" 1.62095
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/B" 0.00301797
+cap "nor2_7/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.683099
+cap "nor2_5/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.402617
+cap "nor2_6/B" "nor2_6/A" 1.50084
+cap "nor2_7/B" "nor2_7/VDD" 42.3175
+cap "nor2_7/VDD" "nor2_5/B" 2.46997
+cap "nor2_6/B" "nor2_0/B" 0.000419003
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "NOT8_0/A0" 0.00166798
+cap "nor2_7/VDD" "nor2_7/VSS" 188.985
+cap "nor2_7/Y" "nor2_6/B" 0.439137
+cap "nor2_7/A" "nor2_6/A" 0.0391746
+cap "nor2_5/Y" "nor2_7/VDD" 6.19821
+cap "nor2_6/B" "NOT8_0/A0" 0.309377
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/B" 0.236465
+cap "nor2_6/Y" "nor2_7/VDD" 55.9216
+cap "nor2_7/B" "nor2_6/A" -4.16295
+cap "nor2_6/A" "nor2_5/B" 0.658566
+cap "nor2_6/Y" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_6/A" "nor2_7/VSS" 2.52661
+cap "nor2_7/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.51956
+cap "nor2_6/Y" "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.384061
+cap "nor2_5/Y" "nor2_6/A" 0.412013
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/B" 14.0973
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/B" 1.1082
+cap "nor2_6/Y" "nor2_6/A" 1.87166
+cap "nor2_6/Y" "nor2_0/B" 0.0242252
+cap "nor2_7/A" "nor2_6/B" 0.530554
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VSS" 38.4117
+cap "nor2_7/Y" "nor2_6/Y" 0.84985
+cap "nor2_6/Y" "nor2_5/A" 0.00409109
+cap "nor2_6/B" "nor2_7/B" 1.79358
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_5/Y" 1.76972
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 0.384061
+cap "nor2_6/Y" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" -2.03659
+cap "nor2_6/B" "nor2_7/VSS" 6.2952
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 6.92648
+cap "nor2_6/B" "nor2_5/Y" 0.0042324
+cap "nor2_6/Y" "nor2_6/B" 1.20849
+cap "nor2_6/A" "nor2_7/VDD" 85.419
+cap "nor2_7/B" "nor2_5/B" 0.00174334
+cap "NOT8_0/inv_7/VDD" "nor2_7/VDD" 7.3006
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/A" 0.00586994
+cap "nor2_7/B" "nor2_7/VSS" -4.52144
+cap "nor2_7/A" "nor2_6/Y" 2.42887
+cap "nor2_7/Y" "nor2_7/VDD" 2.60138
+cap "nor2_5/A" "nor2_7/VDD" 1.40959
+cap "nor2_5/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/A" 0.555263
+cap "nor2_7/B" "nor2_5/Y" 0.0340808
+cap "nor2_7/VDD" "NOT8_0/A0" 1.29544
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 42.1507
+cap "nor2_6/Y" "nor2_7/B" 3.59749
+cap "nor2_6/Y" "nor2_5/B" 0.159843
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.52306
+cap "NOT8_0/inv_7/VDD" "nor2_6/A" 0.487473
+cap "nor2_6/Y" "nor2_7/VSS" 2.8356
+cap "nor2_5/A" "nor2_6/A" 0.145803
+cap "nor2_7/Y" "nor2_6/A" 0.42912
+cap "nor2_6/B" "nor2_7/VDD" 32.1734
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/B" 0.291435
+cap "nor2_7/A" "nor2_0/Y" 0.309453
+cap "nor2_7/Y" "nor2_0/B" 3.51793
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/Y" 0.384061
+cap "nor2_6/Y" "nor2_0/B" 0.0405717
+cap "nor2_7/Y" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 6.92648
+cap "nor2_7/VSS" "nor2_7/VDD" 77.6723
+cap "nor2_7/Y" "nor2_6/Y" 0.202147
+cap "nor2_7/VSS" "nor2_7/B" 6.30284
+cap "nor2_0/A" "nor2_7/Y" 2.42934
+cap "nor2_6/A" "nor2_7/Y" 0.00409109
+cap "nor2_7/A" "nor2_7/VDD" 79.4895
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/B" 14.5731
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/Y" -2.06655
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.17038
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.43874
+cap "nor2_7/A" "nor2_7/B" 1.51076
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/Y" 1.72263
+cap "nor2_7/VSS" "nor2_0/B" -4.54773
+cap "nor2_7/VSS" "nor2_7/Y" 2.89777
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/A" 1.48703
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/A" 0.391595
+cap "nor2_6/B" "nor2_7/VDD" 2.46904
+cap "nor2_0/Y" "nor2_7/VDD" 0.247666
+cap "nor2_0/Y" "nor2_7/B" 0.319469
+cap "nor2_7/A" "nor2_0/B" -4.2098
+cap "nor2_7/A" "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.611528
+cap "nor2_7/A" "nor2_7/Y" 1.7583
+cap "nor2_7/A" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 0.0081393
+cap "nor2_7/A" "nor2_6/Y" 0.45475
+cap "nor2_7/VSS" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 38.5558
+cap "nor2_7/A" "nor2_0/A" 0.0415038
+cap "nor2_7/A" "nor2_6/A" 0.159438
+cap "nor2_6/B" "nor2_0/B" 0.00492801
+cap "nor2_7/Y" "nor2_6/B" 0.159843
+cap "nor2_7/A" "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 26.454
+cap "nor2_7/VDD" "nor2_7/B" 25.358
+cap "nor2_0/Y" "nor2_7/Y" 0.84985
+cap "nor2_7/A" "nor2_7/VSS" 2.47284
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_6/B" 1.08598
+cap "nor2_0/B" "nor2_7/VDD" 41.0459
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/Y" 0.654758
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 6.92648
+cap "nor2_7/Y" "nor2_7/VDD" 41.2108
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 0.384061
+cap "nor2_6/Y" "nor2_7/VDD" 6.19821
+cap "nor2_0/B" "nor2_7/B" 1.75288
+cap "nor2_6/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/B" 0.00301797
+cap "nor2_7/Y" "nor2_7/B" 0.951739
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/B" 0.0311646
+cap "nor2_6/Y" "nor2_7/B" 0.0042324
+cap "nor2_0/A" "nor2_7/VDD" 1.62396
+cap "nor2_6/A" "nor2_7/VDD" 1.37822
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 33.1868
+cap "nor2_7/A" "nor2_6/B" 0.683072
+cap "nor2_0/A" "nor2_7/B" 0.530635
+cap "nor2_7/B" "nor2_7/VDD" 2.46904
+cap "nor2_0/B" "nor2_0/Y" 1.00498
+cap "nor2_0/A" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 26.2447
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/A" 0.712672
+cap "nor2_0/B" "nor2_7/VDD" 11.3178
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 3.18455
+cap "nor2_0/Y" "nor2_7/VDD" 0.608885
+cap "nor2_0/Y" "nor2_7/A" 0.00409109
+cap "nor2_7/VSS" "nor2_0/B" 5.73767
+cap "nor2_7/VSS" "nor2_0/Y" 2.31971
+cap "nor2_7/A" "nor2_7/VDD" 1.39391
+cap "nor2_7/Y" "nor2_0/B" 0.0042324
+cap "nor2_7/Y" "nor2_0/Y" 0.202147
+cap "nor2_7/VSS" "nor2_7/VDD" 72.717
+cap "nor2_7/B" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.09154
+cap "nor2_7/B" "nor2_0/A" 0.725794
+cap "nor2_7/Y" "nor2_7/VDD" 6.19821
+cap "nor2_0/B" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.00841
+cap "nor2_0/A" "nor2_0/B" 1.61108
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/B" 0.00301797
+cap "nor2_0/A" "nor2_0/Y" 1.66929
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_0/Y" 0.384061
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 13.6496
+cap "nor2_0/A" "nor2_7/VDD" 78.6462
+cap "nor2_7/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/VDD" 6.92648
+cap "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" "nor2_7/A" 0.394417
+cap "nor2_0/A" "nor2_7/A" 0.187629
+cap "nor2_7/VSS" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 38.1411
+cap "nor2_0/A" "nor2_7/VSS" 2.41561
+cap "nor2_7/Y" "nor2_0/A" 0.528899
+cap "nor2_7/B" "nor2_0/Y" 0.159843
+cap "nor2_7/Y" "nor2_0/sky130_fd_pr__pfet_01v8_UFBY79_0/a_n417_n128#" 1.73441
+merge "NOT8_0/A6" "nor2_2/Y" -205.654 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11845 -708 0 0 0 0 0 0 0 0 0 0
+merge "nor2_2/Y" "m1_4310_n2196#"
+merge "nor2_0/VSS" "NOT8_0/inv_7/VSS" -5051.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8752 -1220 0 0 0 0 0 0 -1867663 -8872 0 0
+merge "NOT8_0/inv_7/VSS" "nor2_7/VSS"
+merge "nor2_7/VSS" "NOT8_0/inv_6/VSS"
+merge "NOT8_0/inv_6/VSS" "nor2_6/VSS"
+merge "nor2_6/VSS" "NOT8_0/inv_4/VSS"
+merge "NOT8_0/inv_4/VSS" "nor2_5/VSS"
+merge "nor2_5/VSS" "NOT8_0/VSUBS"
+merge "NOT8_0/VSUBS" "NOT8_0/inv_1/VSS"
+merge "NOT8_0/inv_1/VSS" "nor2_4/VSS"
+merge "nor2_4/VSS" "nor2_1/VSS"
+merge "nor2_1/VSS" "nor2_2/VSS"
+merge "nor2_2/VSS" "VSS"
+merge "VSS" "nor2_3/VSS"
+merge "nor2_3/VSS" "VSUBS"
+merge "nor2_7/B" "B1" -217.119 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5742 -306 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/VDD" "nor2_7/VDD" -4611.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6512 -1360 0 0 0 0 -43680 -872 0 0 0 0
+merge "nor2_7/VDD" "nor2_6/VDD"
+merge "nor2_6/VDD" "nor2_5/VDD"
+merge "nor2_5/VDD" "nor2_4/VDD"
+merge "nor2_4/VDD" "nor2_3/VDD"
+merge "nor2_3/VDD" "nor2_1/VDD"
+merge "nor2_1/VDD" "nor2_2/VDD"
+merge "nor2_2/VDD" "NOT8_0/inv_7/VDD"
+merge "NOT8_0/inv_7/VDD" "NOT8_0/inv_6/VDD"
+merge "NOT8_0/inv_6/VDD" "NOT8_0/inv_4/VDD"
+merge "NOT8_0/inv_4/VDD" "VDD"
+merge "nor2_6/Y" "NOT8_0/A2" -348.799 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15228 -720 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/A2" "m1_8156_n2350#"
+merge "NOT8_0/S0" "S0" -22.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/A4" "nor2_4/Y" -315.462 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8211 -514 0 0 0 0 0 0 0 0 0 0
+merge "nor2_4/Y" "m1_6905_n2156#"
+merge "NOT8_0/A3" "nor2_5/Y" -241.279 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9591 -554 0 0 0 0 0 0 0 0 0 0
+merge "nor2_5/Y" "m1_7654_n2305#"
+merge "NOT8_0/A7" "nor2_1/Y" -223.468 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9798 -584 0 0 0 0 0 0 0 0 0 0
+merge "nor2_1/Y" "m1_2986_n2314#"
+merge "NOT8_0/S1" "S1" -11.616 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "nor2_5/A" "A3" -211.609 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4554 -270 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/S2" "S2" -10.6228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "nor2_5/B" "B3" -142.848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/A5" "nor2_3/Y" -317.092 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9591 -554 0 0 0 0 0 0 0 0 0 0
+merge "nor2_3/Y" "m1_5726_n2060#"
+merge "NOT8_0/S3" "S3" -12.0726 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/S4" "S4" -1.65249 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "nor2_3/A" "A5" -186.098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/S5" "S5" -13.1352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "nor2_3/B" "B5" -121.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4686 -274 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/Y" "NOT8_0/A0" -333.665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9591 -554 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/A0" "m1_9134_n2305#"
+merge "NOT8_0/S6" "S6" -16.662 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/S7" "S7" -20.3033 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -172 0 0 0 0 0 0 0 0 0 0
+merge "nor2_1/A" "A7" -131.792 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor2_1/B" "B7" -112.602 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/B" "B0" -197.111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6138 -318 0 0 0 0 0 0 0 0 0 0
+merge "nor2_6/A" "A2" -224.388 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5214 -290 0 0 0 0 0 0 0 0 0 0
+merge "nor2_0/A" "A0" -188.006 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor2_6/B" "B2" -209.895 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4818 -278 0 0 0 0 0 0 0 0 0 0
+merge "nor2_7/A" "A1" -186.403 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5082 -286 0 0 0 0 0 0 0 0 0 0
+merge "nor2_4/A" "A4" -197.949 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor2_4/B" "B4" -133.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5082 -286 0 0 0 0 0 0 0 0 0 0
+merge "nor2_7/Y" "NOT8_0/A1" -272.885 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10954 -594 0 0 0 0 0 0 0 0 0 0
+merge "NOT8_0/A1" "m1_8634_n2305#"
+merge "nor2_2/B" "B6" -221.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0
+merge "nor2_2/A" "A6" -174.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3180 -226 0 0 0 0 0 0 0 0 0 0

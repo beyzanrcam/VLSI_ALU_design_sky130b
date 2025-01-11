@@ -1,0 +1,478 @@
+
+Subcircuit summary:
+Circuit 1: OR8                             |Circuit 2: OR8                             
+-------------------------------------------|-------------------------------------------
+nor2 (8)                                   |nor2 (8)                                   
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (16) **Mismatch**  
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (16) **Mismatch**  
+Number of devices: 24 **Mismatch**         |Number of devices: 40 **Mismatch**         
+Number of nets: 42                         |Number of nets: 42                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: OR8                             |Circuit 2: OR8                             
+
+---------------------------------------------------------------------------------------
+Net: B0                                    |Net: B0                                    
+  nor2/B = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: B2                                    |Net: B2                                    
+  nor2/B = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: B4                                    |Net: B4                                    
+  nor2/B = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: B6                                    |Net: B6                                    
+  nor2/B = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: A0                                    |Net: A0                                    
+  nor2/A = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: A2                                    |Net: A2                                    
+  nor2/A = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: A4                                    |Net: A4                                    
+  nor2/A = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: A6                                    |Net: A6                                    
+  nor2/A = 1                               |  nor2/A = 1                               
+                                           |                                           
+Net: B1                                    |Net: B1                                    
+  nor2/B = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: B3                                    |Net: B3                                    
+  nor2/B = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: B5                                    |Net: B5                                    
+  nor2/B = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: B7                                    |Net: B7                                    
+  nor2/B = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: A1                                    |Net: A1                                    
+  nor2/A = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: A3                                    |Net: A3                                    
+  nor2/A = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: A5                                    |Net: A5                                    
+  nor2/A = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: A7                                    |Net: A7                                    
+  nor2/A = 1                               |  nor2/B = 1                               
+                                           |                                           
+Net: nor2_0/VDD                            |Net: net1                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_1/VDD                            |Net: net2                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_2/VDD                            |Net: net3                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_3/VDD                            |Net: net4                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_4/VDD                            |Net: net5                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_5/VDD                            |Net: net6                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_6/VDD                            |Net: net7                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: nor2_7/VDD                            |Net: net8                                  
+  nor2/VDD = 1                             |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: VSUBS                                 |(no matching net)                          
+  nor2/VSS = 8                             |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 8        |                                           
+  sky130_fd_pr__nfet_01v8/4 = 8            |                                           
+                                           |                                           
+Net: /NOT8_0/inv_7/VDD                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 8        |                                           
+  sky130_fd_pr__pfet_01v8/4 = 8            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: VDD                                   
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 16       
+                                           |  sky130_fd_pr__pfet_01v8/4 = 16           
+                                           |  nor2/VDD = 8                             
+                                           |                                           
+(no matching net)                          |Net: VSS                                   
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 16       
+                                           |  sky130_fd_pr__nfet_01v8/4 = 16           
+                                           |  nor2/VSS = 8                             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: S7                                    |Net: S7                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S6                                    |Net: S6                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S5                                    |Net: S5                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S4                                    |Net: S4                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S3                                    |Net: S3                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S2                                    |Net: S2                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S1                                    |Net: S1                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: S0                                    |Net: S0                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: nor2_7/Y                              |Net: nor_8_bitwise:2/net8                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_6/Y                              |Net: nor_8_bitwise:2/net7                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_5/Y                              |Net: nor_8_bitwise:2/net6                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_4/Y                              |Net: nor_8_bitwise:2/net5                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_3/Y                              |Net: nor_8_bitwise:2/net4                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_2/Y                              |Net: nor_8_bitwise:2/net3                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_1/Y                              |Net: nor_8_bitwise:2/net2                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: nor2_0/Y                              |Net: nor_8_bitwise:2/net1                  
+  nor2/Y = 1                               |  nor2/Y = 1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: OR8                             |Circuit 2: OR8                             
+
+---------------------------------------------------------------------------------------
+Instance: NOT8_0//inv_0//sky130_fd_pr__nfe |Instance: not8:1/inv:1/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_1//sky130_fd_pr__nfe |Instance: not8:1/inv:2/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_2//sky130_fd_pr__nfe |Instance: not8:1/inv:3/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_3//sky130_fd_pr__nfe |Instance: not8:1/inv:4/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_4//sky130_fd_pr__nfe |Instance: not8:1/inv:5/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_5//sky130_fd_pr__nfe |Instance: not8:1/inv:6/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_6//sky130_fd_pr__nfe |Instance: not8:1/inv:7/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_7//sky130_fd_pr__nfe |Instance: not8:1/inv:8/sky130_fd_pr__nfet_ 
+  (1,3) = (24,2)                           |  (1,3) = (40,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 24                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_0//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:9/sky130_fd_ 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_1//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:10/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_2//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:11/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_3//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:12/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_4//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:13/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_5//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:14/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_6//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:15/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+Instance: NOT8_0//inv_7//efepmos_W107-L15- |Instance: nor_8_bitwise:2/inv:16/sky130_fd 
+  (1,3) = (16,2)                           |  (1,3) = (40,4)                           
+  2 = 3                                    |  2 = 3                                    
+  4 = 16                                   |  4 = 40                                   
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:1/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:2/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:3/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:4/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:5/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:6/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:7/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: not8:1/inv:8/sky130_fd_pr__pfet_ 
+                                           |  (1,3) = (40,2)                           
+                                           |  2 = 4                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:9/sky130_fd_ 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:10/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:11/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:12/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:13/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:14/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:15/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nor_8_bitwise:2/inv:16/sky130_fd 
+                                           |  (1,3) = (40,4)                           
+                                           |  2 = 3                                    
+                                           |  4 = 40                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: nor2_7                           |Instance: nor_8_bitwise:2/nor2:8           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_6                           |Instance: nor_8_bitwise:2/nor2:7           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_5                           |Instance: nor_8_bitwise:2/nor2:6           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_4                           |Instance: nor_8_bitwise:2/nor2:5           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_3                           |Instance: nor_8_bitwise:2/nor2:4           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_2                           |Instance: nor_8_bitwise:2/nor2:3           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_1                           |Instance: nor_8_bitwise:2/nor2:2           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+                                           |                                           
+Instance: nor2_0                           |Instance: nor_8_bitwise:2/nor2:1           
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  VSS = 24                                 |  VSS = 40                                 
+  VDD = 1                                  |  VDD = 40                                 
+  Y = 3                                    |  Y = 3                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: OR8                             |Circuit 2: OR8                             
+-------------------------------------------|-------------------------------------------
+*A0                                        |*B0 **Mismatch**                           
+*A7                                        |*B2 **Mismatch**                           
+*A6                                        |*B4 **Mismatch**                           
+*A5                                        |*B6 **Mismatch**                           
+*A4                                        |*A0 **Mismatch**                           
+*A3                                        |*A2 **Mismatch**                           
+*A2                                        |*A4 **Mismatch**                           
+*A1                                        |*A6 **Mismatch**                           
+*B0                                        |*B1 **Mismatch**                           
+*B7                                        |*B3 **Mismatch**                           
+*B6                                        |*B5 **Mismatch**                           
+*B5                                        |*B7 **Mismatch**                           
+*B4                                        |*A1 **Mismatch**                           
+*B3                                        |*A3 **Mismatch**                           
+*B2                                        |*A5 **Mismatch**                           
+*B1                                        |*A7 **Mismatch**                           
+*S7                                        |*S7 **Mismatch**                           
+*S6                                        |*S6 **Mismatch**                           
+*S5                                        |*S5 **Mismatch**                           
+*S4                                        |*S4 **Mismatch**                           
+*S3                                        |*S3 **Mismatch**                           
+*S2                                        |*S2 **Mismatch**                           
+*S1                                        |*S1 **Mismatch**                           
+*S0                                        |*S0 **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists for OR8 and OR8 do not match.
+
+Final result: Netlists do not match.
