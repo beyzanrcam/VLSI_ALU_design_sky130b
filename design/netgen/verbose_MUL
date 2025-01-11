@@ -1,0 +1,544 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell nmos_2shared_W200-L015-F1 in circuit NAND2 (0)(1 instance)
+Flattening unmatched subcell pmos_p2-w321-L015-f3 in circuit NAND2 (0)(1 instance)
+
+Class NAND2 (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: NAND2                           |Circuit 2: nand2                           
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2 and nand2 are equivalent.
+Flattening unmatched subcell cg4 in circuit XOR2 (1)(1 instance)
+Flattening unmatched subcell inv_smol in circuit XOR2 (1)(2 instances)
+
+Class XOR2 (0):  Merged 16 parallel devices.
+Subcircuit summary:
+Circuit 1: XOR2                            |Circuit 2: XOR2                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (14->6)            |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (14->6)            |sky130_fd_pr__nfet_01v8 (6)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: XOR2                            |Circuit 2: XOR2                            
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+a_99_341#                                  |*!B **not a pin**                          
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for XOR2 and XOR2 do not match.
+  Flattening non-matched subcircuits XOR2 XOR2
+
+Subcircuit summary:
+Circuit 1: FULL_ADDER                      |Circuit 2: full_adder                      
+-------------------------------------------|-------------------------------------------
+NAND2 (3)                                  |nand2 (3)                                  
+sky130_fd_pr__pfet_01v8 (12)               |sky130_fd_pr__pfet_01v8 (12)               
+sky130_fd_pr__nfet_01v8 (12)               |sky130_fd_pr__nfet_01v8 (12)               
+Number of devices: 27                      |Number of devices: 27                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: FULL_ADDER                      |Circuit 2: full_adder                      
+-------------------------------------------|-------------------------------------------
+OUT                                        |OUT                                        
+COUT                                       |COUT                                       
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+B                                          |B                                          
+A                                          |A                                          
+CIN                                        |CIN                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes FULL_ADDER and full_adder are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H9P4D in circuit inv (0)(1 instance)
+Flattening unmatched subcell efepmos_W107-L15-F3 in circuit inv (0)(1 instance)
+
+Class inv (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (3->1)             |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv and inv are equivalent.
+Flattening unmatched subcell x4bit_ADDER in circuit MULT (0)(3 instances)
+Flattening unmatched subcell and2 in circuit mul (1)(16 instances)
+Flattening unmatched subcell 4-bit_adder in circuit mul (1)(3 instances)
+
+Cell MULT (0) disconnected node: A2
+Subcircuit summary:
+Circuit 1: MULT                            |Circuit 2: mul                             
+-------------------------------------------|-------------------------------------------
+NAND2 (16)                                 |nand2 (16)                                 
+inv (16)                                   |inv (16)                                   
+FULL_ADDER (12)                            |full_adder (12)                            
+Number of devices: 44                      |Number of devices: 44                      
+Number of nets: 85 **Mismatch**            |Number of nets: 66 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: MULT                            |Circuit 2: mul                             
+
+---------------------------------------------------------------------------------------
+Net: NAND2_5/A                             |Net: B1                                    
+  NAND2/B = 2                              |  nand2/B = 4                              
+  NAND2/A = 2                              |                                           
+                                           |                                           
+Net: B2                                    |Net: B2                                    
+  NAND2/B = 2                              |  nand2/B = 4                              
+  NAND2/A = 2                              |                                           
+                                           |                                           
+Net: B3                                    |Net: B3                                    
+  NAND2/B = 2                              |  nand2/B = 4                              
+  NAND2/A = 2                              |                                           
+                                           |                                           
+Net: A3                                    |Net: A3                                    
+  NAND2/B = 4                              |  nand2/A = 4                              
+                                           |                                           
+Net: VSUBS                                 |Net: A0                                    
+  NAND2/VSS = 16                           |  nand2/A = 4                              
+  inv/VSS = 16                             |                                           
+  FULL_ADDER/B = 1                         |                                           
+  FULL_ADDER/VSS = 12                      |                                           
+                                           |                                           
+Net: inv_13/VDD                            |Net: net2                                  
+  NAND2/VDD = 1                            |  inv/Y = 1                                
+  inv/VDD = 1                              |  full_adder/B = 1                         
+                                           |                                           
+Net: inv_7/VDD                             |Net: net1                                  
+  NAND2/VDD = 1                            |  inv/Y = 1                                
+  inv/VDD = 1                              |  full_adder/B = 1                         
+                                           |                                           
+Net: inv_15/VDD                            |Net: VSS                                   
+  NAND2/VDD = 1                            |  inv/VSS = 16                             
+  inv/VDD = 1                              |  nand2/VSS = 16                           
+                                           |  full_adder/CIN = 3                       
+                                           |  full_adder/VSS = 12                      
+                                           |  full_adder/B = 1                         
+                                           |                                           
+Net: inv_9/VDD                             |Net: VDD                                   
+  NAND2/VDD = 1                            |  inv/VDD = 16                             
+  inv/VDD = 1                              |  nand2/VDD = 16                           
+                                           |  full_adder/VDD = 12                      
+                                           |                                           
+Net: inv_11/VDD                            |(no matching net)                          
+  inv/VDD = 1                              |                                           
+  NAND2/VDD = 1                            |                                           
+                                           |                                           
+Net: inv_4/VDD                             |(no matching net)                          
+  inv/VDD = 1                              |                                           
+  NAND2/VDD = 1                            |                                           
+                                           |                                           
+Net: inv_14/VDD                            |(no matching net)                          
+  NAND2/VDD = 1                            |                                           
+  inv/VDD = 1                              |                                           
+                                           |                                           
+Net: inv_12/VDD                            |(no matching net)                          
+  inv/VDD = 1                              |                                           
+  NAND2/VDD = 1                            |                                           
+                                           |                                           
+Net: inv_3/VDD                             |(no matching net)                          
+  inv/VDD = 4                              |                                           
+  NAND2/VDD = 4                            |                                           
+                                           |                                           
+Net: 4bit_ADDER_0/C                        |(no matching net)                          
+  FULL_ADDER/CIN = 1                       |                                           
+                                           |                                           
+Net: NAND2_0/A                             |(no matching net)                          
+  NAND2/A = 1                              |                                           
+                                           |                                           
+Net: 4bit_ADDER_2/VDD                      |(no matching net)                          
+  FULL_ADDER/VDD = 12                      |                                           
+                                           |                                           
+Net: B0                                    |(no matching net)                          
+  NAND2/A = 3                              |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: A1                                    
+                                           |  nand2/A = 4                              
+                                           |                                           
+(no matching net)                          |Net: A2                                    
+                                           |  nand2/A = 4                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: A1                                    |Net: B0                                    
+  NAND2/B = 4                              |  nand2/B = 4                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_5/VDD                             |(no matching net)                          
+  inv/VDD = 1                              |                                           
+  NAND2/VDD = 1                            |                                           
+                                           |                                           
+Net: inv_10/VDD                            |(no matching net)                          
+  inv/VDD = 1                              |                                           
+  NAND2/VDD = 1                            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 4bit_ADDER_2/C                        |(no matching net)                          
+  FULL_ADDER/CIN = 1                       |                                           
+                                           |                                           
+Net: 4bit_ADDER_1/C                        |(no matching net)                          
+  FULL_ADDER/CIN = 1                       |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: S1                                    |Net: S1                                    
+  FULL_ADDER/OUT = 1                       |  full_adder/OUT = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: S2                                    |Net: S2                                    
+  FULL_ADDER/OUT = 1                       |  full_adder/OUT = 1                       
+                                           |                                           
+Net: S3                                    |Net: S3                                    
+  FULL_ADDER/OUT = 1                       |  full_adder/OUT = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 4bit_ADDER_0/B1                       |(no matching net)                          
+  FULL_ADDER/B = 1                         |                                           
+                                           |                                           
+Net: 4bit_ADDER_0/B0                       |(no matching net)                          
+  FULL_ADDER/B = 1                         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: x4bit_ADDER:4bit_ADDER_0/FULL_ADDER_2 |Net: 4-bit_adder:5/net2                    
+  FULL_ADDER/CIN = 1                       |  full_adder/COUT = 1                      
+  FULL_ADDER/COUT = 1                      |  full_adder/CIN = 1                       
+                                           |                                           
+Net: x4bit_ADDER:4bit_ADDER_0/FULL_ADDER_1 |Net: 4-bit_adder:5/net1                    
+  FULL_ADDER/CIN = 1                       |  full_adder/COUT = 1                      
+  FULL_ADDER/COUT = 1                      |  full_adder/CIN = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: x4bit_ADDER:4bit_ADDER_1/FULL_ADDER_2 |Net: 4-bit_adder:10/net1                   
+  FULL_ADDER/CIN = 1                       |  full_adder/CIN = 1                       
+  FULL_ADDER/COUT = 1                      |  full_adder/COUT = 1                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: x4bit_ADDER:4bit_ADDER_2/FULL_ADDER_2 |Net: 4-bit_adder:15/net1                   
+  FULL_ADDER/CIN = 1                       |  full_adder/CIN = 1                       
+  FULL_ADDER/COUT = 1                      |  full_adder/COUT = 1                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 4bit_ADDER_1/B0                       |Net: net8                                  
+  FULL_ADDER/OUT = 1                       |  full_adder/OUT = 1                       
+  FULL_ADDER/B = 1                         |  full_adder/B = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 4bit_ADDER_2/B0                       |Net: net22                                 
+  FULL_ADDER/OUT = 1                       |  full_adder/OUT = 1                       
+  FULL_ADDER/B = 1                         |  full_adder/B = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_5/Y                               |Net: net5                                  
+  FULL_ADDER/A = 1                         |  full_adder/A = 1                         
+  inv/Y = 1                                |  inv/Y = 1                                
+                                           |                                           
+Net: inv_4/Y                               |Net: net4                                  
+  FULL_ADDER/A = 1                         |  full_adder/A = 1                         
+  inv/Y = 1                                |  inv/Y = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_10/Y                              |Net: net6                                  
+  inv/Y = 1                                |  inv/Y = 1                                
+  FULL_ADDER/A = 1                         |  full_adder/A = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_6/Y                               |Net: net10                                 
+  FULL_ADDER/A = 1                         |  full_adder/A = 1                         
+  inv/Y = 1                                |  inv/Y = 1                                
+                                           |                                           
+Net: inv_8/Y                               |Net: net16                                 
+  FULL_ADDER/A = 1                         |  full_adder/A = 1                         
+  inv/Y = 1                                |  inv/Y = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_4/A                               |Net: and2:17/net1                          
+  inv/A = 1                                |  inv/A = 1                                
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+                                           |                                           
+Net: inv_12/A                              |Net: and2:12/net1                          
+  inv/A = 1                                |  inv/A = 1                                
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+                                           |                                           
+Net: inv_14/A                              |Net: and2:9/net1                           
+  NAND2/Y = 1                              |  inv/A = 1                                
+  inv/A = 1                                |  nand2/Y = 1                              
+                                           |                                           
+(no matching net)                          |Net: and2:8/net1                           
+                                           |  inv/A = 1                                
+                                           |  nand2/Y = 1                              
+                                           |                                           
+(no matching net)                          |Net: and2:7/net1                           
+                                           |  inv/A = 1                                
+                                           |  nand2/Y = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_0/A                               |Net: and2:1/net1                           
+  inv/A = 1                                |  inv/A = 1                                
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_7/A                               |Net: and2:13/net1                          
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  inv/A = 1                                |  inv/A = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_9/A                               |Net: and2:18/net1                          
+  NAND2/Y = 1                              |  nand2/Y = 1                              
+  inv/A = 1                                |  inv/A = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: inv_10/A                              |(no matching net)                          
+  inv/A = 1                                |                                           
+  NAND2/Y = 1                              |                                           
+                                           |                                           
+Net: inv_5/A                               |(no matching net)                          
+  inv/A = 1                                |                                           
+  NAND2/Y = 1                              |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: NAND2_1/B                             |(no matching net)                          
+  NAND2/A = 3                              |                                           
+  NAND2/B = 1                              |                                           
+                                           |                                           
+Net: A0                                    |(no matching net)                          
+  NAND2/A = 3                              |                                           
+  NAND2/B = 1                              |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: MULT                            |Circuit 2: mul                             
+
+---------------------------------------------------------------------------------------
+Instance: x4bit_ADDER:4bit_ADDER_0//FULL_A |Instance: 4-bit_adder:5/full_adder:2       
+  COUT = 2                                 |  COUT = 2                                 
+  CIN = 2                                  |  CIN = 2                                  
+  A = 2                                    |  A = 2                                    
+  B = 1                                    |  B = 2                                    
+  VDD = 12                                 |  VDD = 44                                 
+  VSS = 45                                 |  VSS = 48                                 
+  OUT = 2                                  |  OUT = 2                                  
+                                           |                                           
+Instance: x4bit_ADDER:4bit_ADDER_0//FULL_A |Instance: 4-bit_adder:5/full_adder:1       
+  COUT = 2                                 |  COUT = 2                                 
+  CIN = 1                                  |  CIN = 48                                 
+  A = 2                                    |  A = 2                                    
+  B = 1                                    |  B = 2                                    
+  VDD = 12                                 |  VDD = 44                                 
+  VSS = 45                                 |  VSS = 48                                 
+  OUT = 1                                  |  OUT = 1                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: x4bit_ADDER:4bit_ADDER_2//FULL_A |Instance: 4-bit_adder:15/full_adder:1      
+  COUT = 2                                 |  COUT = 2                                 
+  CIN = 1                                  |  CIN = 48                                 
+  A = 2                                    |  A = 2                                    
+  B = 2                                    |  B = 2                                    
+  VDD = 12                                 |  VDD = 44                                 
+  VSS = 45                                 |  VSS = 48                                 
+  OUT = 1                                  |  OUT = 1                                  
+                                           |                                           
+Instance: x4bit_ADDER:4bit_ADDER_1//FULL_A |Instance: 4-bit_adder:10/full_adder:1      
+  COUT = 2                                 |  COUT = 2                                 
+  CIN = 1                                  |  CIN = 48                                 
+  A = 2                                    |  A = 2                                    
+  B = 2                                    |  B = 2                                    
+  VDD = 12                                 |  VDD = 44                                 
+  VSS = 45                                 |  VSS = 48                                 
+  OUT = 1                                  |  OUT = 1                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: inv_10                           |Instance: and2:8/inv:1                     
+  A = 2                                    |  A = 2                                    
+  VSS = 45                                 |  VSS = 48                                 
+  Y = 2                                    |  Y = 2                                    
+  VDD = 2                                  |  VDD = 44                                 
+                                           |                                           
+Instance: inv_4                            |Instance: and2:9/inv:1                     
+  A = 2                                    |  A = 2                                    
+  VSS = 45                                 |  VSS = 48                                 
+  Y = 2                                    |  Y = 2                                    
+  VDD = 2                                  |  VDD = 44                                 
+                                           |                                           
+Instance: inv_5                            |Instance: and2:7/inv:1                     
+  A = 2                                    |  A = 2                                    
+  VSS = 45                                 |  VSS = 48                                 
+  Y = 2                                    |  Y = 2                                    
+  VDD = 2                                  |  VDD = 44                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: NAND2_7                          |Instance: and2:1/nand2:2                   
+  A = 4                                    |  A = 4                                    
+  B = 4                                    |  B = 4                                    
+  VSS = 45                                 |  VSS = 48                                 
+  VDD = 2                                  |  VDD = 44                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: NAND2_9                          |Instance: and2:7/nand2:2                   
+  A = 4                                    |  A = 4                                    
+  B = 4                                    |  B = 4                                    
+  VSS = 45                                 |  VSS = 48                                 
+  VDD = 2                                  |  VDD = 44                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: NAND2_0                          |Instance: and2:8/nand2:2                   
+  A = 1                                    |  A = 4                                    
+  B = 4                                    |  B = 4                                    
+  VSS = 45                                 |  VSS = 48                                 
+  VDD = 8                                  |  VDD = 44                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+Instance: NAND2_5                          |Instance: and2:12/nand2:2                  
+  A = 4                                    |  A = 4                                    
+  B = 4                                    |  B = 4                                    
+  VSS = 45                                 |  VSS = 48                                 
+  VDD = 2                                  |  VDD = 44                                 
+  Y = 2                                    |  Y = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: and2:17/nand2:2                  
+                                           |  A = 4                                    
+                                           |  B = 4                                    
+                                           |  VSS = 48                                 
+                                           |  VDD = 44                                 
+                                           |  Y = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: and2:9/nand2:2                   
+                                           |  A = 4                                    
+                                           |  B = 4                                    
+                                           |  VSS = 48                                 
+                                           |  VDD = 44                                 
+                                           |  Y = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: and2:13/nand2:2                  
+                                           |  A = 4                                    
+                                           |  B = 4                                    
+                                           |  VSS = 48                                 
+                                           |  VDD = 44                                 
+                                           |  Y = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: and2:18/nand2:2                  
+                                           |  A = 4                                    
+                                           |  B = 4                                    
+                                           |  VSS = 48                                 
+                                           |  VDD = 44                                 
+                                           |  Y = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: MULT                            |Circuit 2: mul                             
+-------------------------------------------|-------------------------------------------
+*B2                                        |*B1 **Mismatch**                           
+*B3                                        |*B2 **Mismatch**                           
+*NAND2_5/A **Mismatch**                    |B3                                         
+*A3                                        |*A3 **Mismatch**                           
+*VSUBS **Mismatch**                        |A0                                         
+*inv_15/VDD **Mismatch**                   |VSS                                        
+*inv_9/VDD **Mismatch**                    |VDD                                        
+*A1                                        |*B0 **Mismatch**                           
+*inv_2/Y **not pin**                       |S0                                         
+S7                                         |S7                                         
+*S1                                        |*S1 **Mismatch**                           
+*S2                                        |*S2 **Mismatch**                           
+*S3                                        |*S3 **Mismatch**                           
+S5                                         |S5                                         
+S4                                         |S4                                         
+S6                                         |S6                                         
+**no match**                               |A1                                         
+**no match**                               |A2                                         
+A0                                         |**no match**                               
+B0                                         |**no match**                               
+A2 (disconnected)                          |**no match**                               
+SO                                         |**no match**                               
+---------------------------------------------------------------------------------------
+Cell pin lists for MULT and mul do not match.
+
+Final result: Netlists do not match.

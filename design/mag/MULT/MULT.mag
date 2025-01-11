@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736617160
+timestamp 1736617714
 << nwell >>
 rect -3439 3542 3242 4070
 rect -3388 1730 -2206 2288
@@ -634,85 +634,23 @@ rect -1733 -6293 -1708 -6272
 rect -1893 -6739 -1818 -6733
 rect -1729 -6739 -1708 -6293
 rect -1893 -6782 -1708 -6739
+<< metal4 >>
+rect 6502 -4200 6802 2410
 << metal5 >>
 rect -3818 -7001 13360 4259
 use 4bit_ADDER  4bit_ADDER_0
-timestamp 1736616668
+timestamp 1736611400
 transform 1 0 171 0 1 -165
 box -174 -307 13189 3089
 use 4bit_ADDER  4bit_ADDER_1
-timestamp 1736616668
+timestamp 1736611400
 transform 1 0 171 0 1 -3430
 box -174 -307 13189 3089
 use 4bit_ADDER  4bit_ADDER_2
-timestamp 1736616668
+timestamp 1736611400
 transform 1 0 171 0 1 -6694
 box -174 -307 13189 3089
-use INV  INV_0
-timestamp 1735843251
-transform 1 0 -2684 0 1 3542
-box 0 -311 412 486
-use INV  INV_1
-timestamp 1735843251
-transform 1 0 -664 0 1 3542
-box 0 -311 412 486
-use INV  INV_2
-timestamp 1735843251
-transform 1 0 1077 0 1 3542
-box 0 -311 412 486
-use INV  INV_3
-timestamp 1735843251
-transform 1 0 2856 0 1 3542
-box 0 -311 412 486
-use INV  INV_4
-timestamp 1735843251
-transform 1 0 -2642 0 1 438
-box 0 -311 412 486
-use INV  INV_5
-timestamp 1735843251
-transform 1 0 -2640 0 1 1730
-box 0 -311 412 486
-use INV  INV_6
-timestamp 1735843251
-transform 1 0 -2640 0 1 -1535
-box 0 -311 412 486
-use INV  INV_7
-timestamp 1735843251
-transform 1 0 -2639 0 1 -2827
-box 0 -311 412 486
-use INV  INV_8
-timestamp 1735843251
-transform 1 0 -2639 0 1 -4799
-box 0 -311 412 486
-use INV  INV_9
-timestamp 1735843251
-transform 1 0 -2639 0 1 -6091
-box 0 -311 412 486
-use INV  INV_10
-timestamp 1735843251
-transform 1 0 -902 0 1 1730
-box 0 -311 412 486
-use INV  INV_11
-timestamp 1735843251
-transform 1 0 -908 0 1 438
-box 0 -311 412 486
-use INV  INV_12
-timestamp 1735843251
-transform 1 0 -906 0 1 -1535
-box 0 -311 412 486
-use INV  INV_13
-timestamp 1735843251
-transform 1 0 -902 0 1 -2827
-box 0 -311 412 486
-use INV  INV_14
-timestamp 1735843251
-transform 1 0 -906 0 1 -4799
-box 0 -311 412 486
-use INV  INV_15
-timestamp 1735843251
-transform 1 0 -910 0 1 -6091
-box 0 -311 412 486
-use NAND2  NAND2_0
+use NAND2  NAND2_0 ~/Desktop/vlsi_sky130b/design/mag/NAND/NAND2
 timestamp 1736436273
 transform 1 0 -3795 0 1 3170
 box 356 -17 1062 804
@@ -776,6 +714,70 @@ use NAND2  NAND2_15
 timestamp 1736436273
 transform 1 0 -2007 0 1 -6463
 box 356 -17 1062 804
+use inv  inv_0 ~/Desktop/vlsi_sky130b/design/mag/inv
+timestamp 1735843251
+transform 1 0 -2684 0 1 3542
+box 0 -311 412 486
+use inv  inv_1
+timestamp 1735843251
+transform 1 0 -664 0 1 3542
+box 0 -311 412 486
+use inv  inv_2
+timestamp 1735843251
+transform 1 0 1077 0 1 3542
+box 0 -311 412 486
+use inv  inv_3
+timestamp 1735843251
+transform 1 0 2856 0 1 3542
+box 0 -311 412 486
+use inv  inv_4
+timestamp 1735843251
+transform 1 0 -2642 0 1 438
+box 0 -311 412 486
+use inv  inv_5
+timestamp 1735843251
+transform 1 0 -2640 0 1 1730
+box 0 -311 412 486
+use inv  inv_6
+timestamp 1735843251
+transform 1 0 -2640 0 1 -1535
+box 0 -311 412 486
+use inv  inv_7
+timestamp 1735843251
+transform 1 0 -2639 0 1 -2827
+box 0 -311 412 486
+use inv  inv_8
+timestamp 1735843251
+transform 1 0 -2639 0 1 -4799
+box 0 -311 412 486
+use inv  inv_9
+timestamp 1735843251
+transform 1 0 -2639 0 1 -6091
+box 0 -311 412 486
+use inv  inv_10
+timestamp 1735843251
+transform 1 0 -902 0 1 1730
+box 0 -311 412 486
+use inv  inv_11
+timestamp 1735843251
+transform 1 0 -908 0 1 438
+box 0 -311 412 486
+use inv  inv_12
+timestamp 1735843251
+transform 1 0 -906 0 1 -1535
+box 0 -311 412 486
+use inv  inv_13
+timestamp 1735843251
+transform 1 0 -902 0 1 -2827
+box 0 -311 412 486
+use inv  inv_14
+timestamp 1735843251
+transform 1 0 -906 0 1 -4799
+box 0 -311 412 486
+use inv  inv_15
+timestamp 1735843251
+transform 1 0 -910 0 1 -6091
+box 0 -311 412 486
 << labels >>
 flabel metal2 -3228 -2190 -3108 -2070 1 FreeSerif 160 0 0 0 B2
 port 7 n
@@ -785,7 +787,7 @@ flabel metal2 -2952 -576 -2832 -456 1 FreeSerif 160 0 0 0 A1
 port 11 n
 flabel metal2 12820 3054 12940 3174 1 FreeSerif 160 0 0 0 SO
 port 13 n
-flabel metal3 -2146 -202 -2026 -82 1 FreeSerif 160 0 0 0 A2
+flabel metal2 -2146 -202 -2026 -82 1 FreeSerif 160 0 0 0 A2
 port 10 n
 flabel metal1 -3794 1646 -3674 1766 1 FreeSerif 160 0 0 0 A0
 port 6 n
@@ -793,14 +795,6 @@ flabel metal3 -3190 2678 -3070 2798 1 FreeSerif 160 0 0 0 A3
 port 12 n
 flabel metal2 -3584 3886 -3464 4006 1 FreeSerif 160 0 0 0 B0
 port 8 n
-rlabel metal2 -518 407 -518 407 3 Y
-port 3 e
-rlabel metal2 -518 -6122 -518 -6122 3 Y
-port 3 e
-flabel metal2 -3556 1080 -3436 1200 1 FreeSerif 160 0 0 0 B1
-port 5 n
-rlabel via1 -518 -2858 -518 -2858 3 Y
-port 3 e
 flabel metal2 54 -6728 150 -6642 1 FreeSerif 160 0 0 0 S7
 port 19 n
 flabel metal2 13182 -6664 13278 -6578 1 FreeSerif 160 0 0 0 S3
