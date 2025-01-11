@@ -1,7 +1,7 @@
 magic
-tech sky130A
+tech sky130B
 magscale 1 2
-timestamp 1736606925
+timestamp 1736611400
 << nwell >>
 rect 6413 2450 6512 2634
 rect 9708 2491 9799 2635
@@ -28,36 +28,79 @@ rect -160 931 49 961
 rect 3113 953 3316 1044
 rect 6404 953 6607 1044
 rect 9695 953 9898 1044
-rect 12934 91 12983 1042
+rect 12934 954 12983 1042
 rect 12986 953 13189 1044
-rect 12441 1 12992 91
-rect 12934 -3 12983 1
 << via1 >>
 rect 3129 2538 3218 2633
 rect 6413 2450 6512 2634
 rect 9708 2491 9799 2635
 rect -130 961 -12 1063
 << metal2 >>
+rect -158 2574 -88 2634
+rect 26 2574 96 2634
+rect 3312 2554 3382 2614
+rect 6606 2552 6676 2612
+rect 9896 2568 9966 2628
 rect -174 1500 -96 1640
 rect -166 1063 19 1079
 rect -166 961 -130 1063
 rect -12 961 19 1063
 rect -166 -125 19 961
+rect 3132 48 3210 128
+rect 6422 48 6500 128
+rect 9714 48 9792 128
 rect 12985 16 13185 127
-use FULL_ADDER  FULL_ADDER_0
-timestamp 1736606925
+<< metal4 >>
+rect 224 2470 12866 2598
+<< metal5 >>
+rect 3094 -307 9870 2650
+use FULL_ADDER  FULL_ADDER_0 ~/Desktop/vlsi_sky130b/design/mag/ADDER
+timestamp 1736608123
 transform 1 0 118 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_1
-timestamp 1736606925
+timestamp 1736608123
 transform 1 0 3409 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_2
-timestamp 1736606925
+timestamp 1736608123
 transform 1 0 6700 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_3
-timestamp 1736606925
+timestamp 1736608123
 transform 1 0 9991 0 1 1114
-box -292 -1260 3108 1536
+box -292 -1421 3108 1536
+<< labels >>
+flabel metal2 -158 2574 -88 2634 0 FreeSans 160 0 0 0 A3
+port 2 nsew
+flabel metal2 3138 2554 3208 2614 0 FreeSans 160 0 0 0 A2
+port 8 nsew
+flabel metal2 6426 2552 6496 2612 0 FreeSans 160 0 0 0 A1
+port 9 nsew
+flabel metal2 9718 2568 9788 2628 0 FreeSans 160 0 0 0 A0
+port 10 nsew
+flabel metal2 9896 2568 9966 2628 0 FreeSans 160 0 0 0 B0
+port 11 nsew
+flabel metal2 6606 2552 6676 2612 0 FreeSans 160 0 0 0 B1
+port 12 nsew
+flabel metal2 3312 2554 3382 2614 0 FreeSans 160 0 0 0 B2
+port 13 nsew
+flabel metal2 26 2574 96 2634 0 FreeSans 160 0 0 0 B3
+port 14 nsew
+flabel metal1 13108 966 13180 1036 0 FreeSans 160 0 0 0 C
+port 15 nsew
+flabel metal2 13008 44 13080 114 0 FreeSans 160 0 0 0 S0
+port 16 nsew
+flabel metal2 9714 48 9792 128 0 FreeSans 160 0 0 0 S1
+port 17 nsew
+flabel metal2 6422 48 6500 128 0 FreeSans 160 0 0 0 S2
+port 18 nsew
+flabel metal2 3132 48 3210 128 0 FreeSans 160 0 0 0 S3
+port 19 nsew
+flabel metal2 -152 -100 -14 12 0 FreeSans 160 0 0 0 Cout
+port 21 nsew
+flabel metal5 5518 -274 5656 -162 0 FreeSans 160 0 0 0 VSS
+port 22 nsew
+flabel metal4 5486 2482 5624 2594 0 FreeSans 160 0 0 0 VDD
+port 23 nsew
 << end >>
