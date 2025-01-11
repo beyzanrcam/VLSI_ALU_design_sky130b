@@ -51,11 +51,11 @@ rect 4892 -2650 4928 -2618
 rect 5392 -2650 5428 -2618
 rect 5872 -2646 5908 -2614
 rect 6372 -2650 6408 -2618
-use NAND8__0  NAND8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/AND8/../NAND8
+use NAND8  NAND8_0 
 timestamp 1736595726
 transform 1 0 5260 0 1 734
 box -5260 -734 4324 1197
-use NOT8__0  NOT8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/AND8/../NOT
+use NOT8  NOT8_0 
 timestamp 1736595726
 transform 1 0 2718 0 1 -2155
 box -110 -501 3853 1143
