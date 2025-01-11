@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736595726
+timestamp 1736620191
 << nwell >>
 rect 3025 865 4210 866
 rect 1812 860 4210 865
@@ -451,35 +451,35 @@ rect -596 -611 4221 -588
 rect -1794 -620 4221 -611
 rect -4930 -734 4221 -620
 use NAND2  NAND2_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NAND/NAND2
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 3148 0 1 62
 box 356 -17 1062 804
 use NAND2  NAND2_1
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 -369 0 1 41
 box 356 -17 1062 804
 use NAND2  NAND2_2
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 -1563 0 1 39
 box 356 -17 1062 804
 use NAND2  NAND2_4
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 -5375 0 1 9
 box 356 -17 1062 804
 use NAND2  NAND2_6
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 750 0 1 56
 box 356 -17 1062 804
 use NAND2  NAND2_7
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 1963 0 1 61
 box 356 -17 1062 804
 use NAND2  NAND2_8
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 -4066 0 1 9
 box 356 -17 1062 804
 use NAND2  NAND2_9
-timestamp 1736436273
+timestamp 1736620191
 transform 1 0 -2763 0 1 8
 box 356 -17 1062 804
 << labels >>

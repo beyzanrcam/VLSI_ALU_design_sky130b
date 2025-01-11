@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736096163
+timestamp 1736620191
 << nwell >>
 rect 10 444 908 571
 rect 45 414 872 444
@@ -78,11 +78,11 @@ rect 122 -1175 321 -1086
 rect 658 -326 909 -311
 rect 658 -1111 908 -326
 use efenmos2  efenmos2_1
-timestamp 1736094670
+timestamp 1736620191
 transform 1 0 489 0 1 -711
 box -221 -426 221 426
 use pmos4_f2  pmos4_f2_0
-timestamp 1735579975
+timestamp 1736620191
 transform 1 0 459 0 1 257
 box -449 -261 449 223
 << labels >>

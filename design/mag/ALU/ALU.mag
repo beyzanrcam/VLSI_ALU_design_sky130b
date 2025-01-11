@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736618868
+timestamp 1736620191
 << error_s >>
 rect -20921 -6703 -7888 -6691
 rect -20921 -7023 -7888 -7011
@@ -34,6 +34,7 @@ rect 248 -40 339 -34
 rect 1922 -40 2013 2453
 rect 6917 2147 6966 2213
 rect 7032 2147 7299 2213
+rect 13152 1469 13208 1558
 rect 6953 1111 7019 1117
 rect 7019 1045 7283 1111
 rect 6953 1039 7019 1045
@@ -442,19 +443,25 @@ rect 4948 -15747 5014 -851
 rect 5096 -13052 5162 -684
 rect 5261 -6685 5327 -487
 rect 5419 -6437 5485 -298
-rect 13190 -3000 15683 -2934
+rect 13190 -2964 15683 -2934
+rect 13169 -3000 15683 -2964
+rect 13169 -3047 13216 -3000
 rect 5413 -6503 5419 -6437
 rect 5485 -6503 5491 -6437
 rect 5261 -6751 5492 -6685
 rect 5426 -11065 5492 -6751
+rect 13172 -7413 13219 -7330
 rect 13180 -7481 15547 -7415
 rect 5426 -11137 5492 -11131
 rect 13139 -12012 15435 -11946
+rect 13183 -12104 13230 -12021
 rect 5096 -13118 5354 -13052
 rect 5420 -13118 5426 -13052
 rect 4948 -15813 5473 -15747
 rect 5407 -17552 5473 -15813
-rect 13193 -16584 15223 -16518
+rect 13178 -16518 13225 -16463
+rect 13178 -16546 15223 -16518
+rect 13193 -16584 15223 -16546
 rect 5401 -17619 5407 -17552
 rect 5473 -17619 5479 -17552
 rect 15157 -17570 15223 -16584
@@ -466,16 +473,21 @@ rect 15369 -17542 15683 -17476
 rect 15157 -17636 15683 -17570
 rect 4838 -18027 5471 -17961
 rect 5405 -24649 5471 -18027
+rect 18354 -18573 18391 -18471
 rect 15066 -19602 15699 -19536
+rect 13181 -21039 13228 -21034
 rect 15066 -21039 15132 -19602
-rect 13200 -21105 15132 -21039
+rect 13181 -21105 15132 -21039
 rect 15261 -19696 15685 -19630
+rect 13181 -21117 13228 -21105
 rect 5732 -24649 5798 -24643
 rect 5405 -24715 5732 -24649
 rect 5732 -24721 5798 -24715
 rect 15261 -25506 15327 -19696
-rect 13186 -25572 15327 -25506
+rect 13186 -25531 15327 -25506
+rect 13179 -25572 15327 -25531
 rect 15447 -19790 15683 -19724
+rect 13179 -25614 13226 -25572
 rect 4573 -28130 5520 -28064
 rect 4427 -28374 5329 -28308
 rect 5263 -29395 5329 -28374
@@ -497,6 +509,7 @@ rect -12746 -34671 -12582 -34670
 rect -12746 -34760 -12726 -34671
 rect -12637 -34760 -12476 -34671
 rect 13151 -35666 13235 -34780
+rect 13035 -36363 13082 -36280
 << via1 >>
 rect 1934 2453 2000 2519
 rect -21801 218 -21735 284
@@ -1822,79 +1835,134 @@ rect -14623 -34755 -12721 -34676
 rect -12642 -34755 -12520 -34676
 rect -14623 -34760 -12520 -34755
 use 8bit_ADDER  8bit_ADDER_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/ADDER
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 -24940 0 1 164
 box -180 -380 26456 4515
 use AND8  AND8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/AND8
-timestamp 1736595726
+timestamp 1736620191
 transform 0 -1 -23005 1 0 -24350
 box 0 -2656 9584 1931
 use buffer  buffer_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
-timestamp 1736595726
+timestamp 1736620191
 transform 0 1 12838 -1 0 -35620
 box -5 -422 786 852
 use left_shifter  left_shifter_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/SHIFTER
-timestamp 1736595726
+timestamp 1736620191
 transform 0 -1 -3884 1 0 -22631
 box 1467 -110 8528 1164
 use MULT  MULT_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/MULT
-timestamp 1736447539
+timestamp 1736620191
 transform 1 0 -21044 0 1 -6231
 box -3818 -7001 13360 4259
 use mux8  mux8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/MUX
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 784
 box -1848 -1184 5835 3344
 use mux8  mux8_1
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -3744
 box -1848 -1184 5835 3344
 use mux8  mux8_2
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -8172
 box -1848 -1184 5835 3344
 use mux8  mux8_3
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -12800
 box -1848 -1184 5835 3344
 use mux8  mux8_4
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -17328
 box -1848 -1184 5835 3344
 use mux8  mux8_5
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -21856
 box -1848 -1184 5835 3344
 use mux8  mux8_6
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -35440
 box -1848 -1184 5835 3344
 use mux8  mux8_7
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -26384
 box -1848 -1184 5835 3344
 use mux8  mux8_8
-timestamp 1736595726
+timestamp 1736620191
 transform 1 0 7400 0 1 -30912
 box -1848 -1184 5835 3344
 use NOT8  NOT8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOT
-timestamp 1736598171
+timestamp 1736620191
 transform 0 -1 -7411 1 0 -18944
 box -110 -501 3853 1143
 use OR8  OR8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/OR
-timestamp 1736600897
+timestamp 1736620191
 transform 0 -1 -18638 1 0 -27353
 box 1807 -3880 12892 -390
 use right_shifter  right_shifter_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/SHIFTER
-timestamp 1736595726
+timestamp 1736620191
 transform 0 -1 -1168 1 0 -21808
 box 1124 -110 8185 1164
 use XOR8  XOR8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/XOR
-timestamp 1736595875
+timestamp 1736620191
 transform 0 -1 -10856 1 0 -34519
 box -239 -77 20622 1756
 use ZFLAG  ZFLAG_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/ZV_FLAG
-timestamp 1736532729
+timestamp 1736620191
 transform 1 0 15545 0 1 -20424
 box -7 -79 2863 3814
+<< labels >>
+flabel metal3 -24908 -15649 -24849 -15604 0 FreeSans 800 0 0 0 B0
+port 0 nsew
+flabel metal3 -24899 -16827 -24840 -16782 0 FreeSans 800 0 0 0 B1
+port 1 nsew
+flabel metal3 -24910 -18036 -24851 -17991 0 FreeSans 800 0 0 0 B2
+port 2 nsew
+flabel metal3 -24840 -19162 -24781 -19117 0 FreeSans 800 0 0 0 B3
+port 3 nsew
+flabel metal3 -24887 -20352 -24828 -20307 0 FreeSans 800 0 0 0 B4
+port 4 nsew
+flabel metal3 -24879 -21556 -24820 -21511 0 FreeSans 800 0 0 0 B5
+port 5 nsew
+flabel metal3 -24879 -22857 -24820 -22812 0 FreeSans 800 0 0 0 B6
+port 6 nsew
+flabel metal3 -24879 -24168 -24820 -24123 0 FreeSans 800 0 0 0 B7
+port 7 nsew
+flabel metal3 -24878 -15812 -24819 -15767 0 FreeSans 800 0 0 0 A0
+port 8 nsew
+flabel metal3 -24898 -16988 -24839 -16943 0 FreeSans 800 0 0 0 A1
+port 9 nsew
+flabel metal3 -24905 -18196 -24846 -18151 0 FreeSans 800 0 0 0 A2
+port 10 nsew
+flabel metal3 -24846 -19319 -24787 -19274 0 FreeSans 800 0 0 0 A3
+port 11 nsew
+flabel metal3 -24884 -20512 -24825 -20467 0 FreeSans 800 0 0 0 A4
+port 12 nsew
+flabel metal3 -24902 -21706 -24843 -21661 0 FreeSans 800 0 0 0 A5
+port 13 nsew
+flabel metal3 -24888 -23019 -24829 -22974 0 FreeSans 800 0 0 0 A6
+port 15 nsew
+flabel metal3 -24885 -24327 -24826 -24282 0 FreeSans 800 0 0 0 A7
+port 16 nsew
+flabel metal1 13169 -3047 13216 -2964 0 FreeSans 800 0 0 0 Y0
+port 17 nsew
+flabel metal1 13172 -7413 13219 -7330 0 FreeSans 800 0 0 0 Y1
+port 18 nsew
+flabel metal1 13183 -12104 13230 -12021 0 FreeSans 800 0 0 0 Y2
+port 20 nsew
+flabel metal1 13178 -16546 13225 -16463 0 FreeSans 800 0 0 0 Y3
+port 21 nsew
+flabel metal1 13181 -21117 13228 -21034 0 FreeSans 800 0 0 0 Y4
+port 22 nsew
+flabel metal1 13179 -25614 13226 -25531 0 FreeSans 800 0 0 0 Y5
+port 23 nsew
+flabel metal1 13178 -30106 13225 -30058 0 FreeSans 800 0 0 0 Y6
+port 24 nsew
+flabel metal1 13179 -34680 13226 -34671 0 FreeSans 800 0 0 0 Y7
+port 25 nsew
+flabel metal1 13035 -36363 13082 -36280 0 FreeSans 800 0 0 0 S
+port 26 nsew
+flabel metal1 18354 -18573 18391 -18471 0 FreeSans 800 0 0 0 Z
+port 27 nsew
+flabel metal1 13152 1469 13208 1558 0 FreeSans 800 0 0 0 C
+port 28 nsew
 << end >>

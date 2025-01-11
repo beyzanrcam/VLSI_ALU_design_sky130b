@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736595726
+timestamp 1736620191
 << nwell >>
 rect -1843 2757 -550 3243
 rect 493 2589 3416 2590
@@ -741,63 +741,63 @@ rect 5756 184 5786 456
 rect 5067 36 5786 184
 rect 5396 3 5786 36
 use inv  inv_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 5423 0 1 739
 box 0 -311 412 486
 use inv  inv_1
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 -1402 0 1 2757
 box 0 -311 412 486
 use inv  inv_2
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 -962 0 1 2757
 box 0 -311 412 486
 use inv  inv_3
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 -1842 0 1 2757
 box 0 -311 412 486
 use NAND4F  NAND4F_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NAND/NAND4
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 2507 0 1 2017
 box 10 -1175 909 571
 use NAND4F  NAND4F_1
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 1576 0 -1 -333
 box 10 -1175 909 571
 use NAND4F  NAND4F_2
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 640 0 1 2017
 box 10 -1175 909 571
 use NAND4F  NAND4F_3
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 1576 0 1 2017
 box 10 -1175 909 571
 use NAND4F  NAND4F_4
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 -308 0 1 2017
 box 10 -1175 909 571
 use NAND4F  NAND4F_5
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 -308 0 -1 -333
 box 10 -1175 909 571
 use NAND4F  NAND4F_6
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 640 0 -1 -333
 box 10 -1175 909 571
 use NAND4F  NAND4F_7
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 2507 0 -1 -332
 box 10 -1175 909 571
 use NAND4F  NAND4F_8
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 3434 0 1 2017
 box 10 -1175 909 571
 use NAND4F  NAND4F_9
-timestamp 1736096163
+timestamp 1736620191
 transform 1 0 3434 0 -1 -333
 box 10 -1175 909 571
 use nor2  nor2_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOR/NOR2
-timestamp 1736020690
+timestamp 1736620191
 transform 1 0 4337 0 1 866
 box 0 -480 1090 580
 << labels >>

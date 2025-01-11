@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736532729
+timestamp 1736620191
 << nwell >>
 rect 108 1772 218 2024
 rect 1449 1873 1743 2305
@@ -167,15 +167,15 @@ rect 71 254 2859 1384
 rect 71 -18 675 254
 rect 947 -18 2859 254
 rect 71 -79 2859 -18
-use inv  inv_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/inv
-timestamp 1735843251
+use inv  inv_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1736620191
 transform 1 0 2451 0 1 1795
 box 0 -311 412 486
-use NAND2  NAND2_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/NAND/NAND2
-timestamp 1736436273
+use NAND2  NAND2_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NAND/NAND2
+timestamp 1736620191
 transform 1 0 1357 0 1 1501
 box 356 -17 1062 804
-use nor4  nor4_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/NOR/NOR4
+use nor4  nor4_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOR/NOR4
 timestamp 1736019943
 transform 1 0 674 0 -1 3804
 box -602 118 790 1966

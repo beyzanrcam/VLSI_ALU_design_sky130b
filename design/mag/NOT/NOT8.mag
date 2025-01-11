@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736598171
+timestamp 1736620191
 << nwell >>
 rect -76 872 3696 928
 rect -76 510 3660 872
@@ -412,36 +412,36 @@ rect 1250 -405 3343 -404
 rect -110 -411 3343 -405
 rect 3663 -411 3853 -91
 rect -110 -501 3853 -411
-use inv  inv_0 ~/Desktop/vlsi_sky130b/design/mag/inv
-timestamp 1735843251
+use inv  inv_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1736620191
 transform 1 0 1804 0 1 386
 box 0 -311 412 486
 use inv  inv_1
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 -76 0 1 398
 box 0 -311 412 486
 use inv  inv_2
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 404 0 1 400
 box 0 -311 412 486
 use inv  inv_3
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 864 0 1 386
 box 0 -311 412 486
 use inv  inv_4
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 1324 0 1 386
 box 0 -311 412 486
 use inv  inv_5
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 2304 0 1 386
 box 0 -311 412 486
 use inv  inv_6
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 2784 0 1 385
 box 0 -311 412 486
 use inv  inv_7
-timestamp 1735843251
+timestamp 1736620191
 transform 1 0 3284 0 1 386
 box 0 -311 412 486
 << labels >>
