@@ -1,3 +1,5 @@
+import itertools
+
 def generate_pwl_for_sequence(sequence, period, voltage, tr, tf):
     """Generates a PWL string for a given sequence of 0s and 1s."""
     pwl_string = "PWL(0 0"
@@ -22,9 +24,13 @@ def generate_pwl_for_sequence(sequence, period, voltage, tr, tf):
     pwl_string += ")"
     return pwl_string
 
-def generate_spice_input(num_inputs, sequence_a, sequence_b, period=40e-9, voltage=1.2, tr=1e-12, tf=1e-12, end_time=400e-9):
-    """Generates the SPICE input section for multiple A and B inputs."""
-    spice_input = "* SPICE Input for A and B signals with custom sequences\n\n"
+def generate_opcode_sequences(num_bits):
+    """Generates all possible binary sequences for a given number of bits."""
+    return list(itertools.product([0, 1], repeat=num_bits))
+
+def generate_spice_input(num_inputs, sequence_a, sequence_b, opcode_bits=3, period=40e-9, voltage=1.2, tr=1e-12, tf=1e-12, end_time=400e-9):
+    """Generates the SPICE input section for multiple A, B, and OPCODE inputs."""
+    spice_input = "* SPICE Input for A, B, and OPCODE signals with custom sequences\n\n"
     spice_input += "* Parameters\n"
     spice_input += f".param period = {period}\n"
     spice_input += f".param voltage = {voltage}\n"
@@ -35,6 +41,7 @@ def generate_spice_input(num_inputs, sequence_a, sequence_b, period=40e-9, volta
     if len(sequence_a) != len(sequence_b):
       raise ValueError("sequence a and b must be of the same length")
 
+    # Generate PWL for A inputs
     for i in range(num_inputs):
         if i < len(sequence_a):
             pwl_a = generate_pwl_for_sequence(sequence_a[i], period, voltage, tr, tf)
@@ -43,6 +50,7 @@ def generate_spice_input(num_inputs, sequence_a, sequence_b, period=40e-9, volta
             pwl_a = generate_pwl_for_sequence([0] * (int(end_time / period) + 1), period, voltage, tr, tf) # pad with zeros
             spice_input += f"V_A{i} A{i} 0 {pwl_a}\n"
 
+    # Generate PWL for B inputs
     for i in range(num_inputs):
         if i < len(sequence_b):
             pwl_b = generate_pwl_for_sequence(sequence_b[i], period, voltage, tr, tf)
@@ -50,6 +58,13 @@ def generate_spice_input(num_inputs, sequence_a, sequence_b, period=40e-9, volta
         else:
             pwl_b = generate_pwl_for_sequence([0] * (int(end_time / period) + 1), period, voltage, tr, tf) # pad with zeros
             spice_input += f"V_B{i} B{i} 0 {pwl_b}\n"
+
+    # Generate PWL for OPCODE inputs
+    opcode_sequences = generate_opcode_sequences(opcode_bits)
+    for i in range(opcode_bits):
+        opcode_sequence = [seq[i] for seq in opcode_sequences]
+        pwl_opcode = generate_pwl_for_sequence(opcode_sequence, period * (2**opcode_bits), voltage, tr, tf) #adjust period for opcodes
+        spice_input += f"V_OPCODE{i} OPCODE[{i}] 0 {pwl_opcode}\n"
 
     return spice_input
 
@@ -64,11 +79,11 @@ def write_spice_to_file(spice_code, filename="spice_input.txt"):
 
 # Example usage:
 num_inputs = 8  # Number of A and B inputs
-sequence_a = [[1, 0, 1, 0, 1, 0, 1, 0, 1, 0],[0, 1, 0, 1, 0, 1, 0, 1, 0, 1]] # Example sequence for A0 and A1
-sequence_b = [[0, 0, 1, 1, 0, 0, 1, 1, 0, 0],[1, 1, 0, 0, 1, 1, 0, 0, 1, 1]] # Example sequence for B0 and B1
+sequence_a = [[1, 0, 1, 0, 1, 0, 1, 0, 1, 0]] # Example sequence for A0 and A1
+sequence_b = [[0, 0, 1, 1, 0, 0, 1, 1, 0, 0]] # Example sequence for B0 and B1
+opcode_bits = 3
 
-spice_code = generate_spice_input(num_inputs, sequence_a, sequence_b)
-
+spice_code = generate_spice_input(num_inputs, sequence_a, sequence_b, opcode_bits)
 write_spice_to_file(spice_code)
 
-# Now you would add the rest of your SPICE netlist (circuit description, control block, etc.) to the file.
+# Now add the rest of your SPICE netlist to the file.

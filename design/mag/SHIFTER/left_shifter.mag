@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1735651832
+timestamp 1736595726
 << nwell >>
 rect 2355 900 7564 1048
 rect 8019 900 8528 1048
@@ -106,40 +106,40 @@ rect 1731 208 8511 251
 rect 1731 -64 8196 208
 rect 8468 -64 8511 208
 rect 1731 -110 8511 -64
-use buffer  buffer_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/inv
-timestamp 1735596573
+use buffer  buffer_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1736595726
 transform -1 0 6445 0 1 312
 box -5 -422 786 852
 use buffer  buffer_1
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 2350 0 1 312
 box -5 -422 786 852
 use buffer  buffer_2
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 3169 0 1 312
 box -5 -422 786 852
 use buffer  buffer_3
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 3988 0 1 312
 box -5 -422 786 852
 use buffer  buffer_4
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 4807 0 1 312
 box -5 -422 786 852
 use buffer  buffer_5
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 5626 0 1 312
 box -5 -422 786 852
 use buffer  buffer_6
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 8083 0 1 312
 box -5 -422 786 852
 use buffer  buffer_7
-timestamp 1735596573
+timestamp 1736595726
 transform -1 0 7264 0 1 312
 box -5 -422 786 852
-use inv  inv_0 ~/Documents/Dersler/VLSI/vlsi_sky130b/design/mag/inv
-timestamp 1735590487
+use inv  inv_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
+timestamp 1735843251
 transform -1 0 8528 0 1 562
 box 0 -311 412 486
 << labels >>

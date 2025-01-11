@@ -1,41 +1,74 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736532227
+timestamp 1736595726
+<< error_p >>
+rect -20921 -6703 -7888 -6691
+rect -20921 -7023 -7888 -7011
+rect -20921 -9968 -7888 -9955
+rect -20921 -10288 -7888 -10275
+use 8bit_ADDER  8bit_ADDER_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/ADDER
+timestamp 1736595726
+transform -1 0 1336 0 -1 4299
+box -180 -380 26456 4515
+use AND8  AND8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/AND8
+timestamp 1736595726
+transform 0 -1 -23005 1 0 -24350
+box 0 -2656 9584 1931
+use left_shifter  left_shifter_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/SHIFTER
+timestamp 1736595726
+transform 0 -1 -9140 1 0 -27397
+box 1467 -110 8528 1164
+use MULT  MULT_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/MULT
+timestamp 1736447539
+transform 1 0 -21044 0 1 -6231
+box -3818 -7001 13360 4259
 use mux8  mux8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/MUX
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 784
 box -1848 -1184 5835 3344
 use mux8  mux8_1
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -3744
 box -1848 -1184 5835 3344
 use mux8  mux8_2
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -8272
 box -1848 -1184 5835 3344
 use mux8  mux8_3
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -12800
 box -1848 -1184 5835 3344
 use mux8  mux8_4
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -17328
 box -1848 -1184 5835 3344
 use mux8  mux8_5
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -21856
 box -1848 -1184 5835 3344
 use mux8  mux8_6
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -35440
 box -1848 -1184 5835 3344
 use mux8  mux8_7
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -26384
 box -1848 -1184 5835 3344
 use mux8  mux8_8
-timestamp 1736530819
+timestamp 1736595726
 transform 1 0 7400 0 1 -30912
 box -1848 -1184 5835 3344
+use NOT8  NOT8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOT
+timestamp 1736595726
+transform 0 -1 -9183 1 0 -18062
+box -110 -501 3853 1143
+use OR8  OR8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/OR
+timestamp 1736595726
+transform 0 -1 -15328 1 0 -23430
+box -708 -2732 8876 1646
+use right_shifter  right_shifter_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/SHIFTER
+timestamp 1736595726
+transform 0 -1 -6138 1 0 -26924
+box 1124 -110 8185 1164
 << end >>
