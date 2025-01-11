@@ -1,0 +1,45 @@
+* NGSPICE file created from /home/beyza/Desktop/vlsi_sky130b/design/mag/XOR/XOR8.ext - technology: sky130B
+
+.subckt XOR2 A B Y VDD VSS
+X0 VDD A a_129_987# VDD sky130_fd_pr__pfet_01v8 ad=3.52e+12p pd=2.456e+07u as=5.445e+12p ps=3.696e+07u w=2.75e+06u l=150000u
+X1 a_129_987# A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X2 a_129_987# a_n51_367# Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.7225e+12p ps=1.848e+07u w=2.75e+06u l=150000u
+X3 Y a_99_341# a_129_987# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X4 Y a_n51_367# a_129_987# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X5 Y a_n51_367# a_129_987# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X6 a_129_987# a_99_341# Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X7 a_129_987# a_99_341# Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X8 VDD B a_129_987# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X9 a_129_367# a_99_341# VSS VSS sky130_fd_pr__nfet_01v8 ad=6.435e+11p pd=5.88e+06u as=8.32e+11p ps=7.76e+06u w=650000u l=150000u
+X10 a_99_341# B VSS VSS sky130_fd_pr__nfet_01v8 ad=1.885e+11p pd=1.88e+06u as=0p ps=0u w=650000u l=150000u
+X11 a_129_987# B VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X12 VDD B a_129_987# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X13 VSS A a_n51_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.885e+11p ps=1.88e+06u w=650000u l=150000u
+X14 a_129_987# A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.75e+06u l=150000u
+X15 a_99_341# B VDD VDD sky130_fd_pr__pfet_01v8 ad=7.975e+11p pd=6.08e+06u as=0p ps=0u w=2.75e+06u l=150000u
+X16 VDD A a_n51_367# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=7.975e+11p ps=6.08e+06u w=2.75e+06u l=150000u
+X17 VSS a_99_341# a_129_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X18 a_129_367# a_99_341# VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X19 a_129_367# a_n51_367# Y VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=6.435e+11p ps=5.88e+06u w=650000u l=150000u
+X20 Y A a_705_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=6.435e+11p ps=5.88e+06u w=650000u l=150000u
+X21 Y a_n51_367# a_129_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X22 Y a_n51_367# a_129_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X23 a_705_367# A Y VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X24 a_705_367# A Y VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X25 VSS B a_705_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X26 a_705_367# B VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X27 VSS B a_705_367# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt XOR8 B7 A7 A6 A5 A4 A3 A2
++ A1 A0 B0 B1 B2 B3 B4 B5 B6 S7 S6 S5 S4 S3 S2 S1 S0
+XXOR2_3 A5 B5 S5 XOR2_7/VDD VSUBS XOR2
+XXOR2_4 A4 B4 S4 XOR2_7/VDD VSUBS XOR2
+XXOR2_5 A3 B3 S3 XOR2_7/VDD VSUBS XOR2
+XXOR2_6 A2 B2 S2 XOR2_7/VDD VSUBS XOR2
+XXOR2_7 A1 B1 S1 XOR2_7/VDD VSUBS XOR2
+XXOR2_1 A7 B7 S7 XOR2_7/VDD VSUBS XOR2
+XXOR2_0 A0 B0 S0 XOR2_7/VDD VSUBS XOR2
+XXOR2_2 A6 B6 S6 XOR2_7/VDD VSUBS XOR2
+.ends
+

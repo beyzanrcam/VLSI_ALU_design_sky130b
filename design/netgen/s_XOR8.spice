@@ -1,0 +1,71 @@
+** sch_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/XOR/xor_8_bitwise.sch
+.subckt xor_8_bitwise S0 S1 S2 S3 S4 S5 S6 S7 A0 B0 A1 B1 A2 B2 A3 B3 A4 B4 A5 B5 A6 B6 A7 B7
+*.PININFO S0:O S1:O S2:O S3:O S4:O S5:O S6:O S7:O A0:I B0:I A1:I B1:I A2:I B2:I A3:I B3:I A4:I B4:I
+*+ A5:I B5:I A6:I B6:I A7:I B7:I
+x1 A0 B0 S0 VSS VDD XOR2
+x2 A1 B1 S1 VSS VDD XOR2
+x3 A2 B2 S2 VSS VDD XOR2
+x4 A3 B3 S3 VSS VDD XOR2
+x5 A4 B4 S4 VSS VDD XOR2
+x6 A5 B5 S5 VSS VDD XOR2
+x7 A6 B6 S6 VSS VDD XOR2
+x8 A7 B7 S7 VSS VDD XOR2
+.ends
+
+* expanding   symbol:  XOR/XOR2.sym # of pins=3
+** sym_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/XOR/XOR2.sym
+** sch_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/XOR/XOR2.sch
+.subckt XOR2  A B Y  VSS  VDD
+*.PININFO A:I B:I Y:O
+x1 A B !B !A Y A !A B !B VSS VDD cg4
+x2 A VSS VDD !A inv_smol
+x3 B VSS VDD !B inv_smol
+.ends
+
+
+* expanding   symbol:  ./CG4/cg4.sym # of pins=9
+** sym_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/CG4/cg4.sym
+** sch_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/CG4/cg4.sch
+.subckt cg4  P3 P4 P2 P1 OUT N2 N1 N4 N3  VSS  VDD
+*.PININFO P3:I P1:I N1:I N3:I P4:I P2:I N2:I N4:I OUT:O
+XM1 OUT N1 net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT N2 net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 N3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net2 N4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT P1 net3 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 OUT P2 net3 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net3 P3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net3 P4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  INV/inv_smol.sym # of pins=2
+** sym_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/INV/inv_smol.sym
+** sch_path: /home/beyza/Desktop/vlsi_sky130b/design/xschem/INV/inv_smol.sch
+.subckt inv_smol  A  VSS  VDD  Y
+*.PININFO A:I Y:O
+XM2 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
