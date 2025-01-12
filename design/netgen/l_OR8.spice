@@ -42,19 +42,18 @@ Xsky130_fd_pr__nfet_01v8_6H9P4D_0 Y VSS A VSS sky130_fd_pr__nfet_01v8_6H9P4D
 Xefepmos_W107-L15-F3_0 A VDD VDD Y efepmos_W107-L15-F3
 .ends
 
-.subckt NOT8 A7 A6 A5 A4 A3 A2 A1 A0 S0 S1 S2 S3 S4 S5 S6 S7 inv_7/VDD VSUBS
-Xinv_0 A3 VSUBS inv_7/VDD S3 inv
-Xinv_1 A7 VSUBS inv_7/VDD S7 inv
-Xinv_2 A6 VSUBS inv_7/VDD S6 inv
-Xinv_3 A5 VSUBS inv_7/VDD S5 inv
-Xinv_4 A4 VSUBS inv_7/VDD S4 inv
-Xinv_5 A2 VSUBS inv_7/VDD S2 inv
-Xinv_6 A1 VSUBS inv_7/VDD S1 inv
-Xinv_7 A0 VSUBS inv_7/VDD S0 inv
+.subckt NOT8 A7 A6 A5 A4 A3 A2 A1 A0 S0 S1 S2 S3 S4 S5 S6 S7 VDD VSS
+Xinv_0 A3 VSS VDD S3 inv
+Xinv_1 A7 VSS VDD S7 inv
+Xinv_2 A6 VSS VDD S6 inv
+Xinv_3 A5 VSS VDD S5 inv
+Xinv_4 A4 VSS VDD S4 inv
+Xinv_5 A2 VSS VDD S2 inv
+Xinv_6 A1 VSS VDD S1 inv
+Xinv_7 A0 VSS VDD S0 inv
 .ends
 
-.subckt OR8 A7 A6 A5 A4 A3 A2 A1 A0 B0 B1 B2 B3 B4 B5 B6 B7 S7 S6 S5 S4 S3 S2 S1 S0
-+ VDD VSS
+.subckt OR8 A7 A6 A5 A4 A3 A2 A1 A0 B0 B1 B2 B3 B4 B5 B6 B7 S7 S6 S5 S4 S3 S2 S1 S0 VDD VSS
 Xnor2_0 A0 B0 VSS VDD nor2_0/Y nor2
 Xnor2_1 A7 B7 VSS VDD nor2_1/Y nor2
 Xnor2_2 A6 B6 VSS VDD nor2_2/Y nor2
