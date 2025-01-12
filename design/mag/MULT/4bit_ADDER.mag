@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736611400
+timestamp 1736680159
 << nwell >>
 rect 6413 2450 6512 2634
 rect 9708 2491 9799 2635
@@ -54,20 +54,20 @@ rect 12985 16 13185 127
 rect 224 2470 12866 2598
 << metal5 >>
 rect 3094 -307 9870 2650
-use FULL_ADDER  FULL_ADDER_0
-timestamp 1736608123
+use FULL_ADDER  FULL_ADDER_0 ~/Desktop/vlsi_sky130b/design/mag/ADDER
+timestamp 1736680159
 transform 1 0 118 0 1 1114
 box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_1
-timestamp 1736608123
+timestamp 1736680159
 transform 1 0 3409 0 1 1114
 box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_2
-timestamp 1736608123
+timestamp 1736680159
 transform 1 0 6700 0 1 1114
 box -292 -1421 3108 1536
 use FULL_ADDER  FULL_ADDER_3
-timestamp 1736608123
+timestamp 1736680159
 transform 1 0 9991 0 1 1114
 box -292 -1421 3108 1536
 << labels >>

@@ -2,24 +2,24 @@
 .subckt mul A0 A1 A2 A3 B1 B2 B3 B0 S6 S7 S3 S4 S5 S0 S1 S2 VSS VDD
 *.PININFO A0:I A1:I A2:I A3:I B1:I B2:I B3:I B0:I S6:O S7:O S3:O S4:O S5:O S0:O S1:O S2:O VSS:I
 *+ VDD:I
-x1 A3 B0 VSS VDD net3 and2
-x2 A2 B0 VSS VDD net2 and2
-x3 A1 B0 VSS VDD net1 and2
-x4 A0 B0 VSS VDD S0 and2
+x1 B0 A3 VSS VDD net3 and2
+x2 B0 A2 VSS VDD net2 and2
+x3 B0 A1 VSS VDD net1 and2
+x4 B0 A0 VSS VDD S0 and2
 x5 net4 S1 net1 net5 net8 net2 net6 net15 net3 net7 net9 VSS net14 VSS VSS VDD 4-bit_adder
-x6 A3 B1 VSS VDD net7 and2
+x6 B1 A3 VSS VDD net7 and2
 x7 A2 B1 VSS VDD net6 and2
-x8 A1 B1 VSS VDD net5 and2
+x8 B1 A1 VSS VDD net5 and2
 x9 A0 B1 VSS VDD net4 and2
 x10 net10 S2 net8 net11 net22 net15 net12 net23 net9 net13 net21 net14 net20 VSS VSS VDD 4-bit_adder
-x11 A3 B2 VSS VDD net13 and2
+x11 B2 A3 VSS VDD net13 and2
 x12 A2 B2 VSS VDD net12 and2
-x13 A1 B2 VSS VDD net11 and2
+x13 B2 A1 VSS VDD net11 and2
 x14 A0 B2 VSS VDD net10 and2
 x15 net16 S3 net22 net17 S4 net23 net18 S5 net21 net19 S6 net20 S7 VSS VSS VDD 4-bit_adder
-x16 A3 B3 VSS VDD net19 and2
+x16 B3 A3 VSS VDD net19 and2
 x17 A2 B3 VSS VDD net18 and2
-x18 A1 B3 VSS VDD net17 and2
+x18 B3 A1 VSS VDD net17 and2
 x19 A0 B3 VSS VDD net16 and2
 .ends
 

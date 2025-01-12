@@ -104,16 +104,16 @@ N -210 1080 -160 1080 {lab=#net21}
 N -160 1030 -160 1080 {lab=#net21}
 N -250 1060 -180 1060 {lab=#net20}
 N -180 1030 -180 1060 {lab=#net20}
-C {AND/and2.sym} 0 90 1 0 {name=x1 VSS=VSS VDD=VDD}
-C {AND/and2.sym} 120 90 1 0 {name=x2 VSS=VSS VDD=VDD}
-C {AND/and2.sym} 240 90 1 0 {name=x3 VSS=VSS VDD=VDD}
-C {AND/and2.sym} 360 90 1 0 {name=x4 VSS=VSS VDD=VDD}
+C {AND/and2.sym} 0 90 3 1 {name=x1 VSS=VSS VDD=VDD}
+C {AND/and2.sym} 120 90 3 1 {name=x2 VSS=VSS VDD=VDD}
+C {AND/and2.sym} 240 90 3 1 {name=x3 VSS=VSS VDD=VDD}
+C {AND/and2.sym} 360 90 3 1 {name=x4 VSS=VSS VDD=VDD}
 C {ADDER/4-bit_adder.sym} -80 440 1 0 {name=x5 VSS=VSS
 VDD=VDD}
 C {devices/lab_pin.sym} -150 290 1 0 {name=p1 sig_type=std_logic lab=VSS}
-C {AND/and2.sym} -590 130 1 0 {name=x6 VSS=VSS VDD=VDD}
+C {AND/and2.sym} -590 130 3 1 {name=x6 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -470 130 1 0 {name=x7 VSS=VSS VDD=VDD}
-C {AND/and2.sym} -350 130 1 0 {name=x8 VSS=VSS VDD=VDD}
+C {AND/and2.sym} -350 130 3 1 {name=x8 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -230 130 1 0 {name=x9 VSS=VSS VDD=VDD}
 C {devices/ipin.sym} 310 -200 1 0 {name=p9 lab=A0}
 C {devices/ipin.sym} 290 -200 1 0 {name=p11 lab=A1}
@@ -135,9 +135,9 @@ C {devices/lab_pin.sym} -130 -30 1 0 {name=p22 sig_type=std_logic lab=B0}
 C {devices/lab_pin.sym} -670 20 1 0 {name=p23 sig_type=std_logic lab=B1}
 C {ADDER/4-bit_adder.sym} -170 880 1 0 {name=x10 VSS=VSS
 VDD=VDD}
-C {AND/and2.sym} -680 570 1 0 {name=x11 VSS=VSS VDD=VDD}
+C {AND/and2.sym} -680 570 3 1 {name=x11 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -560 570 1 0 {name=x12 VSS=VSS VDD=VDD}
-C {AND/and2.sym} -440 570 1 0 {name=x13 VSS=VSS VDD=VDD}
+C {AND/and2.sym} -440 570 3 1 {name=x13 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -320 570 1 0 {name=x14 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} -300 510 1 0 {name=p8 sig_type=std_logic lab=A0}
 C {devices/lab_pin.sym} -420 510 1 0 {name=p17 sig_type=std_logic lab=A1}
@@ -146,9 +146,9 @@ C {devices/lab_pin.sym} -660 510 1 0 {name=p27 sig_type=std_logic lab=A3}
 C {devices/lab_pin.sym} -760 460 1 0 {name=p30 sig_type=std_logic lab=B2}
 C {ADDER/4-bit_adder.sym} -180 1380 1 0 {name=x15 VSS=VSS
 VDD=VDD}
-C {AND/and2.sym} -690 1070 1 0 {name=x16 VSS=VSS VDD=VDD}
+C {AND/and2.sym} -690 1070 3 1 {name=x16 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -570 1070 1 0 {name=x17 VSS=VSS VDD=VDD}
-C {AND/and2.sym} -450 1070 1 0 {name=x18 VSS=VSS VDD=VDD}
+C {AND/and2.sym} -450 1070 3 1 {name=x18 VSS=VSS VDD=VDD}
 C {AND/and2.sym} -330 1070 1 0 {name=x19 VSS=VSS VDD=VDD}
 C {devices/lab_pin.sym} -310 1010 1 0 {name=p6 sig_type=std_logic lab=A0}
 C {devices/lab_pin.sym} -430 1010 1 0 {name=p7 sig_type=std_logic lab=A1}
