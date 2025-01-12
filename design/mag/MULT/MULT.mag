@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736682680
+timestamp 1736693491
 << nwell >>
 rect -3439 3542 3242 4070
 rect -3388 1730 -2206 2288
@@ -1873,82 +1873,18 @@ rect -3818 -6612 -2985 -6304
 rect -715 -6612 13360 -6304
 rect -3818 -7001 13360 -6612
 use 4bit_ADDER  4bit_ADDER_0
-timestamp 1736680159
+timestamp 1736693491
 transform 1 0 171 0 1 -165
 box -174 -307 13189 3089
 use 4bit_ADDER  4bit_ADDER_1
-timestamp 1736680159
+timestamp 1736693491
 transform 1 0 171 0 1 -3430
 box -174 -307 13189 3089
 use 4bit_ADDER  4bit_ADDER_2
-timestamp 1736680159
+timestamp 1736693491
 transform 1 0 171 0 1 -6694
 box -174 -307 13189 3089
-use NAND2  NAND2_0 
-timestamp 1736620191
-transform 1 0 -3795 0 1 3170
-box 356 -17 1062 804
-use NAND2  NAND2_1
-timestamp 1736620191
-transform 1 0 -1758 0 1 3170
-box 356 -17 1062 804
-use NAND2  NAND2_2
-timestamp 1736620191
-transform 1 0 -28 0 1 3170
-box 356 -17 1062 804
-use NAND2  NAND2_3
-timestamp 1736620191
-transform 1 0 1732 0 1 3170
-box 356 -17 1062 804
-use NAND2  NAND2_4
-timestamp 1736620191
-transform 1 0 -3744 0 1 1358
-box 356 -17 1062 804
-use NAND2  NAND2_5
-timestamp 1736620191
-transform 1 0 -3744 0 1 66
-box 356 -17 1062 804
-use NAND2  NAND2_6
-timestamp 1736620191
-transform 1 0 -3744 0 1 -1907
-box 356 -17 1062 804
-use NAND2  NAND2_7
-timestamp 1736620191
-transform 1 0 -3744 0 1 -3199
-box 356 -17 1062 804
-use NAND2  NAND2_8
-timestamp 1736620191
-transform 1 0 -3744 0 1 -5171
-box 356 -17 1062 804
-use NAND2  NAND2_9
-timestamp 1736620191
-transform 1 0 -3744 0 1 -6463
-box 356 -17 1062 804
-use NAND2  NAND2_10
-timestamp 1736620191
-transform 1 0 -2008 0 1 1358
-box 356 -17 1062 804
-use NAND2  NAND2_11
-timestamp 1736620191
-transform 1 0 -2008 0 1 66
-box 356 -17 1062 804
-use NAND2  NAND2_12
-timestamp 1736620191
-transform 1 0 -2007 0 1 -1907
-box 356 -17 1062 804
-use NAND2  NAND2_13
-timestamp 1736620191
-transform 1 0 -2008 0 1 -3199
-box 356 -17 1062 804
-use NAND2  NAND2_14
-timestamp 1736620191
-transform 1 0 -2007 0 1 -5171
-box 356 -17 1062 804
-use NAND2  NAND2_15
-timestamp 1736620191
-transform 1 0 -2007 0 1 -6463
-box 356 -17 1062 804
-use inv  inv_0 
+use inv  inv_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/inv
 timestamp 1736620191
 transform 1 0 -2684 0 1 3542
 box 0 -311 412 486
@@ -2012,6 +1948,70 @@ use inv  inv_15
 timestamp 1736620191
 transform 1 0 -910 0 1 -6091
 box 0 -311 412 486
+use NAND2  NAND2_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NAND/NAND2
+timestamp 1736620191
+transform 1 0 -3795 0 1 3170
+box 356 -17 1062 804
+use NAND2  NAND2_1
+timestamp 1736620191
+transform 1 0 -1758 0 1 3170
+box 356 -17 1062 804
+use NAND2  NAND2_2
+timestamp 1736620191
+transform 1 0 -28 0 1 3170
+box 356 -17 1062 804
+use NAND2  NAND2_3
+timestamp 1736620191
+transform 1 0 1732 0 1 3170
+box 356 -17 1062 804
+use NAND2  NAND2_4
+timestamp 1736620191
+transform 1 0 -3744 0 1 1358
+box 356 -17 1062 804
+use NAND2  NAND2_5
+timestamp 1736620191
+transform 1 0 -3744 0 1 66
+box 356 -17 1062 804
+use NAND2  NAND2_6
+timestamp 1736620191
+transform 1 0 -3744 0 1 -1907
+box 356 -17 1062 804
+use NAND2  NAND2_7
+timestamp 1736620191
+transform 1 0 -3744 0 1 -3199
+box 356 -17 1062 804
+use NAND2  NAND2_8
+timestamp 1736620191
+transform 1 0 -3744 0 1 -5171
+box 356 -17 1062 804
+use NAND2  NAND2_9
+timestamp 1736620191
+transform 1 0 -3744 0 1 -6463
+box 356 -17 1062 804
+use NAND2  NAND2_10
+timestamp 1736620191
+transform 1 0 -2008 0 1 1358
+box 356 -17 1062 804
+use NAND2  NAND2_11
+timestamp 1736620191
+transform 1 0 -2008 0 1 66
+box 356 -17 1062 804
+use NAND2  NAND2_12
+timestamp 1736620191
+transform 1 0 -2007 0 1 -1907
+box 356 -17 1062 804
+use NAND2  NAND2_13
+timestamp 1736620191
+transform 1 0 -2008 0 1 -3199
+box 356 -17 1062 804
+use NAND2  NAND2_14
+timestamp 1736620191
+transform 1 0 -2007 0 1 -5171
+box 356 -17 1062 804
+use NAND2  NAND2_15
+timestamp 1736620191
+transform 1 0 -2007 0 1 -6463
+box 356 -17 1062 804
 << labels >>
 flabel metal2 -3228 -2190 -3108 -2070 1 FreeSerif 160 0 0 0 B2
 port 7 n

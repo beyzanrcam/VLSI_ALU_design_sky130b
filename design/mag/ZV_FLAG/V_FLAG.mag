@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736687514
+timestamp 1736693491
 << nwell >>
 rect 1282 2682 1443 2683
 rect -168 1782 4600 2682
@@ -143,15 +143,15 @@ timestamp 1736620191
 transform 1 0 4708 0 1 1165
 box 356 -17 1062 804
 use XOR2  XOR2_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/XOR
-timestamp 1736620191
+timestamp 1736689398
 transform 1 0 3229 0 1 917
 box -109 77 1371 1764
 use XOR2  XOR2_1
-timestamp 1736620191
+timestamp 1736689398
 transform 1 0 -81 0 1 919
 box -109 77 1371 1764
 use XOR2  XOR2_2
-timestamp 1736620191
+timestamp 1736689398
 transform 1 0 1525 0 1 919
 box -109 77 1371 1764
 << labels >>
