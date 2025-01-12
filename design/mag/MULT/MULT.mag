@@ -1884,7 +1884,7 @@ use 4bit_ADDER  4bit_ADDER_2
 timestamp 1736680159
 transform 1 0 171 0 1 -6694
 box -174 -307 13189 3089
-use NAND2  NAND2_0 ~/Desktop/vlsi_sky130b/design/mag/NAND/NAND2
+use NAND2  NAND2_0 
 timestamp 1736620191
 transform 1 0 -3795 0 1 3170
 box 356 -17 1062 804
@@ -1948,7 +1948,7 @@ use NAND2  NAND2_15
 timestamp 1736620191
 transform 1 0 -2007 0 1 -6463
 box 356 -17 1062 804
-use inv  inv_0 ~/Desktop/vlsi_sky130b/design/mag/inv
+use inv  inv_0 
 timestamp 1736620191
 transform 1 0 -2684 0 1 3542
 box 0 -311 412 486
