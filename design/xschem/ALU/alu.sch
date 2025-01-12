@@ -177,7 +177,7 @@ VSS=VSS
 VDD=VDD}
 C {devices/lab_pin.sym} 70 650 0 0 {name=p122 sig_type=std_logic lab=A0}
 C {devices/lab_pin.sym} 70 670 0 0 {name=p123 sig_type=std_logic lab=A1}
-C {devices/lab_pin.sym} 70 690 0 0 {name=p124 sig_type=std_logic lab=A1}
+C {devices/lab_pin.sym} 70 690 0 0 {name=p124 sig_type=std_logic lab=A2}
 C {devices/lab_pin.sym} 70 710 0 0 {name=p113 sig_type=std_logic lab=A3}
 C {devices/lab_pin.sym} 70 730 0 0 {name=p114 sig_type=std_logic lab=B0}
 C {devices/lab_pin.sym} 70 750 0 0 {name=p115 sig_type=std_logic lab=B1}

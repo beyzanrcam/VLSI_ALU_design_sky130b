@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736694850
+timestamp 1736699842
 << metal1 >>
 rect 2212 -554 2310 -542
 rect 2212 -628 2224 -554
@@ -512,11 +512,7 @@ rect 5498 -2104 12892 -1919
 rect 4107 -2149 12892 -2104
 rect 1940 -3874 12892 -2149
 rect 12154 -3878 12892 -3874
-use NOT8  NOT8_0 ~/Desktop/vlsi_sky130b/design/mag/NOT
-timestamp 1736694824
-transform 1 0 5850 0 1 -3379
-box -110 -501 3853 1143
-use nor2  nor2_0 ~/Desktop/vlsi_sky130b/design/mag/NOR/NOR2
+use nor2  nor2_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOR/NOR2
 timestamp 1736620191
 transform 1 0 11800 0 1 -1320
 box 0 -480 1090 580
@@ -548,6 +544,10 @@ use nor2  nor2_7
 timestamp 1736620191
 transform 1 0 10400 0 1 -1320
 box 0 -480 1090 580
+use NOT8  NOT8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOT
+timestamp 1736694824
+transform 1 0 5850 0 1 -3379
+box -110 -501 3853 1143
 << labels >>
 flabel metal1 1936 -718 1978 -690 0 FreeSans 160 0 0 0 A7
 port 0 nsew

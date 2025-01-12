@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1736693803
+timestamp 1736699842
 << metal1 >>
 rect 6 1844 78 1924
 rect 178 1852 234 1924
@@ -56,7 +56,7 @@ timestamp 1736620191
 transform 1 0 5260 0 1 734
 box -5260 -734 4324 1197
 use NOT8  NOT8_0 ~/Documents/vlsi/vlsi_sky130b/design/mag/NOT
-timestamp 1736693803
+timestamp 1736694824
 transform 1 0 2718 0 1 -2155
 box -110 -501 3853 1143
 << labels >>

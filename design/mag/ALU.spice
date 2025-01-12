@@ -134,12 +134,12 @@ X26 a_705_367# B VSS VSS sky130_fd_pr__nfet_01v8 ad=0.10725 pd=0.98 as=0.10725 p
 X27 VSS B a_705_367# VSS sky130_fd_pr__nfet_01v8 ad=0.10075 pd=0.96 as=0.10725 ps=0.98 w=0.65 l=0.15
 .ends
 
-.subckt V_FLAG A_MSB B_MSB OPCODE3 Y_MSB V inv_0/VDD VSUBS
-Xinv_0 inv_0/A VSUBS V inv_0/VDD inv
-XNAND2_0 XOR2_0/Y XOR2_2/Y VSUBS inv_0/VDD inv_0/A NAND2
-XXOR2_0 A_MSB Y_MSB VSUBS inv_0/VDD XOR2_0/Y XOR2_0/a_99_341# XOR2
-XXOR2_1 A_MSB B_MSB VSUBS inv_0/VDD XOR2_2/B XOR2_1/a_99_341# XOR2
-XXOR2_2 OPCODE3 XOR2_2/B VSUBS inv_0/VDD XOR2_2/Y XOR2_2/a_99_341# XOR2
+.subckt V_FLAG A_MSB B_MSB OPCODE3 Y_MSB V VDD VSS
+Xinv_0 inv_0/A VSS V VDD inv
+XNAND2_0 XOR2_0/Y XOR2_2/Y VSS VDD inv_0/A NAND2
+XXOR2_0 A_MSB Y_MSB VSS VDD XOR2_0/Y XOR2_0/a_99_341# XOR2
+XXOR2_1 A_MSB B_MSB VSS VDD XOR2_2/B XOR2_1/a_99_341# XOR2
+XXOR2_2 OPCODE3 XOR2_2/B VSS VDD XOR2_2/Y XOR2_2/a_99_341# XOR2
 .ends
 
 .subckt FULL_ADDER_XORED A K COUT CIN B VDD VSS OUT
@@ -354,44 +354,44 @@ XNAND2_6 A0 B2 VSS VDD inv_6/A NAND2
 .ends
 
 .subckt ALU B0 B1 B2 B3 B4 B5 B6 A0 A1 A2 A3 A4 A5 A6 A7 Y0 Y1 Y2 Y3 Y4 Y5 Y6 S Z
-+ C V VSS Y7 B7
-XZFLAG_0 Y0 Y1 Y2 Y3 Y4 Y5 Y6 Y7 Z VSS VSS ZFLAG
++ C V VSS Y7 B7 SEL0 SEL1 SEL2 SEL3 VDD
+XZFLAG_0 Y0 Y1 Y2 Y3 Y4 Y5 Y6 Y7 Z VDD VSS ZFLAG
 Xleft_shifter_0 B0 B1 B2 B3 B4 B5 B6 B7 mux8_1/A6 mux8_2/A6 mux8_3/A6 mux8_4/A6 mux8_5/A6
-+ mux8_7/A6 mux8_8/A6 mux8_6/A6 mux8_0/A6 VSS VSS left_shifter
++ mux8_7/A6 mux8_8/A6 mux8_6/A6 mux8_0/A6 VDD VSS left_shifter
 Xright_shifter_0 B0 B1 B2 B3 B4 B5 B6 B7 mux8_0/A7 mux8_1/A7 mux8_2/A7 mux8_3/A7 mux8_4/A7
-+ mux8_5/A7 mux8_7/A7 mux8_8/A7 mux8_6/A7 VSS VSS right_shifter
-XV_FLAG_0 A7 A6 8bit_ADDER_0/K mux8_6/A0 V VSS VSS V_FLAG
-X8bit_ADDER_0 8bit_ADDER_0/K B0 B1 B2 B3 B5 B6 B7 A0 A1 A2 A3 A4 A5 A6 A7 mux8_1/A0
-+ mux8_2/A0 mux8_3/A0 mux8_4/A0 mux8_5/A0 mux8_7/A0 8bit_ADDER_0/S6 mux8_6/A0 mux8_0/A0
-+ B4 VSS VSS x8bit_ADDER
++ mux8_5/A7 mux8_7/A7 mux8_8/A7 mux8_6/A7 VDD VSS right_shifter
+XV_FLAG_0 A7 B7 SEL3 mux8_6/A0 V VDD VSS V_FLAG
+X8bit_ADDER_0 SEL3 B0 B1 B2 B3 B5 B6 B7 A0 A1 A2 A3 A4 A5 A6 A7 mux8_1/A0 mux8_2/A0
++ mux8_3/A0 mux8_4/A0 mux8_5/A0 mux8_7/A0 mux8_8/A0 mux8_6/A0 mux8_0/A0 B4 VDD VSS
++ x8bit_ADDER
 XAND8_0 A7 B7 A6 B6 A5 B5 A4 B4 A3 B3 A2 B2 A1 B1 A0 B0 mux8_1/A2 mux8_2/A2 mux8_3/A2
-+ mux8_4/A2 mux8_5/A2 mux8_7/A2 mux8_8/A2 mux8_6/A2 VSS VSS VSS AND8
-Xmux8_1 mux8_1/A0 mux8_1/A1 mux8_1/A2 mux8_1/A5 mux8_1/A6 mux8_1/A7 mux8_8/SEL0 OR8_0/S0
-+ mux8_8/SEL1 Y0 VSS mux8_1/A4 VSS mux8_8/SEL2 mux8
-Xmux8_0 mux8_0/A0 VSS VSS VSS mux8_0/A6 mux8_0/A7 mux8_8/SEL0 VSS mux8_8/SEL1 C VSS
-+ VSS VSS mux8_8/SEL2 mux8
++ mux8_4/A2 mux8_5/A2 mux8_7/A2 mux8_8/A2 mux8_6/A2 VDD VDD VSS AND8
+Xmux8_1 mux8_1/A0 mux8_1/A1 mux8_1/A2 mux8_1/A5 mux8_1/A6 mux8_1/A7 SEL0 OR8_0/S0
++ SEL1 Y0 VDD mux8_1/A4 VSS SEL2 mux8
+Xmux8_0 mux8_0/A0 VSS VSS VSS mux8_0/A6 mux8_0/A7 SEL0 VSS SEL1 C VDD VSS VSS SEL2
++ mux8
 XNOT8_0 B7 B6 B5 B4 B3 B2 B1 B0 mux8_1/A5 mux8_2/A5 mux8_3/A5 mux8_4/A5 mux8_5/A5
-+ mux8_7/A5 mux8_8/A5 mux8_6/A5 VSS VSS NOT8
-Xmux8_2 mux8_2/A0 mux8_2/A1 mux8_2/A2 mux8_2/A5 mux8_2/A6 mux8_2/A7 mux8_8/SEL0 OR8_0/S1
-+ mux8_8/SEL1 Y1 VSS mux8_2/A4 VSS mux8_8/SEL2 mux8
-Xmux8_3 mux8_3/A0 mux8_3/A1 mux8_3/A2 mux8_3/A5 mux8_3/A6 mux8_3/A7 mux8_8/SEL0 OR8_0/S2
-+ mux8_8/SEL1 Y2 VSS mux8_3/A4 VSS mux8_8/SEL2 mux8
-Xbuffer_0 VSS S Y7 VSS buffer
-Xmux8_4 mux8_4/A0 mux8_4/A1 mux8_4/A2 mux8_4/A5 mux8_4/A6 mux8_4/A7 mux8_8/SEL0 OR8_0/S3
-+ mux8_8/SEL1 Y3 VSS mux8_4/A4 VSS mux8_8/SEL2 mux8
-Xmux8_5 mux8_5/A0 mux8_5/A1 mux8_5/A2 mux8_5/A5 mux8_5/A6 mux8_5/A7 mux8_8/SEL0 OR8_0/S4
-+ mux8_8/SEL1 Y4 VSS mux8_5/A4 VSS mux8_8/SEL2 mux8
-Xmux8_6 mux8_6/A0 mux8_6/A1 mux8_6/A2 mux8_6/A5 mux8_6/A6 mux8_6/A7 mux8_8/SEL0 OR8_0/S7
-+ mux8_8/SEL1 Y7 VSS mux8_6/A4 VSS mux8_8/SEL2 mux8
-Xmux8_7 mux8_7/A0 mux8_7/A1 mux8_7/A2 mux8_7/A5 mux8_7/A6 mux8_7/A7 mux8_8/SEL0 OR8_0/S5
-+ mux8_8/SEL1 Y5 VSS mux8_7/A4 VSS mux8_8/SEL2 mux8
-Xmux8_8 mux8_8/A0 mux8_8/A1 mux8_8/A2 mux8_8/A5 mux8_8/A6 mux8_8/A7 mux8_8/SEL0 OR8_0/S6
-+ mux8_8/SEL1 Y6 VSS mux8_8/A4 VSS mux8_8/SEL2 mux8
++ mux8_7/A5 mux8_8/A5 mux8_6/A5 VDD VSS NOT8
+Xmux8_2 mux8_2/A0 mux8_2/A1 mux8_2/A2 mux8_2/A5 mux8_2/A6 mux8_2/A7 SEL0 OR8_0/S1
++ SEL1 Y1 VDD mux8_2/A4 VSS SEL2 mux8
+Xmux8_3 mux8_3/A0 mux8_3/A1 mux8_3/A2 mux8_3/A5 mux8_3/A6 mux8_3/A7 SEL0 OR8_0/S2
++ SEL1 Y2 VDD mux8_3/A4 VSS SEL2 mux8
+Xbuffer_0 VDD S Y7 VSS buffer
+Xmux8_4 mux8_4/A0 mux8_4/A1 mux8_4/A2 mux8_4/A5 mux8_4/A6 mux8_4/A7 SEL0 OR8_0/S3
++ SEL1 Y3 VDD mux8_4/A4 VSS SEL2 mux8
+Xmux8_5 mux8_5/A0 mux8_5/A1 mux8_5/A2 mux8_5/A5 mux8_5/A6 mux8_5/A7 SEL0 OR8_0/S4
++ SEL1 Y4 VDD mux8_5/A4 VSS SEL2 mux8
+Xmux8_6 mux8_6/A0 mux8_6/A1 mux8_6/A2 mux8_6/A5 mux8_6/A6 mux8_6/A7 SEL0 OR8_0/S7
++ SEL1 Y7 VDD mux8_6/A4 VSS SEL2 mux8
+Xmux8_7 mux8_7/A0 mux8_7/A1 mux8_7/A2 mux8_7/A5 mux8_7/A6 mux8_7/A7 SEL0 OR8_0/S5
++ SEL1 Y5 VDD mux8_7/A4 VSS SEL2 mux8
+Xmux8_8 mux8_8/A0 mux8_8/A1 mux8_8/A2 mux8_8/A5 mux8_8/A6 mux8_8/A7 SEL0 OR8_0/S6
++ SEL1 Y6 VDD mux8_8/A4 VSS SEL2 mux8
 XXOR8_0 A7 B7 B6 B5 B4 B3 B2 B1 B0 A0 A1 A2 A3 A4 A5 A6 mux8_6/A4 mux8_8/A4 mux8_7/A4
-+ mux8_5/A4 mux8_4/A4 mux8_3/A4 mux8_2/A4 mux8_1/A4 VSS VSS XOR8
++ mux8_5/A4 mux8_4/A4 mux8_3/A4 mux8_2/A4 mux8_1/A4 VDD VSS XOR8
 XOR8_0 B7 B6 B5 B4 B3 B2 B1 B0 A0 A1 A2 A3 A4 A5 A6 A7 OR8_0/S7 OR8_0/S6 OR8_0/S5
-+ OR8_0/S4 OR8_0/S3 OR8_0/S2 OR8_0/S1 OR8_0/S0 VSS VSS OR8
++ OR8_0/S4 OR8_0/S3 OR8_0/S2 OR8_0/S1 OR8_0/S0 VDD VSS OR8
 XMULT_0 A0 B2 B0 B3 A2 A1 mux8_1/A1 mux8_2/A1 mux8_3/A1 mux8_7/A1 mux8_5/A1 mux8_4/A1
-+ mux8_6/A1 mux8_8/A1 VSS B1 A3 VSS MULT
++ mux8_6/A1 mux8_8/A1 VDD B1 A3 VSS MULT
 .ends
 
