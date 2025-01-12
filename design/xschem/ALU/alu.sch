@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2 }
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -401,3 +401,4 @@ C {devices/ipin.sym} 1060 970 2 1 {name=p336 lab=VDD}
 C {devices/lab_pin.sym} 70 630 0 0 {name=p337 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 70 610 0 0 {name=p339 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 70 790 0 0 {name=p121 sig_type=std_logic lab=B3}
+C {devices/lab_pin.sym} 590 1310 0 0 {name=p338 sig_type=std_logic lab=OPCODE[3]}
