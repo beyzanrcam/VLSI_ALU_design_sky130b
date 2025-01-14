@@ -29,7 +29,7 @@ def generate_opcode_sequences(num_bits):
     """Generates all possible binary sequences for a given number of bits."""
     return list(itertools.product([0, 1], repeat=num_bits))
 
-def generate_spice_input(num_inputs, sequence_a, sequence_b, opcode_bits=3, period=40e-9, voltage=1.2, tr=1e-12, tf=1e-12, end_time=400e-9):
+def generate_spice_input(num_inputs, sequence_a, sequence_b, opcode_bits=3, period=800e-9, voltage=1.2, tr=1e-12, tf=1e-12, end_time=1e-6):
     """Generates the SPICE input section for multiple A, B, and OPCODE inputs."""
     spice_input = "* SPICE Input for A, B, and OPCODE signals with custom sequences\n\n"
     spice_input += "* Parameters\n"
@@ -80,13 +80,12 @@ def write_spice_to_file(spice_code, filename="spice_input.txt"):
 
 # Example usage:
 num_inputs = 8  # Number of A and B inputs
-# Example usage:
-num_inputs = 8  # Number of A and B inputs
+
 
 # Define sequences for all 8 bits of A and B
 # Each sublist represents the sequence for one bit, e.g., A[0], A[1], ..., A[7]
 sequence_a = [
-    [1, 2, 3, 4, 5, 6, 7, 8],  # A0
+    [1, 1, 1, 1, 1, 1, 1, 1],  # A0
     [0, 0, 0, 0, 0, 0, 0, 0],  # A1
     [0, 0, 0, 0, 0, 0, 0, 0],  # A2
     [0, 0, 0, 0, 0, 0, 0, 0],  # A3
@@ -98,7 +97,7 @@ sequence_a = [
 
 
 sequence_b = [
-    [0, 0, 0, 0, 0, 0, 0, 0],  # A0
+    [0, 0, 0, 0, 0, 0, 0, 1],  # A0
     [0, 0, 0, 0, 0, 0, 0, 0],  # A1
     [0, 0, 0, 0, 0, 0, 0, 0],  # A2
     [0, 0, 0, 0, 0, 0, 0, 0],  # A3
